@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Conditionals and Loops &mdash; PyMan 0.9.24 documentation</title>
+    <title>6. Conditionals and Loops &mdash; PyMan 0.9.24 documentation</title>
     
     <link rel="stylesheet" href="../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -24,8 +24,8 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="top" title="PyMan 0.9.24 documentation" href="../index.html" />
-    <link rel="next" title="Functions" href="../chap7/chap7_funcs.html" />
-    <link rel="prev" title="Plotting" href="../chap5/chap5_plot.html" /> 
+    <link rel="next" title="7. Functions" href="../chap7/chap7_funcs.html" />
+    <link rel="prev" title="5. Plotting" href="../chap5/chap5_plot.html" /> 
   </head>
   <body>
     <div class="related">
@@ -35,10 +35,10 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="../chap7/chap7_funcs.html" title="Functions"
+          <a href="../chap7/chap7_funcs.html" title="7. Functions"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../chap5/chap5_plot.html" title="Plotting"
+          <a href="../chap5/chap5_plot.html" title="5. Plotting"
              accesskey="P">previous</a> |</li>
         <li><a href="../pymanMaster.html">PyMan 0.9.24 documentation</a> &raquo;</li> 
       </ul>
@@ -50,18 +50,18 @@
           <div class="body">
             
   <div class="section" id="conditionals-and-loops">
-<span id="chap6"></span><h1>Conditionals and Loops<a class="headerlink" href="#conditionals-and-loops" title="Permalink to this headline">¶</a></h1>
+<span id="chap6"></span><h1>6. Conditionals and Loops<a class="headerlink" href="#conditionals-and-loops" title="Permalink to this headline">¶</a></h1>
 <p>Computer programs are useful for performing repetitive tasks.  Without complaining, getting bored, or growing tired, they can repetitively perform the same calculations with minor, but important, variations over and over again.  Humans share with computers none of these qualities.  And so we humans employ computers to perform the massive repetitive tasks we would rather avoid. However, we need efficient ways of telling the computer to do these repetitive tasks; we don&#8217;t want to have stop to tell the computer each time it finishes one iteration of a task to do the task again, but for a slightly different case.  We want to tell it once, &#8220;Do this task 1000 times with slightly different conditions and report back to me when you are done.&#8221;  This is what <strong>loops</strong> were made for.</p>
 <p>In the course of doing these repetitive tasks, computers often need to make decisions.  In general, we don&#8217;t want the computer to stop and ask us what it should do if a certain result is obtained from its calculations.  We might prefer to say,  &#8220;Look, if you get result A during your calculations, do this, otherwise, do this other thing.&#8221;  That is, we often want to tell the computer ahead of time what to do if it encounters different situations.  This is what <strong>conditionals</strong> were made for.</p>
 <p>Conditionals and loops control the flow of a program.  They are essential to performing virtually any significant computational task.  Python, like most computer languages, provides a variety of ways of implementing loops and conditionals.</p>
 <div class="section" id="conditionals">
-<span id="index-0"></span><h2>Conditionals<a class="headerlink" href="#conditionals" title="Permalink to this headline">¶</a></h2>
+<span id="index-0"></span><h2>6.1. Conditionals<a class="headerlink" href="#conditionals" title="Permalink to this headline">¶</a></h2>
 <p>Conditional statements allow a computer program to take different actions based on whether some condition, or set of conditions is true or false.  In this way, the programmer can control the flow of a program.</p>
 <div class="section" id="if-elif-and-else-statements">
-<h3><tt class="docutils literal"><span class="pre">if</span></tt>, <tt class="docutils literal"><span class="pre">elif</span></tt>, and <tt class="docutils literal"><span class="pre">else</span></tt> statements<a class="headerlink" href="#if-elif-and-else-statements" title="Permalink to this headline">¶</a></h3>
+<h3>6.1.1. <tt class="docutils literal"><span class="pre">if</span></tt>, <tt class="docutils literal"><span class="pre">elif</span></tt>, and <tt class="docutils literal"><span class="pre">else</span></tt> statements<a class="headerlink" href="#if-elif-and-else-statements" title="Permalink to this headline">¶</a></h3>
 <p>The <tt class="docutils literal"><span class="pre">if</span></tt>, <tt class="docutils literal"><span class="pre">elif</span></tt>, and <tt class="docutils literal"><span class="pre">else</span></tt> statements are used to define conditionals in Python.  We illustrate their use with a few examples.</p>
 <div class="section" id="if-elif-else-example">
-<h4><tt class="docutils literal"><span class="pre">if</span></tt>-<tt class="docutils literal"><span class="pre">elif</span></tt>-<tt class="docutils literal"><span class="pre">else</span></tt> example<a class="headerlink" href="#if-elif-else-example" title="Permalink to this headline">¶</a></h4>
+<h4>6.1.1.1. <tt class="docutils literal"><span class="pre">if</span></tt>-<tt class="docutils literal"><span class="pre">elif</span></tt>-<tt class="docutils literal"><span class="pre">else</span></tt> example<a class="headerlink" href="#if-elif-else-example" title="Permalink to this headline">¶</a></h4>
 <p>Suppose we want to know if the solutions to the quadratic equation</p>
 <div class="math">
 <p><img src="../_images/math/991e55c120457fce1add8e631b8814169768b0b9.png" alt="ax^2 + bx + c = 0"/></p>
@@ -110,14 +110,14 @@
 <p>Finally, if the <tt class="docutils literal"><span class="pre">elif</span></tt> statement is <tt class="docutils literal"><span class="pre">False</span></tt>, Python skips to the <tt class="docutils literal"><span class="pre">else</span></tt> statement and executes the block immediately below the <tt class="docutils literal"><span class="pre">else</span></tt> statement.  Once finished with that indented block, it then executes the <tt class="docutils literal"><span class="pre">print(&quot;Finished!&quot;)</span></tt> statement.</p>
 <p>As you can see, each time a <tt class="docutils literal"><span class="pre">False</span></tt> result is obtained in an <tt class="docutils literal"><span class="pre">if</span></tt> or <tt class="docutils literal"><span class="pre">elif</span></tt> statement, Python skips the indented code block associated with that  statement and drops down to the next conditional statement, that is, the next <tt class="docutils literal"><span class="pre">elif</span></tt> or <tt class="docutils literal"><span class="pre">else</span></tt>.  A flowchart of the if-elif-else code is shown below.</p>
 <div class="figure align-center" id="fig-flow-if-elif-else">
-<a class="reference internal image-reference" href="../_images/flow_if_elif_else.pdf"><img alt="Flowchart" src="../_images/flow_if_elif_else.pdf" /></a>
+<a class="reference internal image-reference" href="../_images/flow_if_elif_else.png"><img alt="Flowchart" src="../_images/flow_if_elif_else.png" style="width: 421.6px; height: 300.8px;" /></a>
 <p class="caption">Flowchart for <tt class="docutils literal"><span class="pre">if</span></tt>-<tt class="docutils literal"><span class="pre">elif</span></tt>-<tt class="docutils literal"><span class="pre">else</span></tt> code.</p>
 </div>
 <p>At the outset of this problem we stated that the solutions to the quadratic equation are imaginary only if <img class="math" src="../_images/math/bfedd297ccad8f6f651a318a560a8dd7e79553a9.png" alt="b=0"/> and <img class="math" src="../_images/math/d0bbd0eedf794556343a7476ee473dd5dc088845.png" alt="d &lt; 0"/>.  In the <tt class="docutils literal"><span class="pre">elif</span> <span class="pre">b</span> <span class="pre">==</span> <span class="pre">0.0</span></tt> statement on line 9, however, we only check to see if  <img class="math" src="../_images/math/bfedd297ccad8f6f651a318a560a8dd7e79553a9.png" alt="b=0"/>.  The reason that we don&#8217;t have to check if <img class="math" src="../_images/math/d0bbd0eedf794556343a7476ee473dd5dc088845.png" alt="d &lt; 0"/> is that the <tt class="docutils literal"><span class="pre">elif</span></tt> statement is executed only if the condition <tt class="docutils literal"><span class="pre">if</span> <span class="pre">d</span> <span class="pre">&gt;=</span> <span class="pre">0.0</span></tt> on line 7 is <tt class="docutils literal"><span class="pre">False</span></tt>.  Similarly, we don&#8217;t have to check if if <img class="math" src="../_images/math/bfedd297ccad8f6f651a318a560a8dd7e79553a9.png" alt="b=0"/> and <img class="math" src="../_images/math/d0bbd0eedf794556343a7476ee473dd5dc088845.png" alt="d &lt; 0"/> for the final <tt class="docutils literal"><span class="pre">else</span></tt> statement because this part of the <tt class="docutils literal"><span class="pre">if</span></tt>, <tt class="docutils literal"><span class="pre">elif</span></tt>, and <tt class="docutils literal"><span class="pre">else</span></tt> block will only be executed if the preceding <tt class="docutils literal"><span class="pre">if</span></tt> and <tt class="docutils literal"><span class="pre">elif</span></tt> statements are <tt class="docutils literal"><span class="pre">False</span></tt>.  This illustrates a key feature of the <tt class="docutils literal"><span class="pre">if</span></tt>, <tt class="docutils literal"><span class="pre">elif</span></tt>, and <tt class="docutils literal"><span class="pre">else</span></tt> statements: these statements are executed sequentially until one of the <tt class="docutils literal"><span class="pre">if</span></tt> or <tt class="docutils literal"><span class="pre">elif</span></tt> statements is found to be <tt class="docutils literal"><span class="pre">True</span></tt>.  Therefore, Python reaches an <tt class="docutils literal"><span class="pre">elif</span></tt> or <tt class="docutils literal"><span class="pre">else</span></tt> statement only if all the preceding <tt class="docutils literal"><span class="pre">if</span></tt> and <tt class="docutils literal"><span class="pre">elif</span></tt> statements are <tt class="docutils literal"><span class="pre">False</span></tt>.</p>
 <p>The <tt class="docutils literal"><span class="pre">if</span></tt>-<tt class="docutils literal"><span class="pre">elif</span></tt>-<tt class="docutils literal"><span class="pre">else</span></tt> logical structure can accomodate as many <tt class="docutils literal"><span class="pre">elif</span></tt> blocks as desired.  This allows you to set up logic with more than the three possible outcomes illustrated in the example above.  When designing the logical structure you should keep in mind that once Python finds a true condition, it skips all subsequent <tt class="docutils literal"><span class="pre">elif</span></tt> and <tt class="docutils literal"><span class="pre">else</span></tt> statements in a given <tt class="docutils literal"><span class="pre">if</span></tt>, <tt class="docutils literal"><span class="pre">elif</span></tt>, and <tt class="docutils literal"><span class="pre">else</span></tt> block, irrespective of their truth values.</p>
 </div>
 <div class="section" id="if-else-example">
-<h4><tt class="docutils literal"><span class="pre">if</span></tt>-<tt class="docutils literal"><span class="pre">else</span></tt> example<a class="headerlink" href="#if-else-example" title="Permalink to this headline">¶</a></h4>
+<h4>6.1.1.2. <tt class="docutils literal"><span class="pre">if</span></tt>-<tt class="docutils literal"><span class="pre">else</span></tt> example<a class="headerlink" href="#if-else-example" title="Permalink to this headline">¶</a></h4>
 <p>You will often run into situations where you simply want the program to execute one of two possible blocks based on the outcome of an <tt class="docutils literal"><span class="pre">if</span></tt> statement.  In this case, the <tt class="docutils literal"><span class="pre">elif</span></tt> block is omitted and you simply use an <tt class="docutils literal"><span class="pre">if</span></tt>-<tt class="docutils literal"><span class="pre">else</span></tt> structure.  The following program testing whether an integer is even or odd provides a simple example.</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="go">a = int(raw_input(&quot;Please input an integer: &quot;))</span>
 <span class="go">if a%2 == 0:</span>
@@ -128,12 +128,12 @@
 </div>
 <p>The flowchart below shows the logical structure of an <tt class="docutils literal"><span class="pre">if</span></tt>-<tt class="docutils literal"><span class="pre">else</span></tt> structure.</p>
 <div class="figure align-center" id="fig-flow-if-else">
-<a class="reference internal image-reference" href="../_images/flow_if_else.pdf"><img alt="Flowchart" src="../_images/flow_if_else.pdf" /></a>
+<a class="reference internal image-reference" href="../_images/flow_if_else.png"><img alt="Flowchart" src="../_images/flow_if_else.png" style="width: 357.6px; height: 224.0px;" /></a>
 <p class="caption">Flowchart for <tt class="docutils literal"><span class="pre">if</span></tt>-<tt class="docutils literal"><span class="pre">else</span></tt> code.</p>
 </div>
 </div>
 <div class="section" id="if-example">
-<h4><tt class="docutils literal"><span class="pre">if</span></tt> example<a class="headerlink" href="#if-example" title="Permalink to this headline">¶</a></h4>
+<h4>6.1.1.3. <tt class="docutils literal"><span class="pre">if</span></tt> example<a class="headerlink" href="#if-example" title="Permalink to this headline">¶</a></h4>
 <p>The simplest logical structure you can make is a simple <tt class="docutils literal"><span class="pre">if</span></tt> statement, which executes a block of code if some condition is met but otherwise does nothing.  The program below, which takes the absolute value of a number, provides a simple example of such a case.</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="go">a = eval(raw_input(&quot;Please input a number: &quot;))</span>
 <span class="go">if a &lt; 0:</span>
@@ -150,13 +150,13 @@
 <p>This works exactly as the preceding code.  Note, however, that if the block of code associated with an <tt class="docutils literal"><span class="pre">if</span></tt> or <tt class="docutils literal"><span class="pre">elif</span></tt> statement is more than one line long, the entire block of code should be written as indented text below the <tt class="docutils literal"><span class="pre">if</span></tt> or <tt class="docutils literal"><span class="pre">elif</span></tt> statement.</p>
 <p>The flowchart below shows the logical structure of a simple <tt class="docutils literal"><span class="pre">if</span></tt> structure.</p>
 <div class="figure align-center" id="fig-flow-if">
-<a class="reference internal image-reference" href="../_images/flow_if.pdf"><img alt="Flowchart" src="../_images/flow_if.pdf" /></a>
+<a class="reference internal image-reference" href="../_images/flow_if.png"><img alt="Flowchart" src="../_images/flow_if.png" style="width: 341.6px; height: 156.0px;" /></a>
 <p class="caption">Flowchart for <tt class="docutils literal"><span class="pre">if</span></tt> code.</p>
 </div>
 </div>
 </div>
 <div class="section" id="logical-operators">
-<span id="index-1"></span><h3>Logical operators<a class="headerlink" href="#logical-operators" title="Permalink to this headline">¶</a></h3>
+<span id="index-1"></span><h3>6.1.2. Logical operators<a class="headerlink" href="#logical-operators" title="Permalink to this headline">¶</a></h3>
 <p>It is important to understand that &#8220;<tt class="docutils literal"><span class="pre">==</span></tt>&#8221; in Python is not the same as &#8220;<tt class="docutils literal"><span class="pre">=</span></tt>&#8221;.  The operator &#8220;<tt class="docutils literal"><span class="pre">=</span></tt>&#8221; is the assignment operator: <tt class="docutils literal"><span class="pre">d</span> <span class="pre">=</span> <span class="pre">5</span></tt> assigns the value of 5 to the valiable <tt class="docutils literal"><span class="pre">d</span></tt>.  On the other hand &#8220;<tt class="docutils literal"><span class="pre">==</span></tt>&#8221; is the <em>logical equals operator</em> and <tt class="docutils literal"><span class="pre">d</span> <span class="pre">==</span> <span class="pre">5</span></tt> is a <em>logical truth statement</em>.  It tells Python to check to see if <tt class="docutils literal"><span class="pre">d</span></tt> is equal to <tt class="docutils literal"><span class="pre">5</span></tt> or not, and assigns a value of <tt class="docutils literal"><span class="pre">True</span></tt> or <tt class="docutils literal"><span class="pre">False</span></tt> to the statement <tt class="docutils literal"><span class="pre">d</span> <span class="pre">==</span> <span class="pre">5</span></tt> depending on whether or not <tt class="docutils literal"><span class="pre">d</span></tt> is equal to <tt class="docutils literal"><span class="pre">5</span></tt>.  The table below summarizes the various logical operators available in Python.</p>
 <blockquote>
 <div><table border="1" class="docutils">
@@ -229,10 +229,10 @@
 </div>
 </div>
 <div class="section" id="loops">
-<span id="index-2"></span><h2>Loops<a class="headerlink" href="#loops" title="Permalink to this headline">¶</a></h2>
+<span id="index-2"></span><h2>6.2. Loops<a class="headerlink" href="#loops" title="Permalink to this headline">¶</a></h2>
 <p>In computer programming a <em>loop</em> is statement or block of statements that is executed repeatedly.  Python has two kinds of loops, a <tt class="docutils literal"><span class="pre">for</span></tt> loop and a <tt class="docutils literal"><span class="pre">while</span></tt> loop.  We first introduce the <tt class="docutils literal"><span class="pre">for</span></tt> loop and illustrate its use for a variety of tasks.  We then introduce the <tt class="docutils literal"><span class="pre">while</span></tt> loop and, after a few illustrative examples, compare the two kinds of loops and discuss when to use one or the other.</p>
 <div class="section" id="for-loops">
-<span id="index-3"></span><h3><tt class="docutils literal"><span class="pre">for</span></tt> loops<a class="headerlink" href="#for-loops" title="Permalink to this headline">¶</a></h3>
+<span id="index-3"></span><h3>6.2.1. <tt class="docutils literal"><span class="pre">for</span></tt> loops<a class="headerlink" href="#for-loops" title="Permalink to this headline">¶</a></h3>
 <p>The general form of a <tt class="docutils literal"><span class="pre">for</span></tt> loop in Python is</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="o">&lt;</span><span class="n">itervar</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">sequence</span><span class="o">&gt;</span><span class="p">:</span>
     <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
@@ -264,12 +264,12 @@
 <p>When indenting a block of code in a Python <tt class="docutils literal"><span class="pre">for</span></tt> loop, it is critical that every line be indented by the same amount.  Using the <strong>&lt;tab&gt;</strong> key causes the Code Editor to indent 4 spaces.  Any amount of indentation works, as long as it is the same for all lines in a <tt class="docutils literal"><span class="pre">for</span></tt> loop.  While code editors designed to work with Python (including Canopy and Spyder) translate the <strong>&lt;tab&gt;</strong> key to 4 spaces, not all text editors do.  In those cases, 4 spaces are not equivalent to a <strong>&lt;tab&gt;</strong> character even if they appear the same on the display.  Indenting some lines by 4 spaces and other lines by a <strong>&lt;tab&gt;</strong> character will produce an error.  So beware!</p>
 <p>The figure below shows the flowchart for a <tt class="docutils literal"><span class="pre">for</span></tt> loop.  It starts with an implicit conditional asking if there are any more elements in the sequence.  If there are, it sets the iteration variable equal to the next element in the sequence and then executes the body&#8212;the indented text&#8212;using that value of the iteration variable.  It then  returns to the beginning to see if there are more elements in the sequence and continues the loop until there is none remaining.</p>
 <div class="figure align-center" id="fig-flow-for">
-<a class="reference internal image-reference" href="../_images/flow_for.pdf"><img alt="For loop flowchart" src="../_images/flow_for.pdf" /></a>
+<a class="reference internal image-reference" href="../_images/flow_for.png"><img alt="For loop flowchart" src="../_images/flow_for.png" style="width: 222.4px; height: 287.2px;" /></a>
 <p class="caption">Flowchart for <tt class="docutils literal"><span class="pre">for</span></tt>-loop.</p>
 </div>
 </div>
 <div class="section" id="accumulators">
-<h3>Accumulators<a class="headerlink" href="#accumulators" title="Permalink to this headline">¶</a></h3>
+<h3>6.2.2. Accumulators<a class="headerlink" href="#accumulators" title="Permalink to this headline">¶</a></h3>
 <p>Let&#8217;s look at another application of Python&#8217;s <tt class="docutils literal"><span class="pre">for</span></tt> loop.  Suppose you want to calculate the sum of all the odd numbers between 1 and 100.  Before writing a computer program to do this, let&#8217;s think about how you would do it by hand.  You might start by adding 1+3=4.  Then take the result 4 and add the next odd integer, 5, to get 4+5=9; then 9+7=16, then 16+9=25, and so forth.  You are doing repeated additions, starting with 1+3, while keeping track of the running sum, until you reach the last number 99.</p>
 <p>In developing an algorithm for having the computer sum the series of numbers, we are going to do the same thing: add the numbers one at a time while keeping track of the running sum, until we reach the last number.  We will keep track of the running sum with the variable <tt class="docutils literal"><span class="pre">s</span></tt>, which is called the <em>accumulator</em>.  Initially <tt class="docutils literal"><span class="pre">s=0</span></tt>, since we haven&#8217;t adding any numbers yet.  Then we add the first number, 1, to <tt class="docutils literal"><span class="pre">s</span></tt> and <tt class="docutils literal"><span class="pre">s</span></tt> becomes 1.  Then we add then next number, 3, in our sequence of odd numbers to <tt class="docutils literal"><span class="pre">s</span></tt> and <tt class="docutils literal"><span class="pre">s</span></tt> becomes 4.  We continue doing this over and over again using a <tt class="docutils literal"><span class="pre">for</span></tt> loop while the variable <tt class="docutils literal"><span class="pre">s</span></tt> accumulates the running sum until we reach the final number.  The code below illustrates how to do this.</p>
 <div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -284,7 +284,7 @@
 <p>The <tt class="docutils literal"><span class="pre">range</span></tt> function defines the list <tt class="docutils literal"><span class="pre">[1,</span> <span class="pre">3,</span> <span class="pre">5,</span> <span class="pre">...,</span> <span class="pre">97,</span> <span class="pre">99]</span></tt>.  The <tt class="docutils literal"><span class="pre">for</span></tt> loop successively adds each number in the list to the running sum until it reaches the last element in the list and the sum is complete.  Once the <tt class="docutils literal"><span class="pre">for</span></tt> loop finishes, the program exits the loop and the final value of <tt class="docutils literal"><span class="pre">s</span></tt>, which is the sum of the odd numbers from 1 to 99, is printed out.  Copy the above program and run it.  You should get an answer of 2500.</p>
 </div>
 <div class="section" id="while-loops">
-<span id="index-4"></span><h3><tt class="docutils literal"><span class="pre">while</span></tt> loops<a class="headerlink" href="#while-loops" title="Permalink to this headline">¶</a></h3>
+<span id="index-4"></span><h3>6.2.3. <tt class="docutils literal"><span class="pre">while</span></tt> loops<a class="headerlink" href="#while-loops" title="Permalink to this headline">¶</a></h3>
 <p>The general form of a <tt class="docutils literal"><span class="pre">while</span></tt> loop in Python is</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">while</span> <span class="o">&lt;</span><span class="n">condition</span><span class="o">&gt;</span><span class="p">:</span>
     <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
@@ -301,14 +301,14 @@
 <p>We have used the multiple assignment feature of Python in this code.  Recall that all the values on the left are assigned using the original values of <tt class="docutils literal"><span class="pre">x</span></tt> and <tt class="docutils literal"><span class="pre">y</span></tt>.</p>
 <p>The figure below shows the flowchart for the <tt class="docutils literal"><span class="pre">while</span></tt> loop.  The loop starts with the evaluation of a condition.  If the condition is <tt class="docutils literal"><span class="pre">False</span></tt>, the code in the body is skipped, the flow exits the loop, and then continues with the rest of the program.  If the condition is <tt class="docutils literal"><span class="pre">True</span></tt>, the code in the body&#8212;the indented text&#8212;is executed.  Once the body is finished, the flow returns to the condition and proceeds along the <tt class="docutils literal"><span class="pre">True</span></tt> or <tt class="docutils literal"><span class="pre">False</span></tt> branches depending on the truth value of the condition.  Implicit in this loop is the idea that somewhere during the execution of the body of the while loop, the variable that is evaluated in the condition is changed in some way.  Eventually that change will cause the condition to return a value of <tt class="docutils literal"><span class="pre">False</span></tt> so that the loop will end.</p>
 <div class="figure align-center" id="fig-flow-while">
-<a class="reference internal image-reference" href="../_images/flow_while.pdf"><img alt="Flowchart" src="../_images/flow_while.pdf" /></a>
+<a class="reference internal image-reference" href="../_images/flow_while.png"><img alt="Flowchart" src="../_images/flow_while.png" style="width: 205.6px; height: 262.4px;" /></a>
 <p class="caption">Flowchart for <tt class="docutils literal"><span class="pre">while</span></tt> loop.</p>
 </div>
 <p>One danger of a <tt class="docutils literal"><span class="pre">while</span></tt> loop is that it entirely possible to write a loop that never terminates&#8212;an <em>infinite loop</em>.  For example, if we had written <tt class="docutils literal"><span class="pre">while</span> <span class="pre">y</span> <span class="pre">&gt;</span> <span class="pre">0:</span></tt>, in place of <tt class="docutils literal"><span class="pre">while</span> <span class="pre">x</span> <span class="pre">&lt;</span> <span class="pre">1000:</span></tt>, the loop would never end.  If you execute code that has an infinite loop, you can often terminate the program from the keyboard by typing <strong>ctrl-C</strong> a couple of times.  If that doesn&#8217;t work, you may have to terminate and then restart Python.</p>
 <p>For the kind of work we do in science and engineering, we generally find that the <tt class="docutils literal"><span class="pre">for</span></tt> loop is more useful than the <tt class="docutils literal"><span class="pre">while</span></tt> loop.  Nevertheless, there are times when using a <tt class="docutils literal"><span class="pre">while</span></tt> loop is better suited to a task than is a <tt class="docutils literal"><span class="pre">for</span></tt> loop.</p>
 </div>
 <div class="section" id="loops-and-array-operations">
-<h3>Loops and array operations<a class="headerlink" href="#loops-and-array-operations" title="Permalink to this headline">¶</a></h3>
+<h3>6.2.4. Loops and array operations<a class="headerlink" href="#loops-and-array-operations" title="Permalink to this headline">¶</a></h3>
 <p>Loops are often used to sequentially modify the elements of an array.  For example, suppose we want to square each element of the array <tt class="docutils literal"><span class="pre">a</span> <span class="pre">=</span> <span class="pre">np.linspace(0,</span> <span class="pre">32,</span> <span class="pre">1e7)</span></tt>.  This is a hefty array with 10 million elements.  Nevertheless, the following loop does the trick.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mf">1e7</span><span class="p">)</span>
@@ -330,7 +330,7 @@
 </div>
 </div>
 <div class="section" id="list-comprehensions">
-<span id="index-5"></span><h2>List Comprehensions<a class="headerlink" href="#list-comprehensions" title="Permalink to this headline">¶</a></h2>
+<span id="index-5"></span><h2>6.3. List Comprehensions<a class="headerlink" href="#list-comprehensions" title="Permalink to this headline">¶</a></h2>
 <p>List comprehensions are a special feature of core Python for processing and constructing lists.  We introduce them here because they use a looping process.  They are used quite commonly in Python coding and they often provide elegant compact solutions to some common computing tasks.</p>
 <p>Consider, for example the <img class="math" src="../_images/math/9570fefe745eeeb3fb70f10bf7a441868fbe1cdd.png" alt="3 \times 3"/> matrix</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [1]: </span><span class="n">x</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]</span>
@@ -385,7 +385,7 @@
 <p>As we see in this example, a conditional statement can be added to a list comprehension.  Here it serves as a filter to select out only those elements that are divisible by three.</p>
 </div>
 <div class="section" id="exercises">
-<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<h2>6.4. Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">Write a program to calculate the factorial of a positive integer input by the user.  Recall that the factorial function is given by <img class="math" src="../_images/math/12e55678b059415cd2abee76681fdf2a550d01c6.png" alt="x! = x (x-1) (x-2) ... (2) (1)"/> so that <img class="math" src="../_images/math/0ebb0e0bf4ebfd21fd2db257cd3769813d5f7662.png" alt="1!=1"/>, <img class="math" src="../_images/math/0ca8f0d86095730be6ca6c2da549f0d8fb6bd84a.png" alt="2!=2"/>, <img class="math" src="../_images/math/a43e5d686a449075d8f410a10c7ff57f43027d02.png" alt="3!=6"/>, <img class="math" src="../_images/math/56390b85ef8f137819f8bbcb3fe3601f5f206c81.png" alt="4!=24"/>, ...</p>
 <ol class="loweralpha simple">
@@ -433,36 +433,36 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../pymanMaster.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Conditionals and Loops</a><ul>
-<li><a class="reference internal" href="#conditionals">Conditionals</a><ul>
-<li><a class="reference internal" href="#if-elif-and-else-statements"><tt class="docutils literal"><span class="pre">if</span></tt>, <tt class="docutils literal"><span class="pre">elif</span></tt>, and <tt class="docutils literal"><span class="pre">else</span></tt> statements</a><ul>
-<li><a class="reference internal" href="#if-elif-else-example"><tt class="docutils literal"><span class="pre">if</span></tt>-<tt class="docutils literal"><span class="pre">elif</span></tt>-<tt class="docutils literal"><span class="pre">else</span></tt> example</a></li>
-<li><a class="reference internal" href="#if-else-example"><tt class="docutils literal"><span class="pre">if</span></tt>-<tt class="docutils literal"><span class="pre">else</span></tt> example</a></li>
-<li><a class="reference internal" href="#if-example"><tt class="docutils literal"><span class="pre">if</span></tt> example</a></li>
+<li><a class="reference internal" href="#">6. Conditionals and Loops</a><ul>
+<li><a class="reference internal" href="#conditionals">6.1. Conditionals</a><ul>
+<li><a class="reference internal" href="#if-elif-and-else-statements">6.1.1. <tt class="docutils literal"><span class="pre">if</span></tt>, <tt class="docutils literal"><span class="pre">elif</span></tt>, and <tt class="docutils literal"><span class="pre">else</span></tt> statements</a><ul>
+<li><a class="reference internal" href="#if-elif-else-example">6.1.1.1. <tt class="docutils literal"><span class="pre">if</span></tt>-<tt class="docutils literal"><span class="pre">elif</span></tt>-<tt class="docutils literal"><span class="pre">else</span></tt> example</a></li>
+<li><a class="reference internal" href="#if-else-example">6.1.1.2. <tt class="docutils literal"><span class="pre">if</span></tt>-<tt class="docutils literal"><span class="pre">else</span></tt> example</a></li>
+<li><a class="reference internal" href="#if-example">6.1.1.3. <tt class="docutils literal"><span class="pre">if</span></tt> example</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#logical-operators">Logical operators</a></li>
+<li><a class="reference internal" href="#logical-operators">6.1.2. Logical operators</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#loops">Loops</a><ul>
-<li><a class="reference internal" href="#for-loops"><tt class="docutils literal"><span class="pre">for</span></tt> loops</a></li>
-<li><a class="reference internal" href="#accumulators">Accumulators</a></li>
-<li><a class="reference internal" href="#while-loops"><tt class="docutils literal"><span class="pre">while</span></tt> loops</a></li>
-<li><a class="reference internal" href="#loops-and-array-operations">Loops and array operations</a></li>
+<li><a class="reference internal" href="#loops">6.2. Loops</a><ul>
+<li><a class="reference internal" href="#for-loops">6.2.1. <tt class="docutils literal"><span class="pre">for</span></tt> loops</a></li>
+<li><a class="reference internal" href="#accumulators">6.2.2. Accumulators</a></li>
+<li><a class="reference internal" href="#while-loops">6.2.3. <tt class="docutils literal"><span class="pre">while</span></tt> loops</a></li>
+<li><a class="reference internal" href="#loops-and-array-operations">6.2.4. Loops and array operations</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#list-comprehensions">List Comprehensions</a></li>
-<li><a class="reference internal" href="#exercises">Exercises</a></li>
+<li><a class="reference internal" href="#list-comprehensions">6.3. List Comprehensions</a></li>
+<li><a class="reference internal" href="#exercises">6.4. Exercises</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="../chap5/chap5_plot.html"
-                        title="previous chapter">Plotting</a></p>
+                        title="previous chapter">5. Plotting</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="../chap7/chap7_funcs.html"
-                        title="next chapter">Functions</a></p>
+                        title="next chapter">7. Functions</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../_sources/chap6/chap6_loopsconds.txt"
@@ -492,10 +492,10 @@
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="../chap7/chap7_funcs.html" title="Functions"
+          <a href="../chap7/chap7_funcs.html" title="7. Functions"
              >next</a> |</li>
         <li class="right" >
-          <a href="../chap5/chap5_plot.html" title="Plotting"
+          <a href="../chap5/chap5_plot.html" title="5. Plotting"
              >previous</a> |</li>
         <li><a href="../pymanMaster.html">PyMan 0.9.24 documentation</a> &raquo;</li> 
       </ul>

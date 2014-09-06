@@ -1,185 +1,185 @@
 \begin{theindex}
 
   \item Anaconda
-    \subitem resources, \hyperpage{204}
-  \item Anonymous functions, \hyperpage{137}
-    \subitem lambda expressions, \hyperpage{137}
-  \item array (NumPy), \hyperpage{31}
-    \subitem printing, \hyperpage{63}
-  \item assignment operator, \hyperpage{17}
+    \subitem resources, \hyperpage{202}
+  \item Anonymous functions, \hyperpage{135}
+    \subitem lambda expressions, \hyperpage{135}
+  \item array (NumPy), \hyperpage{29}
+    \subitem printing, \hyperpage{61}
+  \item assignment operator, \hyperpage{15}
 
   \indexspace
 
   \item Canopy
-    \subitem Code Editor, \hyperpage{21}
-    \subitem installing Python, \hyperpage{189}
-    \subitem IPython pane, \hyperpage{6}
-    \subitem resources, \hyperpage{204}
-    \subitem tab completion, \hyperpage{21}
-    \subitem window, \hyperpage{5}
-  \item conditionals, \hyperpage{101}
-    \subitem applied to arrays, \hyperpage{121}
-  \item curve fitting, \hyperpage{143}
-    \subitem linear, \hyperpage{132}
-      \subsubitem exponential function, \hyperpage{145}
-      \subsubitem power law function, \hyperpage{150}
-      \subsubitem power-law function, \hyperpage{150}
-      \subsubitem with weighting, \hyperpage{136}
-    \subitem nonlinear, \hyperpage{150}
+    \subitem Code Editor, \hyperpage{18}
+    \subitem installing Python, \hyperpage{187}
+    \subitem IPython pane, \hyperpage{3}
+    \subitem resources, \hyperpage{202}
+    \subitem tab completion, \hyperpage{18}
+    \subitem window, \hyperpage{3}
+  \item conditionals, \hyperpage{99}
+    \subitem applied to arrays, \hyperpage{119}
+  \item curve fitting, \hyperpage{141}
+    \subitem linear, \hyperpage{130}
+      \subsubitem exponential function, \hyperpage{143}
+      \subsubitem power law function, \hyperpage{148}
+      \subsubitem power-law function, \hyperpage{148}
+      \subsubitem with weighting, \hyperpage{134}
+    \subitem nonlinear, \hyperpage{148}
 
   \indexspace
 
-  \item dictionary, \hyperpage{31}, \hyperpage{48}
-  \item discrete Fourier transforms, \hyperpage{174}
+  \item dictionary, \hyperpage{29}, \hyperpage{46}
+  \item discrete Fourier transforms, \hyperpage{171}
 
   \indexspace
 
   \item fast Fourier transforms, 
-		\hyperindexformat{\see{discrete Fourier transforms}}{174}
-  \item FFTs, \hyperindexformat{\see{discrete Fourier transforms}}{174}
+		\hyperindexformat{\see{discrete Fourier transforms}}{171}
+  \item FFTs, \hyperindexformat{\see{discrete Fourier transforms}}{171}
   \item functions
     \subitem arguments
-      \subsubitem **kwargs, \hyperpage{124}
-      \subsubitem *args, \hyperpage{124}
-      \subsubitem keyword, \hyperpage{123}
-      \subsubitem positional, \hyperpage{123}
-      \subsubitem variable number, \hyperpage{124}
-    \subitem fast array processing, \hyperpage{121}
-    \subitem looping over arrays, \hyperpage{119}
-    \subitem NumPy, \hyperpage{16}
-    \subitem user defined, \hyperpage{117}
+      \subsubitem **kwargs, \hyperpage{122}
+      \subsubitem *args, \hyperpage{122}
+      \subsubitem keyword, \hyperpage{121}
+      \subsubitem positional, \hyperpage{121}
+      \subsubitem variable number, \hyperpage{122}
+    \subitem fast array processing, \hyperpage{119}
+    \subitem looping over arrays, \hyperpage{117}
+    \subitem NumPy, \hyperpage{14}
+    \subitem user defined, \hyperpage{115}
 
   \indexspace
 
-  \item input, \hyperpage{57}
-    \subitem keyboard, \hyperpage{57}
-    \subitem reading data from a file, \hyperpage{64}
+  \item input, \hyperpage{55}
+    \subitem keyboard, \hyperpage{55}
+    \subitem reading data from a file, \hyperpage{62}
   \item installing Python
-    \subitem Canopy, \hyperpage{189}
-    \subitem Spyder, \hyperpage{189}
+    \subitem Canopy, \hyperpage{187}
+    \subitem Spyder, \hyperpage{187}
   \item integer division
-    \subitem Python 2 and 3 differences, \hyperpage{12}
+    \subitem Python 2 and 3 differences, \hyperpage{10}
   \item IPython
-    \subitem Canopy IPython pane, \hyperpage{6}
-    \subitem IPython Notebook, \hyperpage{191}
-    \subitem magic commands, \hyperpage{9}
-    \subitem magic functions, \hyperpage{7}
-    \subitem navigation commands, \hyperpage{7}
-    \subitem system shell commands, \hyperpage{10}
-    \subitem tab completion, \hyperpage{10}
+    \subitem Canopy IPython pane, \hyperpage{4}
+    \subitem IPython Notebook, \hyperpage{189}
+    \subitem magic commands, \hyperpage{6}
+    \subitem magic functions, \hyperpage{5}
+    \subitem navigation commands, \hyperpage{5}
+    \subitem system shell commands, \hyperpage{7}
+    \subitem tab completion, \hyperpage{7}
 
   \indexspace
 
-  \item lambda expressions, \hyperpage{137}
-  \item line continuation, \hyperpage{24}
-  \item linear algebra, \hyperpage{178}
-    \subitem eigenvalue problems, \hyperpage{180}
-    \subitem generalized eigenvalue problem, \hyperpage{181}
-    \subitem Hermitian and banded matrices, \hyperpage{182}
-    \subitem solving systems of equations, \hyperpage{178}
-  \item list, \hyperpage{31, 32}
-  \item list comprehension, \hyperpage{112}, \hyperpage{152}
-  \item logical operators, \hyperpage{106}
-  \item loops, \hyperpage{107}
-    \subitem for loops, \hyperpage{107}
-    \subitem while loops, \hyperpage{109}
+  \item lambda expressions, \hyperpage{135}
+  \item line continuation, \hyperpage{22}
+  \item linear algebra, \hyperpage{176}
+    \subitem eigenvalue problems, \hyperpage{178}
+    \subitem generalized eigenvalue problem, \hyperpage{179}
+    \subitem Hermitian and banded matrices, \hyperpage{180}
+    \subitem solving systems of equations, \hyperpage{176}
+  \item list, \hyperpage{29, 30}
+  \item list comprehension, \hyperpage{110}, \hyperpage{150}
+  \item logical operators, \hyperpage{104}
+  \item loops, \hyperpage{105}
+    \subitem for loops, \hyperpage{105}
+    \subitem while loops, \hyperpage{107}
 
   \indexspace
 
   \item magic functions
-    \subitem IPython, \hyperpage{7}
-  \item masked arrays, \hyperpage{87}
-  \item MatPlotLib, \hyperpage{75}
-    \subitem module, \hyperpage{14}
+    \subitem IPython, \hyperpage{5}
+  \item masked arrays, \hyperpage{85}
+  \item MatPlotLib, \hyperpage{73}
+    \subitem module, \hyperpage{12}
   \item MatPlotLib functions
-    \subitem ayhline, axhline, \hyperpage{81}
-    \subitem figure, \hyperpage{81}
-    \subitem legend, \hyperpage{81}
-    \subitem plot, \hyperpage{81}
-    \subitem savefig, \hyperpage{81}
-    \subitem show, \hyperpage{81}
-    \subitem tight\_layout, \hyperpage{92}
-    \subitem xlabel, ylabel, \hyperpage{81}
+    \subitem ayhline, axhline, \hyperpage{79}
+    \subitem figure, \hyperpage{79}
+    \subitem legend, \hyperpage{79}
+    \subitem plot, \hyperpage{79}
+    \subitem savefig, \hyperpage{79}
+    \subitem show, \hyperpage{79}
+    \subitem tight\_layout, \hyperpage{90}
+    \subitem xlabel, ylabel, \hyperpage{79}
   \item module
-    \subitem importing, \hyperpage{25}
-    \subitem MatPlotLib, \hyperpage{14}
-    \subitem NumPy, \hyperpage{14}
-    \subitem SciPy, \hyperpage{14}
+    \subitem importing, \hyperpage{23}
+    \subitem MatPlotLib, \hyperpage{12}
+    \subitem NumPy, \hyperpage{12}
+    \subitem SciPy, \hyperpage{12}
 
   \indexspace
 
-  \item non-linear equations, \hyperpage{182}
-    \subitem Bisection method, \hyperpage{186}
-    \subitem Brent method, \hyperpage{183}
-    \subitem Newton-Raphson method, \hyperpage{186}
-    \subitem Ridder method, \hyperpage{186}
-    \subitem solving, \hyperpage{182}
-    \subitem systems of nonlinear equations, \hyperpage{186}
-  \item numerical integration, \hyperpage{165}
-    \subitem double integrals, \hyperpage{169}
-    \subitem integrals of polynomials, \hyperpage{168}
-    \subitem single integrals, \hyperpage{165}
+  \item non-linear equations, \hyperpage{180}
+    \subitem Bisection method, \hyperpage{184}
+    \subitem Brent method, \hyperpage{181}
+    \subitem Newton-Raphson method, \hyperpage{184}
+    \subitem Ridder method, \hyperpage{184}
+    \subitem solving, \hyperpage{180}
+    \subitem systems of nonlinear equations, \hyperpage{184}
+  \item numerical integration, \hyperpage{163}
+    \subitem double integrals, \hyperpage{166}
+    \subitem integrals of polynomials, \hyperpage{165}
+    \subitem single integrals, \hyperpage{163}
   \item NumPy
-    \subitem array, \hyperpage{37}
-    \subitem functions, \hyperpage{16}
-    \subitem module, \hyperpage{14}
+    \subitem array, \hyperpage{35}
+    \subitem functions, \hyperpage{14}
+    \subitem module, \hyperpage{12}
 
   \indexspace
 
   \item ODEs
-    \subitem numerical solutions, \hyperpage{170}
-  \item output, \hyperpage{57}
-    \subitem screen, \hyperpage{59}
-    \subitem writing data to a file, \hyperpage{68}
+    \subitem numerical solutions, \hyperpage{168}
+  \item output, \hyperpage{55}
+    \subitem screen, \hyperpage{57}
+    \subitem writing data to a file, \hyperpage{66}
 
   \indexspace
 
-  \item plots, \hyperpage{75}
-    \subitem basic, \hyperpage{77}
-    \subitem error bars, \hyperpage{83}
-    \subitem interactive, \hyperpage{76}
-    \subitem line and symbol specifiers, \hyperpage{82}
-    \subitem log-log, \hyperpage{93}
-    \subitem logarithmic axes, \hyperpage{91}
-    \subitem masked arrays, \hyperpage{87}
-    \subitem semi-log, \hyperpage{91}
-    \subitem setting axis limits, \hyperpage{85}
-    \subitem subplots, \hyperpage{89}
-  \item programs, \hyperpage{20}
+  \item plots, \hyperpage{73}
+    \subitem basic, \hyperpage{75}
+    \subitem error bars, \hyperpage{81}
+    \subitem interactive, \hyperpage{74}
+    \subitem line and symbol specifiers, \hyperpage{80}
+    \subitem log-log, \hyperpage{91}
+    \subitem logarithmic axes, \hyperpage{89}
+    \subitem masked arrays, \hyperpage{85}
+    \subitem semi-log, \hyperpage{89}
+    \subitem setting axis limits, \hyperpage{83}
+    \subitem subplots, \hyperpage{87}
+  \item programs, \hyperpage{18}
   \item Python
-    \subitem installing, \hyperpage{189}
-    \subitem module, \hyperpage{14}
+    \subitem installing, \hyperpage{187}
+    \subitem module, \hyperpage{12}
 
   \indexspace
 
-  \item random numbers, \hyperpage{50}
-  \item reserved words, \hyperpage{20}
+  \item random numbers, \hyperpage{48}
+  \item reserved words, \hyperpage{17}
   \item roots of equations, 
-		\hyperindexformat{\see{non-linear equations}}{182}
+		\hyperindexformat{\see{non-linear equations}}{180}
 
   \indexspace
 
   \item SciPy
-    \subitem module, \hyperpage{14}
-  \item scripts, \hyperpage{20}
+    \subitem module, \hyperpage{12}
+  \item scripts, \hyperpage{18}
   \item solving non-linear equations, 
-		\hyperindexformat{\see{non-linear equations}}{182}
-  \item special functions, \hyperpage{161}
+		\hyperindexformat{\see{non-linear equations}}{180}
+  \item special functions, \hyperpage{159}
   \item Spyder
-    \subitem installing Python, \hyperpage{189}
-    \subitem resources, \hyperpage{204}
-  \item string, \hyperpage{31}
-  \item strings, \hyperpage{32}
+    \subitem installing Python, \hyperpage{187}
+    \subitem resources, \hyperpage{202}
+  \item string, \hyperpage{29}
+  \item strings, \hyperpage{30}
 
   \indexspace
 
   \item tab completion
-    \subitem Canopy, \hyperpage{21}
-    \subitem IPython, \hyperpage{10}
+    \subitem Canopy, \hyperpage{18}
+    \subitem IPython, \hyperpage{7}
 
   \indexspace
 
-  \item variable, \hyperpage{17}
-  \item variable names, \hyperpage{19}
+  \item variable, \hyperpage{15}
+  \item variable names, \hyperpage{17}
 
 \end{theindex}

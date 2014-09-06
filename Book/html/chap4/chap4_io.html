@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Input and Output &mdash; PyMan 0.9.24 documentation</title>
+    <title>4. Input and Output &mdash; PyMan 0.9.24 documentation</title>
     
     <link rel="stylesheet" href="../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -24,8 +24,8 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="top" title="PyMan 0.9.24 documentation" href="../index.html" />
-    <link rel="next" title="Plotting" href="../chap5/chap5_plot.html" />
-    <link rel="prev" title="Strings, Lists, Arrays, and Dictionaries" href="../chap3/chap3_arrays.html" /> 
+    <link rel="next" title="5. Plotting" href="../chap5/chap5_plot.html" />
+    <link rel="prev" title="3. Strings, Lists, Arrays, and Dictionaries" href="../chap3/chap3_arrays.html" /> 
   </head>
   <body>
     <div class="related">
@@ -35,10 +35,10 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="../chap5/chap5_plot.html" title="Plotting"
+          <a href="../chap5/chap5_plot.html" title="5. Plotting"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../chap3/chap3_arrays.html" title="Strings, Lists, Arrays, and Dictionaries"
+          <a href="../chap3/chap3_arrays.html" title="3. Strings, Lists, Arrays, and Dictionaries"
              accesskey="P">previous</a> |</li>
         <li><a href="../pymanMaster.html">PyMan 0.9.24 documentation</a> &raquo;</li> 
       </ul>
@@ -50,11 +50,11 @@
           <div class="body">
             
   <div class="section" id="input-and-output">
-<span id="chap4"></span><h1>Input and Output<a class="headerlink" href="#input-and-output" title="Permalink to this headline">¶</a></h1>
+<span id="chap4"></span><h1>4. Input and Output<a class="headerlink" href="#input-and-output" title="Permalink to this headline">¶</a></h1>
 <p id="index-0">A good relationship depends on good communication.  In this chapter you learn how to communicate with Python.  Of course, communicating is a two-way street: input and output.  Generally, when you have Python perform some task, you need to feed it information&#8212;input.  When it is done with that task, it reports back to you the results of its calculations&#8212;output.</p>
 <p>There are two venues for input that concern us: the computer keyboard and the input data file.  Similarly, there are two venues for output: the computer screen and the output data file.  We start with input from the keyboard and output to the computer screen.  Then we deal with data file input and output&#8212;or &#8220;io.&#8221;</p>
 <div class="section" id="keyboard-input">
-<span id="index-1"></span><h2>Keyboard input<a class="headerlink" href="#keyboard-input" title="Permalink to this headline">¶</a></h2>
+<span id="index-1"></span><h2>4.1. Keyboard input<a class="headerlink" href="#keyboard-input" title="Permalink to this headline">¶</a></h2>
 <p>Many computer programs need input from the user.  In <a class="reference internal" href="../chap2/chap2_basics.html#chap2-scriptexmp1"><em>Scripting Example 1</em></a>, the program needed the distance traveled as an input in order to determine the duration of the trip and the cost of the gasoline.  As you might like to use this same script to determine the cost of several different trips, it would be useful if the program requested that input when it was run from the IPython shell.</p>
 <p>Python has a function called <tt class="docutils literal"><span class="pre">raw_input</span></tt> (renamed <tt class="docutils literal"><span class="pre">input</span></tt> in Python 3) for getting input from the user and assigning it a variable name.  It has the form</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">strname</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;prompt to user&quot;</span><span class="p">)</span>
@@ -130,7 +130,7 @@
 <p>Before moving on to output, we note that sometimes you may want string input rather that numerical input.  For example, you might want the user to input their name, in which case you would simply use the <tt class="docutils literal"><span class="pre">raw_input</span></tt> function without converting its output.</p>
 </div>
 <div class="section" id="screen-output">
-<span id="screenoutput"></span><span id="index-2"></span><h2>Screen output<a class="headerlink" href="#screen-output" title="Permalink to this headline">¶</a></h2>
+<span id="screenoutput"></span><span id="index-2"></span><h2>4.2. Screen output<a class="headerlink" href="#screen-output" title="Permalink to this headline">¶</a></h2>
 <p>It would be much more convenient if the program in the previous section would simply write its output to the computer screen, instead of requiring the user to type <tt class="docutils literal"><span class="pre">time</span></tt>, <tt class="docutils literal"><span class="pre">gallons</span></tt>, and <tt class="docutils literal"><span class="pre">cost</span></tt> to view the results.  Fortunately, this can be accomplished very simply using Python&#8217;s <tt class="docutils literal"><span class="pre">print</span></tt> function.  For example, simply including the statement <tt class="docutils literal"><span class="pre">print(time,</span> <span class="pre">gallons,</span> <span class="pre">cost)</span></tt> after line 12, running the program would give the following result:</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [1]: </span><span class="n">run</span> <span class="n">myTripIO</span><span class="o">.</span><span class="n">py</span>
 
@@ -140,7 +140,7 @@
 </div>
 <p>The program prints out the results as a tuple of time (in hours), gasoline used (in gallons), and cost (in dollars).  Of course, the program doesn&#8217;t give the user a clue as to which quantity is which.  The user has to know.</p>
 <div class="section" id="formatting-output-with-str-format">
-<h3>Formatting output with <tt class="docutils literal"><span class="pre">str.format()</span></tt><a class="headerlink" href="#formatting-output-with-str-format" title="Permalink to this headline">¶</a></h3>
+<h3>4.2.1. Formatting output with <tt class="docutils literal"><span class="pre">str.format()</span></tt><a class="headerlink" href="#formatting-output-with-str-format" title="Permalink to this headline">¶</a></h3>
 <p>We can clean up the output of the example above and make it considerably more user friendly.  The program below demonstrates how to do this.</p>
 <div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -290,7 +290,7 @@ How are you my friend?
 <p>Finally, note that the code starting on lines 14 and 16 each are split into two lines.  We have done this so that the lines fit on the page without running off the edge.  Python allows you to break lines up like this to improve readability.</p>
 </div>
 <div class="section" id="printing-arrays">
-<h3>Printing arrays<a class="headerlink" href="#printing-arrays" title="Permalink to this headline">¶</a></h3>
+<h3>4.2.2. Printing arrays<a class="headerlink" href="#printing-arrays" title="Permalink to this headline">¶</a></h3>
 <p id="index-3">Formatting NumPy arrays for printing requires another approach.  As an example, let&#8217;s create an array and then format it in various ways.  From the IPython terminal</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [10]: </span><span class="n">a</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
 <span class="gp">In [11]: </span><span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
@@ -336,9 +336,9 @@ How are you my friend?
 </div>
 </div>
 <div class="section" id="file-input">
-<span id="index-4"></span><h2>File input<a class="headerlink" href="#file-input" title="Permalink to this headline">¶</a></h2>
+<span id="index-4"></span><h2>4.3. File input<a class="headerlink" href="#file-input" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="reading-data-from-a-text-file">
-<h3>Reading data from a text file<a class="headerlink" href="#reading-data-from-a-text-file" title="Permalink to this headline">¶</a></h3>
+<h3>4.3.1. Reading data from a text file<a class="headerlink" href="#reading-data-from-a-text-file" title="Permalink to this headline">¶</a></h3>
 <p>Often you would like to analyze data that you have stored in a text file.  Consider, for example, the data file below for an experiment measuring the free fall of a mass.</p>
 <div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -394,7 +394,7 @@ data point      time (sec)      height (mm)     uncertainty (mm)
 <p>Finally you should remember that <tt class="docutils literal"><span class="pre">loadtxt</span></tt> is a NumPy function.  So if you are using it in a Python module, you must be sure to include an &#8220;<tt class="docutils literal"><span class="pre">import</span> <span class="pre">numpy</span> <span class="pre">as</span> <span class="pre">np</span></tt>&#8221;  statement before calling &#8220;<tt class="docutils literal"><span class="pre">np.loadtxt</span></tt>&#8221;.</p>
 </div>
 <div class="section" id="reading-data-from-a-csv-file">
-<h3>Reading data from a CSV file<a class="headerlink" href="#reading-data-from-a-csv-file" title="Permalink to this headline">¶</a></h3>
+<h3>4.3.2. Reading data from a CSV file<a class="headerlink" href="#reading-data-from-a-csv-file" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center" id="fig-excelwindow">
 <a class="reference internal image-reference" href="../_images/ExcelDataFile.png"><img alt="Data in Excel spreadsheet" src="../_images/ExcelDataFile.png" style="width: 299.65px; height: 321.1px;" /></a>
 <p class="caption">Excel data sheet</p>
@@ -421,7 +421,7 @@ data point      time (sec)      height (mm)     uncertainty (mm)
 Date: 16-Aug-2013,,,
 Data taken by Lauren and John,,,
 ,,,
-data point,time (sec0,height (mm),uncertainty (mm)
+data point,time (sec),height (mm),uncertainty (mm)
 0,0,180,3.5
 1,0.5,182,4.5
 2,1,178,4
@@ -446,9 +446,9 @@ data point,time (sec0,height (mm),uncertainty (mm)
 </div>
 </div>
 <div class="section" id="file-output">
-<span id="index-5"></span><h2>File output<a class="headerlink" href="#file-output" title="Permalink to this headline">¶</a></h2>
+<span id="index-5"></span><h2>4.4. File output<a class="headerlink" href="#file-output" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="writing-data-to-a-text-file">
-<h3>Writing data to a text file<a class="headerlink" href="#writing-data-to-a-text-file" title="Permalink to this headline">¶</a></h3>
+<h3>4.4.1. Writing data to a text file<a class="headerlink" href="#writing-data-to-a-text-file" title="Permalink to this headline">¶</a></h3>
 <p>There is a plethora of ways to write data to a data file in Python.  We will stick to one very simple one that&#8217;s suitable for writing data files in text format.  It uses the NumPy <tt class="docutils literal"><span class="pre">savetxt</span></tt> routine, which is the counterpart of the <tt class="docutils literal"><span class="pre">loadtxt</span></tt> routine introduced in the previous section.  The general form of the routine is</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">savetxt</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">array</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s">&quot;</span><span class="si">%0.18e</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s">&quot; &quot;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span>
     <span class="n">header</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">,</span> <span class="n">footer</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">,</span> <span class="n">comments</span><span class="o">=</span><span class="s">&quot;# &quot;</span><span class="p">)</span>
@@ -540,7 +540,7 @@ data point,time (sec0,height (mm),uncertainty (mm)
 </div>
 </div>
 <div class="section" id="writing-data-to-a-csv-file">
-<h3>Writing data to a CSV file<a class="headerlink" href="#writing-data-to-a-csv-file" title="Permalink to this headline">¶</a></h3>
+<h3>4.4.2. Writing data to a CSV file<a class="headerlink" href="#writing-data-to-a-csv-file" title="Permalink to this headline">¶</a></h3>
 <p>To produce a CSV file, you would specify a comma as the delimiter.  You might use the <tt class="docutils literal"><span class="pre">0.1f</span></tt> format specifier, which leaves no extra spaces between the comma data separators, as the file is to be read by a spreadsheet program, which will determine how the numbers are displayed.  The code, which could be substituted for the <tt class="docutils literal"><span class="pre">savetxt</span></tt> line in the above code reads</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">savetxt</span><span class="p">(</span><span class="s">&#39;MyDataOut.csv&#39;</span><span class="p">,</span>
         <span class="nb">zip</span><span class="p">(</span><span class="n">dataPt</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">error</span><span class="p">),</span> <span class="n">fmt</span><span class="o">=</span><span class="s">&quot;</span><span class="si">%0.1f</span><span class="s">&quot;</span><span class="p">,</span>
@@ -567,7 +567,7 @@ data point,time (sec0,height (mm),uncertainty (mm)
 </div>
 </div>
 <div class="section" id="exercises">
-<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<h2>4.5. Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">Write a Python program that calculates how much money you can spend each day for lunch for the rest of the month based on today&#8217;s date and how much money you currently have in your lunch account.  The program should ask you: (1) how much money you have in your account, (2) what today&#8217;s date is, and (3) how many days there are in month.  The program should return your daily allowance.  The results of running your program should look like this:</p>
 <div class="highlight-python"><div class="highlight"><pre>How much money (in dollars) in your lunch account? 118.39
@@ -644,34 +644,34 @@ You can spend $8.46 each day for the rest of the month.
         <div class="sphinxsidebarwrapper">
   <h3><a href="../pymanMaster.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Input and Output</a><ul>
-<li><a class="reference internal" href="#keyboard-input">Keyboard input</a></li>
-<li><a class="reference internal" href="#screen-output">Screen output</a><ul>
-<li><a class="reference internal" href="#formatting-output-with-str-format">Formatting output with <tt class="docutils literal"><span class="pre">str.format()</span></tt></a></li>
-<li><a class="reference internal" href="#printing-arrays">Printing arrays</a></li>
+<li><a class="reference internal" href="#">4. Input and Output</a><ul>
+<li><a class="reference internal" href="#keyboard-input">4.1. Keyboard input</a></li>
+<li><a class="reference internal" href="#screen-output">4.2. Screen output</a><ul>
+<li><a class="reference internal" href="#formatting-output-with-str-format">4.2.1. Formatting output with <tt class="docutils literal"><span class="pre">str.format()</span></tt></a></li>
+<li><a class="reference internal" href="#printing-arrays">4.2.2. Printing arrays</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#file-input">File input</a><ul>
-<li><a class="reference internal" href="#reading-data-from-a-text-file">Reading data from a text file</a></li>
-<li><a class="reference internal" href="#reading-data-from-a-csv-file">Reading data from a CSV file</a></li>
+<li><a class="reference internal" href="#file-input">4.3. File input</a><ul>
+<li><a class="reference internal" href="#reading-data-from-a-text-file">4.3.1. Reading data from a text file</a></li>
+<li><a class="reference internal" href="#reading-data-from-a-csv-file">4.3.2. Reading data from a CSV file</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#file-output">File output</a><ul>
-<li><a class="reference internal" href="#writing-data-to-a-text-file">Writing data to a text file</a></li>
-<li><a class="reference internal" href="#writing-data-to-a-csv-file">Writing data to a CSV file</a></li>
+<li><a class="reference internal" href="#file-output">4.4. File output</a><ul>
+<li><a class="reference internal" href="#writing-data-to-a-text-file">4.4.1. Writing data to a text file</a></li>
+<li><a class="reference internal" href="#writing-data-to-a-csv-file">4.4.2. Writing data to a CSV file</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#exercises">Exercises</a></li>
+<li><a class="reference internal" href="#exercises">4.5. Exercises</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="../chap3/chap3_arrays.html"
-                        title="previous chapter">Strings, Lists, Arrays, and Dictionaries</a></p>
+                        title="previous chapter">3. Strings, Lists, Arrays, and Dictionaries</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="../chap5/chap5_plot.html"
-                        title="next chapter">Plotting</a></p>
+                        title="next chapter">5. Plotting</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../_sources/chap4/chap4_io.txt"
@@ -701,10 +701,10 @@ You can spend $8.46 each day for the rest of the month.
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="../chap5/chap5_plot.html" title="Plotting"
+          <a href="../chap5/chap5_plot.html" title="5. Plotting"
              >next</a> |</li>
         <li class="right" >
-          <a href="../chap3/chap3_arrays.html" title="Strings, Lists, Arrays, and Dictionaries"
+          <a href="../chap3/chap3_arrays.html" title="3. Strings, Lists, Arrays, and Dictionaries"
              >previous</a> |</li>
         <li><a href="../pymanMaster.html">PyMan 0.9.24 documentation</a> &raquo;</li> 
       </ul>

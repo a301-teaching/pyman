@@ -837,7 +837,7 @@ The figure below shows histograms for the distributions of 10,000 random numbers
 
 .. _fig-randhistos:
 
-.. figure:: /chap3/randhistos.pdf
+.. figure:: /chap3/randhistos.*
    :scale: 80 %
    :align: center
    :alt: Histograms of random numbers.

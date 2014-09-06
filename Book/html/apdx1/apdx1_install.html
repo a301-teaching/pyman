@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Installing Python &mdash; PyMan 0.9.24 documentation</title>
+    <title>10. Installing Python &mdash; PyMan 0.9.24 documentation</title>
     
     <link rel="stylesheet" href="../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -24,8 +24,8 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="top" title="PyMan 0.9.24 documentation" href="../index.html" />
-    <link rel="next" title="IPython Notebooks" href="../apdx2/apdx2_ipynb.html" />
-    <link rel="prev" title="Numerical Routines: SciPy and NumPy" href="../chap9/chap9_scipy.html" /> 
+    <link rel="next" title="11. IPython Notebooks" href="../apdx2/apdx2_ipynb.html" />
+    <link rel="prev" title="9. Numerical Routines: SciPy and NumPy" href="../chap9/chap9_scipy.html" /> 
   </head>
   <body>
     <div class="related">
@@ -35,10 +35,10 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="../apdx2/apdx2_ipynb.html" title="IPython Notebooks"
+          <a href="../apdx2/apdx2_ipynb.html" title="11. IPython Notebooks"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../chap9/chap9_scipy.html" title="Numerical Routines: SciPy and NumPy"
+          <a href="../chap9/chap9_scipy.html" title="9. Numerical Routines: SciPy and NumPy"
              accesskey="P">previous</a> |</li>
         <li><a href="../pymanMaster.html">PyMan 0.9.24 documentation</a> &raquo;</li> 
       </ul>
@@ -50,10 +50,10 @@
           <div class="body">
             
   <div class="section" id="installing-python">
-<span id="apdx1"></span><h1>Installing Python<a class="headerlink" href="#installing-python" title="Permalink to this headline">¶</a></h1>
+<span id="apdx1"></span><h1>10. Installing Python<a class="headerlink" href="#installing-python" title="Permalink to this headline">¶</a></h1>
 <p id="index-0">For scientific programming with Python, you need to install Python and three scientific Python libraries: NumPy, SciPy, and MatPlotLib.  There are many more libraries you can install, but Python along with NumPy, SciPy, and MatPlotLib are those that are essential for scientific programming.</p>
 <div class="section" id="id1">
-<h2>Installing Python<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>10.1. Installing Python<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>There are a number of ways to install Python and the scientific libraries you will need on your computer.  Some are easier than others.  You can install Python and the scientific libraries you need from &#8220;source&#8221; and compile them yourself.  This is not recommended unless you are an expert in Python, in which case you have little need for this manual.</p>
 <p id="index-1">For most people, the simplest way to install Python and all the scientific libraries you need is to install either <em>Canopy</em> or <em>Spyder</em>.  Canopy and Spyder are integrated development environments (IDEs) for Python.  They have a number of very useful features and tools.  First, they have syntax highlighting, which colors different parts Python syntax according to function, making code easier to read.  Second, and more importantly, they run a program in the background called <em>PyFlakes</em> that checks the validity of the Python syntax as you write it.  It&#8217;s like a spelling and grammar checker all rolled into one, and it is extremely useful, for novice and expert alike.  The Canopy and Spyder IDEs have a number of other useful features, which we do not go into here, but expect you will learn about as you become more familiar with Python.  Canopy is a simpler IDE than Spyder, and easier for novices to learn and maintain.  Spyder has more advanced features, which you may find useful as you become more expert in Python programming.</p>
 <p><em>Canopy</em> is written, maintained, and distributed by the software company Enthought (<a class="reference external" href="http://www.enthought.com/">http://www.enthought.com/</a>).  There are two versions of Canopy.  One version, <em>Canopy Express</em>, is completely free to everybody and contains all the libraries you will need for this manual.  The other, <em>Canopy Basic</em>, contains nearly every library you are ever likely to need for scientific computing.  It is free to academic users; others pay a fee.  Go to <a class="reference external" href="https://www.enthought.com/products/canopy/">https://www.enthought.com/products/canopy/</a> and press the &#8220;Get Canopy&#8221; button, which will take you to a page where you can either download <em>Canopy Express</em> or request and academic license, which will allow you to download <em>Canopy Basic</em>.</p>
@@ -61,7 +61,7 @@
 <p>In this manual, we assume you are using Canopy, but the Spyder interface is very similar to Canopy so that most users should have no difficulty using Spyder with this manual.  If you choose to use Spyder, launch Spyder and then go to the Preferences menu and then under the <tt class="docutils literal"><span class="pre">Console</span></tt> menu, select the <tt class="docutils literal"><span class="pre">Advanced</span> <span class="pre">settings</span></tt> tab; tick the box <tt class="docutils literal"><span class="pre">Start</span> <span class="pre">an</span> <span class="pre">IPython</span> <span class="pre">kernel</span> <span class="pre">at</span> <span class="pre">startup</span></tt> (it may already be selected, in which case you need to do nothing).  You only need to do this once, which sets up the IPython console when Spyder is launched.  Once that is done, you should be able to follow everything written in this manual.</p>
 </div>
 <div class="section" id="testing-your-installation-of-python">
-<h2>Testing your installation of Python<a class="headerlink" href="#testing-your-installation-of-python" title="Permalink to this headline">¶</a></h2>
+<h2>10.2. Testing your installation of Python<a class="headerlink" href="#testing-your-installation-of-python" title="Permalink to this headline">¶</a></h2>
 <p>Running the Python program below tests your installation of Python to verify that the installation was successful.  In particular, it tests that the NumPy, SciPy, and MatPlotLib libraries that are needed for this manual are properly installed.</p>
 <p>If you are a student, you should input your first and last names inside the single quotes on lines 15 and 16, respectively.</p>
 <p>Instructors can modify lines 21-23 to suit the needs of the course.</p>
@@ -173,19 +173,19 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../pymanMaster.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Installing Python</a><ul>
-<li><a class="reference internal" href="#id1">Installing Python</a></li>
-<li><a class="reference internal" href="#testing-your-installation-of-python">Testing your installation of Python</a></li>
+<li><a class="reference internal" href="#">10. Installing Python</a><ul>
+<li><a class="reference internal" href="#id1">10.1. Installing Python</a></li>
+<li><a class="reference internal" href="#testing-your-installation-of-python">10.2. Testing your installation of Python</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="../chap9/chap9_scipy.html"
-                        title="previous chapter">Numerical Routines: SciPy and NumPy</a></p>
+                        title="previous chapter">9. Numerical Routines: SciPy and NumPy</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="../apdx2/apdx2_ipynb.html"
-                        title="next chapter">IPython Notebooks</a></p>
+                        title="next chapter">11. IPython Notebooks</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../_sources/apdx1/apdx1_install.txt"
@@ -215,10 +215,10 @@
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="../apdx2/apdx2_ipynb.html" title="IPython Notebooks"
+          <a href="../apdx2/apdx2_ipynb.html" title="11. IPython Notebooks"
              >next</a> |</li>
         <li class="right" >
-          <a href="../chap9/chap9_scipy.html" title="Numerical Routines: SciPy and NumPy"
+          <a href="../chap9/chap9_scipy.html" title="9. Numerical Routines: SciPy and NumPy"
              >previous</a> |</li>
         <li><a href="../pymanMaster.html">PyMan 0.9.24 documentation</a> &raquo;</li> 
       </ul>

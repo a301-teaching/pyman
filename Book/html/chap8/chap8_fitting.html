@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Curve Fitting &mdash; PyMan 0.9.24 documentation</title>
+    <title>8. Curve Fitting &mdash; PyMan 0.9.24 documentation</title>
     
     <link rel="stylesheet" href="../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -24,8 +24,8 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="top" title="PyMan 0.9.24 documentation" href="../index.html" />
-    <link rel="next" title="Numerical Routines: SciPy and NumPy" href="../chap9/chap9_scipy.html" />
-    <link rel="prev" title="Functions" href="../chap7/chap7_funcs.html" /> 
+    <link rel="next" title="9. Numerical Routines: SciPy and NumPy" href="../chap9/chap9_scipy.html" />
+    <link rel="prev" title="7. Functions" href="../chap7/chap7_funcs.html" /> 
   </head>
   <body>
     <div class="related">
@@ -35,10 +35,10 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="../chap9/chap9_scipy.html" title="Numerical Routines: SciPy and NumPy"
+          <a href="../chap9/chap9_scipy.html" title="9. Numerical Routines: SciPy and NumPy"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../chap7/chap7_funcs.html" title="Functions"
+          <a href="../chap7/chap7_funcs.html" title="7. Functions"
              accesskey="P">previous</a> |</li>
         <li><a href="../pymanMaster.html">PyMan 0.9.24 documentation</a> &raquo;</li> 
       </ul>
@@ -50,13 +50,13 @@
           <div class="body">
             
   <div class="section" id="curve-fitting">
-<span id="chap8"></span><span id="index-0"></span><h1>Curve Fitting<a class="headerlink" href="#curve-fitting" title="Permalink to this headline">¶</a></h1>
+<span id="chap8"></span><span id="index-0"></span><h1>8. Curve Fitting<a class="headerlink" href="#curve-fitting" title="Permalink to this headline">¶</a></h1>
 <p>One of the most important tasks in any experimental science is modeling data and determining how well some theoretical function describes experimental data.  In the last chapter, we illustrated how this can be done when the theoretical function is a simple straight line in the context of learning about Python functions and methods.  Here we show how this can be done for a arbitrary fitting functions, including linear, exponential, power law, and other nonlinear fitting functions.</p>
 <div class="section" id="using-linear-regression-for-fitting-non-linear-functions">
-<h2>Using linear regression for fitting non-linear functions<a class="headerlink" href="#using-linear-regression-for-fitting-non-linear-functions" title="Permalink to this headline">¶</a></h2>
+<h2>8.1. Using linear regression for fitting non-linear functions<a class="headerlink" href="#using-linear-regression-for-fitting-non-linear-functions" title="Permalink to this headline">¶</a></h2>
 <p>We can use our results for linear regression with <img class="math" src="../_images/math/8bd0685e3bf9101859d24cf0e851651f182364c9.png" alt="\chi^2"/> weighting that we developed in Chapter 7 to fit functions that are nonlinear in the fitting parameters, <em>provided</em> we can transform the fitting function into one that is linear in the fitting parameters and in the independent variable (<img class="math" src="../_images/math/188c175aac0a8a9c22499336711b5d7256407254.png" alt="x"/>).</p>
 <div class="section" id="linear-regression-for-fitting-an-exponential-function">
-<span id="index-1"></span><h3>Linear regression for fitting an exponential function<a class="headerlink" href="#linear-regression-for-fitting-an-exponential-function" title="Permalink to this headline">¶</a></h3>
+<span id="index-1"></span><h3>8.1.1. Linear regression for fitting an exponential function<a class="headerlink" href="#linear-regression-for-fitting-an-exponential-function" title="Permalink to this headline">¶</a></h3>
 <p>To illustrate this approach, let&#8217;s consider some experimental data taken from a radioactive source that was emitting beta particles (electrons).  We notice that the number of electrons emitted per unit time is decreasing with time.  Theory suggests that the number of electrons <img class="math" src="../_images/math/75e27f04188974063be3230dca208cd495b77ce1.png" alt="N"/> emitted per unit time should decay exponentially according to the equation</p>
 <div class="math" id="equation-eq:decay">
 <p><span class="eqno">(1)</span><img src="../_images/math/01200af87fb3c3c80e89c4bebe3128699519222b.png" alt="N(t) = N_0 e^{-t/\tau} \;."/></p>
@@ -100,7 +100,7 @@ b &amp;= -1/\tau"/></p>
 </div><p>The Python routine below shows how to implement all of this for a set of experimental data that is read in from a data file.</p>
 <p>Figure <a class="reference internal" href="#fig-betadecay"><em>8.1</em></a> shows the output of the fit to simulated beta decay data obtained using the program below.  Note that the error bars are large when the number of counts <img class="math" src="../_images/math/75e27f04188974063be3230dca208cd495b77ce1.png" alt="N"/> are small.  This is consistent with what is known as <em>shot noise</em> (noise that arises from counting discrete events), which obeys <em>Poisson</em> statistics.  You will study sources of noise, including shot noise, later in your lab courses.  The program also prints out the fitting parameters of the transformed data as well as the fitting parameters for the exponential fitting function.</p>
 <div class="figure align-center" id="fig-betadecay">
-<a class="reference internal image-reference" href="../_images/betaDecay.pdf"><img alt="Semi-log plot of beta decay measurements from Phosphorus-32." src="../_images/betaDecay.pdf" /></a>
+<a class="reference internal image-reference" href="../_images/betaDecay.png"><img alt="Semi-log plot of beta decay measurements from Phosphorus-32." src="../_images/betaDecay.png" style="width: 640.0px; height: 480.0px;" /></a>
 <p class="caption">Semi-log plot of beta decay measurements from Phosphorus-32.</p>
 </div>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -183,7 +183,7 @@ b &amp;= -1/\tau"/></p>
 </div>
 <span class="target" id="index-2"></span></div>
 <div class="section" id="linear-regression-for-fitting-a-power-law-function">
-<span id="index-3"></span><h3>Linear regression for fitting a power-law function<a class="headerlink" href="#linear-regression-for-fitting-a-power-law-function" title="Permalink to this headline">¶</a></h3>
+<span id="index-3"></span><h3>8.1.2. Linear regression for fitting a power-law function<a class="headerlink" href="#linear-regression-for-fitting-a-power-law-function" title="Permalink to this headline">¶</a></h3>
 <p>You can use a similar approach to the one outlined above to fit experimental data to a power law fitting function of the form</p>
 <div class="math" id="equation-eq:pwrlaw">
 <p><span class="eqno">(7)</span><img src="../_images/math/5e704faeb6824ff7ee7a5aca747fd5cce8594f6c.png" alt="P(s) = P_0 s^\alpha \;."/></p>
@@ -200,7 +200,7 @@ b &amp;= \alpha"/></p>
 </div>
 </div>
 <div class="section" id="nonlinear-fitting">
-<span id="sec-nonlinfit"></span><span id="index-4"></span><h2>Nonlinear fitting<a class="headerlink" href="#nonlinear-fitting" title="Permalink to this headline">¶</a></h2>
+<span id="sec-nonlinfit"></span><span id="index-4"></span><h2>8.2. Nonlinear fitting<a class="headerlink" href="#nonlinear-fitting" title="Permalink to this headline">¶</a></h2>
 <p>The method introduced in the previous section for fitting nonlinear fitting functions can be used only if the fitting function can be transformed into a fitting function that is linear in the fitting parameters  <img class="math" src="../_images/math/7dd2a5ea01fbd72ad2a58dd1f3d6ecbfde6208a1.png" alt="a"/>, <img class="math" src="../_images/math/5e87bf41a96deddf6cb485ff530f153f2590e9cc.png" alt="b"/>, <img class="math" src="../_images/math/65868d23a5bfe5b3b2d819386b19c14fa36af134.png" alt="c"/>...  When we have a nonlinear fitting function that cannot be transformed into a linear form, we need another approach.</p>
 <p>The problem of finding values of the fitting parameters that minimize <img class="math" src="../_images/math/8bd0685e3bf9101859d24cf0e851651f182364c9.png" alt="\chi^2"/> is a nonlinear optimization problem to which there is quite generally no analytical solution (in contrast to the linear optimization problem).  We can gain some insight into this nonlinear optimization problem, namely the fitting of a nonlinear fitting function to a data set, by considering a fitting function with only two fitting parameters.  That is, we are trying to fit some data set <img class="math" src="../_images/math/d06b1cbfab7dfc0cbbbd337df6bef341326a328a.png" alt="\{x_{i},y_{i}\}"/>, with uncertainties in <img class="math" src="../_images/math/8d609fbf3f5c4824f8420e386e6337a84f591571.png" alt="\{y_{i}\}"/> of <img class="math" src="../_images/math/51104887a06dbbd7a10d79ee5083f3557e7dbbc8.png" alt="\{\sigma_{i}\}"/>, to a fitting function is <img class="math" src="../_images/math/54928e357f9de50e79641c5cabb58ac3a5abea86.png" alt="f(x;a,b)"/> where <img class="math" src="../_images/math/7dd2a5ea01fbd72ad2a58dd1f3d6ecbfde6208a1.png" alt="a"/> and <img class="math" src="../_images/math/5e87bf41a96deddf6cb485ff530f153f2590e9cc.png" alt="b"/> are the two fitting parameters.  To do so, we look for the minimum in</p>
 <div class="math">
@@ -228,7 +228,7 @@ scipy.optimize.curve_fit(f, xdata, ydata, p0=None, sigma=None,
 </div></blockquote>
 <p>We demonstrate the use of <tt class="docutils literal"><span class="pre">curve_fit</span></tt> to fit the data plotted in the figure below:</p>
 <div class="figure align-center" id="fig-spectrum">
-<a class="reference internal image-reference" href="../_images/Spectrum.pdf"><img alt="Absorption spectrum data." src="../_images/Spectrum.pdf" /></a>
+<a class="reference internal image-reference" href="../_images/Spectrum.png"><img alt="Absorption spectrum data." src="../_images/Spectrum.png" style="width: 640.0px; height: 480.0px;" /></a>
 </div>
 <p>We model the data with the fitting function that consists of a quadratic polynomial background with a Gaussian peak:</p>
 <div class="math">
@@ -384,13 +384,13 @@ scipy.optimize.curve_fit(f, xdata, ydata, p0=None, sigma=None,
 </td></tr></table></div>
 <p>The above code also plots the difference between the data and fit, known as the <em>residuals</em> in the subplot below the plot of the data and fit.  Plotting the residuals in this way gives a graphical representation of the goodness of the fit.  To the extent that the residuals vary randomly about zero and do not show any overall upward or downward curvature, or any long wavelength oscillations, the fit would seem to be a good fit.</p>
 <div class="figure align-center" id="fig-fitspectrum">
-<a class="reference internal image-reference" href="../_images/FitSpectrum.pdf"><img alt="Fit to power law data using the Levenburg-Marquardt algorithm for nonlinear least squares fitting." src="../_images/FitSpectrum.pdf" /></a>
+<a class="reference internal image-reference" href="../_images/FitSpectrum.png"><img alt="Fit to power law data using the Levenburg-Marquardt algorithm for nonlinear least squares fitting." src="../_images/FitSpectrum.png" style="width: 640.0px; height: 640.0px;" /></a>
 <p class="caption">Fit to Gaussian with quadratic polynomial background.</p>
 </div>
 <p>Finally, we note that we have used the MatPlotLib package <tt class="docutils literal"><span class="pre">gridspec</span></tt> to create the two subplots with different heights.  The <tt class="docutils literal"><span class="pre">gridspec</span></tt> are made in lines 3 (where the package is imported), 36 (where 2 rows and 1 column are specified with relative heights of 6 to 2), 39 (where the first <tt class="docutils literal"><span class="pre">gs[0]</span></tt> height is specified), and 54 (where the second <tt class="docutils literal"><span class="pre">gs[1]</span></tt> height is specified).  More details about the <tt class="docutils literal"><span class="pre">gridspec</span></tt> package can be found at the MatPlotLib web site.</p>
 </div>
 <div class="section" id="exercises">
-<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<h2>8.3. Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">When a voltage source is connected across a resistor and inductor in series, the voltage across the inductor <img class="math" src="../_images/math/94a960d3157da7835814f4232743c7d76f05c1c5.png" alt="V_i(t)"/> is predicted to obey the equation</p>
 <div class="math" id="equation-eq:inductorDecay">
@@ -490,7 +490,7 @@ time (m)   size (nm)    unc (nm)
 <p><span class="eqno">(11)</span><img src="../_images/math/3ac9d3e5939efabe7cc876591fde92fa7df29e16.png" alt="d(t) = A (1+B\,\cos\omega t) e^{-t^2/2\tau^2} + C"/></p>
 </div><p>to the data, where the fitting parameters are <img class="math" src="../_images/math/0acafa529182e79b4f56165ec677554fba7fcf98.png" alt="A"/>, <img class="math" src="../_images/math/83956e92fcc80dee17fce864543216939a3c9da7.png" alt="B"/>, <img class="math" src="../_images/math/2bcc65482aa8e15cd4c9e9f2542451fb4e971a91.png" alt="C"/>, <img class="math" src="../_images/math/c7415c6919c2eb17b1ea36f0243079b59825ee89.png" alt="\omega"/>, and <img class="math" src="../_images/math/d9e99c35d3632bb156b7aca0e93cd78a148a10e8.png" alt="\tau"/>.</p>
 <div class="figure align-center" id="fig-oscdata">
-<a class="reference internal image-reference" href="../_images/DataOscDecay.pdf"><img alt="../_images/DataOscDecay.pdf" src="../_images/DataOscDecay.pdf" /></a>
+<a class="reference internal image-reference" href="../_images/DataOscDecay.png"><img alt="../_images/DataOscDecay.png" src="../_images/DataOscDecay.png" style="width: 640.0px; height: 480.0px;" /></a>
 </div>
 <ol class="loweralpha">
 <li><p class="first">Write a Python program that (<em>i</em>) reads the data in from a data file, (<em>ii</em>) defines a function <tt class="docutils literal"><span class="pre">oscDecay(t,</span> <span class="pre">A,</span> <span class="pre">B,</span> <span class="pre">C,</span> <span class="pre">tau,</span> <span class="pre">omega)</span></tt> for the function <img class="math" src="../_images/math/013f8dac7538d1d7a508c910a19cb6c146fd254b.png" alt="d(t)"/> above, and (<em>iii</em>) produces a plot of the data and the function <img class="math" src="../_images/math/013f8dac7538d1d7a508c910a19cb6c146fd254b.png" alt="d(t)"/>.  Choose the fitting parameters  <tt class="docutils literal"><span class="pre">A</span></tt>, <tt class="docutils literal"><span class="pre">B</span></tt>, <tt class="docutils literal"><span class="pre">C</span></tt>, <tt class="docutils literal"><span class="pre">tau</span></tt>, and <tt class="docutils literal"><span class="pre">omega</span></tt> to produce an approximate fit &#8220;by eye&#8221; to the data.  You should be able estimate reasonable values for these parameters just by looking at the data and thinking about the behavior of <img class="math" src="../_images/math/013f8dac7538d1d7a508c910a19cb6c146fd254b.png" alt="d(t)"/>.  For example, <img class="math" src="../_images/math/116559fcbd3fee68dd9e42597e37e5468ace1c15.png" alt="d(0)=A(1+B)+C"/> while <img class="math" src="../_images/math/117cbe0627c7d33bbbeffa3b54118d3237edf561.png" alt="d(\infty)=C"/>.  What parameter in <img class="math" src="../_images/math/013f8dac7538d1d7a508c910a19cb6c146fd254b.png" alt="d(t)"/> controls the period of the peaks observed in the data?  Use that information to estimate the value of that parameter.</p>
@@ -588,24 +588,24 @@ time (ms)  signal  uncertainty
         <div class="sphinxsidebarwrapper">
   <h3><a href="../pymanMaster.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Curve Fitting</a><ul>
-<li><a class="reference internal" href="#using-linear-regression-for-fitting-non-linear-functions">Using linear regression for fitting non-linear functions</a><ul>
-<li><a class="reference internal" href="#linear-regression-for-fitting-an-exponential-function">Linear regression for fitting an exponential function</a></li>
-<li><a class="reference internal" href="#linear-regression-for-fitting-a-power-law-function">Linear regression for fitting a power-law function</a></li>
+<li><a class="reference internal" href="#">8. Curve Fitting</a><ul>
+<li><a class="reference internal" href="#using-linear-regression-for-fitting-non-linear-functions">8.1. Using linear regression for fitting non-linear functions</a><ul>
+<li><a class="reference internal" href="#linear-regression-for-fitting-an-exponential-function">8.1.1. Linear regression for fitting an exponential function</a></li>
+<li><a class="reference internal" href="#linear-regression-for-fitting-a-power-law-function">8.1.2. Linear regression for fitting a power-law function</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#nonlinear-fitting">Nonlinear fitting</a></li>
-<li><a class="reference internal" href="#exercises">Exercises</a></li>
+<li><a class="reference internal" href="#nonlinear-fitting">8.2. Nonlinear fitting</a></li>
+<li><a class="reference internal" href="#exercises">8.3. Exercises</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="../chap7/chap7_funcs.html"
-                        title="previous chapter">Functions</a></p>
+                        title="previous chapter">7. Functions</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="../chap9/chap9_scipy.html"
-                        title="next chapter">Numerical Routines: SciPy and NumPy</a></p>
+                        title="next chapter">9. Numerical Routines: SciPy and NumPy</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../_sources/chap8/chap8_fitting.txt"
@@ -635,10 +635,10 @@ time (ms)  signal  uncertainty
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="../chap9/chap9_scipy.html" title="Numerical Routines: SciPy and NumPy"
+          <a href="../chap9/chap9_scipy.html" title="9. Numerical Routines: SciPy and NumPy"
              >next</a> |</li>
         <li class="right" >
-          <a href="../chap7/chap7_funcs.html" title="Functions"
+          <a href="../chap7/chap7_funcs.html" title="7. Functions"
              >previous</a> |</li>
         <li><a href="../pymanMaster.html">PyMan 0.9.24 documentation</a> &raquo;</li> 
       </ul>

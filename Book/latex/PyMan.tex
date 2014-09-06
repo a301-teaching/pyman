@@ -16,7 +16,7 @@
 
 
 \title{Introduction to Python for Science}
-\date{September 04, 2014}
+\date{September 06, 2014}
 \release{0.9.24}
 \author{David J. Pine}
 \newcommand{\sphinxlogo}{}
@@ -2497,7 +2497,7 @@ Data for falling mass experiment,,,
 Date: 16\PYGZhy{}Aug\PYGZhy{}2013,,,
 Data taken by Lauren and John,,,
 ,,,
-data point,time (sec0,height (mm),uncertainty (mm)
+data point,time (sec),height (mm),uncertainty (mm)
 0,0,180,3.5
 1,0.5,182,4.5
 2,1,178,4
@@ -6381,7 +6381,7 @@ This will launch the IPython notebook web application and will display the {\hyp
 \centering
 \capstart
 
-\scalebox{0.900000}{\includegraphics{nbDashboard.jpg}}
+\scalebox{0.900000}{\includegraphics{nbDashboard.pdf}}
 \caption{IPython Notebook Dashboard}\label{apdx2/apdx2_ipynb:fig-nbdashboard}\end{figure}
 
 To create a new IPython notebook, click the \code{New Notebook} button.  That will open a new {\hyperref[apdx2/apdx2_ipynb:fig-ipynotebook]{\emph{IPython Notebook}}} with the provisional title \code{Untitled0} in a new tab in your browser.  To give the notebook a more meaningful name, click on the \code{File} menu and select \code{Rename...}.  Let's say you rename your notebook \code{FirstNotebook}.  The Name \code{FirstNotebook} will replace \code{Untitled0} in your Notebook browser window and a file named \code{FirstNotebook.ipynb} will appear in the directory from which you launched IPython Notebook.  That file will contain all the work you do in the IPython notebook.  Next time you launch IPython Notebook from this same directory, all the IPython notebooks in that directory will appear in a list on the IPython Notebook Dashboard.  Clicking on one of them will launch that notebook.
@@ -6389,7 +6389,7 @@ To create a new IPython notebook, click the \code{New Notebook} button.  That wi
 \centering
 \capstart
 
-\scalebox{0.900000}{\includegraphics{ipyNotebook.jpg}}
+\scalebox{0.900000}{\includegraphics{ipyNotebook.pdf}}
 \caption{IPython Notebook}\label{apdx2/apdx2_ipynb:fig-ipynotebook}\end{figure}
 
 
@@ -6400,7 +6400,7 @@ When you open a new IPython Notebook, an IPython interactive cell with the promp
 \centering
 \capstart
 
-\scalebox{0.900000}{\includegraphics{firstIPyNBcells.jpg}}
+\scalebox{0.900000}{\includegraphics{firstIPyNBcells.pdf}}
 \caption{IPython Notebook demo}\label{apdx2/apdx2_ipynb:fig-firstipynbcells}\end{figure}
 
 Below the result a new IPython interactive cell appears ready for your next entry.  Because we launched IPython Notebook with the \code{-{-}pylab} switch, NumPy and MatPlotLib are already loaded so we do not need the \code{np.} or \code{plt.} prefixes to access the functions in the NumPy and MatPlotLib libraries.  Thus, typing \code{sin(pi/6.)} and pressing \code{Shift-Enter} produces the expected result (to nearly 1 part in \(10^{16}\)).
@@ -6417,7 +6417,7 @@ You can also run programs in an IPython notebook.  As an example, we run the pro
 \centering
 \capstart
 
-\scalebox{0.800000}{\includegraphics{mileageNB.jpg}}
+\scalebox{0.800000}{\includegraphics{mileageNB.pdf}}
 \caption{Running a program}\label{apdx2/apdx2_ipynb:fig-mileagenb}\end{figure}
 
 In this example, the program requests input from the user: the distance of the trip.  The program runs up to the point where it needs input from the user, and then pauses until the user responds and presses the \code{Enter} or \code{Return} key.  The program then completes its execution.  Thus the IPython notebook provides a complete log of the session.
@@ -6430,7 +6430,7 @@ An IPython notebook will be more easily comprehended if it includes annotations 
 \centering
 \capstart
 
-\scalebox{0.800000}{\includegraphics{ipyNoteFinalTop.jpg}}
+\scalebox{0.800000}{\includegraphics{ipyNoteFinalTop.pdf}}
 \caption{Annotating a notebook}\label{apdx2/apdx2_ipynb:fig-ipynotefinaltop}\end{figure}
 
 Suppose, for example, that we want to have a title at the top of the IPython notebook we have been working with, and we want to include the name of the author of the session.  To do this, we scroll the IPython notebook back up to the top and place the cursor and click in the very first input cell, the one that contained \code{2+3}.  We then open the \code{Insert} menu near the top center of the window and click on \code{Insert Cell Above}, which opens up a new input cell above the first cell.  Next, we click on the box in the Toolbar that says \code{Code}.  A list of cell types appears: \code{Code} (currently checked), \code{Markdown}, \code{Raw Text}, \code{Heading 1}, \code{Heading 2}, ..., \code{Heading 6}.  Select \code{Heading 1}; immediately the \code{In {[} {]}:} prompt disappears, indicating that this box is no longer meant for inputing and executing Python code.  Type ``\code{Demo of IPython Notebook}'' and press \code{Shift-Enter} (or \code{Shift-Return}).  A heading in large print appears before the first IPython code cell.  Place the cursor back in the first Ipython code cell (\code{2+3}).  Once again, select the \code{Insert} menu and click on \code{Insert Cell Above}.  Again, click on the Toolbar that says \code{Code}, but this time select \code{Heading 2}.  Type your name into the newly created cell and press \code{Shift-Enter}.  Your name is printed in the cell in slightly smaller print than for the previous case.
@@ -6453,7 +6453,7 @@ After entering the text, pressing \code{Shift-Enter} yields the result shown in 
 \centering
 \capstart
 
-\scalebox{0.800000}{\includegraphics{markdown.jpg}}
+\scalebox{0.800000}{\includegraphics{markdown.pdf}}
 \caption{Annotation using a Markdown cell}\label{apdx2/apdx2_ipynb:fig-markdown}\end{figure}
 
 The \code{\$} symbol brackets inline mathematical expressions in Latex, while the \code{\textbackslash{}begin\{align\}} and \code{\textbackslash{}end\{align\}} expressions bracket displayed expressions.  You only need to use Latex if you want to have fancy mathematical expressions in your notes.  Otherwise, they are not necessary.
@@ -6463,7 +6463,7 @@ Suppose you were importing a data (\code{.txt}) file from your hard disk and you
 \centering
 \capstart
 
-\scalebox{0.800000}{\includegraphics{ipyNoteFinalBottom.jpg}}
+\scalebox{0.800000}{\includegraphics{ipyNoteFinalBottom.pdf}}
 \caption{Displaying a text file from disk}\label{apdx2/apdx2_ipynb:fig-ipynotefinalbottom}\end{figure}
 
 

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Plotting &mdash; PyMan 0.9.24 documentation</title>
+    <title>5. Plotting &mdash; PyMan 0.9.24 documentation</title>
     
     <link rel="stylesheet" href="../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -24,8 +24,8 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="top" title="PyMan 0.9.24 documentation" href="../index.html" />
-    <link rel="next" title="Conditionals and Loops" href="../chap6/chap6_loopsconds.html" />
-    <link rel="prev" title="Input and Output" href="../chap4/chap4_io.html" /> 
+    <link rel="next" title="6. Conditionals and Loops" href="../chap6/chap6_loopsconds.html" />
+    <link rel="prev" title="4. Input and Output" href="../chap4/chap4_io.html" /> 
   </head>
   <body>
     <div class="related">
@@ -35,10 +35,10 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="../chap6/chap6_loopsconds.html" title="Conditionals and Loops"
+          <a href="../chap6/chap6_loopsconds.html" title="6. Conditionals and Loops"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../chap4/chap4_io.html" title="Input and Output"
+          <a href="../chap4/chap4_io.html" title="4. Input and Output"
              accesskey="P">previous</a> |</li>
         <li><a href="../pymanMaster.html">PyMan 0.9.24 documentation</a> &raquo;</li> 
       </ul>
@@ -50,7 +50,7 @@
           <div class="body">
             
   <div class="section" id="plotting">
-<span id="chap5"></span><h1>Plotting<a class="headerlink" href="#plotting" title="Permalink to this headline">¶</a></h1>
+<span id="chap5"></span><h1>5. Plotting<a class="headerlink" href="#plotting" title="Permalink to this headline">¶</a></h1>
 <p id="index-0">The graphical representation of data&#8212;plotting&#8212;is one of the most important tools for evaluating and understanding scientific data and theoretical predictions.  However, plotting is not a part of core Python but is provided through one of several possible library modules.  The most highly developed and widely used plotting package for Python is MatPlotLib (<a class="reference external" href="http://MatPlotLib.sourceforge.net/">http://MatPlotLib.sourceforge.net/</a>).  It is a powerful and flexible program that has become the <em>de facto</em> standard for 2-d plotting with Python.</p>
 <p>Because MatPlotLib is an external library&#8212;in fact it&#8217;s a collection of libraries&#8212;it must be imported into any routine that uses it.  MatPlotLib makes extensive use of NumPy so the two should be imported together.  Therefore, for any program for which you would like to produce 2-d plots, you should include the lines</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -60,14 +60,14 @@
 <p>There are other MatPlotLib sub-libraries, but the <tt class="docutils literal"><span class="pre">pyplot</span></tt> library provides nearly everything that you need for 2-d plotting.  The standard prefix for it is <tt class="docutils literal"><span class="pre">plt</span></tt>.  The two statements above must appear before any calls to NumPy or MatPlotLib routines are made.  MatPlotLib is automatically loaded with the IPython shell so you do not need to use import matplotlib.pyplot nor do you need to use the <tt class="docutils literal"><span class="pre">plt</span></tt> prefix when working in the IPython shell.</p>
 <p>One final word before we get started: We only scratch the surface of what is possible using MatPlotLib and as you become familiar with it, you will surely want to do more than this manual describes.  In that case, you need to go the the web to get more information.  A good place to start is <a class="reference external" href="http://matplotlib.org/api/pyplot_summary.html">http://matplotlib.org/api/pyplot_summary.html</a>.  Another interesting web page is <a class="reference external" href="http://matplotlib.org/gallery.html">http://matplotlib.org/gallery.html</a>.</p>
 <div class="section" id="an-interactive-session-with-pyplot">
-<h2>An interactive session with <tt class="docutils literal"><span class="pre">pyplot</span></tt><a class="headerlink" href="#an-interactive-session-with-pyplot" title="Permalink to this headline">¶</a></h2>
+<h2>5.1. An interactive session with <tt class="docutils literal"><span class="pre">pyplot</span></tt><a class="headerlink" href="#an-interactive-session-with-pyplot" title="Permalink to this headline">¶</a></h2>
 <p id="index-1">We begin with an interactive plotting session that illustrates some very basic features of MatPlotLib.  Type in the <tt class="docutils literal"><span class="pre">plot</span></tt> command shown below and press the return key.  Take care to follow the exact syntax.</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [1]: </span><span class="n">plot</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
 <span class="gr">Out[1]: </span><span class="p">[</span><span class="o">&lt;</span><span class="n">MatPlotLib</span><span class="o">.</span><span class="n">lines</span><span class="o">.</span><span class="n">Line2D</span> <span class="n">at</span> <span class="mh">0x94e1310</span><span class="o">&gt;</span><span class="p">]</span>
 </pre></div>
 </div>
 <div class="figure align-center" id="fig-zigzagplotdemo">
-<a class="reference internal image-reference" href="../_images/zigzagPlotDemo.pdf"><img alt="Interactive plot window" src="../_images/zigzagPlotDemo.pdf" /></a>
+<a class="reference internal image-reference" href="../_images/zigzagPlotDemo.png"><img alt="Interactive plot window" src="../_images/zigzagPlotDemo.png" style="width: 640.0px; height: 480.0px;" /></a>
 <p class="caption">Interactive plot window</p>
 </div>
 <p>A window should appear with a plot that looks something like the <a class="reference internal" href="#fig-zigzagplotdemo"><em>Interactive plot window</em></a> shown here.  By default, the <tt class="docutils literal"><span class="pre">plot</span></tt> function draws a line between the data points that were entered.  You can save this plot to an image file by clicking on the floppy disk icon at the top of the plot window.  You can also zoom, pan, scroll through the plot, and return to the original view using the other icons in the plot window.  Experimenting with them reveals their functions.</p>
@@ -80,7 +80,7 @@
 <p>More typically, you supply both an <img class="math" src="../_images/math/188c175aac0a8a9c22499336711b5d7256407254.png" alt="x"/> and a <img class="math" src="../_images/math/b124ff74afb0914bb434e8fb849eb56d734412f8.png" alt="y"/> data set to plot.  Taking things a bit further, you may also want to plot several data sets on the same graph, use symbols as well as lines, label the axes, create a title and a legend, and control the color of symbols and lines.  All of this is possible but requires calling a number of plotting functions.  For this reason, plotting is usually done using a Python script or program.</p>
 </div>
 <div class="section" id="basic-plotting">
-<span id="chap5basicplotting"></span><h2>Basic plotting<a class="headerlink" href="#basic-plotting" title="Permalink to this headline">¶</a></h2>
+<span id="chap5basicplotting"></span><h2>5.2. Basic plotting<a class="headerlink" href="#basic-plotting" title="Permalink to this headline">¶</a></h2>
 <p id="index-2">The quickest way to learn how to plot using the MatPlotLib library is by example.  For our first task, let&#8217;s plot the sine function over the interval from 0 to <img class="math" src="../_images/math/68f0a8f80ca0cffa13635d762ef5046571f05d9b.png" alt="4\pi"/>.  The main plotting function <tt class="docutils literal"><span class="pre">plot</span></tt> in MatPlotLib does not plot functions <em>per se</em>, it plots <img class="math" src="../_images/math/5f81ea407dc24031569231ab2cd28222176f38ca.png" alt="(x,y)"/> data points.  As we shall see, we can instruct the function <tt class="docutils literal"><span class="pre">plot</span></tt> either to just draw point&#8212;or dots&#8212;at each data point, or we can instruct it to draw straight lines between the data points.  To create the illusion of the smooth function that the sine function is, we need to create enough <img class="math" src="../_images/math/5f81ea407dc24031569231ab2cd28222176f38ca.png" alt="(x,y)"/> data points so that when <tt class="docutils literal"><span class="pre">plot</span></tt> draws straight lines between the data points, the function appears to be smooth.  The sine function undergoes two full oscillations with two maxima and two minima between 0 and <img class="math" src="../_images/math/68f0a8f80ca0cffa13635d762ef5046571f05d9b.png" alt="4\pi"/>.  So let&#8217;s start by creating an array with 33 data points between 0 and <img class="math" src="../_images/math/68f0a8f80ca0cffa13635d762ef5046571f05d9b.png" alt="4\pi"/>, and then let MatPlotLib draw a straight line between them.  Our code consists of four parts</p>
 <ul class="simple">
 <li>import the NumPy and MatPlotLib modules (lines 1-2 below)</li>
@@ -103,13 +103,13 @@
 </pre></div>
 </td></tr></table></div>
 <div class="figure align-center" id="fig-sineplot">
-<a class="reference internal image-reference" href="../_images/sinePlot.pdf"><img alt="Sine function" src="../_images/sinePlot.pdf" /></a>
+<a class="reference internal image-reference" href="../_images/sinePlot.png"><img alt="Sine function" src="../_images/sinePlot.png" style="width: 560.0px; height: 420.0px;" /></a>
 <p class="caption">Sine function</p>
 </div>
 <p>Only 6 lines suffice to create the plot, which consists of the sine function over the interval from 0 to <img class="math" src="../_images/math/68f0a8f80ca0cffa13635d762ef5046571f05d9b.png" alt="4\pi"/>, as advertised, as well as axes annotated with nice whole numbers over the appropriate interval.  It&#8217;s a pretty nice plot made with very little code.</p>
 <p>One problem, however, is that while the plot oscillates like a sine wave, it is not smooth.  This is because we did not create the <img class="math" src="../_images/math/5f81ea407dc24031569231ab2cd28222176f38ca.png" alt="(x,y)"/> arrays with enough data points.  To correct this, we need more data points.  The plot below was created using the same program shown above but with 129 <img class="math" src="../_images/math/5f81ea407dc24031569231ab2cd28222176f38ca.png" alt="(x,y)"/> data points instead of 33.  Try it out your self by copying the above program and replacing 33 in line 3 with 129 so that the function <tt class="docutils literal"><span class="pre">linspace</span></tt> creates an array with 129 data points instead of 33.</p>
 <div class="figure align-center" id="fig-sineplotdenserxy">
-<a class="reference internal image-reference" href="../_images/sinePlotDenserXY.pdf"><img alt="Sine function with more data points" src="../_images/sinePlotDenserXY.pdf" /></a>
+<a class="reference internal image-reference" href="../_images/sinePlotDenserXY.png"><img alt="Sine function with more data points" src="../_images/sinePlotDenserXY.png" style="width: 560.0px; height: 420.0px;" /></a>
 <p class="caption">Sine function plotted using more data points</p>
 </div>
 <p>The code above illustrates how plots can be made with very little code using the MatPlotLib module.  In making this plot, MatPlotLib has made a number of choices, such as the size of the figure, the blue color of the line, even the fact that by default a line is drawn between successive data points in the <img class="math" src="../_images/math/5f81ea407dc24031569231ab2cd28222176f38ca.png" alt="(x,y)"/> arrays.  All of these choices can be changed by explicitly instructing MatPlotLib to do so.  This involves including more arguments in the function calls we have used and using new functions that control other properties of the plot.  The next example illustrates a few of the simpler embellishments that are possible.</p>
@@ -166,7 +166,7 @@
 </pre></div>
 </td></tr></table></div>
 <div class="figure align-center" id="fig-wavypulse">
-<a class="reference internal image-reference" href="../_images/WavyPulse.pdf"><img alt="Wavy pulse" src="../_images/WavyPulse.pdf" /></a>
+<a class="reference internal image-reference" href="../_images/WavyPulse.png"><img alt="Wavy pulse" src="../_images/WavyPulse.png" style="width: 480.0px; height: 320.0px;" /></a>
 <p class="caption">Wavy pulse</p>
 </div>
 <p>If you have read the first four chapters, the code in lines 1-9 in the above script should  be familiar to you.  Fist, the script loads the NumPy and MatPlotLib modules, then reads data from a data file into two arrays, <tt class="docutils literal"><span class="pre">xdata</span></tt> and <tt class="docutils literal"><span class="pre">ydata</span></tt>, and then creates two more arrays, <tt class="docutils literal"><span class="pre">x</span></tt> and <tt class="docutils literal"><span class="pre">y</span></tt>.  The first pair or arrays, <tt class="docutils literal"><span class="pre">xdata</span></tt> and <tt class="docutils literal"><span class="pre">ydata</span></tt>, contain the <img class="math" src="../_images/math/188c175aac0a8a9c22499336711b5d7256407254.png" alt="x"/>-<img class="math" src="../_images/math/b124ff74afb0914bb434e8fb849eb56d734412f8.png" alt="y"/> data that are plotted as red circles in the <a class="reference internal" href="#fig-wavypulse"><em>Wavy pulse</em></a> figure; the arrays created in line 8 and 9 contain the <img class="math" src="../_images/math/188c175aac0a8a9c22499336711b5d7256407254.png" alt="x"/>-<img class="math" src="../_images/math/b124ff74afb0914bb434e8fb849eb56d734412f8.png" alt="y"/> data that are plotted as a blue line.</p>
@@ -196,7 +196,7 @@
 <p id="index-3">To plot the solid blue line, the code uses the <tt class="docutils literal"><span class="pre">'b-'</span></tt> format specifier in the <tt class="docutils literal"><span class="pre">plot</span></tt> function call.  It is important to understand that MatPlotLib draws <em>straight lines</em> between data points.  Therefore, the curve will appear smooth only if the data in the NumPy arrays are sufficiently dense.  If the space between data points is too large, the straight lines the <tt class="docutils literal"><span class="pre">plot</span></tt> function draws between data points will be visible.  For plotting a typical function, something on the order of 100-200 data points usually produces a smooth curve, depending on just how curvy the function is.  On the other hand, only two points are required to draw a smooth straight line.</p>
 <p>Detailed information about the MatPlotLib plotting functions are available online, starting with the site <a class="reference external" href="http://matplotlib.org/api/pyplot_summary.html">http://matplotlib.org/api/pyplot_summary.html</a>.  The main MatPlotLib site is <a class="reference external" href="http://matplotlib.org/">http://matplotlib.org/</a>.</p>
 <div class="section" id="specifying-line-and-symbol-types-and-colors">
-<h3>Specifying line and symbol types and colors<a class="headerlink" href="#specifying-line-and-symbol-types-and-colors" title="Permalink to this headline">¶</a></h3>
+<h3>5.2.1. Specifying line and symbol types and colors<a class="headerlink" href="#specifying-line-and-symbol-types-and-colors" title="Permalink to this headline">¶</a></h3>
 <p>In the above example, we illustrated how to draw one line type (solid), one symbol type (circle), and two colors (blue and red).  There are many more possibilities, which are specified in the tables below.  The way it works is to specify a string consisting of one or more plotting format specifiers.  There are two types of format specifiers, one for the line or symbol type and another for the color.  It does not matter in which order the  format specifiers are listed in the string.  Examples are given following the two tables.  Try them out to make sure you understand how these plotting format specifiers work.</p>
 <p id="index-4">The first table below shows the characters used to specify the line or symbol type that is used.  If a line type is chosen, the lines are drawn between the data points.  If a marker type is chosen, the a marker is plotted at each data point.</p>
 <blockquote>
@@ -342,10 +342,10 @@
 <p>Try it out!  The online MatPlotLib documentation provides all the plotting format keyword arguments and their possible values.</p>
 </div>
 <div class="section" id="error-bars">
-<h3>Error bars<a class="headerlink" href="#error-bars" title="Permalink to this headline">¶</a></h3>
+<h3>5.2.2. Error bars<a class="headerlink" href="#error-bars" title="Permalink to this headline">¶</a></h3>
 <p id="index-5">When plotting experimental data it is customary to include error bars that indicate graphically the degree of uncertainty that exists in the measurement of each data point.  The MatPlotLib function <tt class="docutils literal"><span class="pre">errorbar</span></tt> plots data with error bars attached.  It can be used in a way that either replaces or augments the <tt class="docutils literal"><span class="pre">plot</span></tt> function.  Both vertical and horizontal error bars can be displayed.  The figure below illustrates the use of error bars.</p>
 <div class="figure align-center" id="fig-expdecay">
-<a class="reference internal image-reference" href="../_images/ExpDecay.pdf"><img alt="Error Bars" src="../_images/ExpDecay.pdf" /></a>
+<a class="reference internal image-reference" href="../_images/ExpDecay.png"><img alt="Error Bars" src="../_images/ExpDecay.png" style="width: 450.0px; height: 300.0px;" /></a>
 <p class="caption">Error Bars</p>
 </div>
 <p>When error bars are desired, you typically replace the <tt class="docutils literal"><span class="pre">plot</span></tt> function with the <tt class="docutils literal"><span class="pre">errorbar</span></tt> function.  The first two arguments of the  <tt class="docutils literal"><span class="pre">errorbar</span></tt> function are the <tt class="docutils literal"><span class="pre">x</span></tt> and <tt class="docutils literal"><span class="pre">y</span></tt> arrays to be plotted, just as for the <tt class="docutils literal"><span class="pre">plot</span></tt> function.  The keyword <tt class="docutils literal"><span class="pre">fmt</span></tt> <em>must be used</em> to specify the format of the points to be plotted; the format specifiers are the same as for <tt class="docutils literal"><span class="pre">plot</span></tt>.  The keywords <tt class="docutils literal"><span class="pre">xerr</span></tt> and <tt class="docutils literal"><span class="pre">yerr</span></tt> are used to specify the <img class="math" src="../_images/math/188c175aac0a8a9c22499336711b5d7256407254.png" alt="x"/> and <img class="math" src="../_images/math/b124ff74afb0914bb434e8fb849eb56d734412f8.png" alt="y"/> error bars.  Setting one or both of them to a constant specifies one size for all the error bars.  Alternatively, setting one or both of them equal to an array that has the same length as the <tt class="docutils literal"><span class="pre">x</span></tt> and <tt class="docutils literal"><span class="pre">y</span></tt> arrays allows you to give each data point an error bar with a different value.  If you only want <img class="math" src="../_images/math/b124ff74afb0914bb434e8fb849eb56d734412f8.png" alt="y"/> error bars, then you should only specify the <tt class="docutils literal"><span class="pre">yerr</span></tt> keyword and omit the <tt class="docutils literal"><span class="pre">xerr</span></tt> keyword.  The color of the error bars is set with the keyword <tt class="docutils literal"><span class="pre">ecolor</span></tt>.</p>
@@ -402,10 +402,10 @@
 <p>We have more to say about the <tt class="docutils literal"><span class="pre">errorbar</span></tt> function in the sections on  logarithmic plots.  But the brief introduction given here should suffice for making most plots not involving logarithmic axes.</p>
 </div>
 <div class="section" id="setting-plotting-limits-and-excluding-data">
-<h3>Setting plotting limits and excluding data<a class="headerlink" href="#setting-plotting-limits-and-excluding-data" title="Permalink to this headline">¶</a></h3>
+<h3>5.2.3. Setting plotting limits and excluding data<a class="headerlink" href="#setting-plotting-limits-and-excluding-data" title="Permalink to this headline">¶</a></h3>
 <p>It turns out that you often want to restrict the range of numerical values over which you plot data or functions.  In these cases you may need to manually specify the plotting window or, alternatively, you may wish to exclude data points that are outside some set of limits.  Here we demonstrate methods for doing this.</p>
 <div class="section" id="setting-plotting-limits">
-<h4>Setting plotting limits<a class="headerlink" href="#setting-plotting-limits" title="Permalink to this headline">¶</a></h4>
+<h4>5.2.3.1. Setting plotting limits<a class="headerlink" href="#setting-plotting-limits" title="Permalink to this headline">¶</a></h4>
 <p id="index-6">Suppose you want to plot the tangent function over the interval from 0 to 10.  The following script offers an straightforward first attempt.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
@@ -419,7 +419,7 @@
 </pre></div>
 </div>
 <div class="figure align-center" id="fig-plotlimits1">
-<a class="reference internal image-reference" href="../_images/plotLimits1.pdf"><img alt="tangent theta" src="../_images/plotLimits1.pdf" /></a>
+<a class="reference internal image-reference" href="../_images/plotLimits1.png"><img alt="tangent theta" src="../_images/plotLimits1.png" style="width: 640.0px; height: 480.0px;" /></a>
 </div>
 <p>The resulting plot, shown above, doesn&#8217;t quite look like what you might have expected for <img class="math" src="../_images/math/03317095d80476c4ecca47a9004927ed8672e7a7.png" alt="\tan\theta"/> <em>vs</em> <img class="math" src="../_images/math/a9cfbeb8ebee1f365919e147a79e242dcb67ee5d.png" alt="\theta"/>.  The problem is that <img class="math" src="../_images/math/03317095d80476c4ecca47a9004927ed8672e7a7.png" alt="\tan\theta"/> diverges at <img class="math" src="../_images/math/ca0d8907fc01e261e1172bca684a0bcd5546866f.png" alt="\theta = \pi/2, 3\pi/2, 5\pi/2, ..."/>, which leads to large spikes in the plots as values in the <tt class="docutils literal"><span class="pre">theta</span></tt> array come near those values.  Of course, we don&#8217;t want the plot to extend all the way out to <img class="math" src="../_images/math/9e0d43547af6ade3b647231a5b32a0ce3cd9bbcf.png" alt="\pm\infty"/> in the <img class="math" src="../_images/math/b124ff74afb0914bb434e8fb849eb56d734412f8.png" alt="y"/> direction, nor can it.  Instead, we would like the plot to extend far enough that we get the idea of what is going on as <img class="math" src="../_images/math/5eac46bb4b6383353911a54999480e4f7298282d.png" alt="y\rightarrow\pm\infty"/>, but we would still like to see the behavior of the graph near <img class="math" src="../_images/math/c99c34dbd3d8e874a8ea4cc301e3b8ff9abcea59.png" alt="y=0"/>.  We can restrict the range of <tt class="docutils literal"><span class="pre">ytan</span></tt> values that are plotted using the MatPlotLib function <tt class="docutils literal"><span class="pre">ylim</span></tt>, as we demonstrate in the script below.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -438,16 +438,16 @@
 </div>
 <p>The figure produced by this script is shown below.  The plot now looks much more like the familiar <img class="math" src="../_images/math/03317095d80476c4ecca47a9004927ed8672e7a7.png" alt="\tan\theta"/> function we know.  We have also include a call to the <tt class="docutils literal"><span class="pre">axline</span></tt> function to create an <img class="math" src="../_images/math/188c175aac0a8a9c22499336711b5d7256407254.png" alt="x"/> axis.</p>
 <div class="figure align-center" id="fig-plotlimits2">
-<a class="reference internal image-reference" href="../_images/plotLimits2.pdf"><img alt="tangent theta" src="../_images/plotLimits2.pdf" /></a>
+<a class="reference internal image-reference" href="../_images/plotLimits2.png"><img alt="tangent theta" src="../_images/plotLimits2.png" style="width: 640.0px; height: 480.0px;" /></a>
 <p class="caption">Tangent function (with spurious lines)</p>
 </div>
 <p>The vertical blue lines at <img class="math" src="../_images/math/e4d1f6e4a1de9f64d5deed88c9f71482e3198731.png" alt="\theta = \pi/2, 3\pi/2, 5\pi/2"/> should not appear in a plot of <img class="math" src="../_images/math/03317095d80476c4ecca47a9004927ed8672e7a7.png" alt="\tan\theta"/> <em>vs</em> <img class="math" src="../_images/math/a9cfbeb8ebee1f365919e147a79e242dcb67ee5d.png" alt="\theta"/>.  However, they do appear because the <tt class="docutils literal"><span class="pre">plot</span></tt> function simply draws lines between the data points in the <tt class="docutils literal"><span class="pre">x</span></tt>-<tt class="docutils literal"><span class="pre">y</span></tt> arrays provided in its arguments.  Thus, <tt class="docutils literal"><span class="pre">plot</span></tt> draws a line between the very large positive and negative <tt class="docutils literal"><span class="pre">ytan</span></tt> values corresponding to the <tt class="docutils literal"><span class="pre">theta</span></tt> values on either side of <img class="math" src="../_images/math/eb290bb4fbda29c280354df1325e092fc682e865.png" alt="\pi/2"/> where <img class="math" src="../_images/math/03317095d80476c4ecca47a9004927ed8672e7a7.png" alt="\tan\theta"/> diverges to <img class="math" src="../_images/math/9e0d43547af6ade3b647231a5b32a0ce3cd9bbcf.png" alt="\pm\infty"/>.  It would be nice to exclude that line.</p>
 </div>
 <div class="section" id="masked-arrays">
-<h4>Masked arrays<a class="headerlink" href="#masked-arrays" title="Permalink to this headline">¶</a></h4>
+<h4>5.2.3.2. Masked arrays<a class="headerlink" href="#masked-arrays" title="Permalink to this headline">¶</a></h4>
 <p id="index-7">We can exclude the data points near <img class="math" src="../_images/math/e4d1f6e4a1de9f64d5deed88c9f71482e3198731.png" alt="\theta = \pi/2, 3\pi/2, 5\pi/2"/> in the above plot, and thus avoid drawing the nearly vertical lines at those points, using NumPy&#8217;s <em>masked array</em> feature.  The code below shows how this is done and produces the graph below.  The masked array feature is implemented in line 6 with a call to NumPy&#8217;s <tt class="docutils literal"><span class="pre">masked_where</span></tt> function in the sub-module <tt class="docutils literal"><span class="pre">ma</span></tt> (masked array).  Therefore, it is called by writing <tt class="docutils literal"><span class="pre">np.ma.masked_where</span></tt>.  The <tt class="docutils literal"><span class="pre">masked_where</span></tt> function works as follows.  The first argument sets the condition for masking elements of the array, which is specified by the second argument.  In this case, the function says to mask all elements of the array <tt class="docutils literal"><span class="pre">ytan</span></tt> (the second argument) where the absolute value of <tt class="docutils literal"><span class="pre">ytan</span></tt> is greater than 20.  The result is set equal to <tt class="docutils literal"><span class="pre">ytanM</span></tt>.  When <tt class="docutils literal"><span class="pre">ytanM</span></tt> is plotted, MatPlotLib&#8217;s <tt class="docutils literal"><span class="pre">plot</span></tt> function omits all masked points from the plot.  You can think of it as the <tt class="docutils literal"><span class="pre">plot</span></tt> function lifting the pen that is drawing the line in the plot when it comes to the masked points in the array <tt class="docutils literal"><span class="pre">ytanM</span></tt>.</p>
 <div class="figure align-center" id="fig-plotlimits3">
-<a class="reference internal image-reference" href="../_images/plotLimits3.pdf"><img alt="tangent theta" src="../_images/plotLimits3.pdf" /></a>
+<a class="reference internal image-reference" href="../_images/plotLimits3.png"><img alt="tangent theta" src="../_images/plotLimits3.png" style="width: 640.0px; height: 480.0px;" /></a>
 <p class="caption">Tangent function</p>
 </div>
 <div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
@@ -480,10 +480,10 @@
 </div>
 </div>
 <div class="section" id="subplots">
-<h3>Subplots<a class="headerlink" href="#subplots" title="Permalink to this headline">¶</a></h3>
+<h3>5.2.4. Subplots<a class="headerlink" href="#subplots" title="Permalink to this headline">¶</a></h3>
 <p id="index-8">Often you want to create two or more graphs and place them next to one another, generally because they are related to each other in some way.  The plot below shows an example of such a plot.  In the top graph, <img class="math" src="../_images/math/03317095d80476c4ecca47a9004927ed8672e7a7.png" alt="\tan\theta"/> and <img class="math" src="../_images/math/02759ccf65b36d5b9e7c0b3a634e3f76fce0be18.png" alt="\sqrt{(8/\theta)^2-1}"/> <em>vs</em> <img class="math" src="../_images/math/a9cfbeb8ebee1f365919e147a79e242dcb67ee5d.png" alt="\theta"/> are plotted.  The two curves cross each other at the points where <img class="math" src="../_images/math/2f07722216f7aa2ad6a8e5b896bea85382a8523e.png" alt="\tan\theta=\sqrt{(8/\theta)^2-1}"/>.  In the bottom  <img class="math" src="../_images/math/d7f0a662f0514815599f1d64af426699da78a1d7.png" alt="\cot\theta"/> and <img class="math" src="../_images/math/2d54fe2752d18671cc5372ea4091afe53999893e.png" alt="-\sqrt{(8/\theta)^2-1}"/> <em>vs</em> <img class="math" src="../_images/math/a9cfbeb8ebee1f365919e147a79e242dcb67ee5d.png" alt="\theta"/> are plotted.  These two curves cross each other at the points where <img class="math" src="../_images/math/5e42f5e2b4f16484d6ad9bdc0d78bc7b3cf81de7.png" alt="\cot\theta=-\sqrt{(8/\theta)^2-1}"/>.</p>
 <div class="figure align-center" id="fig-subplotdemo">
-<a class="reference internal image-reference" href="../_images/subplotDemo.pdf"><img alt="Crossing functions" src="../_images/subplotDemo.pdf" /></a>
+<a class="reference internal image-reference" href="../_images/subplotDemo.png"><img alt="Crossing functions" src="../_images/subplotDemo.png" style="width: 720.0px; height: 540.0px;" /></a>
 <p class="caption">Crossing functions</p>
 </div>
 <p>The code that produces this plot is provided below.</p>
@@ -561,13 +561,13 @@
 </div>
 </div>
 <div class="section" id="logarithmic-plots">
-<h2>Logarithmic plots<a class="headerlink" href="#logarithmic-plots" title="Permalink to this headline">¶</a></h2>
+<h2>5.3. Logarithmic plots<a class="headerlink" href="#logarithmic-plots" title="Permalink to this headline">¶</a></h2>
 <p id="index-9">Data sets can span many orders of magnitude from fractional quantities much smaller than unity to values much larger than unity.  In such cases it is often useful to plot the data on logarithmic axes.</p>
 <div class="section" id="semi-log-plots">
-<h3>Semi-log plots<a class="headerlink" href="#semi-log-plots" title="Permalink to this headline">¶</a></h3>
+<h3>5.3.1. Semi-log plots<a class="headerlink" href="#semi-log-plots" title="Permalink to this headline">¶</a></h3>
 <p id="index-10">For data sets that vary exponentially in the independent variable, it is often useful to use one or more logarithmic axes.  Radioactive decay of unstable nuclei, for example, exhibits an exponential decrease in the number of particles emitted from the nuclei as a function of time.  In the plot below, for example, we show the decay of the radioactive isotope Phosphorus-32 over a period of 6 months, where the radioactivity is measured once each week.  Starting at a decay rate of nearly <img class="math" src="../_images/math/7df15fdc7d219c3dda864ea8d3b902e059847459.png" alt="10^4"/> electrons (counts) per second, the decay rate diminishes to only about 1 count per second after about 6 months or 180 days.  If we plot counts per second as a function of time on a normal plot, as we have done in the plot on the left below, then the count rate is indistinguishable from zero after about 100 days.  On the other hand, if we use a logarithmic axis for the count rate, as we have done in the plot on the right below, then we can follow the count rate well past 100 days and can readily distinguish it from zero.  Moreover, if the data vary exponentially in time, then the data will fall along a straight line, as they do for the case of radioactive decay.</p>
 <div class="figure align-center" id="fig-semilogdemo">
-<a class="reference internal image-reference" href="../_images/semilogDemo.pdf"><img alt="Semi-log plotting" src="../_images/semilogDemo.pdf" /></a>
+<a class="reference internal image-reference" href="../_images/semilogDemo.png"><img alt="Semi-log plotting" src="../_images/semilogDemo.png" style="width: 800.0px; height: 320.0px;" /></a>
 <p class="caption">Semi-log plotting</p>
 </div>
 <p>MatPlotLib provides two functions for making semi-logarithmic plots, <tt class="docutils literal"><span class="pre">semilogx</span></tt> and <tt class="docutils literal"><span class="pre">semilogy</span></tt>, for creating plots with logarithmic <img class="math" src="../_images/math/188c175aac0a8a9c22499336711b5d7256407254.png" alt="x"/> and <img class="math" src="../_images/math/b124ff74afb0914bb434e8fb849eb56d734412f8.png" alt="y"/> axes, with linear <img class="math" src="../_images/math/b124ff74afb0914bb434e8fb849eb56d734412f8.png" alt="y"/> and <img class="math" src="../_images/math/188c175aac0a8a9c22499336711b5d7256407254.png" alt="x"/> axes, respectively.  We illustrate their use in the program below, which made the above plots.</p>
@@ -640,20 +640,20 @@
 </td></tr></table></div>
 <p>The <tt class="docutils literal"><span class="pre">semilogx</span></tt> and <tt class="docutils literal"><span class="pre">semilogy</span></tt> functions work the same way as the <tt class="docutils literal"><span class="pre">plot</span></tt> function.  You just use one or the other depending on which axis you want to be logarithmic.</p>
 <div class="section" id="the-tight-layout-function">
-<h4>The <tt class="docutils literal"><span class="pre">tight_layout()</span></tt> function<a class="headerlink" href="#the-tight-layout-function" title="Permalink to this headline">¶</a></h4>
+<h4>5.3.1.1. The <tt class="docutils literal"><span class="pre">tight_layout()</span></tt> function<a class="headerlink" href="#the-tight-layout-function" title="Permalink to this headline">¶</a></h4>
 <p id="index-11">You may have noticed the <tt class="docutils literal"><span class="pre">tight_layout()</span></tt> function, called without arguments on line 30 of the program.  This is a convenience function that adjusts the sizes of the plots to make room for the axes labels.  If it is not called, the <img class="math" src="../_images/math/b124ff74afb0914bb434e8fb849eb56d734412f8.png" alt="y"/>-axis label of the right plot runs into the left plot.  The <tt class="docutils literal"><span class="pre">tight_layout()</span></tt> function can also be useful in graphics windows with only one plot sometimes.</p>
 </div>
 </div>
 <div class="section" id="log-log-plots">
-<h3>Log-log plots<a class="headerlink" href="#log-log-plots" title="Permalink to this headline">¶</a></h3>
+<h3>5.3.2. Log-log plots<a class="headerlink" href="#log-log-plots" title="Permalink to this headline">¶</a></h3>
 <p id="index-12">MatPlotLib can also make log-log or double-logarithmic plots using the function <tt class="docutils literal"><span class="pre">loglog</span></tt>.  It is useful when both the <img class="math" src="../_images/math/188c175aac0a8a9c22499336711b5d7256407254.png" alt="x"/> and <img class="math" src="../_images/math/b124ff74afb0914bb434e8fb849eb56d734412f8.png" alt="y"/> data span many orders of magnitude.  Data that are described by a power law <img class="math" src="../_images/math/7ccdc1a9bf78d17463375b789e0c4c44c3f79d27.png" alt="y=Ax^b"/>, where <img class="math" src="../_images/math/0acafa529182e79b4f56165ec677554fba7fcf98.png" alt="A"/> and <img class="math" src="../_images/math/5e87bf41a96deddf6cb485ff530f153f2590e9cc.png" alt="b"/> are constants, appear as straight lines when plotted on a log-log plot.  Again, the <tt class="docutils literal"><span class="pre">loglog</span></tt> function works just like the <tt class="docutils literal"><span class="pre">plot</span></tt> function but with logarithmic axes.</p>
 </div>
 </div>
 <div class="section" id="more-advanced-graphical-output">
-<h2>More advanced graphical output<a class="headerlink" href="#more-advanced-graphical-output" title="Permalink to this headline">¶</a></h2>
+<h2>5.4. More advanced graphical output<a class="headerlink" href="#more-advanced-graphical-output" title="Permalink to this headline">¶</a></h2>
 <p>The plotting methods introduced in the previous sections are perfectly adequate for basic plotting and are therefore recommended for simple graphical output.  Here, we introduce an alternative syntax that harnesses the full power of MatPlotLib.  It gives the user more options and greater control.  Perhaps the most efficient way to learn this alternative syntax is to look at an example.  The figure below illustrating <a class="reference internal" href="#multplotdemo"><em>Mulitple plots in the same window</em></a> is produced by the following code:</p>
 <div class="figure align-center" id="multplotdemo">
-<a class="reference internal image-reference" href="../_images/MultPlotDemo.pdf"><img alt="Mulitple plots in the same window" src="../_images/MultPlotDemo.pdf" style="width: 320.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/MultPlotDemo.png"><img alt="Mulitple plots in the same window" src="../_images/MultPlotDemo.png" style="width: 320.0px; height: 284.0px;" /></a>
 <p class="caption">Mulitple plots in the same window</p>
 </div>
 <div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
@@ -812,7 +812,7 @@
 </div>
 </div>
 <div class="section" id="exercises">
-<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<h2>5.5. Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">Plot the function <img class="math" src="../_images/math/a88b4d9e8b9717e6e1584b12384ad77e7e751ab7.png" alt="y=3x^2"/> for <img class="math" src="../_images/math/9390ece3a47e96ac26d11993307d408df8d9025d.png" alt="-1 \le x \le 3"/> as a continuous line.  Include enough points so that the curve you plot appears smooth.  Label the axes <img class="math" src="../_images/math/188c175aac0a8a9c22499336711b5d7256407254.png" alt="x"/> and <img class="math" src="../_images/math/b124ff74afb0914bb434e8fb849eb56d734412f8.png" alt="y"/>.</p>
 </li>
@@ -882,7 +882,7 @@ Data taken by Lauren and John
 </div>
 <p>Your plot should also include a visual straight &#8220;best fit&#8221; to the data as well as visual &#8220;fits&#8221; that give the smallest and largest slopes consistent with the data.  Note, you only need two points to define a straight line so the straight lines you draw on the plot should be arrays of length 2 and no longer.  All of your fitted lines should lie <em>behind</em> the data.  Try to make your plot look like the one below.  <em>In addition</em>, add a legend to your plot the gives the slope with its uncertainty obtained from your visual fits to the data.</p>
 <div class="figure align-center" id="fig-lineardata">
-<a class="reference internal image-reference" href="../_images/LinearData.pdf"><img alt="../_images/LinearData.pdf" src="../_images/LinearData.pdf" /></a>
+<a class="reference internal image-reference" href="../_images/LinearData.png"><img alt="../_images/LinearData.png" src="../_images/LinearData.png" style="width: 480.0px; height: 320.0px;" /></a>
 </div>
 <p>The web page <a class="reference external" href="http://matplotlib.org/api/pyplot_summary.html">http://matplotlib.org/api/pyplot_summary.html</a> gives a summary of the main plotting commands available in MatPlotLib.  The two important ones here are <tt class="docutils literal"><span class="pre">plot</span></tt> and <tt class="docutils literal"><span class="pre">errorbar</span></tt>, which make regular plots and plots with error bars, respectively.  You will find the following keyword arguments useful: <tt class="docutils literal"><span class="pre">yerr</span></tt>, <tt class="docutils literal"><span class="pre">ls</span></tt>, <tt class="docutils literal"><span class="pre">marker</span></tt>, <tt class="docutils literal"><span class="pre">mfc</span></tt>, <tt class="docutils literal"><span class="pre">mec</span></tt>, <tt class="docutils literal"><span class="pre">ms</span></tt>, and <tt class="docutils literal"><span class="pre">ecolor</span></tt>, which you can find described by clicking on the <tt class="docutils literal"><span class="pre">errorbar</span></tt> function link on the web page cited above.</p>
 </li>
@@ -957,39 +957,39 @@ time (s)    position (m)    uncertainty (m)
         <div class="sphinxsidebarwrapper">
   <h3><a href="../pymanMaster.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Plotting</a><ul>
-<li><a class="reference internal" href="#an-interactive-session-with-pyplot">An interactive session with <tt class="docutils literal"><span class="pre">pyplot</span></tt></a></li>
-<li><a class="reference internal" href="#basic-plotting">Basic plotting</a><ul>
-<li><a class="reference internal" href="#specifying-line-and-symbol-types-and-colors">Specifying line and symbol types and colors</a></li>
-<li><a class="reference internal" href="#error-bars">Error bars</a></li>
-<li><a class="reference internal" href="#setting-plotting-limits-and-excluding-data">Setting plotting limits and excluding data</a><ul>
-<li><a class="reference internal" href="#setting-plotting-limits">Setting plotting limits</a></li>
-<li><a class="reference internal" href="#masked-arrays">Masked arrays</a></li>
+<li><a class="reference internal" href="#">5. Plotting</a><ul>
+<li><a class="reference internal" href="#an-interactive-session-with-pyplot">5.1. An interactive session with <tt class="docutils literal"><span class="pre">pyplot</span></tt></a></li>
+<li><a class="reference internal" href="#basic-plotting">5.2. Basic plotting</a><ul>
+<li><a class="reference internal" href="#specifying-line-and-symbol-types-and-colors">5.2.1. Specifying line and symbol types and colors</a></li>
+<li><a class="reference internal" href="#error-bars">5.2.2. Error bars</a></li>
+<li><a class="reference internal" href="#setting-plotting-limits-and-excluding-data">5.2.3. Setting plotting limits and excluding data</a><ul>
+<li><a class="reference internal" href="#setting-plotting-limits">5.2.3.1. Setting plotting limits</a></li>
+<li><a class="reference internal" href="#masked-arrays">5.2.3.2. Masked arrays</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#subplots">Subplots</a></li>
+<li><a class="reference internal" href="#subplots">5.2.4. Subplots</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#logarithmic-plots">Logarithmic plots</a><ul>
-<li><a class="reference internal" href="#semi-log-plots">Semi-log plots</a><ul>
-<li><a class="reference internal" href="#the-tight-layout-function">The <tt class="docutils literal"><span class="pre">tight_layout()</span></tt> function</a></li>
+<li><a class="reference internal" href="#logarithmic-plots">5.3. Logarithmic plots</a><ul>
+<li><a class="reference internal" href="#semi-log-plots">5.3.1. Semi-log plots</a><ul>
+<li><a class="reference internal" href="#the-tight-layout-function">5.3.1.1. The <tt class="docutils literal"><span class="pre">tight_layout()</span></tt> function</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#log-log-plots">Log-log plots</a></li>
+<li><a class="reference internal" href="#log-log-plots">5.3.2. Log-log plots</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#more-advanced-graphical-output">More advanced graphical output</a></li>
-<li><a class="reference internal" href="#exercises">Exercises</a></li>
+<li><a class="reference internal" href="#more-advanced-graphical-output">5.4. More advanced graphical output</a></li>
+<li><a class="reference internal" href="#exercises">5.5. Exercises</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="../chap4/chap4_io.html"
-                        title="previous chapter">Input and Output</a></p>
+                        title="previous chapter">4. Input and Output</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="../chap6/chap6_loopsconds.html"
-                        title="next chapter">Conditionals and Loops</a></p>
+                        title="next chapter">6. Conditionals and Loops</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../_sources/chap5/chap5_plot.txt"
@@ -1019,10 +1019,10 @@ time (s)    position (m)    uncertainty (m)
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="../chap6/chap6_loopsconds.html" title="Conditionals and Loops"
+          <a href="../chap6/chap6_loopsconds.html" title="6. Conditionals and Loops"
              >next</a> |</li>
         <li class="right" >
-          <a href="../chap4/chap4_io.html" title="Input and Output"
+          <a href="../chap4/chap4_io.html" title="4. Input and Output"
              >previous</a> |</li>
         <li><a href="../pymanMaster.html">PyMan 0.9.24 documentation</a> &raquo;</li> 
       </ul>

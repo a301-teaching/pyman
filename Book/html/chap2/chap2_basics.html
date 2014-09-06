@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Launching Python &mdash; PyMan 0.9.24 documentation</title>
+    <title>2. Launching Python &mdash; PyMan 0.9.24 documentation</title>
     
     <link rel="stylesheet" href="../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -24,8 +24,8 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="top" title="PyMan 0.9.24 documentation" href="../index.html" />
-    <link rel="next" title="Strings, Lists, Arrays, and Dictionaries" href="../chap3/chap3_arrays.html" />
-    <link rel="prev" title="Introduction" href="../chap1/chap1_intro.html" /> 
+    <link rel="next" title="3. Strings, Lists, Arrays, and Dictionaries" href="../chap3/chap3_arrays.html" />
+    <link rel="prev" title="1. Introduction" href="../chap1/chap1_intro.html" /> 
   </head>
   <body>
     <div class="related">
@@ -35,10 +35,10 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="../chap3/chap3_arrays.html" title="Strings, Lists, Arrays, and Dictionaries"
+          <a href="../chap3/chap3_arrays.html" title="3. Strings, Lists, Arrays, and Dictionaries"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../chap1/chap1_intro.html" title="Introduction"
+          <a href="../chap1/chap1_intro.html" title="1. Introduction"
              accesskey="P">previous</a> |</li>
         <li><a href="../pymanMaster.html">PyMan 0.9.24 documentation</a> &raquo;</li> 
       </ul>
@@ -50,9 +50,9 @@
           <div class="body">
             
   <div class="section" id="launching-python">
-<span id="chap2"></span><h1>Launching Python<a class="headerlink" href="#launching-python" title="Permalink to this headline">¶</a></h1>
+<span id="chap2"></span><h1>2. Launching Python<a class="headerlink" href="#launching-python" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="installing-python-on-your-computer">
-<h2>Installing Python on your computer<a class="headerlink" href="#installing-python-on-your-computer" title="Permalink to this headline">¶</a></h2>
+<h2>2.1. Installing Python on your computer<a class="headerlink" href="#installing-python-on-your-computer" title="Permalink to this headline">¶</a></h2>
 <p>If you haven&#8217;t already installed Python on your computer, see <a class="reference internal" href="../apdx1/apdx1_install.html#apdx1"><em>Installing Python</em></a>, which includes instructions for installing Python on Macs running under MacOSX and on PCs running under  Windows.</p>
 <p>Once you have installed Python, find the Canopy icon on your computer and launch the application.  Wait for the Canopy welcome screen to appear, and then click on the <tt class="docutils literal"><span class="pre">Editor</span></tt> icon.  The Canopy window should appear, like the one shown below.  This is the window you will generally use to work with Python.</p>
 <div class="figure align-center" id="fig-canopywindow">
@@ -61,12 +61,12 @@
 </div>
 </div>
 <div class="section" id="the-canopy-window">
-<h2>The Canopy window<a class="headerlink" href="#the-canopy-window" title="Permalink to this headline">¶</a></h2>
+<h2>2.2. The Canopy window<a class="headerlink" href="#the-canopy-window" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="index-0"></span><p id="index-1">The default Canopy window has three panes: the code editor, the interactive Python pane, and the file browser pane.  The <strong>interactive Python pane</strong> is the primary way that you interact with Python.  You can use it to run Python computer programs, test snippets of Python code, navigate your computer file directories, and perform system tasks like creating, moving, and deleting files and directories.  You will use the <strong>code editor</strong> to write and edit Python programs (or scripts), which are simply sequences of Python commands (code) stored in a file on your computer.  The <strong>file browser pane</strong> allows you to navigate your computer&#8217;s file directory system in order to view and retrieve files on your computer.</p>
 <p>The individual panes in the Canopy window are reconfigurable and detachable but we will leave them pretty much as they are for now.  However, you may want to adjust the overall size of the window to suit your computer screen.  You can find more information about Canopy in the <em>Documentation Browser</em>, which you can access through the <em>Welcome to Canopy</em> window.</p>
 </div>
 <div class="section" id="the-interactive-python-pane">
-<span id="index-2"></span><h2>The Interactive Python Pane<a class="headerlink" href="#the-interactive-python-pane" title="Permalink to this headline">¶</a></h2>
+<span id="index-2"></span><h2>2.3. The Interactive Python Pane<a class="headerlink" href="#the-interactive-python-pane" title="Permalink to this headline">¶</a></h2>
 <p>The default input prompt of the interactive Python pane looks like this:</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="go">In [1]:</span>
 </pre></div>
@@ -75,12 +75,12 @@
 <p>By typing short commands at the prompt, IPython can be used to perform various system tasks, such as running programs and creating and moving files around on your computer.  This is a different kind of computer interface than the icon-based interface (or &#8220;graphical user interface&#8221; GUI) that you usually use to communicate with your computer.  While it may seem more cumbersome for some tasks, it can be more powerful for other tasks, particularly those associated with programming.</p>
 <p>Before getting started, we point out that like most modern computer languages, Python is <em>case sensitive</em>.  That is, Python distinguishes between upper and lower case letters.  Thus, two words spelled the same but having different letters capitalized are treated as different names in Python.  Keep that in mind as we introduce different commands.</p>
 <div class="section" id="magic-functions">
-<h3>Magic Functions<a class="headerlink" href="#magic-functions" title="Permalink to this headline">¶</a></h3>
+<h3>2.3.1. Magic Functions<a class="headerlink" href="#magic-functions" title="Permalink to this headline">¶</a></h3>
 <p id="index-4">IPython features a number of commands called &#8220;magic&#8221; commands that let you perform various useful tasks.  There are two types of magic commands, line magic commands that begin with <tt class="docutils literal"><span class="pre">%</span></tt>&#8212;these are executed on a single line&#8212;and cell magic commands that begin with <tt class="docutils literal"><span class="pre">%%</span></tt>&#8212;these are executed on several lines.  Here we will concern ourselves only with line magic commands.</p>
 <p>The first thing to know about magic commands is that you can toggle (turn on and off) the need to use the <tt class="docutils literal"><span class="pre">%</span></tt> prefix for line magic commands by typing <tt class="docutils literal"><span class="pre">%automagic</span></tt>.  By default, the <tt class="docutils literal"><span class="pre">Automagic</span></tt> switch is set to <tt class="docutils literal"><span class="pre">ON</span></tt> so you don&#8217;t need the <tt class="docutils literal"><span class="pre">%</span></tt> prefix.  To set <tt class="docutils literal"><span class="pre">Automagic</span></tt> to <tt class="docutils literal"><span class="pre">OFF</span></tt>, simply type <tt class="docutils literal"><span class="pre">%automagic</span></tt> at the IPython prompt.  Cell magic commands always need the <tt class="docutils literal"><span class="pre">%%</span></tt> prefix.</p>
 <p>In what follows below, we assume that the <tt class="docutils literal"><span class="pre">Automagic</span></tt> switch is set to <tt class="docutils literal"><span class="pre">ON</span></tt> so we omit the <tt class="docutils literal"><span class="pre">%</span></tt> sign.</p>
 <div class="section" id="navigation-commands">
-<span id="index-5"></span><h4>Navigation Commands<a class="headerlink" href="#navigation-commands" title="Permalink to this headline">¶</a></h4>
+<span id="index-5"></span><h4>2.3.1.1. Navigation Commands<a class="headerlink" href="#navigation-commands" title="Permalink to this headline">¶</a></h4>
 <p>IPython recognizes several common navigation commands that are used under the Unix/Linux operating systems.  In the IPython shell, these few commands work on Macs, PCs, and Linux machines.</p>
 <p>At the IPython prompt, type <tt class="docutils literal"><span class="pre">cd</span> <span class="pre">~</span></tt> (<em>i.e.</em> &#8220;<tt class="docutils literal"><span class="pre">cd</span></tt>&#8221; &#8211; &#8220;space&#8221; &#8211; &#8220;tilde&#8221; , where tilde is found near the upper left part of most keyboards).  This will set your computer to its home (default) directory.  Next type <tt class="docutils literal"><span class="pre">pwd</span></tt> (<strong>p</strong>rint <strong>w</strong>orking <strong>d</strong>irectory) and press RETURN.  The console should return the name of the current directory of your computer.  It might look like this on a Mac:</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [2]: </span><span class="n">pwd</span>
@@ -113,7 +113,7 @@ The path is just the name of a directory and the sequence of subdirectories in w
 <p>Now let&#8217;s say you want to return to the previous subdirectory, <tt class="docutils literal"><span class="pre">Documents</span></tt> or <tt class="docutils literal"><span class="pre">My</span> <span class="pre">Documents</span></tt>, which should be one up in the directory tree if you have followed along.  Type <tt class="docutils literal"><span class="pre">cd</span> <span class="pre">..</span></tt> and then type <tt class="docutils literal"><span class="pre">pwd</span></tt>.  You should find that you are back in the previous directory, <tt class="docutils literal"><span class="pre">Documents</span></tt> or <tt class="docutils literal"><span class="pre">My</span> <span class="pre">Documents</span></tt>.  If you type <tt class="docutils literal"><span class="pre">ls</span></tt>, you should see the new directory <tt class="docutils literal"><span class="pre">PyProgs</span></tt> that you just created.</p>
 </div>
 <div class="section" id="more-magic-commands">
-<h4>More Magic Commands<a class="headerlink" href="#more-magic-commands" title="Permalink to this headline">¶</a></h4>
+<h4>2.3.1.2. More Magic Commands<a class="headerlink" href="#more-magic-commands" title="Permalink to this headline">¶</a></h4>
 <p id="index-6">The most important magic command is <tt class="docutils literal"><span class="pre">%run</span></tt> <em>filename</em> where <em>filename</em> is the name of a Python program you have created.  We haven&#8217;t done this yet but include it here just for reference.  We will come back to this later.</p>
 <p>Some other useful magic commands include <tt class="docutils literal"><span class="pre">%hist</span></tt>, which lists the recent commands issued to the IPython terminal, and <tt class="docutils literal"><span class="pre">%edit</span></tt>, which opens a new empty file in the code editor window.  Typing <tt class="docutils literal"><span class="pre">%edit</span></tt> <em>filename</em>, will open the file <em>filename</em> if it exists in the current directory, or it will create a new file by that name if it does not, and will open it as a blank file in the code editor window.</p>
 <p>There are a number of other magic commands.  You can get a list of them by typing <tt class="docutils literal"><span class="pre">lsmagic</span></tt>.</p>
@@ -145,17 +145,17 @@ The path is just the name of a directory and the sequence of subdirectories in w
 </div>
 </div>
 <div class="section" id="system-shell-commands">
-<span id="syscommands"></span><h3>System shell commands<a class="headerlink" href="#system-shell-commands" title="Permalink to this headline">¶</a></h3>
+<span id="syscommands"></span><h3>2.3.2. System shell commands<a class="headerlink" href="#system-shell-commands" title="Permalink to this headline">¶</a></h3>
 <p id="index-7">You can also run system shell commands from the IPython shell by typing <tt class="docutils literal"><span class="pre">!</span></tt> followed by a system shell command.  For Macs running OSX and for Linux machines, this means that Unix (or equivalently Linux) commands can be issued from the IPython prompt.  For PCs, this means that Windows (DOS) commands can be issued from the IPython prompt.  For example, typing  <tt class="docutils literal"><span class="pre">!ls</span></tt> (<strong>l</strong>i<strong>s</strong>t) and pressing RETURN lists all the files in the current directory on a Mac.  Typing <tt class="docutils literal"><span class="pre">!dir</span></tt> on a PC does essentially the same thing (note that system shell commands in Windows are <em>not</em> case sensitive).</p>
 </div>
 <div class="section" id="tab-completion">
-<span id="index-8"></span><h3>Tab completion<a class="headerlink" href="#tab-completion" title="Permalink to this headline">¶</a></h3>
+<span id="index-8"></span><h3>2.3.3. Tab completion<a class="headerlink" href="#tab-completion" title="Permalink to this headline">¶</a></h3>
 <p>IPython also incorporates a number of shortcuts that make using the shell more efficient.  One of the most useful is <strong>tab completion</strong>.  Let&#8217;s assume you have been following along and that your are in the directory  <tt class="docutils literal"><span class="pre">Documents</span></tt> or <tt class="docutils literal"><span class="pre">My</span> <span class="pre">Documents</span></tt>.  To switch to the directory <tt class="docutils literal"><span class="pre">PyProgs</span></tt>, you could type <tt class="docutils literal"><span class="pre">cd</span> <span class="pre">PyProgs</span></tt>.  Instead of doing that, type <tt class="docutils literal"><span class="pre">cd</span> <span class="pre">PyP</span></tt> and then press the <tt class="docutils literal"><span class="pre">TAB</span></tt> key.  This will complete the command, provided there is no ambiguity in how to finish the command.  In the present case, that would mean that there was no other subdirectory beginning with <tt class="docutils literal"><span class="pre">PyP</span></tt>.  Tab completion works with any command you type into the IPython terminal.  Try it out!  It will make your life more wonderful.</p>
 <p>A related shortcut involves the <img class="math" src="../_images/math/3b66cc9b01eb0217fbb4a8bfe001f76cfbaab94b.png" alt="\uparrow"/> key.  If you type a command, say <tt class="docutils literal"><span class="pre">cd</span></tt> and then to press the <img class="math" src="../_images/math/3b66cc9b01eb0217fbb4a8bfe001f76cfbaab94b.png" alt="\uparrow"/> key, IPython will complete the <tt class="docutils literal"><span class="pre">cd</span></tt> command with the last instance of that command.  Thus, when you launch IPython, you can use this shortcut to take you to the directory you used when you last ran IPython.</p>
 <p>You can also simply press the <img class="math" src="../_images/math/3b66cc9b01eb0217fbb4a8bfe001f76cfbaab94b.png" alt="\uparrow"/> key, which will simply recall the most recent command.  Repeated application of the <img class="math" src="../_images/math/3b66cc9b01eb0217fbb4a8bfe001f76cfbaab94b.png" alt="\uparrow"/> key scrolls though the most recent commands in reverse order.  The <img class="math" src="../_images/math/9e4a8fbf84c5f0484f5874542962a893b22ce712.png" alt="\downarrow"/> key can be used to scroll in the other direction.</p>
 </div>
 <div class="section" id="recap-of-commands">
-<h3>Recap of commands<a class="headerlink" href="#recap-of-commands" title="Permalink to this headline">¶</a></h3>
+<h3>2.3.4. Recap of commands<a class="headerlink" href="#recap-of-commands" title="Permalink to this headline">¶</a></h3>
 <p>Let&#8217;s recap the (magic) commands introduced above:</p>
 <blockquote>
 <div><dl class="docutils">
@@ -178,7 +178,7 @@ The path is just the name of a directory and the sequence of subdirectories in w
 </div>
 </div>
 <div class="section" id="interactive-python-as-a-calculator">
-<h2>Interactive Python as a calculator<a class="headerlink" href="#interactive-python-as-a-calculator" title="Permalink to this headline">¶</a></h2>
+<h2>2.4. Interactive Python as a calculator<a class="headerlink" href="#interactive-python-as-a-calculator" title="Permalink to this headline">¶</a></h2>
 <p>You can use the IPython shell to perform simple arithmatic calculations.  For example, to find the product <img class="math" src="../_images/math/2de38cc6f7795fbd328cf36c49cc4142b92fb997.png" alt="3\times 15"/>, you type <tt class="docutils literal"><span class="pre">3*15</span></tt> at the <tt class="docutils literal"><span class="pre">In</span></tt> prompt and press <tt class="docutils literal"><span class="pre">RETURN</span></tt>:</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [1]: </span><span class="mi">3</span><span class="o">*</span><span class="mi">15</span>
 <span class="gr">Out[1]: </span><span class="mi">45</span>
@@ -196,7 +196,7 @@ The path is just the name of a directory and the sequence of subdirectories in w
 </div>
 <p>Notice that the effect of the parentheses in <tt class="docutils literal"><span class="pre">In</span> <span class="pre">[3]:</span> <span class="pre">(6+21)/3</span></tt> is to cause the addition to be performed first and then the division.  Without the parentheses, Python will always perform the multiplication and division operations <em>before</em> performing the addition and subtraction operations.  The order in which arithmetic operations are performed is the same as for most calculators: exponentiation first, then multiplication or division, then addition or subtraction, then left to right.</p>
 <div class="section" id="binary-arithmetic-operations-in-python">
-<h3>Binary arithmetic operations in Python<a class="headerlink" href="#binary-arithmetic-operations-in-python" title="Permalink to this headline">¶</a></h3>
+<h3>2.4.1. Binary arithmetic operations in Python<a class="headerlink" href="#binary-arithmetic-operations-in-python" title="Permalink to this headline">¶</a></h3>
 <p>The table below lists the binary arithmatic operations in Python.  It has all the standard binary operators for arithmetic, plus a few you may not have seen before.</p>
 <blockquote>
 <div><table border="1" class="docutils">
@@ -264,7 +264,7 @@ The path is just the name of a directory and the sequence of subdirectories in w
 <p>at the beginning of an IPython session.  You only need to type it once and it works for the entire session.</p>
 </div>
 <div class="section" id="types-of-numbers">
-<h3>Types of numbers<a class="headerlink" href="#types-of-numbers" title="Permalink to this headline">¶</a></h3>
+<h3>2.4.2. Types of numbers<a class="headerlink" href="#types-of-numbers" title="Permalink to this headline">¶</a></h3>
 <p>There are four different types of numbers in Python: plain integers, long integers, floating point numbers, and complex numbers.</p>
 <p><strong>Plain integers</strong>, or simply <strong>integers</strong>, are 32 bits (binary digits) long, which means they extend from <img class="math" src="../_images/math/fe1ca943854a3f1ed1de64498eaa62fd95b12bd7.png" alt="-2^{31}=-2147483648"/> to <img class="math" src="../_images/math/21181ffdf4881d2d99b01a1f5df8ecb55df1dc39.png" alt="2^{31}-1=2147483647"/>. One bit is used to store the sign of the integer so there are only 31 bits left&#8212;hence, the power of 31.  In Python, a number is automatically treated as an integer if is written without a decimal point and  it is within the bounds given above.  This means that <tt class="docutils literal"><span class="pre">23</span></tt>, written without a  decimal point, is an integer and <tt class="docutils literal"><span class="pre">23.</span></tt>, written with a decimal point, is a floating point number.  If an integer extends beyond the bounds of a simple integer, the it becomes a <strong>long integer</strong>, and is designated as such by an <tt class="docutils literal"><span class="pre">L</span></tt> following the last digit.  Here are some examples of integer arithmetic:</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [4]: </span><span class="mi">12</span><span class="o">*</span><span class="mi">3</span>
@@ -325,7 +325,7 @@ The path is just the name of a directory and the sequence of subdirectories in w
 </div>
 </div>
 <div class="section" id="python-modules">
-<span id="index-10"></span><h2>Python Modules<a class="headerlink" href="#python-modules" title="Permalink to this headline">¶</a></h2>
+<span id="index-10"></span><h2>2.5. Python Modules<a class="headerlink" href="#python-modules" title="Permalink to this headline">¶</a></h2>
 <p>The Python computer language consists of a &#8220;core&#8221; language plus a vast collection of supplementary software that is contained in <strong>modules</strong>.  Many of these modules come with the standard Python distribution and provide added functionality for performing computer system tasks.  Other modules provide more specialized capabilities that not every user may want.  You can think of these modules as a kind of library from which you can borrow according to your needs.</p>
 <p>We will need three Python modules that are not part of the core Python distribution, but are nevertheless widely used for scientific computing.  The three modules are</p>
 <blockquote>
@@ -343,7 +343,7 @@ The path is just the name of a directory and the sequence of subdirectories in w
 <p>Finally, we note that you can write your own Python modules.  They are a convenient way of packaging and storing Python code so that you can reuse it.  We defer learning about how to write modules until after we have learned about Python.</p>
 </div>
 <div class="section" id="python-functions-a-first-look">
-<span id="chap2-numpyfuncs"></span><h2>Python functions: a first look<a class="headerlink" href="#python-functions-a-first-look" title="Permalink to this headline">¶</a></h2>
+<span id="chap2-numpyfuncs"></span><h2>2.6. Python functions: a first look<a class="headerlink" href="#python-functions-a-first-look" title="Permalink to this headline">¶</a></h2>
 <p>A function in Python is similar to a mathematical function.  In consists of a name and one or more arguments contained inside parentheses, and it produces some output.  For example, the NumPy function <tt class="docutils literal"><span class="pre">sin(x)</span></tt> calculates the sine of the number <tt class="docutils literal"><span class="pre">x</span></tt> (where <tt class="docutils literal"><span class="pre">x</span></tt> is expressed in radians).  Let&#8217;s try it out in the IPython shell:</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [1]: </span><span class="n">sin</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
 <span class="gr">Out[1]: </span><span class="mf">0.47942553860420301</span>
@@ -361,7 +361,7 @@ The path is just the name of a directory and the sequence of subdirectories in w
 </pre></div>
 </div>
 <div class="section" id="some-numpy-functions">
-<span id="index-11"></span><h3>Some NumPy functions<a class="headerlink" href="#some-numpy-functions" title="Permalink to this headline">¶</a></h3>
+<span id="index-11"></span><h3>2.6.1. Some NumPy functions<a class="headerlink" href="#some-numpy-functions" title="Permalink to this headline">¶</a></h3>
 <p id="index-12">NumPy includes an extensive library of mathematical functions.  In the table below, we list some of the most useful ones.  A much more complete list is available at <a class="reference external" href="http://docs.scipy.org/doc/numpy/reference/ufuncs.html#math-operations">http://docs.scipy.org/doc/numpy/reference/ufuncs.html#math-operations</a>.</p>
 <blockquote>
 <div><table border="1" class="docutils">
@@ -432,14 +432,14 @@ The path is just the name of a directory and the sequence of subdirectories in w
 <p>The functions discussed here all have one input and one output.  Python functions can, in general, have multiple inputs and multiple outputs.  We will discuss these and other features of functions later when we take up functions in the context of user-defined functions.</p>
 </div>
 <div class="section" id="keyword-arguments">
-<h3>Keyword arguments<a class="headerlink" href="#keyword-arguments" title="Permalink to this headline">¶</a></h3>
+<h3>2.6.2. Keyword arguments<a class="headerlink" href="#keyword-arguments" title="Permalink to this headline">¶</a></h3>
 <p>In addition to regular arguments, Python functions can have keyword arguments (<tt class="docutils literal"><span class="pre">kwargs</span></tt>).  Keyword arguments are <em>optional</em> arguments that need not be specified when a function is called.  See <a class="reference internal" href="../chap5/chap5_plot.html#chap5basicplotting"><em>Basic plotting</em></a> for examples of the use of keyword arguments.  For the moment, we don&#8217;t need them so we defer a full discussion of keyword arguments until we introduce them in the section on <a class="reference internal" href="../chap7/chap7_funcs.html#userdefdfuncs"><em>User-defined functions</em></a>.</p>
 </div>
 </div>
 <div class="section" id="variables">
-<h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
+<h2>2.7. Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="names-and-the-assignment-operator">
-<h3>Names and the assignment operator<a class="headerlink" href="#names-and-the-assignment-operator" title="Permalink to this headline">¶</a></h3>
+<h3>2.7.1. Names and the assignment operator<a class="headerlink" href="#names-and-the-assignment-operator" title="Permalink to this headline">¶</a></h3>
 <p id="index-13">A variable is a name that is used to store data.  It can be used to store different kinds of data, but here we consider the simplest case where the data is a single numerical value.  Here are a few examples:</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [1]: </span><span class="n">a</span> <span class="o">=</span> <span class="mi">23</span>
 
@@ -506,7 +506,7 @@ The path is just the name of a directory and the sequence of subdirectories in w
 <p>Verify that you understand how the above operations work.</p>
 </div>
 <div class="section" id="legal-and-recommended-variable-names">
-<span id="index-14"></span><h3>Legal and recommended variable names<a class="headerlink" href="#legal-and-recommended-variable-names" title="Permalink to this headline">¶</a></h3>
+<span id="index-14"></span><h3>2.7.2. Legal and recommended variable names<a class="headerlink" href="#legal-and-recommended-variable-names" title="Permalink to this headline">¶</a></h3>
 <p>Variable names in Python must start with a letter, and can be followed by as many alphanumeric characters as you like. Spaces are not allowed in variable names.  However, the underscore character &#8220;<tt class="docutils literal"><span class="pre">_</span></tt>&#8221; is allowed, but no other character that is not a letter or a number is permitted.</p>
 <p>Recall that Python is <em>case sensitive</em>, so the variable <tt class="docutils literal"><span class="pre">a</span></tt> is distinct from the variable <tt class="docutils literal"><span class="pre">A</span></tt>.</p>
 <p>We recommend giving your variables descriptive names as in the following calculation:</p>
@@ -523,7 +523,7 @@ The path is just the name of a directory and the sequence of subdirectories in w
 <p>The variable names <tt class="docutils literal"><span class="pre">distance</span></tt>, <tt class="docutils literal"><span class="pre">time_traveled</span></tt>, and <tt class="docutils literal"><span class="pre">velocity</span></tt> immediately remind you of what is being calculated here.  This is good practice.  But so is keeping variable names reasonably short, so don&#8217;t go nuts!</p>
 </div>
 <div class="section" id="reserved-words-in-python">
-<span id="index-15"></span><h3>Reserved words in Python<a class="headerlink" href="#reserved-words-in-python" title="Permalink to this headline">¶</a></h3>
+<span id="index-15"></span><h3>2.7.3. Reserved words in Python<a class="headerlink" href="#reserved-words-in-python" title="Permalink to this headline">¶</a></h3>
 <p>There are also some names or words that are reserved by Python for special purposes or functions.  You must avoid using these names, which are provided here for your reference:</p>
 <blockquote>
 <div><table border="1" class="docutils">
@@ -584,12 +584,12 @@ The path is just the name of a directory and the sequence of subdirectories in w
 </div>
 </div>
 <div class="section" id="script-files-and-programs">
-<span id="index-16"></span><h2>Script files and programs<a class="headerlink" href="#script-files-and-programs" title="Permalink to this headline">¶</a></h2>
+<span id="index-16"></span><h2>2.8. Script files and programs<a class="headerlink" href="#script-files-and-programs" title="Permalink to this headline">¶</a></h2>
 <p>Performing calculations in the IPython shell is handy if the calculations are short.  But calculations quickly become tedious when they are more than a few lines long.  If you discover you made a mistake at some early step, for example, you may have to go back and retype all the steps subsequent to the error.  The solution to this problem is to save your code in a file.  Saving code in a file means you can just correct the error and rerun the code without having to retype it.  Saving code can also be useful if you want to reuse it later, perhaps with different inputs.</p>
 <p>When we save code in a computer file, we call the sequence of commands stored in the file a <em>script</em> or a <em>program</em> or sometimes a <em>routine</em>.  Programs can become quite sophisticated and complex.  Here we are only going to introduce the simplest features of programming by writing a very simple script.  Much later, we will introduce some of the more advanced features of programming.</p>
 <p id="index-17">To write a script you need a text editor.  In principle, any text editor will do, but it&#8217;s more convenient to use an editor that was designed for the task.  We are going to use the <strong>Code Editor</strong> in the Canopy window that appears when you launch the Canopy application (see  <a class="reference internal" href="#fig-canopywindow"><em>Canopy window</em></a>).  This editor, like most good programming editors, provides syntax highlighting, which color codes key words, comments, and other features of the Python syntax according to their function, and thus makes it easier to read the code and easier to spot programming mistakes.  The Canopy code editor also provides syntax checking, much like a spell-checker in a word processing program, that identifies many coding errors.  This can greatly speed the coding process.  Tab completion also works in the Canopy Code Editor.</p>
 <div class="section" id="scripting-example-1">
-<span id="chap2-scriptexmp1"></span><h3>Scripting Example 1<a class="headerlink" href="#scripting-example-1" title="Permalink to this headline">¶</a></h3>
+<span id="chap2-scriptexmp1"></span><h3>2.8.1. Scripting Example 1<a class="headerlink" href="#scripting-example-1" title="Permalink to this headline">¶</a></h3>
 <p>Let&#8217;s work through an example to see how scripting works.  Suppose you are going on a road trip and you would like to estimate how long the drive will take, how much gas you will need, and the cost of the gas.  It&#8217;s a simple calculation.  As inputs, you will need the distance of the trip, your average speed, the cost of gasoline, and the mileage of your car.</p>
 <p>Writing a script to do these calculations is straightforward.  First, launch Canopy and open the code editor.  You should see a tab with the word <tt class="docutils literal"><span class="pre">untitled</span></tt> at the top left of the code editor pane (see <a class="reference internal" href="#fig-canopywindow"><em>Canopy window</em></a>).  If you don&#8217;t, go to the <tt class="docutils literal"><span class="pre">File</span></tt> menu and select <tt class="docutils literal"><span class="pre">New</span> <span class="pre">File</span></tt>.  Use the mouse to place your cursor at the top of the code editor pane.  Enter the following code and <em>save the code</em> in a file called <tt class="docutils literal"><span class="pre">myTrip.py</span></tt> in the <tt class="docutils literal"><span class="pre">PyProgs</span></tt> folder you created earlier.  This stores your script (or program) on your computer&#8217;s disk.  The exact name of the file is not important but the extension <tt class="docutils literal"><span class="pre">.py</span></tt> is essential.  It tells the computer, and more importantly Python, that this is a Python program.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># Calculates time, gallons of gas used, and cost of gasoline for</span>
@@ -641,7 +641,7 @@ The path is just the name of a directory and the sequence of subdirectories in w
 </div>
 <p>Typing <tt class="docutils literal"><span class="pre">%precision</span></tt> returns IPython to its default state;  <tt class="docutils literal"><span class="pre">%precision</span> <span class="pre">%e</span></tt> causes IPython to display numbers in exponential format (scientific notation).</p>
 <div class="section" id="note-about-printing">
-<span id="printnote"></span><h4>Note about printing<a class="headerlink" href="#note-about-printing" title="Permalink to this headline">¶</a></h4>
+<span id="printnote"></span><h4>2.8.1.1. Note about printing<a class="headerlink" href="#note-about-printing" title="Permalink to this headline">¶</a></h4>
 <p>If you want your script to return the value of a variable (that is, print the value of the variable to your computer screen), use the <tt class="docutils literal"><span class="pre">print</span></tt> function.  For example, at the end of our script, if we include the code</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">time</span><span class="p">)</span>
 <span class="k">print</span><span class="p">(</span><span class="n">gallons</span><span class="p">)</span>
@@ -652,7 +652,7 @@ The path is just the name of a directory and the sequence of subdirectories in w
 </div>
 </div>
 <div class="section" id="scripting-example-2">
-<span id="chap2-scriptexmp2"></span><h3>Scripting Example 2<a class="headerlink" href="#scripting-example-2" title="Permalink to this headline">¶</a></h3>
+<span id="chap2-scriptexmp2"></span><h3>2.8.2. Scripting Example 2<a class="headerlink" href="#scripting-example-2" title="Permalink to this headline">¶</a></h3>
 <p>Let&#8217;s try another problem.  Suppose you want to find the distance between two Cartesian coordinates <img class="math" src="../_images/math/4ad9898b4cfdd60d6f17d39deefc8955d3127cb7.png" alt="(x_1, y_1, z_1)"/> and <img class="math" src="../_images/math/47b1f13ba04157c7863e9c7f20bc602ed88765da.png" alt="(x_2, y_2, z_2)"/>.  The distance is given by the formula</p>
 <div class="math">
 <p><img src="../_images/math/5d4533f1f4830cf6ffa4d6ccbda2c546006189e7.png" alt="\Delta r = \sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}"/></p>
@@ -695,7 +695,7 @@ The path is just the name of a directory and the sequence of subdirectories in w
 <p>The script works as expected.</p>
 <p>The reason we do not have to import NumPy when working in the IPython shell is that it is done automatically when the IPython shell is launched.  Similarly, the package MatPlotLib is also automatically loaded (imported) when IPython is launched.  However, when a script or program is executed, it is run on its own outside the IPython shell, even if the command to run the script is executed from the IPython shell.</p>
 <div class="section" id="line-continuation">
-<span id="index-18"></span><h4>Line continuation<a class="headerlink" href="#line-continuation" title="Permalink to this headline">¶</a></h4>
+<span id="index-18"></span><h4>2.8.2.1. Line continuation<a class="headerlink" href="#line-continuation" title="Permalink to this headline">¶</a></h4>
 <p>From time to time, a line of code in a script will be unusually long, which can make the code difficult to read.  In such cases, it is advisable to split the code onto several lines. For example, line 7 in the preceding script could be written as</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="go">dr = np.sqrt( (x2-x1)**2</span>
 <span class="go">            + (y2-y1)**2</span>
@@ -717,7 +717,7 @@ The path is just the name of a directory and the sequence of subdirectories in w
 </div>
 </div>
 <div class="section" id="importing-modules">
-<span id="importmods"></span><h2>Importing Modules<a class="headerlink" href="#importing-modules" title="Permalink to this headline">¶</a></h2>
+<span id="importmods"></span><h2>2.9. Importing Modules<a class="headerlink" href="#importing-modules" title="Permalink to this headline">¶</a></h2>
 <p id="index-19">We saw in Example 2 in the last section that we needed to import the NumPy module in order to use the <tt class="docutils literal"><span class="pre">sqrt</span></tt> function.  Indeed the NumPy library contains many useful functions, some of which are listed in section <a class="reference internal" href="#chap2-numpyfuncs"><em>Python functions: a first look</em></a>.  Whenever any NumPy functions are used, the NumPy library must be loaded using an <tt class="docutils literal"><span class="pre">import</span></tt> statement.</p>
 <p>There are a few ways to do this.  The one we generally recommend is to use the <tt class="docutils literal"><span class="pre">import</span> <span class="pre">as</span></tt> implementation that we used in Example 2.  For the main NumPy and MatPlotLib libraries, this is implemented as follows:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -746,7 +746,7 @@ The path is just the name of a directory and the sequence of subdirectories in w
 <p>and would similarly use them without an &#8220;<tt class="docutils literal"><span class="pre">np.</span></tt>&#8221; prefix.  In general, we do not recommend using the the <tt class="docutils literal"><span class="pre">from</span></tt> <em>module</em> <tt class="docutils literal"><span class="pre">import</span> <span class="pre">...</span></tt> way of importing functions.  When reading code, it makes it harder to determine from which modules functions are imported, and can lead to clashes between similarly named functions from different modules.  Nevertheless, you will see the form used in programs you encounter on the web and elsewhere so it is important to understand the syntax.</p>
 </div>
 <div class="section" id="getting-help-documentation-in-ipython-shell">
-<h2>Getting help: documentation in IPython shell<a class="headerlink" href="#getting-help-documentation-in-ipython-shell" title="Permalink to this headline">¶</a></h2>
+<h2>2.10. Getting help: documentation in IPython shell<a class="headerlink" href="#getting-help-documentation-in-ipython-shell" title="Permalink to this headline">¶</a></h2>
 <p>Help is never far away when you are running the IPython shell.  To obtain information on any valid Python or NumPy function, and many MatPlotLib functions, simply type <tt class="docutils literal"><span class="pre">help(</span></tt> <em>function</em> <tt class="docutils literal"><span class="pre">)</span></tt>, as illustrated here</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [1]: </span><span class="n">help</span><span class="p">(</span><span class="nb">range</span><span class="p">)</span>
 <span class="go">range([start,] stop[, step]) -&gt; list of integers</span>
@@ -762,12 +762,12 @@ The path is just the name of a directory and the sequence of subdirectories in w
 <p>Often, the information provided can be quite extensive and you might find it useful to clear the IPython window with the <tt class="docutils literal"><span class="pre">clear</span></tt> command so you can easily scroll back to find the beginning of the documentation.  You may have also noticed that when you type the name of a function plus the opening parenthesis, IPython displays a window showing the first dozen lines or so of the documentation on that function.</p>
 </div>
 <div class="section" id="programming-is-a-detail-oriented-activity">
-<h2>Programming is a detail-oriented activity<a class="headerlink" href="#programming-is-a-detail-oriented-activity" title="Permalink to this headline">¶</a></h2>
+<h2>2.11. Programming is a detail-oriented activity<a class="headerlink" href="#programming-is-a-detail-oriented-activity" title="Permalink to this headline">¶</a></h2>
 <p>Now that you have a little experience with Python and computer programming, it&#8217;s time for an important reminder: <em>Programming is a detail-oriented activity</em>.  To be good at computer programming, to avoid frustration when programming, you must pay attention to details.  A misplaced or forgotten comma or colon can keep your code from working.  Note that I did not say it can &#8220;keep your code from working <em>well</em>&#8221;; it can keep your code from working at all!  Worse still, little errors can make your code give erroneous answers, where your code appears to work, but in fact does not!  So pay attention to the details!</p>
 <p>This raises a second point: sometimes your code will run but give the wrong answer because of a programming error or because of a more subtle error in your algorithm.  For this reason, it is important to test your code to make sure it is behaving properly.  Test it to make sure it gives the correct answers for cases where you already know the correct answer or where you have some independent means of checking it.  Test it in limiting cases, that is, for cases that are at the extremes of the sets of parameters you will employ.  Always test your code; this is a cardinal rule of programming.</p>
 </div>
 <div class="section" id="exercises">
-<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<h2>2.12. Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">A ball is thrown vertically up in the air from a height <img class="math" src="../_images/math/fda7c606710a3011192999c39b6c862d9db414d6.png" alt="h_0"/> above the ground at an initial velocity <img class="math" src="../_images/math/86b9d0c0fb1047cba5bea0154ea1965aabc6053a.png" alt="v_0"/>. Its subsequent height <img class="math" src="../_images/math/cbb80ad77aa7a5e227d5a46bc44d235284106cfc.png" alt="h"/> and velocity <img class="math" src="../_images/math/0e22076955898e6c9bb38aa079135195c24dc81e.png" alt="v"/> are given by the equations</p>
 <div class="math">
@@ -816,62 +816,62 @@ v &amp;= v_0 - gt"/></p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="../pymanMaster.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Launching Python</a><ul>
-<li><a class="reference internal" href="#installing-python-on-your-computer">Installing Python on your computer</a></li>
-<li><a class="reference internal" href="#the-canopy-window">The Canopy window</a></li>
-<li><a class="reference internal" href="#the-interactive-python-pane">The Interactive Python Pane</a><ul>
-<li><a class="reference internal" href="#magic-functions">Magic Functions</a><ul>
-<li><a class="reference internal" href="#navigation-commands">Navigation Commands</a></li>
-<li><a class="reference internal" href="#more-magic-commands">More Magic Commands</a></li>
+<li><a class="reference internal" href="#">2. Launching Python</a><ul>
+<li><a class="reference internal" href="#installing-python-on-your-computer">2.1. Installing Python on your computer</a></li>
+<li><a class="reference internal" href="#the-canopy-window">2.2. The Canopy window</a></li>
+<li><a class="reference internal" href="#the-interactive-python-pane">2.3. The Interactive Python Pane</a><ul>
+<li><a class="reference internal" href="#magic-functions">2.3.1. Magic Functions</a><ul>
+<li><a class="reference internal" href="#navigation-commands">2.3.1.1. Navigation Commands</a></li>
+<li><a class="reference internal" href="#more-magic-commands">2.3.1.2. More Magic Commands</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#system-shell-commands">System shell commands</a></li>
-<li><a class="reference internal" href="#tab-completion">Tab completion</a></li>
-<li><a class="reference internal" href="#recap-of-commands">Recap of commands</a></li>
+<li><a class="reference internal" href="#system-shell-commands">2.3.2. System shell commands</a></li>
+<li><a class="reference internal" href="#tab-completion">2.3.3. Tab completion</a></li>
+<li><a class="reference internal" href="#recap-of-commands">2.3.4. Recap of commands</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#interactive-python-as-a-calculator">Interactive Python as a calculator</a><ul>
-<li><a class="reference internal" href="#binary-arithmetic-operations-in-python">Binary arithmetic operations in Python</a></li>
-<li><a class="reference internal" href="#types-of-numbers">Types of numbers</a></li>
+<li><a class="reference internal" href="#interactive-python-as-a-calculator">2.4. Interactive Python as a calculator</a><ul>
+<li><a class="reference internal" href="#binary-arithmetic-operations-in-python">2.4.1. Binary arithmetic operations in Python</a></li>
+<li><a class="reference internal" href="#types-of-numbers">2.4.2. Types of numbers</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#python-modules">Python Modules</a></li>
-<li><a class="reference internal" href="#python-functions-a-first-look">Python functions: a first look</a><ul>
-<li><a class="reference internal" href="#some-numpy-functions">Some NumPy functions</a></li>
-<li><a class="reference internal" href="#keyword-arguments">Keyword arguments</a></li>
+<li><a class="reference internal" href="#python-modules">2.5. Python Modules</a></li>
+<li><a class="reference internal" href="#python-functions-a-first-look">2.6. Python functions: a first look</a><ul>
+<li><a class="reference internal" href="#some-numpy-functions">2.6.1. Some NumPy functions</a></li>
+<li><a class="reference internal" href="#keyword-arguments">2.6.2. Keyword arguments</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#variables">Variables</a><ul>
-<li><a class="reference internal" href="#names-and-the-assignment-operator">Names and the assignment operator</a></li>
-<li><a class="reference internal" href="#legal-and-recommended-variable-names">Legal and recommended variable names</a></li>
-<li><a class="reference internal" href="#reserved-words-in-python">Reserved words in Python</a></li>
+<li><a class="reference internal" href="#variables">2.7. Variables</a><ul>
+<li><a class="reference internal" href="#names-and-the-assignment-operator">2.7.1. Names and the assignment operator</a></li>
+<li><a class="reference internal" href="#legal-and-recommended-variable-names">2.7.2. Legal and recommended variable names</a></li>
+<li><a class="reference internal" href="#reserved-words-in-python">2.7.3. Reserved words in Python</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#script-files-and-programs">Script files and programs</a><ul>
-<li><a class="reference internal" href="#scripting-example-1">Scripting Example 1</a><ul>
-<li><a class="reference internal" href="#note-about-printing">Note about printing</a></li>
+<li><a class="reference internal" href="#script-files-and-programs">2.8. Script files and programs</a><ul>
+<li><a class="reference internal" href="#scripting-example-1">2.8.1. Scripting Example 1</a><ul>
+<li><a class="reference internal" href="#note-about-printing">2.8.1.1. Note about printing</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#scripting-example-2">Scripting Example 2</a><ul>
-<li><a class="reference internal" href="#line-continuation">Line continuation</a></li>
+<li><a class="reference internal" href="#scripting-example-2">2.8.2. Scripting Example 2</a><ul>
+<li><a class="reference internal" href="#line-continuation">2.8.2.1. Line continuation</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#importing-modules">Importing Modules</a></li>
-<li><a class="reference internal" href="#getting-help-documentation-in-ipython-shell">Getting help: documentation in IPython shell</a></li>
-<li><a class="reference internal" href="#programming-is-a-detail-oriented-activity">Programming is a detail-oriented activity</a></li>
-<li><a class="reference internal" href="#exercises">Exercises</a></li>
+<li><a class="reference internal" href="#importing-modules">2.9. Importing Modules</a></li>
+<li><a class="reference internal" href="#getting-help-documentation-in-ipython-shell">2.10. Getting help: documentation in IPython shell</a></li>
+<li><a class="reference internal" href="#programming-is-a-detail-oriented-activity">2.11. Programming is a detail-oriented activity</a></li>
+<li><a class="reference internal" href="#exercises">2.12. Exercises</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="../chap1/chap1_intro.html"
-                        title="previous chapter">Introduction</a></p>
+                        title="previous chapter">1. Introduction</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="../chap3/chap3_arrays.html"
-                        title="next chapter">Strings, Lists, Arrays, and Dictionaries</a></p>
+                        title="next chapter">3. Strings, Lists, Arrays, and Dictionaries</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../_sources/chap2/chap2_basics.txt"
@@ -901,10 +901,10 @@ v &amp;= v_0 - gt"/></p>
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="../chap3/chap3_arrays.html" title="Strings, Lists, Arrays, and Dictionaries"
+          <a href="../chap3/chap3_arrays.html" title="3. Strings, Lists, Arrays, and Dictionaries"
              >next</a> |</li>
         <li class="right" >
-          <a href="../chap1/chap1_intro.html" title="Introduction"
+          <a href="../chap1/chap1_intro.html" title="1. Introduction"
              >previous</a> |</li>
         <li><a href="../pymanMaster.html">PyMan 0.9.24 documentation</a> &raquo;</li> 
       </ul>

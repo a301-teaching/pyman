@@ -8,4 +8,4 @@ plt.plot(x, y)
 
 plt.show()
 
-plt.savefig("sinePlotDenserXY.eps")
+plt.savefig("sinePlotDenserXY.png")

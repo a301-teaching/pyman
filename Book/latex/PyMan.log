@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.8.27)  4 SEP 2014 10:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.8.8)  6 SEP 2014 15:25
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **PyMan.tex
@@ -1495,88 +1495,112 @@ Underfull \hbox (badness 10000) in paragraph at lines 6291--6292
 
 ]
 Appendix B.
-[191] <nbDashboard.jpg, id=2425, 1551.7975pt x 829.0975pt>
-File: nbDashboard.jpg Graphic file (type jpg)
+[191]
 
-<use nbDashboard.jpg>
-Package pdftex.def Info: nbDashboard.jpg used on input line 6384.
-(pdftex.def)             Requested size: 1551.79373pt x 829.09549pt.
-File: nbDashboard.jpg Graphic file (type jpg)
- <use nbDashboard.jpg>
-Package pdftex.def Info: nbDashboard.jpg used on input line 6384.
-(pdftex.def)             Requested size: 355.65944pt x 190.01791pt.
+pdfTeX warning: /usr/texbin/pdflatex (file ./nbDashboard.pdf): PDF inclusion: f
+ound PDF version <1.6>, but at most version <1.5> allowed
+<nbDashboard.pdf, id=2425, 692.12575pt x 426.11194pt>
+File: nbDashboard.pdf Graphic file (type pdf)
+ <use nbDashboard.pdf>
+Package pdftex.def Info: nbDashboard.pdf used on input line 6384.
+(pdftex.def)             Requested size: 692.12405pt x 426.11089pt.
+File: nbDashboard.pdf Graphic file (type pdf)
 
-<ipyNotebook.jpg, id=2427, 1551.7975pt x 650.43pt>
-File: ipyNotebook.jpg Graphic file (type jpg)
- <use ipyNotebook.jpg>
-Package pdftex.def Info: ipyNotebook.jpg used on input line 6392.
-(pdftex.def)             Requested size: 1551.79373pt x 650.4284pt.
-File: ipyNotebook.jpg Graphic file (type jpg)
+<use nbDashboard.pdf>
+Package pdftex.def Info: nbDashboard.pdf used on input line 6384.
+(pdftex.def)             Requested size: 355.65944pt x 218.9722pt.
 
-<use ipyNotebook.jpg>
-Package pdftex.def Info: ipyNotebook.jpg used on input line 6392.
-(pdftex.def)             Requested size: 355.65944pt x 149.06973pt.
 
-<firstIPyNBcells.jpg, id=2429, 1551.7975pt x 1559.8275pt>
-File: firstIPyNBcells.jpg Graphic file (type jpg)
+pdfTeX warning: /usr/texbin/pdflatex (file ./ipyNotebook.pdf): PDF inclusion: f
+ound PDF version <1.6>, but at most version <1.5> allowed
+<ipyNotebook.pdf, id=2427, 775.89874pt x 325.215pt>
+File: ipyNotebook.pdf Graphic file (type pdf)
+ <use ipyNotebook.pdf>
+Package pdftex.def Info: ipyNotebook.pdf used on input line 6392.
+(pdftex.def)             Requested size: 775.89685pt x 325.2142pt.
+File: ipyNotebook.pdf Graphic file (type pdf)
 
-<use firstIPyNBcells.jpg>
-Package pdftex.def Info: firstIPyNBcells.jpg used on input line 6403.
-(pdftex.def)             Requested size: 1551.79373pt x 1559.82372pt.
-File: firstIPyNBcells.jpg Graphic file (type jpg)
- <use firstIPyNBcells.jpg>
-Package pdftex.def Info: firstIPyNBcells.jpg used on input line 6403.
-(pdftex.def)             Requested size: 355.65944pt x 357.49133pt.
- [192 <./nbDashboard.jpg>]
+<use ipyNotebook.pdf>
+Package pdftex.def Info: ipyNotebook.pdf used on input line 6392.
+(pdftex.def)             Requested size: 355.65944pt x 149.07469pt.
+ [192 <./nbDashboard.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./firstIPyNBcells.pdf): PDF inclusio
+n: found PDF version <1.6>, but at most version <1.5> allowed
+<firstIPyNBcells.pdf, id=2441, 775.89874pt x 779.91376pt>
+File: firstIPyNBcells.pdf Graphic file (type pdf)
+
+<use firstIPyNBcells.pdf>
+Package pdftex.def Info: firstIPyNBcells.pdf used on input line 6403.
+(pdftex.def)             Requested size: 775.89685pt x 779.91187pt.
+File: firstIPyNBcells.pdf Graphic file (type pdf)
+ <use firstIPyNBcells.pdf>
+Package pdftex.def Info: firstIPyNBcells.pdf used on input line 6403.
+(pdftex.def)             Requested size: 355.65944pt x 357.50323pt.
+
 Underfull \hbox (badness 5147) in paragraph at lines 6408--6409
 []\T1/ptm/m/n/10 You can also cre-ate plots in an IPython note-book. For ex-am-
 ple, typ-ing
  []
 
-<mileageNB.jpg, id=2440, 1551.7975pt x 1343.0175pt>
-File: mileageNB.jpg Graphic file (type jpg)
- <use mileageNB.jpg>
-Package pdftex.def Info: mileageNB.jpg used on input line 6420.
-(pdftex.def)             Requested size: 1551.79373pt x 1343.01424pt.
-File: mileageNB.jpg Graphic file (type jpg)
 
-<use mileageNB.jpg>
-Package pdftex.def Info: mileageNB.jpg used on input line 6420.
-(pdftex.def)             Requested size: 355.65944pt x 307.8014pt.
- [193 <./ipyNotebook.jpg>] [194 <./firstIPyNBcells.jpg>]
-<ipyNoteFinalTop.jpg, id=2451, 1551.7975pt x 983.675pt>
-File: ipyNoteFinalTop.jpg Graphic file (type jpg)
 
-<use ipyNoteFinalTop.jpg>
-Package pdftex.def Info: ipyNoteFinalTop.jpg used on input line 6433.
-(pdftex.def)             Requested size: 1551.79373pt x 983.6726pt.
-File: ipyNoteFinalTop.jpg Graphic file (type jpg)
- <use ipyNoteFinalTop.jpg>
-Package pdftex.def Info: ipyNoteFinalTop.jpg used on input line 6433.
-(pdftex.def)             Requested size: 355.65944pt x 225.44498pt.
- [195 <./mileageNB.jpg>]
-[196 <./ipyNoteFinalTop.jpg>]
-<markdown.jpg, id=2465, 1551.7975pt x 1112.155pt>
-File: markdown.jpg Graphic file (type jpg)
- <use markdown.jpg>
-Package pdftex.def Info: markdown.jpg used on input line 6456.
-(pdftex.def)             Requested size: 1551.79373pt x 1112.1523pt.
-File: markdown.jpg Graphic file (type jpg)
+pdfTeX warning: /usr/texbin/pdflatex (file ./mileageNB.pdf): PDF inclusion: fou
+nd PDF version <1.6>, but at most version <1.5> allowed
+<mileageNB.pdf, id=2445, 775.89874pt x 671.50874pt>
+File: mileageNB.pdf Graphic file (type pdf)
+ <use mileageNB.pdf>
+Package pdftex.def Info: mileageNB.pdf used on input line 6420.
+(pdftex.def)             Requested size: 775.89685pt x 671.50711pt.
+File: mileageNB.pdf Graphic file (type pdf)
 
-<use markdown.jpg>
-Package pdftex.def Info: markdown.jpg used on input line 6456.
-(pdftex.def)             Requested size: 355.65944pt x 254.89085pt.
- <ipyNoteFinalBottom.jpg, id=2467, 1551.7975pt x 1212.53pt>
-File: ipyNoteFinalBottom.jpg Graphic file (type jpg)
+<use mileageNB.pdf>
+Package pdftex.def Info: mileageNB.pdf used on input line 6420.
+(pdftex.def)             Requested size: 355.65944pt x 307.81166pt.
+ [193 <./ipyNotebook.pdf>] [194 <./firstIPyNBcells.pdf>]
 
-<use ipyNoteFinalBottom.jpg>
-Package pdftex.def Info: ipyNoteFinalBottom.jpg used on input line 6466.
-(pdftex.def)             Requested size: 1551.79373pt x 1212.52705pt.
-File: ipyNoteFinalBottom.jpg Graphic file (type jpg)
- <use ipyNoteFinalBottom.jpg>
-Package pdftex.def Info: ipyNoteFinalBottom.jpg used on input line 6466.
-(pdftex.def)             Requested size: 355.65944pt x 277.89545pt.
- [197 <./markdown.jpg>] [198 <./ipyNoteFinalBottom.jpg>] [199] [200
+pdfTeX warning: /usr/texbin/pdflatex (file ./ipyNoteFinalTop.pdf): PDF inclusio
+n: found PDF version <1.6>, but at most version <1.5> allowed
+<ipyNoteFinalTop.pdf, id=2466, 775.89874pt x 491.8375pt>
+File: ipyNoteFinalTop.pdf Graphic file (type pdf)
+
+<use ipyNoteFinalTop.pdf>
+Package pdftex.def Info: ipyNoteFinalTop.pdf used on input line 6433.
+(pdftex.def)             Requested size: 775.89685pt x 491.83629pt.
+File: ipyNoteFinalTop.pdf Graphic file (type pdf)
+ <use ipyNoteFinalTop.pdf>
+Package pdftex.def Info: ipyNoteFinalTop.pdf used on input line 6433.
+(pdftex.def)             Requested size: 355.65944pt x 225.45247pt.
+ [195 <./mileageNB.pdf>]
+[196 <./ipyNoteFinalTop.pdf>]
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./markdown.pdf): PDF inclusion: foun
+d PDF version <1.6>, but at most version <1.5> allowed
+<markdown.pdf, id=2490, 775.89874pt x 556.0775pt>
+File: markdown.pdf Graphic file (type pdf)
+ <use markdown.pdf>
+Package pdftex.def Info: markdown.pdf used on input line 6456.
+(pdftex.def)             Requested size: 775.89685pt x 556.07614pt.
+File: markdown.pdf Graphic file (type pdf)
+
+<use markdown.pdf>
+Package pdftex.def Info: markdown.pdf used on input line 6456.
+(pdftex.def)             Requested size: 355.65944pt x 254.89934pt.
+
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./ipyNoteFinalBottom.pdf): PDF inclu
+sion: found PDF version <1.6>, but at most version <1.5> allowed
+<ipyNoteFinalBottom.pdf, id=2492, 775.89874pt x 606.265pt>
+File: ipyNoteFinalBottom.pdf Graphic file (type pdf)
+
+<use ipyNoteFinalBottom.pdf>
+Package pdftex.def Info: ipyNoteFinalBottom.pdf used on input line 6466.
+(pdftex.def)             Requested size: 775.89685pt x 606.26352pt.
+File: ipyNoteFinalBottom.pdf Graphic file (type pdf)
+ <use ipyNoteFinalBottom.pdf>
+Package pdftex.def Info: ipyNoteFinalBottom.pdf used on input line 6466.
+(pdftex.def)             Requested size: 355.65944pt x 277.9047pt.
+ [197 <./markdown.pdf>] [198 <./ipyNoteFinalBottom.pdf>] [199] [200
 
 ]
 Appendix C.
@@ -1603,9 +1627,9 @@ Package rerunfilecheck Info: File `PyMan.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6566.
  ) 
 Here is how much of TeX's memory you used:
- 10778 strings out of 493108
- 157417 string characters out of 6134847
- 267260 words of memory out of 5000000
+ 10777 strings out of 493108
+ 157413 string characters out of 6134848
+ 267259 words of memory out of 5000000
  13358 multiletter control sequences out of 15000+600000
  72418 words of font info for 92 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
@@ -1633,10 +1657,10 @@ c/uhvb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/helvetic/uhvbo
 l/texlive/2014/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive
 /2014/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on PyMan.pdf (213 pages, 2446026 bytes).
+Output written on PyMan.pdf (213 pages, 2718304 bytes).
 PDF statistics:
- 2855 PDF objects out of 2984 (max. 8388607)
- 1946 compressed objects within 20 object streams
+ 2890 PDF objects out of 2984 (max. 8388607)
+ 1960 compressed objects within 20 object streams
  548 named destinations out of 1000 (max. 500000)
  810 words of extra memory for PDF output out of 10000 (max. 10000000)
 
