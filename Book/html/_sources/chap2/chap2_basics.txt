@@ -297,7 +297,7 @@ There are four different types of numbers in Python: plain integers, long intege
 
 For the binary operators ``+``, ``-``, ``*``, and ``//``, the output is an integer if the inputs are integers.  The only exception is if the result of the calculation is out of the bounds of Python integers, in which case Python automatically converts the result to a long integer.  The output of the division operator ``/`` is a floating point as of version 3 of Python.  If an integer output is desired when two integers are divided, the floor division operator ``//`` must be used.
 
-**Floating point** numbers are essentially rational numbers and can have a fractional part; integers, by their very nature, have no fractional part.  In most versions of Python running on PCs or Macs, floating point numbers go between approximately :math:`\pm 2 \times 10^{-308}` and :math:`\pm 2 \times 10^{308}`.    Here are some examples of integer arithmetic:
+**Floating point** numbers are essentially rational numbers and can have a fractional part; integers, by their very nature, have no fractional part.  In most versions of Python running on PCs or Macs, floating point numbers go between approximately :math:`\pm 2 \times 10^{-308}` and :math:`\pm 2 \times 10^{308}`.    Here are some examples of floating point arithmetic:
 
 .. sourcecode:: ipython
 
