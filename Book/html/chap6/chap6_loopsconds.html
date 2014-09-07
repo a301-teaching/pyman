@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -6,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>6. Conditionals and Loops &mdash; PyMan 0.9.25 documentation</title>
+    <title>6. Conditionals and Loops &mdash; PyMan 0.9.26 documentation</title>
     
     <link rel="stylesheet" href="../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +16,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '0.9.25',
+        VERSION:     '0.9.26',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +25,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="PyMan 0.9.25 documentation" href="../index.html" />
+    <link rel="top" title="PyMan 0.9.26 documentation" href="../index.html" />
     <link rel="next" title="7. Functions" href="../chap7/chap7_funcs.html" />
     <link rel="prev" title="5. Plotting" href="../chap5/chap5_plot.html" /> 
   </head>
@@ -40,7 +42,7 @@
         <li class="right" >
           <a href="../chap5/chap5_plot.html" title="5. Plotting"
              accesskey="P">previous</a> |</li>
-        <li><a href="../pymanMaster.html">PyMan 0.9.25 documentation</a> &raquo;</li> 
+        <li><a href="../pymanMaster.html">PyMan 0.9.26 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -64,8 +66,8 @@
 <h4>6.1.1.1. <tt class="docutils literal"><span class="pre">if</span></tt>-<tt class="docutils literal"><span class="pre">elif</span></tt>-<tt class="docutils literal"><span class="pre">else</span></tt> example<a class="headerlink" href="#if-elif-else-example" title="Permalink to this headline">¶</a></h4>
 <p>Suppose we want to know if the solutions to the quadratic equation</p>
 <div class="math">
-<p><img src="../_images/math/991e55c120457fce1add8e631b8814169768b0b9.png" alt="ax^2 + bx + c = 0"/></p>
-</div><p>are real, imaginary, or complex for a given set of coefficients <img class="math" src="../_images/math/7dd2a5ea01fbd72ad2a58dd1f3d6ecbfde6208a1.png" alt="a"/>, <img class="math" src="../_images/math/5e87bf41a96deddf6cb485ff530f153f2590e9cc.png" alt="b"/>, and <img class="math" src="../_images/math/65868d23a5bfe5b3b2d819386b19c14fa36af134.png" alt="c"/>.  Of course, the answer to that question depends on the value of the discriminant <img class="math" src="../_images/math/78280e052d637da2fd027c40a9f4c5ea13486904.png" alt="d=b^2-4ac"/>.  The solutions are real if <img class="math" src="../_images/math/0d7f52347e688f771e015d0410b99baa9697a4db.png" alt="d \ge 0"/>, imaginary if <img class="math" src="../_images/math/bfedd297ccad8f6f651a318a560a8dd7e79553a9.png" alt="b=0"/> and <img class="math" src="../_images/math/d0bbd0eedf794556343a7476ee473dd5dc088845.png" alt="d &lt; 0"/>, and complex if <img class="math" src="../_images/math/073823a8a7747d4f7f2d0af91871f90cf2cf790d.png" alt="b \ne 0"/> and <img class="math" src="../_images/math/d0bbd0eedf794556343a7476ee473dd5dc088845.png" alt="d &lt; 0"/>.  The program below implements the above logic in a Python program.</p>
+<p><img src="../_images/math/599985bd64f4a72fbd5b429a9f981856c4c7d1df.png" alt="ax^2 + bx + c = 0"/></p>
+</div><p>are real, imaginary, or complex for a given set of coefficients <img class="math" src="../_images/math/c7d457e388298246adb06c587bccd419ea67f7e8.png" alt="a"/>, <img class="math" src="../_images/math/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png" alt="b"/>, and <img class="math" src="../_images/math/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png" alt="c"/>.  Of course, the answer to that question depends on the value of the discriminant <img class="math" src="../_images/math/b4dac1dd2de248f8d41eb41e50fefbc6689ab70b.png" alt="d=b^2-4ac"/>.  The solutions are real if <img class="math" src="../_images/math/ba158bbf6c9bfa6675cc5e151af459ae0bffda02.png" alt="d \ge 0"/>, imaginary if <img class="math" src="../_images/math/fc43f0ea59e862d7db01586894e9eea730d427b7.png" alt="b=0"/> and <img class="math" src="../_images/math/308a615529780b45955ff5da5f91e2486a512558.png" alt="d &lt; 0"/>, and complex if <img class="math" src="../_images/math/c5bc74cff8e915c20a122acb60a9cc29ac9cddc2.png" alt="b \ne 0"/> and <img class="math" src="../_images/math/308a615529780b45955ff5da5f91e2486a512558.png" alt="d &lt; 0"/>.  The program below implements the above logic in a Python program.</p>
 <div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -95,7 +97,7 @@
 <span class="k">print</span><span class="p">(</span><span class="s">&quot;Finished!&quot;</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<p>After getting the inputs of from the user, the program evaluates the discriminant <img class="math" src="../_images/math/425d86ba2f2979d75b7535c2bcf92c33ed6b285a.png" alt="d"/>.  The code <tt class="docutils literal"><span class="pre">d</span> <span class="pre">&gt;=</span> <span class="pre">0.0</span></tt> has a boolean truth value of either <tt class="docutils literal"><span class="pre">True</span></tt> or <tt class="docutils literal"><span class="pre">False</span></tt> depending on whether or not <img class="math" src="../_images/math/0d7f52347e688f771e015d0410b99baa9697a4db.png" alt="d \ge 0"/>.  You can check this out in the interactive IPython shell by typing the following set of commands</p>
+<p>After getting the inputs of from the user, the program evaluates the discriminant <img class="math" src="../_images/math/96ab646de7704969b91c76a214126b45f2b07b25.png" alt="d"/>.  The code <tt class="docutils literal"><span class="pre">d</span> <span class="pre">&gt;=</span> <span class="pre">0.0</span></tt> has a boolean truth value of either <tt class="docutils literal"><span class="pre">True</span></tt> or <tt class="docutils literal"><span class="pre">False</span></tt> depending on whether or not <img class="math" src="../_images/math/ba158bbf6c9bfa6675cc5e151af459ae0bffda02.png" alt="d \ge 0"/>.  You can check this out in the interactive IPython shell by typing the following set of commands</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [2]: </span><span class="n">d</span> <span class="o">=</span> <span class="mi">5</span>
 
 <span class="gp">In [3]: </span><span class="n">d</span> <span class="o">&gt;=</span> <span class="mi">2</span>
@@ -113,7 +115,7 @@
 <a class="reference internal image-reference" href="../_images/flow_if_elif_else.png"><img alt="Flowchart" src="../_images/flow_if_elif_else.png" style="width: 421.6px; height: 300.8px;" /></a>
 <p class="caption">Flowchart for <tt class="docutils literal"><span class="pre">if</span></tt>-<tt class="docutils literal"><span class="pre">elif</span></tt>-<tt class="docutils literal"><span class="pre">else</span></tt> code.</p>
 </div>
-<p>At the outset of this problem we stated that the solutions to the quadratic equation are imaginary only if <img class="math" src="../_images/math/bfedd297ccad8f6f651a318a560a8dd7e79553a9.png" alt="b=0"/> and <img class="math" src="../_images/math/d0bbd0eedf794556343a7476ee473dd5dc088845.png" alt="d &lt; 0"/>.  In the <tt class="docutils literal"><span class="pre">elif</span> <span class="pre">b</span> <span class="pre">==</span> <span class="pre">0.0</span></tt> statement on line 9, however, we only check to see if  <img class="math" src="../_images/math/bfedd297ccad8f6f651a318a560a8dd7e79553a9.png" alt="b=0"/>.  The reason that we don&#8217;t have to check if <img class="math" src="../_images/math/d0bbd0eedf794556343a7476ee473dd5dc088845.png" alt="d &lt; 0"/> is that the <tt class="docutils literal"><span class="pre">elif</span></tt> statement is executed only if the condition <tt class="docutils literal"><span class="pre">if</span> <span class="pre">d</span> <span class="pre">&gt;=</span> <span class="pre">0.0</span></tt> on line 7 is <tt class="docutils literal"><span class="pre">False</span></tt>.  Similarly, we don&#8217;t have to check if if <img class="math" src="../_images/math/bfedd297ccad8f6f651a318a560a8dd7e79553a9.png" alt="b=0"/> and <img class="math" src="../_images/math/d0bbd0eedf794556343a7476ee473dd5dc088845.png" alt="d &lt; 0"/> for the final <tt class="docutils literal"><span class="pre">else</span></tt> statement because this part of the <tt class="docutils literal"><span class="pre">if</span></tt>, <tt class="docutils literal"><span class="pre">elif</span></tt>, and <tt class="docutils literal"><span class="pre">else</span></tt> block will only be executed if the preceding <tt class="docutils literal"><span class="pre">if</span></tt> and <tt class="docutils literal"><span class="pre">elif</span></tt> statements are <tt class="docutils literal"><span class="pre">False</span></tt>.  This illustrates a key feature of the <tt class="docutils literal"><span class="pre">if</span></tt>, <tt class="docutils literal"><span class="pre">elif</span></tt>, and <tt class="docutils literal"><span class="pre">else</span></tt> statements: these statements are executed sequentially until one of the <tt class="docutils literal"><span class="pre">if</span></tt> or <tt class="docutils literal"><span class="pre">elif</span></tt> statements is found to be <tt class="docutils literal"><span class="pre">True</span></tt>.  Therefore, Python reaches an <tt class="docutils literal"><span class="pre">elif</span></tt> or <tt class="docutils literal"><span class="pre">else</span></tt> statement only if all the preceding <tt class="docutils literal"><span class="pre">if</span></tt> and <tt class="docutils literal"><span class="pre">elif</span></tt> statements are <tt class="docutils literal"><span class="pre">False</span></tt>.</p>
+<p>At the outset of this problem we stated that the solutions to the quadratic equation are imaginary only if <img class="math" src="../_images/math/fc43f0ea59e862d7db01586894e9eea730d427b7.png" alt="b=0"/> and <img class="math" src="../_images/math/308a615529780b45955ff5da5f91e2486a512558.png" alt="d &lt; 0"/>.  In the <tt class="docutils literal"><span class="pre">elif</span> <span class="pre">b</span> <span class="pre">==</span> <span class="pre">0.0</span></tt> statement on line 9, however, we only check to see if  <img class="math" src="../_images/math/fc43f0ea59e862d7db01586894e9eea730d427b7.png" alt="b=0"/>.  The reason that we don&#8217;t have to check if <img class="math" src="../_images/math/308a615529780b45955ff5da5f91e2486a512558.png" alt="d &lt; 0"/> is that the <tt class="docutils literal"><span class="pre">elif</span></tt> statement is executed only if the condition <tt class="docutils literal"><span class="pre">if</span> <span class="pre">d</span> <span class="pre">&gt;=</span> <span class="pre">0.0</span></tt> on line 7 is <tt class="docutils literal"><span class="pre">False</span></tt>.  Similarly, we don&#8217;t have to check if if <img class="math" src="../_images/math/fc43f0ea59e862d7db01586894e9eea730d427b7.png" alt="b=0"/> and <img class="math" src="../_images/math/308a615529780b45955ff5da5f91e2486a512558.png" alt="d &lt; 0"/> for the final <tt class="docutils literal"><span class="pre">else</span></tt> statement because this part of the <tt class="docutils literal"><span class="pre">if</span></tt>, <tt class="docutils literal"><span class="pre">elif</span></tt>, and <tt class="docutils literal"><span class="pre">else</span></tt> block will only be executed if the preceding <tt class="docutils literal"><span class="pre">if</span></tt> and <tt class="docutils literal"><span class="pre">elif</span></tt> statements are <tt class="docutils literal"><span class="pre">False</span></tt>.  This illustrates a key feature of the <tt class="docutils literal"><span class="pre">if</span></tt>, <tt class="docutils literal"><span class="pre">elif</span></tt>, and <tt class="docutils literal"><span class="pre">else</span></tt> statements: these statements are executed sequentially until one of the <tt class="docutils literal"><span class="pre">if</span></tt> or <tt class="docutils literal"><span class="pre">elif</span></tt> statements is found to be <tt class="docutils literal"><span class="pre">True</span></tt>.  Therefore, Python reaches an <tt class="docutils literal"><span class="pre">elif</span></tt> or <tt class="docutils literal"><span class="pre">else</span></tt> statement only if all the preceding <tt class="docutils literal"><span class="pre">if</span></tt> and <tt class="docutils literal"><span class="pre">elif</span></tt> statements are <tt class="docutils literal"><span class="pre">False</span></tt>.</p>
 <p>The <tt class="docutils literal"><span class="pre">if</span></tt>-<tt class="docutils literal"><span class="pre">elif</span></tt>-<tt class="docutils literal"><span class="pre">else</span></tt> logical structure can accomodate as many <tt class="docutils literal"><span class="pre">elif</span></tt> blocks as desired.  This allows you to set up logic with more than the three possible outcomes illustrated in the example above.  When designing the logical structure you should keep in mind that once Python finds a true condition, it skips all subsequent <tt class="docutils literal"><span class="pre">elif</span></tt> and <tt class="docutils literal"><span class="pre">else</span></tt> statements in a given <tt class="docutils literal"><span class="pre">if</span></tt>, <tt class="docutils literal"><span class="pre">elif</span></tt>, and <tt class="docutils literal"><span class="pre">else</span></tt> block, irrespective of their truth values.</p>
 </div>
 <div class="section" id="if-else-example">
@@ -201,7 +203,7 @@
 </table>
 <p>Logical operators in Python</p>
 </div></blockquote>
-<p>The table above list three logical operators, <tt class="docutils literal"><span class="pre">and</span></tt>, <tt class="docutils literal"><span class="pre">or</span></tt>, and <tt class="docutils literal"><span class="pre">not</span></tt>, that we haven&#8217;t encountered before.  There are useful for combining different logical conditions.  For example, suppose you want to check if <img class="math" src="../_images/math/204f73c2eeb18176f3193ff00b61cfee76c2d55c.png" alt="a&gt;2"/> and <img class="math" src="../_images/math/81aceff6c61718115223dd6bc9769479821f7205.png" alt="b&lt;10"/> simultaneously.  To do so, you would write <tt class="docutils literal"><span class="pre">a&gt;2</span> <span class="pre">and</span> <span class="pre">b&lt;10</span></tt>.  The code below illustrates the use of the logical operators <tt class="docutils literal"><span class="pre">and</span></tt>, <tt class="docutils literal"><span class="pre">or</span></tt>, and <tt class="docutils literal"><span class="pre">not</span></tt>.</p>
+<p>The table above list three logical operators, <tt class="docutils literal"><span class="pre">and</span></tt>, <tt class="docutils literal"><span class="pre">or</span></tt>, and <tt class="docutils literal"><span class="pre">not</span></tt>, that we haven&#8217;t encountered before.  There are useful for combining different logical conditions.  For example, suppose you want to check if <img class="math" src="../_images/math/9595e75b87fc7454d6ebed7496c7515708441f39.png" alt="a&gt;2"/> and <img class="math" src="../_images/math/6a85d43c707f1341c3f85263aa2b8d2ccccef16f.png" alt="b&lt;10"/> simultaneously.  To do so, you would write <tt class="docutils literal"><span class="pre">a&gt;2</span> <span class="pre">and</span> <span class="pre">b&lt;10</span></tt>.  The code below illustrates the use of the logical operators <tt class="docutils literal"><span class="pre">and</span></tt>, <tt class="docutils literal"><span class="pre">or</span></tt>, and <tt class="docutils literal"><span class="pre">not</span></tt>.</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [5]: </span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
 
 <span class="gp">In [6]: </span><span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
@@ -291,7 +293,7 @@
 </pre></div>
 </div>
 <p>where <tt class="docutils literal"><span class="pre">&lt;condition&gt;</span></tt> is a statement that can be either <tt class="docutils literal"><span class="pre">True</span></tt> or <tt class="docutils literal"><span class="pre">False</span></tt> and <tt class="docutils literal"><span class="pre">&lt;body&gt;</span></tt> is a series of Python commands that is executed repeatedly until <tt class="docutils literal"><span class="pre">&lt;condition&gt;</span></tt> becomes false.  This means that somewhere in <tt class="docutils literal"><span class="pre">&lt;body&gt;</span></tt>, the truth value of &lt;condition&gt; must be changed so that it becomes false after a finite number of iterations.  Consider the following example.</p>
-<p>Suppose you want to calculate all the Fibonacci numbers smaller than 1000.  The Fibonacci numbers are determined by starting with the integers 0 and 1.  The next number in the sequence is the sum of the previous two.  So, starting with 0 and 1, the next Fibonacci number is <img class="math" src="../_images/math/537dad717e474105c300a2c896bf5a3902b1fa6e.png" alt="0+1=1"/>, giving the sequence <img class="math" src="../_images/math/a26efc977c07c09f31468c902e5afed59ff772a8.png" alt="0, 1, 1"/>.  Continuing this process, we obtain <img class="math" src="../_images/math/5e21949a18161fabfb4daafc98b2d7004f8dcfa5.png" alt="0, 1, 1, 2, 3, 5, 8, ..."/> where each element in the list is the sum of the previous two.   Using a <tt class="docutils literal"><span class="pre">for</span></tt> loop to calculate the Fibonacci numbers is impractical because we do not know ahead of time how many Fibonacci numbers there are smaller than 1000.  By contrast a <tt class="docutils literal"><span class="pre">while</span></tt> loop is perfect for calculating all the Fibonacci numbers because it keeps calculating Fibonacci numbers until it reaches the desired goal, in this case 1000.  Here is the code using a <tt class="docutils literal"><span class="pre">while</span></tt> loop.</p>
+<p>Suppose you want to calculate all the Fibonacci numbers smaller than 1000.  The Fibonacci numbers are determined by starting with the integers 0 and 1.  The next number in the sequence is the sum of the previous two.  So, starting with 0 and 1, the next Fibonacci number is <img class="math" src="../_images/math/4d44154c2cdbf1b63ca14d41ba532f67e9dc6f39.png" alt="0+1=1"/>, giving the sequence <img class="math" src="../_images/math/53394b86b82c53287b72ba2f5069422387eabe05.png" alt="0, 1, 1"/>.  Continuing this process, we obtain <img class="math" src="../_images/math/1645ce73731b039ba72216c68ec6462fd40ca0ef.png" alt="0, 1, 1, 2, 3, 5, 8, ..."/> where each element in the list is the sum of the previous two.   Using a <tt class="docutils literal"><span class="pre">for</span></tt> loop to calculate the Fibonacci numbers is impractical because we do not know ahead of time how many Fibonacci numbers there are smaller than 1000.  By contrast a <tt class="docutils literal"><span class="pre">while</span></tt> loop is perfect for calculating all the Fibonacci numbers because it keeps calculating Fibonacci numbers until it reaches the desired goal, in this case 1000.  Here is the code using a <tt class="docutils literal"><span class="pre">while</span></tt> loop.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
 <span class="k">while</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">1000</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
@@ -332,7 +334,7 @@
 <div class="section" id="list-comprehensions">
 <span id="index-5"></span><h2>6.3. List Comprehensions<a class="headerlink" href="#list-comprehensions" title="Permalink to this headline">¶</a></h2>
 <p>List comprehensions are a special feature of core Python for processing and constructing lists.  We introduce them here because they use a looping process.  They are used quite commonly in Python coding and they often provide elegant compact solutions to some common computing tasks.</p>
-<p>Consider, for example the <img class="math" src="../_images/math/9570fefe745eeeb3fb70f10bf7a441868fbe1cdd.png" alt="3 \times 3"/> matrix</p>
+<p>Consider, for example the <img class="math" src="../_images/math/d278803d72fcc493afb1559174a483aa7f41d143.png" alt="3 \times 3"/> matrix</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [1]: </span><span class="n">x</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]</span>
 </pre></div>
 </div>
@@ -387,7 +389,7 @@
 <div class="section" id="exercises">
 <h2>6.4. Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">Write a program to calculate the factorial of a positive integer input by the user.  Recall that the factorial function is given by <img class="math" src="../_images/math/12e55678b059415cd2abee76681fdf2a550d01c6.png" alt="x! = x (x-1) (x-2) ... (2) (1)"/> so that <img class="math" src="../_images/math/0ebb0e0bf4ebfd21fd2db257cd3769813d5f7662.png" alt="1!=1"/>, <img class="math" src="../_images/math/0ca8f0d86095730be6ca6c2da549f0d8fb6bd84a.png" alt="2!=2"/>, <img class="math" src="../_images/math/a43e5d686a449075d8f410a10c7ff57f43027d02.png" alt="3!=6"/>, <img class="math" src="../_images/math/56390b85ef8f137819f8bbcb3fe3601f5f206c81.png" alt="4!=24"/>, ...</p>
+<li><p class="first">Write a program to calculate the factorial of a positive integer input by the user.  Recall that the factorial function is given by <img class="math" src="../_images/math/7d996612af11b34ab7b4a673f8864020d6b7ae24.png" alt="x! = x (x-1) (x-2) ... (2) (1)"/> so that <img class="math" src="../_images/math/5704a6bd9c2f670b45dabc70e2e5cf93dc742161.png" alt="1!=1"/>, <img class="math" src="../_images/math/46377b53287d0b7f76190da9e05acbd0fdedd334.png" alt="2!=2"/>, <img class="math" src="../_images/math/3920c5e3f6b2e5749cd75c3853b63ae714d00561.png" alt="3!=6"/>, <img class="math" src="../_images/math/1593463d6fb7eaeb3427e06c069fc425fb4f60d9.png" alt="4!=24"/>, ...</p>
 <ol class="loweralpha simple">
 <li>Write the factorial function using a Python <tt class="docutils literal"><span class="pre">while</span></tt> loop.</li>
 <li>Write the factorial function using a Python <tt class="docutils literal"><span class="pre">for</span></tt> loop.</li>
@@ -497,12 +499,12 @@
         <li class="right" >
           <a href="../chap5/chap5_plot.html" title="5. Plotting"
              >previous</a> |</li>
-        <li><a href="../pymanMaster.html">PyMan 0.9.25 documentation</a> &raquo;</li> 
+        <li><a href="../pymanMaster.html">PyMan 0.9.26 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
         &copy; Copyright 2014, David J. Pine.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
     </div>
   </body>
 </html>

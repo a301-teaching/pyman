@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -6,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>11. IPython Notebooks &mdash; PyMan 0.9.25 documentation</title>
+    <title>11. IPython Notebooks &mdash; PyMan 0.9.26 documentation</title>
     
     <link rel="stylesheet" href="../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +16,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '0.9.25',
+        VERSION:     '0.9.26',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +25,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="PyMan 0.9.25 documentation" href="../index.html" />
+    <link rel="top" title="PyMan 0.9.26 documentation" href="../index.html" />
     <link rel="next" title="12. Python Resources" href="../apdx3/apdx3_resources.html" />
     <link rel="prev" title="10. Installing Python" href="../apdx1/apdx1_install.html" /> 
   </head>
@@ -40,7 +42,7 @@
         <li class="right" >
           <a href="../apdx1/apdx1_install.html" title="10. Installing Python"
              accesskey="P">previous</a> |</li>
-        <li><a href="../pymanMaster.html">PyMan 0.9.25 documentation</a> &raquo;</li> 
+        <li><a href="../pymanMaster.html">PyMan 0.9.26 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -61,8 +63,7 @@
 <p>If you have installed Canopy, then you have already installed all the software you need to use IPython notebooks.  IPython notbooks are stored in files with a <tt class="docutils literal"><span class="pre">.ipynb</span></tt> extension.  To create an IPython notebook, launch the Terminal (Mac) or the Command Prompt (PC) application.  On the Mac, the Terminal application is found in the Applications/Utilies folder.  On the PC, the Command Prompt application is found under the Start/All Programs/Accessories menu.  Here we will refer the the Terminal or Command Prompt applications at the System Console.  Type <tt class="docutils literal"><span class="pre">pwd</span></tt> (Mac) or <tt class="docutils literal"><span class="pre">chdir</span></tt> (PC) to determine the current directory (folder) of the System Console.  Type <tt class="docutils literal"><span class="pre">ls</span></tt> (Mac) or <tt class="docutils literal"><span class="pre">dir</span></tt> (PC) to list all the files and subdirectories in the current directory.  Using the <tt class="docutils literal"><span class="pre">cd</span></tt> change directory command, move the System Console to the directory in which you want to store your IPython notebook.</p>
 <p>At the System Console prompt, type</p>
 <blockquote>
-<div><div class="highlight-python"><div class="highlight"><pre>ipython notebook --pylab inline
-</pre></div>
+<div><div class="highlight-python"><pre>ipython notebook --pylab inline</pre>
 </div>
 </div></blockquote>
 <p>This will launch the IPython notebook web application and will display the <a class="reference internal" href="#fig-nbdashboard"><em>IPython Notebook Dashboard</em></a> as a page in your default web browser.</p>
@@ -83,7 +84,7 @@
 <a class="reference internal image-reference" href="../_images/firstIPyNBcells.jpg"><img alt="IPython Notebook demo" src="../_images/firstIPyNBcells.jpg" style="width: 695.7px; height: 699.3px;" /></a>
 <p class="caption">IPython Notebook demo</p>
 </div>
-<p>Below the result a new IPython interactive cell appears ready for your next entry.  Because we launched IPython Notebook with the <tt class="docutils literal"><span class="pre">--pylab</span></tt> switch, NumPy and MatPlotLib are already loaded so we do not need the <tt class="docutils literal"><span class="pre">np.</span></tt> or <tt class="docutils literal"><span class="pre">plt.</span></tt> prefixes to access the functions in the NumPy and MatPlotLib libraries.  Thus, typing <tt class="docutils literal"><span class="pre">sin(pi/6.)</span></tt> and pressing <tt class="docutils literal"><span class="pre">Shift-Enter</span></tt> produces the expected result (to nearly 1 part in <img class="math" src="../_images/math/e297e127ada10e7c2045a57828969910677c3d20.png" alt="10^{16}"/>).</p>
+<p>Below the result a new IPython interactive cell appears ready for your next entry.  Because we launched IPython Notebook with the <tt class="docutils literal"><span class="pre">--pylab</span></tt> switch, NumPy and MatPlotLib are already loaded so we do not need the <tt class="docutils literal"><span class="pre">np.</span></tt> or <tt class="docutils literal"><span class="pre">plt.</span></tt> prefixes to access the functions in the NumPy and MatPlotLib libraries.  Thus, typing <tt class="docutils literal"><span class="pre">sin(pi/6.)</span></tt> and pressing <tt class="docutils literal"><span class="pre">Shift-Enter</span></tt> produces the expected result (to nearly 1 part in <img class="math" src="../_images/math/4cea7bd1fc661281c9f5422dc378614cd26ab567.png" alt="10^{16}"/>).</p>
 <p>You can also create plots in an IPython notebook.  For example, typing <tt class="docutils literal"><span class="pre">plot([1,2,3,2,3,4,3,4,5])</span></tt> and pressing <tt class="docutils literal"><span class="pre">Shift-Enter</span></tt> produces  the same plot shown in <a class="reference internal" href="../chap5/chap5_plot.html#fig-zigzagplotdemo"><em>Interactive plot window</em></a>.  The plot is produced &#8220;in line&#8221; and not in a separate window, because we used the <tt class="docutils literal"><span class="pre">inline</span></tt> switch when we launched IPython Notebook.  If you have followed along, your IPython notebook should look something like that shown in the figure <a class="reference internal" href="#fig-firstipynbcells"><em>IPython Notebook demo</em></a>.</p>
 <p>Be sure to press the <tt class="docutils literal"><span class="pre">Save</span> <span class="pre">and</span> <span class="pre">Checkpoint</span></tt> icon at the far left near the top of the IPython Notebook window from time to time to <strong>save your work</strong>.</p>
 </div>
@@ -106,19 +107,13 @@
 <p>Suppose, for example, that we want to have a title at the top of the IPython notebook we have been working with, and we want to include the name of the author of the session.  To do this, we scroll the IPython notebook back up to the top and place the cursor and click in the very first input cell, the one that contained <tt class="docutils literal"><span class="pre">2+3</span></tt>.  We then open the <tt class="docutils literal"><span class="pre">Insert</span></tt> menu near the top center of the window and click on <tt class="docutils literal"><span class="pre">Insert</span> <span class="pre">Cell</span> <span class="pre">Above</span></tt>, which opens up a new input cell above the first cell.  Next, we click on the box in the Toolbar that says <tt class="docutils literal"><span class="pre">Code</span></tt>.  A list of cell types appears: <tt class="docutils literal"><span class="pre">Code</span></tt> (currently checked), <tt class="docutils literal"><span class="pre">Markdown</span></tt>, <tt class="docutils literal"><span class="pre">Raw</span> <span class="pre">Text</span></tt>, <tt class="docutils literal"><span class="pre">Heading</span> <span class="pre">1</span></tt>, <tt class="docutils literal"><span class="pre">Heading</span> <span class="pre">2</span></tt>, ..., <tt class="docutils literal"><span class="pre">Heading</span> <span class="pre">6</span></tt>.  Select <tt class="docutils literal"><span class="pre">Heading</span> <span class="pre">1</span></tt>; immediately the <tt class="docutils literal"><span class="pre">In</span> <span class="pre">[</span> <span class="pre">]:</span></tt> prompt disappears, indicating that this box is no longer meant for inputing and executing Python code.  Type &#8220;<tt class="docutils literal"><span class="pre">Demo</span> <span class="pre">of</span> <span class="pre">IPython</span> <span class="pre">Notebook</span></tt>&#8221; and press <tt class="docutils literal"><span class="pre">Shift-Enter</span></tt> (or <tt class="docutils literal"><span class="pre">Shift-Return</span></tt>).  A heading in large print appears before the first IPython code cell.  Place the cursor back in the first Ipython code cell (<tt class="docutils literal"><span class="pre">2+3</span></tt>).  Once again, select the <tt class="docutils literal"><span class="pre">Insert</span></tt> menu and click on <tt class="docutils literal"><span class="pre">Insert</span> <span class="pre">Cell</span> <span class="pre">Above</span></tt>.  Again, click on the Toolbar that says <tt class="docutils literal"><span class="pre">Code</span></tt>, but this time select <tt class="docutils literal"><span class="pre">Heading</span> <span class="pre">2</span></tt>.  Type your name into the newly created cell and press <tt class="docutils literal"><span class="pre">Shift-Enter</span></tt>.  Your name is printed in the cell in slightly smaller print than for the previous case.</p>
 <p>You can also write comments, including mathematical expressions, into an IPython Notebook cell.  Let&#8217;s include a comment after the program we ran that calculated the cost of gasoline for a road trip.  First we place the cursor in the open formula cell below program we ran and then click on the box in the Toolbar that says <tt class="docutils literal"><span class="pre">Code</span></tt> and change it to <tt class="docutils literal"><span class="pre">Markdown</span></tt>.  Returning to the cell, we enter the text of our comment.  We can enter any text we wish, including mathematical expressions using the markup language Latex.  (If you do not already know Latex, you can get a brief introduction at these sites: <a class="reference external" href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">http://en.wikibooks.org/wiki/LaTeX/Mathematics</a> or <a class="reference external" href="ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf">ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf</a>.)  Here we enter the following text:</p>
 <blockquote>
-<div><div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6</pre></div></td><td class="code"><div class="highlight"><pre>The total distance $x$ traveled during a trip can be
+<div><div class="highlight-python"><pre>The total distance $x$ traveled during a trip can be
 obtained by integrating the velocity $v(t)$ over the
 duration $T$ of the trip:
 \begin{align}
     x = \int_0^T v(t)\, dt
-\end{align}
-</pre></div>
-</td></tr></table></div>
+\end{align}</pre>
+</div>
 </div></blockquote>
 <p>After entering the text, pressing <tt class="docutils literal"><span class="pre">Shift-Enter</span></tt> yields the result shown in <a class="reference internal" href="#fig-markdown"><em>Annotation using a Markdown cell</em></a>.</p>
 <div class="figure align-center" id="fig-markdown">
@@ -146,8 +141,7 @@ duration $T$ of the trip:
 <h2>11.8. Working with an existing IPython notebook<a class="headerlink" href="#working-with-an-existing-ipython-notebook" title="Permalink to this headline">¶</a></h2>
 <p>To work with an existing IPython notebook, open the <tt class="docutils literal"><span class="pre">Terminal</span></tt> (Mac) or <tt class="docutils literal"><span class="pre">Command</span> <span class="pre">Prompt</span></tt> (PC) application and navigate to the directory in which the notebook you want to work with resides.  Recall that IPython notebooks have the <tt class="docutils literal"><span class="pre">.ipynb</span></tt> extension.  Launch the IPython Notebook Dashboard as you did previously by issuing the command</p>
 <blockquote>
-<div><div class="highlight-python"><div class="highlight"><pre>ipython notebook --pylab inline
-</pre></div>
+<div><div class="highlight-python"><pre>ipython notebook --pylab inline</pre>
 </div>
 </div></blockquote>
 <p>This will open the IPython Notebook Dashboard in your web browser, where you should see a list of all the IPython notebooks in that directory (folder).  Click on the name of the notebook you want to open.  It will appear in a new tab on your web browser as before.</p>
@@ -216,12 +210,12 @@ duration $T$ of the trip:
         <li class="right" >
           <a href="../apdx1/apdx1_install.html" title="10. Installing Python"
              >previous</a> |</li>
-        <li><a href="../pymanMaster.html">PyMan 0.9.25 documentation</a> &raquo;</li> 
+        <li><a href="../pymanMaster.html">PyMan 0.9.26 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
         &copy; Copyright 2014, David J. Pine.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
     </div>
   </body>
 </html>

@@ -1,14 +1,14 @@
 \indexentry{Canopy!window|hyperpage}{3}
 \indexentry{Canopy!window|hyperpage}{3}
-\indexentry{Canopy!IPython pane|hyperpage}{3}
+\indexentry{Canopy!IPython pane|hyperpage}{4}
 \indexentry{IPython!Canopy IPython pane|hyperpage}{4}
 \indexentry{IPython!magic functions|hyperpage}{5}
 \indexentry{magic functions!IPython|hyperpage}{5}
 \indexentry{IPython!navigation commands|hyperpage}{5}
-\indexentry{IPython!magic commands|hyperpage}{6}
-\indexentry{IPython!system shell commands|hyperpage}{7}
-\indexentry{IPython!tab completion|hyperpage}{7}
-\indexentry{tab completion!IPython|hyperpage}{7}
+\indexentry{IPython!magic commands|hyperpage}{7}
+\indexentry{IPython!system shell commands|hyperpage}{8}
+\indexentry{IPython!tab completion|hyperpage}{8}
+\indexentry{tab completion!IPython|hyperpage}{8}
 \indexentry{integer division!Python 2 and 3 differences|hyperpage}{10}
 \indexentry{Python!module|hyperpage}{12}
 \indexentry{module!NumPy|hyperpage}{12}
@@ -24,12 +24,12 @@
 \indexentry{variable|hyperpage}{15}
 \indexentry{assignment operator|hyperpage}{15}
 \indexentry{variable names|hyperpage}{17}
-\indexentry{reserved words|hyperpage}{17}
+\indexentry{reserved words|hyperpage}{18}
 \indexentry{scripts|hyperpage}{18}
 \indexentry{programs|hyperpage}{18}
-\indexentry{Canopy!Code Editor|hyperpage}{18}
-\indexentry{Canopy!tab completion|hyperpage}{18}
-\indexentry{tab completion!Canopy|hyperpage}{18}
+\indexentry{Canopy!Code Editor|hyperpage}{19}
+\indexentry{Canopy!tab completion|hyperpage}{19}
+\indexentry{tab completion!Canopy|hyperpage}{19}
 \indexentry{line continuation|hyperpage}{22}
 \indexentry{module!importing|hyperpage}{23}
 \indexentry{array (NumPy)|hyperpage}{29}
@@ -98,12 +98,12 @@
 \indexentry{special functions|hyperpage}{159}
 \indexentry{numerical integration|hyperpage}{163}
 \indexentry{numerical integration!single integrals|hyperpage}{163}
-\indexentry{numerical integration!integrals of polynomials|hyperpage}{165}
-\indexentry{numerical integration!double integrals|hyperpage}{166}
+\indexentry{numerical integration!integrals of polynomials|hyperpage}{166}
+\indexentry{numerical integration!double integrals|hyperpage}{167}
 \indexentry{ODEs!numerical solutions|hyperpage}{168}
-\indexentry{discrete Fourier transforms|hyperpage}{171}
-\indexentry{fast Fourier transforms|hyperindexformat{\see{discrete Fourier transforms}}}{171}
-\indexentry{FFTs|hyperindexformat{\see{discrete Fourier transforms}}}{171}
+\indexentry{discrete Fourier transforms|hyperpage}{172}
+\indexentry{fast Fourier transforms|hyperindexformat{\see{discrete Fourier transforms}}}{172}
+\indexentry{FFTs|hyperindexformat{\see{discrete Fourier transforms}}}{172}
 \indexentry{linear algebra|hyperpage}{176}
 \indexentry{linear algebra!solving systems of equations|hyperpage}{176}
 \indexentry{linear algebra!eigenvalue problems|hyperpage}{178}

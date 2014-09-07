@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -6,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>3. Strings, Lists, Arrays, and Dictionaries &mdash; PyMan 0.9.25 documentation</title>
+    <title>3. Strings, Lists, Arrays, and Dictionaries &mdash; PyMan 0.9.26 documentation</title>
     
     <link rel="stylesheet" href="../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +16,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '0.9.25',
+        VERSION:     '0.9.26',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +25,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="PyMan 0.9.25 documentation" href="../index.html" />
+    <link rel="top" title="PyMan 0.9.26 documentation" href="../index.html" />
     <link rel="next" title="4. Input and Output" href="../chap4/chap4_io.html" />
     <link rel="prev" title="2. Launching Python" href="../chap2/chap2_basics.html" /> 
   </head>
@@ -40,7 +42,7 @@
         <li class="right" >
           <a href="../chap2/chap2_basics.html" title="2. Launching Python"
              accesskey="P">previous</a> |</li>
-        <li><a href="../pymanMaster.html">PyMan 0.9.25 documentation</a> &raquo;</li> 
+        <li><a href="../pymanMaster.html">PyMan 0.9.26 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -272,12 +274,12 @@
 </pre></div>
 </div>
 <p>Notice that <tt class="docutils literal"><span class="pre">b</span></tt> is an integer array, as it was created from a list of integers.  On the other hand, <tt class="docutils literal"><span class="pre">c</span></tt> is a floating point array even though only one of the elements of the list from which it was made was a floating point number.  The <tt class="docutils literal"><span class="pre">array</span></tt> function automatically promotes all of the numbers to the type of the most general entry in the list, which in this case is a floating point number. In the case that elements of the list is made up of numbers and strings, all the elements become strings when an array is formed from a list.</p>
-<p>The <strong>second</strong> way arrays can be created is using the NumPy <tt class="docutils literal"><span class="pre">linspace</span></tt> or <tt class="docutils literal"><span class="pre">logspace</span></tt> functions.  The <tt class="docutils literal"><span class="pre">linspace</span></tt> function creates an array of <img class="math" src="../_images/math/75e27f04188974063be3230dca208cd495b77ce1.png" alt="N"/> evenly spaced points between a starting point and an ending point.  The form of the function is <tt class="docutils literal"><span class="pre">linspace(start,</span> <span class="pre">stop,</span> <span class="pre">N)</span></tt>.  If the third argument <tt class="docutils literal"><span class="pre">N</span></tt> is omitted, then <tt class="docutils literal"><span class="pre">N=50</span></tt>.</p>
+<p>The <strong>second</strong> way arrays can be created is using the NumPy <tt class="docutils literal"><span class="pre">linspace</span></tt> or <tt class="docutils literal"><span class="pre">logspace</span></tt> functions.  The <tt class="docutils literal"><span class="pre">linspace</span></tt> function creates an array of <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> evenly spaced points between a starting point and an ending point.  The form of the function is <tt class="docutils literal"><span class="pre">linspace(start,</span> <span class="pre">stop,</span> <span class="pre">N)</span></tt>.  If the third argument <tt class="docutils literal"><span class="pre">N</span></tt> is omitted, then <tt class="docutils literal"><span class="pre">N=50</span></tt>.</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [6]: </span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 <span class="gr">Out[6]: </span><span class="n">array</span><span class="p">([</span>  <span class="mf">0.</span> <span class="p">,</span>  <span class="mf">2.5</span><span class="p">,</span>  <span class="mf">5.</span> <span class="p">,</span>  <span class="mf">7.5</span><span class="p">,</span> <span class="mf">10.</span> <span class="p">])</span>
 </pre></div>
 </div>
-<p>The <tt class="docutils literal"><span class="pre">linspace</span></tt> function produced 5 evenly spaced points between 0 and 10 inclusive.  NumPy also has a closely related function <tt class="docutils literal"><span class="pre">logspace</span></tt> that produces evenly spaced points on a logarithmically spaced scale.  The arguments are the same as those for <tt class="docutils literal"><span class="pre">linspace</span></tt> except that <tt class="docutils literal"><span class="pre">start</span></tt> and <tt class="docutils literal"><span class="pre">stop</span></tt> refer to a power of 10.  That is, the array starts at <img class="math" src="../_images/math/ef5ee14fee2126b0af5308c21639581ddce675a0.png" alt="10^{\mathrm{start}}"/> and ends at <img class="math" src="../_images/math/ea427057ba7e23e8d350256abcbaa29b910971e7.png" alt="10^{\mathrm{stop}}"/>.</p>
+<p>The <tt class="docutils literal"><span class="pre">linspace</span></tt> function produced 5 evenly spaced points between 0 and 10 inclusive.  NumPy also has a closely related function <tt class="docutils literal"><span class="pre">logspace</span></tt> that produces evenly spaced points on a logarithmically spaced scale.  The arguments are the same as those for <tt class="docutils literal"><span class="pre">linspace</span></tt> except that <tt class="docutils literal"><span class="pre">start</span></tt> and <tt class="docutils literal"><span class="pre">stop</span></tt> refer to a power of 10.  That is, the array starts at <img class="math" src="../_images/math/c341f7e27c647ba3049e0365dd71e638c1316240.png" alt="10^{\mathrm{start}}"/> and ends at <img class="math" src="../_images/math/9093d69b8fa56a88f60ced2fcd29674db26ef139.png" alt="10^{\mathrm{stop}}"/>.</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [7]: </span><span class="o">%</span><span class="n">precision</span> <span class="mi">1</span>       <span class="c"># display only 1 digit after decimal</span>
 <span class="gr">Out[7]: </span><span class="s">u&#39;</span><span class="si">%.1f</span><span class="s">&#39;</span>
 
@@ -285,7 +287,7 @@
 <span class="gr">Out[8]: </span><span class="n">array</span><span class="p">([</span>   <span class="mf">10.</span> <span class="p">,</span>   <span class="mf">31.6</span><span class="p">,</span>  <span class="mf">100.</span> <span class="p">,</span>  <span class="mf">316.2</span><span class="p">,</span> <span class="mf">1000.</span> <span class="p">])</span>
 </pre></div>
 </div>
-<p>The <tt class="docutils literal"><span class="pre">logspace</span></tt> function created an array with 5 points evenly spaced on a logarithmic axis starting at <img class="math" src="../_images/math/daca94515cfb4df63054985489bcd9e84c1b0f77.png" alt="10^1"/> and ending at  <img class="math" src="../_images/math/fa783a40c941809a86798f349af56396e15c1394.png" alt="10^3"/>.  The <tt class="docutils literal"><span class="pre">logspace</span></tt> function is particularly useful when you want to create a log-log plot.</p>
+<p>The <tt class="docutils literal"><span class="pre">logspace</span></tt> function created an array with 5 points evenly spaced on a logarithmic axis starting at <img class="math" src="../_images/math/84e621e9a63db47cc2b335096c2dc5fa6c514821.png" alt="10^1"/> and ending at  <img class="math" src="../_images/math/904f9084f42eb25076a2c9c06d7fb8e402fea693.png" alt="10^3"/>.  The <tt class="docutils literal"><span class="pre">logspace</span></tt> function is particularly useful when you want to create a log-log plot.</p>
 <p>The <strong>third</strong> way arrays can be created is using the NumPy <tt class="docutils literal"><span class="pre">arange</span></tt> function, which is similar to the Python <tt class="docutils literal"><span class="pre">range</span></tt> function for creating lists.  The form of the function is <tt class="docutils literal"><span class="pre">arange(start,</span> <span class="pre">stop,</span> <span class="pre">step)</span></tt>.  If the third argument is omitted <tt class="docutils literal"><span class="pre">step=1</span></tt>.  If the first and third arguments are omitted, then <tt class="docutils literal"><span class="pre">start=0</span></tt> and <tt class="docutils literal"><span class="pre">step=1</span></tt>.</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [9]: </span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 <span class="gr">Out[9]: </span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">])</span>
@@ -325,7 +327,7 @@
 <dt><tt class="docutils literal"><span class="pre">linspace(start,</span> <span class="pre">stop,</span> <span class="pre">num)</span></tt>:</dt>
 <dd>Returns <tt class="docutils literal"><span class="pre">num</span></tt> evenly spaced numbers over an interval from <tt class="docutils literal"><span class="pre">start</span></tt> to <tt class="docutils literal"><span class="pre">stop</span></tt> inclusive.  [<tt class="docutils literal"><span class="pre">num=50</span></tt> if omitted.]</dd>
 <dt><tt class="docutils literal"><span class="pre">logspace(start,</span> <span class="pre">stop,</span> <span class="pre">num)</span></tt>:</dt>
-<dd>Returns <tt class="docutils literal"><span class="pre">num</span></tt> logarithmically spaced numbers over an interval from <img class="math" src="../_images/math/ef5ee14fee2126b0af5308c21639581ddce675a0.png" alt="10^{\mathrm{start}}"/> to <img class="math" src="../_images/math/ea427057ba7e23e8d350256abcbaa29b910971e7.png" alt="10^{\mathrm{stop}}"/> inclusive.  [<tt class="docutils literal"><span class="pre">num=50</span></tt> if omitted.]</dd>
+<dd>Returns <tt class="docutils literal"><span class="pre">num</span></tt> logarithmically spaced numbers over an interval from <img class="math" src="../_images/math/c341f7e27c647ba3049e0365dd71e638c1316240.png" alt="10^{\mathrm{start}}"/> to <img class="math" src="../_images/math/9093d69b8fa56a88f60ced2fcd29674db26ef139.png" alt="10^{\mathrm{stop}}"/> inclusive.  [<tt class="docutils literal"><span class="pre">num=50</span></tt> if omitted.]</dd>
 <dt><tt class="docutils literal"><span class="pre">arange([start,]</span> <span class="pre">stop[,</span> <span class="pre">step,],</span> <span class="pre">dtype=None)</span></tt>:</dt>
 <dd>Returns data points from <tt class="docutils literal"><span class="pre">start</span></tt> to <tt class="docutils literal"><span class="pre">end</span></tt>, exclusive, evenly spaced by <tt class="docutils literal"><span class="pre">step</span></tt>.  [<tt class="docutils literal"><span class="pre">step=1</span></tt> if omitted.  <tt class="docutils literal"><span class="pre">start=0</span></tt> and <tt class="docutils literal"><span class="pre">step=1</span></tt> if both are omitted.]</dd>
 <dt><tt class="docutils literal"><span class="pre">zeros(num,</span> <span class="pre">dtype=float)</span></tt>:</dt>
@@ -387,7 +389,7 @@
 </pre></div>
 </div>
 <p>In each case, you can see that the same mathematical operations are performed individually on each element of each array.  Even fairly complex algebraic computations can be carried out this way.</p>
-<p>Let&#8217;s say you want to create an <img class="math" src="../_images/math/188c175aac0a8a9c22499336711b5d7256407254.png" alt="x"/>-<img class="math" src="../_images/math/b124ff74afb0914bb434e8fb849eb56d734412f8.png" alt="y"/> data set of <img class="math" src="../_images/math/1f80802cb7f903fc54615b5adde3c5d2dc72a17d.png" alt="y=\cos x"/> <em>vs</em>. <img class="math" src="../_images/math/188c175aac0a8a9c22499336711b5d7256407254.png" alt="x"/> over the interval from -3.14 to 3.14.  Here is how you might do it.</p>
+<p>Let&#8217;s say you want to create an <img class="math" src="../_images/math/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png" alt="x"/>-<img class="math" src="../_images/math/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png" alt="y"/> data set of <img class="math" src="../_images/math/01200e9f73b6ba7ee8eb2cb7508dcb6e675f9291.png" alt="y=\cos x"/> <em>vs</em>. <img class="math" src="../_images/math/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png" alt="x"/> over the interval from -3.14 to 3.14.  Here is how you might do it.</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [30]: </span><span class="n">x</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mf">3.14</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">,</span> <span class="mi">21</span><span class="p">)</span>
 
 <span class="gp">In [31]: </span><span class="n">y</span> <span class="o">=</span> <span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
@@ -419,7 +421,7 @@
 <span class="go">                 1.609])</span>
 </pre></div>
 </div>
-<p>We see that NumPy calculates the logarithm where it can, and returns <tt class="docutils literal"><span class="pre">nan</span></tt> (not a number) for an illegal operation, taking the logarithm of a negative number, and <tt class="docutils literal"><span class="pre">-inf</span></tt>, or <img class="math" src="../_images/math/aa451b2e35255229ee2d4ec55b492d3a06e25638.png" alt="-\infty"/> for the logarithm of zero.  The other values in the array are correctly reported.  NumPy also prints out a warning message to let you know that something untoward has occurred.</p>
+<p>We see that NumPy calculates the logarithm where it can, and returns <tt class="docutils literal"><span class="pre">nan</span></tt> (not a number) for an illegal operation, taking the logarithm of a negative number, and <tt class="docutils literal"><span class="pre">-inf</span></tt>, or <img class="math" src="../_images/math/afac538740054d4786c170ef0123850adea5cdf9.png" alt="-\infty"/> for the logarithm of zero.  The other values in the array are correctly reported.  NumPy also prints out a warning message to let you know that something untoward has occurred.</p>
 <p>Arrays can also be added, subtracted, multiplied, and divided by each other on an element-by-element basis, provided the two arrays have the same size.  Consider adding the two arrays <tt class="docutils literal"><span class="pre">a</span></tt> and <tt class="docutils literal"><span class="pre">b</span></tt> defined below:</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [36]: </span><span class="n">a</span> <span class="o">=</span> <span class="n">array</span><span class="p">([</span><span class="mf">34.</span><span class="p">,</span> <span class="o">-</span><span class="mi">12</span><span class="p">,</span> <span class="mf">5.</span><span class="p">])</span>
 
@@ -451,9 +453,9 @@
 <span class="gp">In [43]: </span><span class="n">t</span> <span class="o">=</span> <span class="n">array</span><span class="p">([</span> <span class="mf">0.</span> <span class="p">,</span> <span class="mf">0.49</span><span class="p">,</span> <span class="mf">1.</span> <span class="p">,</span> <span class="mf">1.5</span> <span class="p">,</span> <span class="mf">2.08</span><span class="p">,</span> <span class="mf">2.55</span><span class="p">,</span> <span class="mf">3.2</span> <span class="p">])</span>
 </pre></div>
 </div>
-<p>We can get find the average velocity for time interval <img class="math" src="../_images/math/a581f053bbfa5115f42c13094857cdd12a37ec49.png" alt="i"/> by the formula</p>
+<p>We can get find the average velocity for time interval <img class="math" src="../_images/math/34857b3ba74ce5cd8607f3ebd23e9015908ada71.png" alt="i"/> by the formula</p>
 <div class="math">
-<p><img src="../_images/math/10f48ce1ef98a34314e2f3e5bf077625a0ec9082.png" alt="v_i = \frac{y_i-y_{i-1}}{t_i-t_{i-1}}"/></p>
+<p><img src="../_images/math/051e5229b3203866445b3d484db0eeeb720930bb.png" alt="v_i = \frac{y_i-y_{i-1}}{t_i-t_{i-1}}"/></p>
 </div><p>We can easily calculate the entire array of of velocities using the slicing and vectorized subtraction properties of NumPy arrays by noting that we can create two <tt class="docutils literal"><span class="pre">y</span></tt> arrays displaced by one index</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [44]: </span><span class="n">y</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 <span class="gr">Out[44]: </span><span class="n">array</span><span class="p">([</span>  <span class="mf">0.</span> <span class="p">,</span>   <span class="mf">1.3</span><span class="p">,</span>   <span class="mf">5.</span> <span class="p">,</span>  <span class="mf">10.9</span><span class="p">,</span>  <span class="mf">18.9</span><span class="p">,</span>  <span class="mf">28.7</span><span class="p">])</span>
@@ -497,7 +499,7 @@
 </pre></div>
 </div>
 <p>Notice the syntax used above in which two one-dimensional lists <tt class="docutils literal"><span class="pre">[1.,</span> <span class="pre">4,</span> <span class="pre">5]</span></tt> and <tt class="docutils literal"><span class="pre">[9,</span> <span class="pre">7,</span> <span class="pre">4]</span></tt> are enclosed in square brackets to make a two-dimensional list.  The <tt class="docutils literal"><span class="pre">array</span></tt> function converts the two-dimensional list, a structure we introduced earlier, to a two-dimensional array.  When it makes the conversion from a list to an array, the array function makes all the elements have the same data type as the most complex entry, in this case a float.  This points out an important difference between NumPy arrays and lists: all elements of a NumPy array must be of the same data type: floats, or integers, or complex numbers, <em>etc</em>.</p>
-<p>There are a number of other functions for creating arrays.  For example, a 3 row by 4 column array or <img class="math" src="../_images/math/01d7db7017d247bc97370423d2bbef791ddf90ac.png" alt="3 \times 4"/> array with all the elements filled with 1 can be created using the <tt class="docutils literal"><span class="pre">ones</span></tt> function introduced earlier.</p>
+<p>There are a number of other functions for creating arrays.  For example, a 3 row by 4 column array or <img class="math" src="../_images/math/9f3f04882ae10c114ebe301c72ee68990d97c48e.png" alt="3 \times 4"/> array with all the elements filled with 1 can be created using the <tt class="docutils literal"><span class="pre">ones</span></tt> function introduced earlier.</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [53]: </span><span class="n">a</span> <span class="o">=</span> <span class="n">ones</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
 
 <span class="gp">In [54]: </span><span class="n">a</span>
@@ -507,7 +509,7 @@
 </pre></div>
 </div>
 <p>Using a tuple to specify the size of the array in the first argument of the <tt class="docutils literal"><span class="pre">ones</span></tt> function creates a multidimensional array, in this case a two-dimensional array with the two elements of the tuple specifying the number of rows and columns, respectively.  The <tt class="docutils literal"><span class="pre">zeros</span></tt> function can be used in the same way to create a matrix or other multidimensional array of zeros.</p>
-<p>The <tt class="docutils literal"><span class="pre">eye(N)</span></tt> function creates an <img class="math" src="../_images/math/e124387baa3fb78556702e7e00266ce1954002e0.png" alt="N \times N"/> two-dimensional identity matrix with ones along the diagonal:</p>
+<p>The <tt class="docutils literal"><span class="pre">eye(N)</span></tt> function creates an <img class="math" src="../_images/math/cb21db0177b65427c9c7fb7bd9183d242bdbcb1f.png" alt="N \times N"/> two-dimensional identity matrix with ones along the diagonal:</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [55]: </span><span class="n">eye</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
 <span class="gr">Out[55]: </span><span class="n">array</span><span class="p">([[</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">],</span>
 <span class="go">                [ 0., 1., 0., 0.],</span>
@@ -515,7 +517,7 @@
 <span class="go">                [ 0., 0., 0., 1.]])</span>
 </pre></div>
 </div>
-<p>Multidimensional arrays can also be created from one-dimensional arrays using the <tt class="docutils literal"><span class="pre">reshape</span></tt> function.  For example, a <img class="math" src="../_images/math/27eabaef4eb60c2f5ecd4c6b0b8c0ce902851417.png" alt="2 \times 3"/> array can be created as follows:</p>
+<p>Multidimensional arrays can also be created from one-dimensional arrays using the <tt class="docutils literal"><span class="pre">reshape</span></tt> function.  For example, a <img class="math" src="../_images/math/a832b76c4f4a4ec13ac1b557da4fed6006e64d00.png" alt="2 \times 3"/> array can be created as follows:</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [56]: </span><span class="n">c</span> <span class="o">=</span> <span class="n">arange</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
 
 <span class="gp">In [57]: </span><span class="n">c</span>
@@ -682,7 +684,7 @@
 </pre></div>
 </div>
 <p>If <tt class="docutils literal"><span class="pre">rand</span></tt> has no argument, a single random number is generated.  Otherwise, the argument specifies the number of size of the array of random numbers that is created.</p>
-<p>If you want random numbers uniformly distributed over some other interval, say from <img class="math" src="../_images/math/7dd2a5ea01fbd72ad2a58dd1f3d6ecbfde6208a1.png" alt="a"/> to <img class="math" src="../_images/math/5e87bf41a96deddf6cb485ff530f153f2590e9cc.png" alt="b"/>, then you can do that simply by stretching the interval so that it has a width of <img class="math" src="../_images/math/7aeaec9eafc1c8bea5ed256fc246d18f9e00edce.png" alt="b-a"/> and displacing the lower limit from 0 to <img class="math" src="../_images/math/7dd2a5ea01fbd72ad2a58dd1f3d6ecbfde6208a1.png" alt="a"/>.  The following statements produce random numbers uniformly distributed from 10 to 20:</p>
+<p>If you want random numbers uniformly distributed over some other interval, say from <img class="math" src="../_images/math/c7d457e388298246adb06c587bccd419ea67f7e8.png" alt="a"/> to <img class="math" src="../_images/math/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png" alt="b"/>, then you can do that simply by stretching the interval so that it has a width of <img class="math" src="../_images/math/02c60c151331e235dc6d9df7ca403b6f0c9af39b.png" alt="b-a"/> and displacing the lower limit from 0 to <img class="math" src="../_images/math/c7d457e388298246adb06c587bccd419ea67f7e8.png" alt="a"/>.  The following statements produce random numbers uniformly distributed from 10 to 20:</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [3]: </span><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span>
 
 <span class="gp">In [4]: </span><span class="p">(</span><span class="n">b</span><span class="o">-</span><span class="n">a</span><span class="p">)</span><span class="o">*</span><span class="n">rand</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="o">+</span> <span class="n">a</span>
@@ -700,13 +702,13 @@
 <h3>3.5.2. Normally distributed random numbers<a class="headerlink" href="#normally-distributed-random-numbers" title="Permalink to this headline">¶</a></h3>
 <p>The function <tt class="docutils literal"><span class="pre">randn(num)</span></tt> produces a <em>normal</em> or <em>Gaussian</em> distribution of <tt class="docutils literal"><span class="pre">num</span></tt> random numbers with a mean of 0 and a standard deviation of 1.  That is, they are distributed according to</p>
 <div class="math">
-<p><img src="../_images/math/16c1193ba9102b76648e232248361f79fa96e672.png" alt="P(x) = \frac{1}{\sqrt{2\pi}} e^{-\frac{1}{2}x^2} \;."/></p>
+<p><img src="../_images/math/23ac899dbaf777ad47f6dc854b26b8892576e51a.png" alt="P(x) = \frac{1}{\sqrt{2\pi}} e^{-\frac{1}{2}x^2} \;."/></p>
 </div><p>The figure below shows histograms for the distributions of 10,000 random numbers generated by the <tt class="docutils literal"><span class="pre">np.random.rand</span></tt> (blue) and <tt class="docutils literal"><span class="pre">np.random.randn</span></tt> (green) functions.  As advertised, the <tt class="docutils literal"><span class="pre">np.random.rand</span></tt> function produces an array of random numbers that is uniformly distributed between the values of 0 and 1, while <tt class="docutils literal"><span class="pre">np.random.randn</span></tt> function produces an array of random numbers that follows a distribution of mean 0 and standard deviation 1.</p>
 <div class="figure align-center" id="fig-randhistos">
 <a class="reference internal image-reference" href="../_images/randhistos.png"><img alt="Histograms of random numbers." src="../_images/randhistos.png" style="width: 640.0px; height: 400.0px;" /></a>
 <p class="caption">Histograms of random numbers.</p>
 </div>
-<p>If we want a random numbers with a Gaussian distribution of width <img class="math" src="../_images/math/2298cf1485084afe72757a9c8483af49a138d81f.png" alt="\sigma"/> centered about <img class="math" src="../_images/math/c3c08496f07567285212e468b173bea9ca153fab.png" alt="x_0"/>, we stretch the interval by a factor of <img class="math" src="../_images/math/2298cf1485084afe72757a9c8483af49a138d81f.png" alt="\sigma"/> and displace it by <img class="math" src="../_images/math/c3c08496f07567285212e468b173bea9ca153fab.png" alt="x_0"/>.  The following code produces 20 random numbers normally distributed around 15 with a width of 10:</p>
+<p>If we want a random numbers with a Gaussian distribution of width <img class="math" src="../_images/math/fa35d9fc104207e09a712110ac81612c5b279a6c.png" alt="\sigma"/> centered about <img class="math" src="../_images/math/17f1249ad95b7682b8316ad21de8ce4ee9fdcf93.png" alt="x_0"/>, we stretch the interval by a factor of <img class="math" src="../_images/math/fa35d9fc104207e09a712110ac81612c5b279a6c.png" alt="\sigma"/> and displace it by <img class="math" src="../_images/math/17f1249ad95b7682b8316ad21de8ce4ee9fdcf93.png" alt="x_0"/>.  The following code produces 20 random numbers normally distributed around 15 with a width of 10:</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [5]: </span><span class="n">x0</span><span class="p">,</span> <span class="n">sigma</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">10</span>
 
 <span class="gp">In [6]: </span><span class="n">sigma</span><span class="o">*</span><span class="n">randn</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="o">+</span> <span class="n">x0</span>
@@ -761,19 +763,19 @@
 </li>
 <li><p class="first">Create the following arrays:</p>
 <ol class="loweralpha simple">
-<li>an array of 100 elements all equal to <img class="math" src="../_images/math/630e3a780577ea7921e81ee2ac5237dd1802ec8d.png" alt="e"/>, the base of the natural logarithm;</li>
+<li>an array of 100 elements all equal to <img class="math" src="../_images/math/a3a59bb1293ee3f6dec19de4019a7178874219ae.png" alt="e"/>, the base of the natural logarithm;</li>
 <li>an array in 1-degree increments of all the angles in degrees from 0 to 360 degrees;</li>
 <li>an array in 1-degree increments of all the angles in radians from 0 to 360 degrees;</li>
 <li>an array from 12 to 17, not including 17, in 0.2 increments;</li>
 <li>an array from 12 to 17, including 17, in 0.2 increments.</li>
 </ol>
 </li>
-<li><p class="first">The position of a ball at time <img class="math" src="../_images/math/ef9270877405055756d345facd044e4ab297f858.png" alt="t"/> dropped with zero initial velocity from a height <img class="math" src="../_images/math/fda7c606710a3011192999c39b6c862d9db414d6.png" alt="h_0"/> is given by</p>
+<li><p class="first">The position of a ball at time <img class="math" src="../_images/math/e0d2bf360290fd61d1c1557e763f2622363b3d35.png" alt="t"/> dropped with zero initial velocity from a height <img class="math" src="../_images/math/2ccfe97aad19720278a939bedb093af63f8ec959.png" alt="h_0"/> is given by</p>
 <div class="math">
-<p><img src="../_images/math/e359027c3755ea3b9879674910394f5463218191.png" alt="y = h_0 - \tfrac{1}{2}gt^2"/></p>
-</div><p>where <img class="math" src="../_images/math/bd1b8aa6f7014e3cfafa921e4185f9a43498711f.png" alt="g=9.8~\mathrm{m/s}^2"/>.  Suppose <img class="math" src="../_images/math/3e3afcee9cf1f974c37597690455d0397b658671.png" alt="h_0=10~\mathrm{m}"/>.  Find the sequence of times when the ball passes each half meter assuming the ball is dropped at <img class="math" src="../_images/math/4e2677b4edfbb85a135b7807d780a44ffa83f052.png" alt="t=0"/>.  Hint: Create a NumPy array for <img class="math" src="../_images/math/b124ff74afb0914bb434e8fb849eb56d734412f8.png" alt="y"/> that goes from 10 to 0 in increments of -0.5 using the <tt class="docutils literal"><span class="pre">arange</span></tt> function.  Solving the above equation for <img class="math" src="../_images/math/ef9270877405055756d345facd044e4ab297f858.png" alt="t"/>, show that</p>
+<p><img src="../_images/math/a3fa0ec87f58e0d265a27b92672760b460953d2c.png" alt="y = h_0 - \tfrac{1}{2}gt^2"/></p>
+</div><p>where <img class="math" src="../_images/math/22d4e834032d13c96d0781506c554aa12160534d.png" alt="g=9.8~\mathrm{m/s}^2"/>.  Suppose <img class="math" src="../_images/math/a89b1e0e55db2c23add81ecc02bf79282bd0018b.png" alt="h_0=10~\mathrm{m}"/>.  Find the sequence of times when the ball passes each half meter assuming the ball is dropped at <img class="math" src="../_images/math/5a607fd61885c014512c949fee18869690330407.png" alt="t=0"/>.  Hint: Create a NumPy array for <img class="math" src="../_images/math/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png" alt="y"/> that goes from 10 to 0 in increments of -0.5 using the <tt class="docutils literal"><span class="pre">arange</span></tt> function.  Solving the above equation for <img class="math" src="../_images/math/e0d2bf360290fd61d1c1557e763f2622363b3d35.png" alt="t"/>, show that</p>
 <div class="math">
-<p><img src="../_images/math/43cdc4bf5f1c2cb509ab124c1406c37697e7aaa9.png" alt="t = \sqrt{\frac{2(h_0-y)}{g}} \;."/></p>
+<p><img src="../_images/math/62a007c733f7779ea812572d036b416065b2faae.png" alt="t = \sqrt{\frac{2(h_0-y)}{g}} \;."/></p>
 </div><p>Using this equation and the array you created, find the sequence of times when the ball passes each half meter.  Save your code as a Python script.  It should yield the following results for the <tt class="docutils literal"><span class="pre">y</span></tt> and <tt class="docutils literal"><span class="pre">t</span></tt> arrays:</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [2]: </span><span class="n">y</span>
 <span class="gr">Out[2]: </span><span class="n">array</span><span class="p">([</span><span class="mf">10.</span> <span class="p">,</span> <span class="mf">9.5</span><span class="p">,</span> <span class="mf">9.</span> <span class="p">,</span> <span class="mf">8.5</span><span class="p">,</span> <span class="mf">8.</span> <span class="p">,</span> <span class="mf">7.5</span><span class="p">,</span> <span class="mf">7.</span> <span class="p">,</span> <span class="mf">6.5</span><span class="p">,</span>
@@ -791,7 +793,7 @@
 </pre></div>
 </div>
 </li>
-<li><p class="first">Recalling that the average velocity over an interval <img class="math" src="../_images/math/5b4271afe7fc7c0ee84172e0ad19b82caf450c00.png" alt="\Delta t"/> is defined as <img class="math" src="../_images/math/32389d52f73e04ed2c9ea1ff7d0c99c9caab3d8f.png" alt="\bar{v} = \Delta y/\Delta t"/>, find the average velocity for each time interval in the previous problem using NumPy arrays.  Keep in mind that the number of time intervals is one less than the number of times.  Hint: What are the arrays <tt class="docutils literal"><span class="pre">y[1:20]</span></tt> and <tt class="docutils literal"><span class="pre">y[0:19]</span></tt>?  What does the array <tt class="docutils literal"><span class="pre">y[1:20]-y[0:19]</span></tt> represent?  (Try printing out the two arrays from the IPython shell.) Using this last array and a similar one involving time, find the array of average velocities.  Bonus: Can you think of a more elegant way of representing <tt class="docutils literal"><span class="pre">y[1:20]-y[0:19]</span></tt> that does not make explicit reference to the number of elements in the <tt class="docutils literal"><span class="pre">y</span></tt> array&#8212;one that would work for any length array?</p>
+<li><p class="first">Recalling that the average velocity over an interval <img class="math" src="../_images/math/a1ffc0a012620941fe660cedabff822ce7162eca.png" alt="\Delta t"/> is defined as <img class="math" src="../_images/math/66a8b21e55e303c28f9e7ee82c34f409c822dcf6.png" alt="\bar{v} = \Delta y/\Delta t"/>, find the average velocity for each time interval in the previous problem using NumPy arrays.  Keep in mind that the number of time intervals is one less than the number of times.  Hint: What are the arrays <tt class="docutils literal"><span class="pre">y[1:20]</span></tt> and <tt class="docutils literal"><span class="pre">y[0:19]</span></tt>?  What does the array <tt class="docutils literal"><span class="pre">y[1:20]-y[0:19]</span></tt> represent?  (Try printing out the two arrays from the IPython shell.) Using this last array and a similar one involving time, find the array of average velocities.  Bonus: Can you think of a more elegant way of representing <tt class="docutils literal"><span class="pre">y[1:20]-y[0:19]</span></tt> that does not make explicit reference to the number of elements in the <tt class="docutils literal"><span class="pre">y</span></tt> array&#8212;one that would work for any length array?</p>
 </li>
 </ol>
 <blockquote>
@@ -895,12 +897,12 @@
         <li class="right" >
           <a href="../chap2/chap2_basics.html" title="2. Launching Python"
              >previous</a> |</li>
-        <li><a href="../pymanMaster.html">PyMan 0.9.25 documentation</a> &raquo;</li> 
+        <li><a href="../pymanMaster.html">PyMan 0.9.26 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
         &copy; Copyright 2014, David J. Pine.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
     </div>
   </body>
 </html>
