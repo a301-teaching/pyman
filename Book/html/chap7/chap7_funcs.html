@@ -6,15 +6,15 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>7. Functions &mdash; PyMan 0.9.27 documentation</title>
+    <title>7. Functions &mdash; PyMan 0.9.28 documentation</title>
     
-    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/agogo.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '0.9.27',
+        VERSION:     '0.9.28',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,28 +23,30 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="PyMan 0.9.27 documentation" href="../index.html" />
+    <link rel="top" title="PyMan 0.9.28 documentation" href="../index.html" />
     <link rel="next" title="8. Curve Fitting" href="../chap8/chap8_fitting.html" />
     <link rel="prev" title="6. Conditionals and Loops" href="../chap6/chap6_loopsconds.html" /> 
   </head>
   <body>
-    <div class="related">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="../chap8/chap8_fitting.html" title="8. Curve Fitting"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
+    <div class="header-wrapper">
+      <div class="header">
+        <div class="headertitle"><a
+          href="../pymanMaster.html">PyMan 0.9.28 documentation</a></div>
+        <div class="rel">
           <a href="../chap6/chap6_loopsconds.html" title="6. Conditionals and Loops"
-             accesskey="P">previous</a> |</li>
-        <li><a href="../pymanMaster.html">PyMan 0.9.27 documentation</a> &raquo;</li> 
-      </ul>
-    </div>  
+             accesskey="P">previous</a> |
+          <a href="../chap8/chap8_fitting.html" title="8. Curve Fitting"
+             accesskey="N">next</a> |
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a>
+        </div>
+       </div>
+    </div>
 
-    <div class="document">
+    <div class="content-wrapper">
+      <div class="content">
+        <div class="document">
+            
       <div class="documentwrapper">
         <div class="bodywrapper">
           <div class="body">
@@ -748,85 +750,70 @@ time (s)   velocity (m/s)   uncertainty (m/s)
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="../pymanMaster.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">7. Functions</a><ul>
-<li><a class="reference internal" href="#user-defined-functions">7.1. User-defined functions</a><ul>
-<li><a class="reference internal" href="#looping-over-arrays-in-user-defined-functions">7.1.1. Looping over arrays in user-defined functions</a></li>
-<li><a class="reference internal" href="#fast-array-processing-in-user-defined-functions">7.1.2. Fast array processing in user-defined functions</a><ul>
-<li><a class="reference internal" href="#the-moral-of-the-story">7.1.2.1. The moral of the story</a></li>
+        </div>
+        <div class="sidebar">
+          <h3>Table Of Contents</h3>
+          <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../chap1/chap1_intro.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chap2/chap2_basics.html">2. Launching Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chap3/chap3_arrays.html">3. Strings, Lists, Arrays, and Dictionaries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chap4/chap4_io.html">4. Input and Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chap5/chap5_plot.html">5. Plotting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chap6/chap6_loopsconds.html">6. Conditionals and Loops</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">7. Functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#user-defined-functions">7.1. User-defined functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#methods-and-attributes">7.2. Methods and attributes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example-linear-least-squares-fitting">7.3. Example: linear least squares fitting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#anonymous-functions-lambda">7.4. Anonymous functions (lambda)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exercises">7.5. Exercises</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#functions-with-more-or-less-than-one-input-or-output">7.1.3. Functions with more (or less) than one input or output</a></li>
-<li><a class="reference internal" href="#positional-and-keyword-arguments">7.1.4. Positional and keyword arguments</a></li>
-<li><a class="reference internal" href="#variable-number-of-arguments">7.1.5. Variable number of arguments</a></li>
-<li><a class="reference internal" href="#passing-data-to-and-from-functions">7.1.6. Passing data to and from functions</a><ul>
-<li><a class="reference internal" href="#variables-and-arrays-created-entirely-within-a-function">7.1.6.1. Variables and arrays created entirely within a function</a></li>
-<li><a class="reference internal" href="#passing-variables-and-arrays-to-functions-mutable-and-immutable-objects">7.1.6.2. Passing variables and arrays to functions: mutable and immutable objects</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#methods-and-attributes">7.2. Methods and attributes</a></li>
-<li><a class="reference internal" href="#example-linear-least-squares-fitting">7.3. Example: linear least squares fitting</a><ul>
-<li><a class="reference internal" href="#linear-regression">7.3.1. Linear regression</a></li>
-<li><a class="reference internal" href="#linear-regression-with-weighting">7.3.2. Linear regression with weighting: <img class="math" src="../_images/math/8bd0685e3bf9101859d24cf0e851651f182364c9.png" alt="\chi^2"/></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#anonymous-functions-lambda">7.4. Anonymous functions (lambda)</a></li>
-<li><a class="reference internal" href="#exercises">7.5. Exercises</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../chap8/chap8_fitting.html">8. Curve Fitting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chap9/chap9_scipy.html">9. Numerical Routines: SciPy and NumPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apdx1/apdx1_install.html">10. Installing Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apdx2/apdx2_ipynb.html">11. IPython Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apdx3/apdx3_resources.html">12. Python Resources</a></li>
 </ul>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="../chap6/chap6_loopsconds.html"
-                        title="previous chapter">6. Conditionals and Loops</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="../chap8/chap8_fitting.html"
-                        title="next chapter">8. Curve Fitting</a></p>
-  <h3>This Page</h3>
-  <ul class="this-page-menu">
-    <li><a href="../_sources/chap7/chap7_funcs.txt"
-           rel="nofollow">Show Source</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
-  <h3>Quick search</h3>
-    <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+          <h3 style="margin-top: 1.5em;">Search</h3>
+          <form class="search" action="../search.html" method="get">
+            <input type="text" name="q" />
+            <input type="submit" value="Go" />
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+          </form>
+          <p class="searchtip" style="font-size: 90%">
+            Enter search terms or a module, class or function name.
+          </p>
         </div>
+        <div class="clearer"></div>
       </div>
-      <div class="clearer"></div>
     </div>
-    <div class="related">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="../chap8/chap8_fitting.html" title="8. Curve Fitting"
-             >next</a> |</li>
-        <li class="right" >
+
+    <div class="footer-wrapper">
+      <div class="footer">
+        <div class="left">
           <a href="../chap6/chap6_loopsconds.html" title="6. Conditionals and Loops"
-             >previous</a> |</li>
-        <li><a href="../pymanMaster.html">PyMan 0.9.27 documentation</a> &raquo;</li> 
-      </ul>
-    </div>
+             >previous</a> |
+          <a href="../chap8/chap8_fitting.html" title="8. Curve Fitting"
+             >next</a> |
+          <a href="../genindex.html" title="General Index"
+             >index</a>
+            <br/>
+            <a href="../_sources/chap7/chap7_funcs.txt"
+               rel="nofollow">Show Source</a>
+        </div>
+
+        <div class="right">
+          
     <div class="footer">
         &copy; Copyright 2014, David J. Pine.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
     </div>
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+
   </body>
 </html>
