@@ -8,3 +8,5 @@ This book is aimed at undergradate science students who want to learn Python for
 
 
 [Download PDF file of the book](https://github.com/djpine/pyman/blob/master/Book/latex/PyMan.pdf?raw=true)
+
+[Web version](http://www.physics.nyu.edu/pine/pymanual/html/pymanMaster.html)
