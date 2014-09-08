@@ -7,15 +7,15 @@
 \contentsline {section}{\numberline {2.3}The Interactive Python Pane}{4}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Magic Functions}{5}{subsection.2.3.1}
 \contentsline {subsubsection}{Navigation Commands}{5}{subsubsection*.3}
-\contentsline {subsubsection}{More Magic Commands}{7}{subsubsection*.4}
-\contentsline {subsection}{\numberline {2.3.2}System shell commands}{8}{subsection.2.3.2}
+\contentsline {subsubsection}{More Magic Commands}{6}{subsubsection*.4}
+\contentsline {subsection}{\numberline {2.3.2}System shell commands}{7}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Tab completion}{8}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Recap of commands}{8}{subsection.2.3.4}
 \contentsline {section}{\numberline {2.4}Interactive Python as a calculator}{9}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Binary arithmetic operations in Python}{10}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.1}Binary arithmetic operations in Python}{9}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Types of numbers}{10}{subsection.2.4.2}
 \contentsline {section}{\numberline {2.5}Python Modules}{12}{section.2.5}
-\contentsline {section}{\numberline {2.6}Python functions: a first look}{14}{section.2.6}
+\contentsline {section}{\numberline {2.6}Python functions: a first look}{13}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}Some NumPy functions}{14}{subsection.2.6.1}
 \contentsline {subsection}{\numberline {2.6.2}Keyword arguments}{15}{subsection.2.6.2}
 \contentsline {section}{\numberline {2.7}Variables}{15}{section.2.7}
@@ -24,11 +24,11 @@
 \contentsline {subsection}{\numberline {2.7.3}Reserved words in Python}{18}{subsection.2.7.3}
 \contentsline {section}{\numberline {2.8}Script files and programs}{18}{section.2.8}
 \contentsline {subsection}{\numberline {2.8.1}Scripting Example 1}{19}{subsection.2.8.1}
-\contentsline {subsubsection}{Note about printing}{21}{subsubsection*.5}
+\contentsline {subsubsection}{Note about printing}{20}{subsubsection*.5}
 \contentsline {subsection}{\numberline {2.8.2}Scripting Example 2}{21}{subsection.2.8.2}
-\contentsline {subsubsection}{Line continuation}{23}{subsubsection*.6}
+\contentsline {subsubsection}{Line continuation}{22}{subsubsection*.6}
 \contentsline {section}{\numberline {2.9}Importing Modules}{23}{section.2.9}
-\contentsline {section}{\numberline {2.10}Getting help: documentation in IPython shell}{25}{section.2.10}
+\contentsline {section}{\numberline {2.10}Getting help: documentation in IPython shell}{24}{section.2.10}
 \contentsline {section}{\numberline {2.11}Programming is a detail-oriented activity}{25}{section.2.11}
 \contentsline {section}{\numberline {2.12}Exercises}{26}{section.2.12}
 \contentsline {chapter}{\numberline {3}Strings, Lists, Arrays, and Dictionaries}{29}{chapter.3}
@@ -109,7 +109,7 @@
 \contentsline {section}{\numberline {7.2}Methods and attributes}{129}{section.7.2}
 \contentsline {section}{\numberline {7.3}Example: linear least squares fitting}{130}{section.7.3}
 \contentsline {subsection}{\numberline {7.3.1}Linear regression}{132}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Linear regression with weighting: $\chi ^2$}{134}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.2}Linear regression with weighting: \relax $\chi ^2\relax \GenericError { }{LaTeX Error: Bad math environment delimiter}{See the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}}{134}{subsection.7.3.2}
 \contentsline {section}{\numberline {7.4}Anonymous functions (lambda)}{135}{section.7.4}
 \contentsline {section}{\numberline {7.5}Exercises}{138}{section.7.5}
 \contentsline {chapter}{\numberline {8}Curve Fitting}{143}{chapter.8}
@@ -119,10 +119,10 @@
 \contentsline {section}{\numberline {8.2}Nonlinear fitting}{148}{section.8.2}
 \contentsline {section}{\numberline {8.3}Exercises}{155}{section.8.3}
 \contentsline {chapter}{\numberline {9}Numerical Routines: SciPy and NumPy}{159}{chapter.9}
-\contentsline {section}{\numberline {9.1}Special functions}{160}{section.9.1}
+\contentsline {section}{\numberline {9.1}Special functions}{159}{section.9.1}
 \contentsline {section}{\numberline {9.2}Numerical integration}{163}{section.9.2}
-\contentsline {subsection}{\numberline {9.2.1}Single integrals}{164}{subsection.9.2.1}
-\contentsline {subsubsection}{Integrating polynomials}{166}{subsubsection*.47}
+\contentsline {subsection}{\numberline {9.2.1}Single integrals}{163}{subsection.9.2.1}
+\contentsline {subsubsection}{Integrating polynomials}{165}{subsubsection*.47}
 \contentsline {subsection}{\numberline {9.2.2}Double integrals}{167}{subsection.9.2.2}
 \contentsline {subsubsection}{Other integration routines}{168}{subsubsection*.48}
 \contentsline {section}{\numberline {9.3}Solving ODEs}{168}{section.9.3}
@@ -137,7 +137,7 @@
 \contentsline {subsubsection}{Hermitian and banded matrices}{180}{subsubsection*.54}
 \contentsline {section}{\numberline {9.6}Solving non-linear equations}{180}{section.9.6}
 \contentsline {subsection}{\numberline {9.6.1}Single equations of a single variable}{180}{subsection.9.6.1}
-\contentsline {subsubsection}{Brent method}{181}{subsubsection*.55}
+\contentsline {subsubsection}{Brent method}{182}{subsubsection*.55}
 \contentsline {subsubsection}{Other methods for solving equations of a single variable}{184}{subsubsection*.56}
 \contentsline {subsection}{\numberline {9.6.2}Solving systems of nonlinear equations}{184}{subsection.9.6.2}
 \contentsline {section}{\numberline {9.7}Exercises}{185}{section.9.7}
@@ -149,7 +149,7 @@
 \contentsline {section}{\numberline {B.2}Installing and launching an IPython notebook}{191}{section.B.2}
 \contentsline {section}{\numberline {B.3}Using an IPython Notebook}{193}{section.B.3}
 \contentsline {section}{\numberline {B.4}Running programs in an IPython Notebook}{195}{section.B.4}
-\contentsline {section}{\numberline {B.5}Annotating an IPython Notebook}{196}{section.B.5}
+\contentsline {section}{\numberline {B.5}Annotating an IPython Notebook}{195}{section.B.5}
 \contentsline {section}{\numberline {B.6}Editing and rerunning a notebook}{198}{section.B.6}
 \contentsline {section}{\numberline {B.7}Quitting an IPython notebook}{199}{section.B.7}
 \contentsline {section}{\numberline {B.8}Working with an existing IPython notebook}{199}{section.B.8}

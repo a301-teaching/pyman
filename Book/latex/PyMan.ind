@@ -11,11 +11,11 @@
   \indexspace
 
   \item Canopy
-    \subitem Code Editor, \hyperpage{19}
+    \subitem Code Editor, \hyperpage{18}
     \subitem installing Python, \hyperpage{187}
-    \subitem IPython pane, \hyperpage{4}
+    \subitem IPython pane, \hyperpage{3}
     \subitem resources, \hyperpage{202}
-    \subitem tab completion, \hyperpage{19}
+    \subitem tab completion, \hyperpage{18}
     \subitem window, \hyperpage{3}
   \item conditionals, \hyperpage{99}
     \subitem applied to arrays, \hyperpage{119}
@@ -30,13 +30,13 @@
   \indexspace
 
   \item dictionary, \hyperpage{29}, \hyperpage{46}
-  \item discrete Fourier transforms, \hyperpage{172}
+  \item discrete Fourier transforms, \hyperpage{171}
 
   \indexspace
 
   \item fast Fourier transforms, 
-		\hyperindexformat{\see{discrete Fourier transforms}}{172}
-  \item FFTs, \hyperindexformat{\see{discrete Fourier transforms}}{172}
+		\hyperindexformat{\see{discrete Fourier transforms}}{171}
+  \item FFTs, \hyperindexformat{\see{discrete Fourier transforms}}{171}
   \item functions
     \subitem arguments
       \subsubitem **kwargs, \hyperpage{122}
@@ -62,11 +62,11 @@
   \item IPython
     \subitem Canopy IPython pane, \hyperpage{4}
     \subitem IPython Notebook, \hyperpage{189}
-    \subitem magic commands, \hyperpage{7}
+    \subitem magic commands, \hyperpage{6}
     \subitem magic functions, \hyperpage{5}
     \subitem navigation commands, \hyperpage{5}
-    \subitem system shell commands, \hyperpage{8}
-    \subitem tab completion, \hyperpage{8}
+    \subitem system shell commands, \hyperpage{7}
+    \subitem tab completion, \hyperpage{7}
 
   \indexspace
 
@@ -116,8 +116,8 @@
     \subitem solving, \hyperpage{180}
     \subitem systems of nonlinear equations, \hyperpage{184}
   \item numerical integration, \hyperpage{163}
-    \subitem double integrals, \hyperpage{167}
-    \subitem integrals of polynomials, \hyperpage{166}
+    \subitem double integrals, \hyperpage{166}
+    \subitem integrals of polynomials, \hyperpage{165}
     \subitem single integrals, \hyperpage{163}
   \item NumPy
     \subitem array, \hyperpage{35}
@@ -153,7 +153,7 @@
   \indexspace
 
   \item random numbers, \hyperpage{48}
-  \item reserved words, \hyperpage{18}
+  \item reserved words, \hyperpage{17}
   \item roots of equations, 
 		\hyperindexformat{\see{non-linear equations}}{180}
 
@@ -174,8 +174,8 @@
   \indexspace
 
   \item tab completion
-    \subitem Canopy, \hyperpage{19}
-    \subitem IPython, \hyperpage{8}
+    \subitem Canopy, \hyperpage{18}
+    \subitem IPython, \hyperpage{7}
 
   \indexspace
 
