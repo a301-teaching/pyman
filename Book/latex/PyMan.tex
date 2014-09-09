@@ -116,6 +116,8 @@
 \def\PYGZrb{]}
 \makeatother
 
+\renewcommand\PYGZsq{\textquotesingle}
+
 \begin{document}
 
 \maketitle
@@ -2483,14 +2485,16 @@ Finally you should remember that \code{loadtxt} is a NumPy function.  So if you 
 
 
 \subsection{Reading data from a CSV file}
-\label{chap4/chap4_io:reading-data-from-a-csv-file}\begin{figure}[htbp]
+\label{chap4/chap4_io:reading-data-from-a-csv-file}
+Sometimes you have data stored in a spreadsheet program like Excel that you would like to read into a Python program.  The {\hyperref[chap4/chap4_io:fig-excelwindow]{\emph{Excel data sheet}}} shown here contains the same data set we saw above in a text file.
+\begin{figure}[htbp]
 \centering
 \capstart
 
 \scalebox{0.650000}{\includegraphics{ExcelDataFile.png}}
 \caption{Excel data sheet}\label{chap4/chap4_io:fig-excelwindow}\end{figure}
 
-Sometimes you have data stored in a spreadsheet program like Excel that you would like to read into a Python program.  The {\hyperref[chap4/chap4_io:fig-excelwindow]{\emph{Excel data sheet}}} shown below contains the same data set we saw above in a text file.  While there are a number of different approaches one can use to reading such files, one of the simplest of most robust is to save the spreadsheet as a CSV (``comma separated value'') file, a format which all common spreadsheet programs can create and read.  So, if your Excel spreadsheet was called \code{MyData.xlsx}, the CSV file saved using Excel's \code{Save As} command would by default be \code{MyData.csv}.  It would look like this
+While there are a number of different approaches one can use to reading such files, one of the simplest of most robust is to save the spreadsheet as a CSV (``comma separated value'') file, a format which all common spreadsheet programs can create and read.  So, if your Excel spreadsheet was called \code{MyData.xlsx}, the CSV file saved using Excel's \code{Save As} command would by default be \code{MyData.csv}.  It would look like this
 
 \begin{Verbatim}[commandchars=\\\{\},numbers=left,firstnumber=1,stepnumber=1]
 Data for falling mass experiment,,,

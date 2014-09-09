@@ -397,11 +397,12 @@ data point      time (sec)      height (mm)     uncertainty (mm)
 </div>
 <div class="section" id="reading-data-from-a-csv-file">
 <h3>4.3.2. Reading data from a CSV file<a class="headerlink" href="#reading-data-from-a-csv-file" title="Permalink to this headline">¶</a></h3>
+<p>Sometimes you have data stored in a spreadsheet program like Excel that you would like to read into a Python program.  The <a class="reference internal" href="#fig-excelwindow"><em>Excel data sheet</em></a> shown here contains the same data set we saw above in a text file.</p>
 <div class="figure align-center" id="fig-excelwindow">
 <a class="reference internal image-reference" href="../_images/ExcelDataFile.png"><img alt="Data in Excel spreadsheet" src="../_images/ExcelDataFile.png" style="width: 299.65px; height: 321.1px;" /></a>
 <p class="caption">Excel data sheet</p>
 </div>
-<p>Sometimes you have data stored in a spreadsheet program like Excel that you would like to read into a Python program.  The <a class="reference internal" href="#fig-excelwindow"><em>Excel data sheet</em></a> shown below contains the same data set we saw above in a text file.  While there are a number of different approaches one can use to reading such files, one of the simplest of most robust is to save the spreadsheet as a CSV (&#8220;comma separated value&#8221;) file, a format which all common spreadsheet programs can create and read.  So, if your Excel spreadsheet was called <tt class="docutils literal"><span class="pre">MyData.xlsx</span></tt>, the CSV file saved using Excel&#8217;s <tt class="docutils literal"><span class="pre">Save</span> <span class="pre">As</span></tt> command would by default be <tt class="docutils literal"><span class="pre">MyData.csv</span></tt>.  It would look like this</p>
+<p>While there are a number of different approaches one can use to reading such files, one of the simplest of most robust is to save the spreadsheet as a CSV (&#8220;comma separated value&#8221;) file, a format which all common spreadsheet programs can create and read.  So, if your Excel spreadsheet was called <tt class="docutils literal"><span class="pre">MyData.xlsx</span></tt>, the CSV file saved using Excel&#8217;s <tt class="docutils literal"><span class="pre">Save</span> <span class="pre">As</span></tt> command would by default be <tt class="docutils literal"><span class="pre">MyData.csv</span></tt>.  It would look like this</p>
 <div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -700,7 +701,7 @@ You can spend $8.46 each day for the rest of the month.
           
     <div class="footer">
         &copy; Copyright 2014, David J. Pine.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
     </div>
         </div>
         <div class="clearer"></div>

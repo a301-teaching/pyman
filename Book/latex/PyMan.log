@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.8.27)  8 SEP 2014 08:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.8.8)  8 SEP 2014 22:32
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **PyMan.tex
@@ -640,6 +640,10 @@ Package: parskip 2001/04/09 non-zero parskip adjustments
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/alltt.sty
 Package: alltt 1997/06/16 v2.0g defines alltt environment
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -815,28 +819,28 @@ Writing index file PyMan.idx
 (./PyMan.aux)
 \openout1 = `PyMan.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 119.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 119.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 121.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 121.
 
  (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 119.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 121.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -870,7 +874,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box41
-Package hyperref Info: Link coloring ON on input line 119.
+Package hyperref Info: Link coloring ON on input line 121.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -880,9 +884,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count133
 )
-LaTeX Info: Redefining \ref on input line 119.
-LaTeX Info: Redefining \pageref on input line 119.
-LaTeX Info: Redefining \nameref on input line 119.
+LaTeX Info: Redefining \ref on input line 121.
+LaTeX Info: Redefining \pageref on input line 121.
+LaTeX Info: Redefining \nameref on input line 121.
 
 (./PyMan.out) (./PyMan.out)
 \@outlinefile=\write6
@@ -925,24 +929,24 @@ LaTeX Info: Redefining \nameref on input line 119.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+phv on input line 122.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 124.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 122.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 124.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <17.28> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 122.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 124.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 122.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 124.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 122.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 124.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 122.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 124.
 <<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>> [1
 Non-PDF special ignored!
 
@@ -969,11 +973,11 @@ Adding blank page after the table of contents.
 [3] [4]
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 127.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 129.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 127.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 129.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 127.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 129.
 [1
 
 
@@ -982,56 +986,61 @@ Chapter 2.
 <CanopyWindow.png, id=419, 376.40625pt x 251.43938pt>
 File: CanopyWindow.png Graphic file (type png)
  <use CanopyWindow.png>
-Package pdftex.def Info: CanopyWindow.png used on input line 161.
+Package pdftex.def Info: CanopyWindow.png used on input line 163.
 (pdftex.def)             Requested size: 376.40532pt x 251.43875pt.
 File: CanopyWindow.png Graphic file (type png)
 
 <use CanopyWindow.png>
-Package pdftex.def Info: CanopyWindow.png used on input line 161.
+Package pdftex.def Info: CanopyWindow.png used on input line 163.
 (pdftex.def)             Requested size: 355.65944pt x 237.5961pt.
  [3
 
 ] [4 <./CanopyWindow.png>]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 191.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 193.
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <9> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 209.
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 211.
+LaTeX Font Info:    Try loading font information for TS1+pcr on input line 212.
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--223
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ts1pcr.fd
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 222--225
 []\T1/ptm/m/n/10 The re-sponses \T1/pcr/m/n/10 Out[2]: u'/Users/pine' \T1/ptm/m
 /n/10 for the Mac and \T1/pcr/m/n/10 Out[3]:
  []
 
 [5] [6] [7]
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 306.
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 308.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 312.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 314.
  [8]
-Underfull \hbox (badness 10000) in paragraph at lines 442--445
+Underfull \hbox (badness 10000) in paragraph at lines 444--447
 
  []
 
 [9]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 475.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 477.
  [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23]
 [24] [25] [26] [27] [28
 
 ]
 Chapter 3.
 [29] [30] [31] [32] [33] [34] [35] [36]
-Underfull \hbox (badness 10000) in paragraph at lines 1527--1529
+Underfull \hbox (badness 10000) in paragraph at lines 1529--1531
 []\T1/ptm/m/n/10 Returns \T1/pcr/m/n/10 num \T1/ptm/m/n/10 log-a-rith-mi-cally
  []
 
 [37]
-Underfull \hbox (badness 10000) in paragraph at lines 1530--1532
+Underfull \hbox (badness 10000) in paragraph at lines 1532--1534
 []\T1/ptm/m/n/10 Returns
  []
 
 [38] [39] [40] [41] [42] [43] [44] [45]
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 1869
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 1871
 .
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ts1ptm.fd
@@ -1040,20 +1049,20 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 [48] <randhistos.pdf, id=683, 578.16pt x 361.35pt>
 File: randhistos.pdf Graphic file (type pdf)
  <use randhistos.pdf>
-Package pdftex.def Info: randhistos.pdf used on input line 1995.
+Package pdftex.def Info: randhistos.pdf used on input line 1997.
 (pdftex.def)             Requested size: 578.15858pt x 361.34912pt.
 File: randhistos.pdf Graphic file (type pdf)
 
 <use randhistos.pdf>
-Package pdftex.def Info: randhistos.pdf used on input line 1995.
+Package pdftex.def Info: randhistos.pdf used on input line 1997.
 (pdftex.def)             Requested size: 355.65944pt x 222.28682pt.
  [49]
-Underfull \hbox (badness 10000) in paragraph at lines 2037--2039
+Underfull \hbox (badness 10000) in paragraph at lines 2039--2041
 []\T1/ptm/m/n/10 must be im-ported from the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2037--2039
+Underfull \hbox (badness 10000) in paragraph at lines 2039--2041
 \T1/pcr/m/n/10 numpy.random \T1/ptm/m/n/10 li-brary. For more in-for-ma-tion, s
 ee
  []
@@ -1064,160 +1073,160 @@ ee
 Chapter 4.
 [55] [56] [57]
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <12> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 2235.
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 2237.
  [58] [59] [60] [61] [62] [63]
-<ExcelDataFile.png, id=790, 462.72874pt x 495.8525pt>
+<ExcelDataFile.png, id=791, 462.72874pt x 495.8525pt>
 File: ExcelDataFile.png Graphic file (type png)
  <use ExcelDataFile.png>
-Package pdftex.def Info: ExcelDataFile.png used on input line 2490.
+Package pdftex.def Info: ExcelDataFile.png used on input line 2494.
 (pdftex.def)             Requested size: 462.72762pt x 495.85129pt.
 File: ExcelDataFile.png Graphic file (type png)
 
 <use ExcelDataFile.png>
-Package pdftex.def Info: ExcelDataFile.png used on input line 2490.
+Package pdftex.def Info: ExcelDataFile.png used on input line 2494.
 (pdftex.def)             Requested size: 355.65944pt x 381.1191pt.
  [64] [65 <./ExcelDataFile.png>] [66] [67] [68] [69]
 [70] [71] [72]
 Chapter 5.
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 2748.
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 2752.
 [73
 
 ] <zigzagPlotDemo.pdf, id=848, 578.16pt x 433.62pt>
 File: zigzagPlotDemo.pdf Graphic file (type pdf)
 
 <use zigzagPlotDemo.pdf>
-Package pdftex.def Info: zigzagPlotDemo.pdf used on input line 2761.
+Package pdftex.def Info: zigzagPlotDemo.pdf used on input line 2765.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 File: zigzagPlotDemo.pdf Graphic file (type pdf)
  <use zigzagPlotDemo.pdf>
-Package pdftex.def Info: zigzagPlotDemo.pdf used on input line 2761.
+Package pdftex.def Info: zigzagPlotDemo.pdf used on input line 2765.
 (pdftex.def)             Requested size: 355.65944pt x 266.74419pt.
  [74 <./zigzagPlotDemo.pdf>]
 <sinePlot.pdf, id=870, 578.16pt x 433.62pt>
 File: sinePlot.pdf Graphic file (type pdf)
  <use sinePlot.pdf>
-Package pdftex.def Info: sinePlot.pdf used on input line 2812.
+Package pdftex.def Info: sinePlot.pdf used on input line 2816.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 File: sinePlot.pdf Graphic file (type pdf)
 
 <use sinePlot.pdf>
-Package pdftex.def Info: sinePlot.pdf used on input line 2812.
+Package pdftex.def Info: sinePlot.pdf used on input line 2816.
 (pdftex.def)             Requested size: 355.65944pt x 266.74419pt.
  [75] <sinePlotDenserXY.pdf, id=876, 578.16pt x 433.62pt>
 File: sinePlotDenserXY.pdf Graphic file (type pdf)
 
 <use sinePlotDenserXY.pdf>
-Package pdftex.def Info: sinePlotDenserXY.pdf used on input line 2822.
+Package pdftex.def Info: sinePlotDenserXY.pdf used on input line 2826.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 File: sinePlotDenserXY.pdf Graphic file (type pdf)
  <use sinePlotDenserXY.pdf>
-Package pdftex.def Info: sinePlotDenserXY.pdf used on input line 2822.
+Package pdftex.def Info: sinePlotDenserXY.pdf used on input line 2826.
 (pdftex.def)             Requested size: 355.65944pt x 266.74419pt.
  [76 <./sinePlot.pdf>]
-Underfull \vbox (badness 10000) detected at line 2855
+Underfull \vbox (badness 10000) detected at line 2859
  []
 
 
-Overfull \vbox (1.30087pt too high) detected at line 2855
+Overfull \vbox (1.30087pt too high) detected at line 2859
  []
 
 [77 <./sinePlotDenserXY.pdf>] <WavyPulse.pdf, id=897, 433.62pt x 289.08pt>
 File: WavyPulse.pdf Graphic file (type pdf)
 
 <use WavyPulse.pdf>
-Package pdftex.def Info: WavyPulse.pdf used on input line 2860.
+Package pdftex.def Info: WavyPulse.pdf used on input line 2864.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
 File: WavyPulse.pdf Graphic file (type pdf)
  <use WavyPulse.pdf>
-Package pdftex.def Info: WavyPulse.pdf used on input line 2860.
+Package pdftex.def Info: WavyPulse.pdf used on input line 2864.
 (pdftex.def)             Requested size: 355.65944pt x 237.1177pt.
  [78 <./WavyPulse.pdf>] [79] [80]
 <ExpDecay.pdf, id=945, 433.62pt x 289.08pt>
 File: ExpDecay.pdf Graphic file (type pdf)
  <use ExpDecay.pdf>
-Package pdftex.def Info: ExpDecay.pdf used on input line 3130.
+Package pdftex.def Info: ExpDecay.pdf used on input line 3134.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
 File: ExpDecay.pdf Graphic file (type pdf)
 
 <use ExpDecay.pdf>
-Package pdftex.def Info: ExpDecay.pdf used on input line 3130.
+Package pdftex.def Info: ExpDecay.pdf used on input line 3134.
 (pdftex.def)             Requested size: 355.65944pt x 237.1177pt.
  [81] [82 <./ExpDecay.pdf>] [83]
 <plotLimits1.pdf, id=995, 578.16pt x 433.62pt>
 File: plotLimits1.pdf Graphic file (type pdf)
  <use plotLimits1.pdf>
-Package pdftex.def Info: plotLimits1.pdf used on input line 3191.
+Package pdftex.def Info: plotLimits1.pdf used on input line 3195.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 File: plotLimits1.pdf Graphic file (type pdf)
 
 <use plotLimits1.pdf>
-Package pdftex.def Info: plotLimits1.pdf used on input line 3191.
+Package pdftex.def Info: plotLimits1.pdf used on input line 3195.
 (pdftex.def)             Requested size: 355.65944pt x 266.74419pt.
  [84 <./plotLimits1.pdf>]
 <plotLimits2.pdf, id=1012, 578.16pt x 433.62pt>
 File: plotLimits2.pdf Graphic file (type pdf)
  <use plotLimits2.pdf>
-Package pdftex.def Info: plotLimits2.pdf used on input line 3216.
+Package pdftex.def Info: plotLimits2.pdf used on input line 3220.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 File: plotLimits2.pdf Graphic file (type pdf)
 
 <use plotLimits2.pdf>
-Package pdftex.def Info: plotLimits2.pdf used on input line 3216.
+Package pdftex.def Info: plotLimits2.pdf used on input line 3220.
 (pdftex.def)             Requested size: 355.65944pt x 266.74419pt.
  <plotLimits3.pdf, id=1013, 578.16pt x 433.62pt>
 File: plotLimits3.pdf Graphic file (type pdf)
 
 <use plotLimits3.pdf>
-Package pdftex.def Info: plotLimits3.pdf used on input line 3230.
+Package pdftex.def Info: plotLimits3.pdf used on input line 3234.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 File: plotLimits3.pdf Graphic file (type pdf)
  <use plotLimits3.pdf>
-Package pdftex.def Info: plotLimits3.pdf used on input line 3230.
+Package pdftex.def Info: plotLimits3.pdf used on input line 3234.
 (pdftex.def)             Requested size: 355.65944pt x 266.74419pt.
  [85 <./plotLimits2.pdf>]
 <subplotDemo.pdf, id=1033, 578.16pt x 433.62pt>
 File: subplotDemo.pdf Graphic file (type pdf)
  <use subplotDemo.pdf>
-Package pdftex.def Info: subplotDemo.pdf used on input line 3258.
+Package pdftex.def Info: subplotDemo.pdf used on input line 3262.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 File: subplotDemo.pdf Graphic file (type pdf)
 
 <use subplotDemo.pdf>
-Package pdftex.def Info: subplotDemo.pdf used on input line 3258.
+Package pdftex.def Info: subplotDemo.pdf used on input line 3262.
 (pdftex.def)             Requested size: 355.65944pt x 266.74419pt.
  [86 <./plotLimits3.pdf>] [87 <./subplotDemo.pdf>]
 [88] <semilogDemo.pdf, id=1085, 722.7pt x 289.08pt>
 File: semilogDemo.pdf Graphic file (type pdf)
  <use semilogDemo.pdf>
-Package pdftex.def Info: semilogDemo.pdf used on input line 3319.
+Package pdftex.def Info: semilogDemo.pdf used on input line 3323.
 (pdftex.def)             Requested size: 722.69823pt x 289.07928pt.
 File: semilogDemo.pdf Graphic file (type pdf)
 
 <use semilogDemo.pdf>
-Package pdftex.def Info: semilogDemo.pdf used on input line 3319.
+Package pdftex.def Info: semilogDemo.pdf used on input line 3323.
 (pdftex.def)             Requested size: 355.65944pt x 142.26357pt.
  [89 <./semilogDemo.pdf>] [90]
 <MultPlotDemo.pdf, id=1133, 650.43pt x 578.16pt>
 File: MultPlotDemo.pdf Graphic file (type pdf)
  <use MultPlotDemo.pdf>
-Package pdftex.def Info: MultPlotDemo.pdf used on input line 3382.
+Package pdftex.def Info: MultPlotDemo.pdf used on input line 3386.
 (pdftex.def)             Requested size: 650.4284pt x 578.15858pt.
 File: MultPlotDemo.pdf Graphic file (type pdf)
 
 <use MultPlotDemo.pdf>
-Package pdftex.def Info: MultPlotDemo.pdf used on input line 3382.
+Package pdftex.def Info: MultPlotDemo.pdf used on input line 3386.
 (pdftex.def)             Requested size: 355.65944pt x 316.14519pt.
  [91] [92 <./MultPlotDemo.pdf>] [93] [94] [95] [96]
 <LinearData.pdf, id=1203, 433.62pt x 289.08pt>
 File: LinearData.pdf Graphic file (type pdf)
  <use LinearData.pdf>
-Package pdftex.def Info: LinearData.pdf used on input line 3563.
+Package pdftex.def Info: LinearData.pdf used on input line 3567.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
 File: LinearData.pdf Graphic file (type pdf)
 
 <use LinearData.pdf>
-Package pdftex.def Info: LinearData.pdf used on input line 3563.
+Package pdftex.def Info: LinearData.pdf used on input line 3567.
 (pdftex.def)             Requested size: 355.65944pt x 237.1177pt.
  [97 <./LinearData.pdf>] [98]
 Chapter 6.
@@ -1227,55 +1236,55 @@ Chapter 6.
 File: flow_if_elif_else.pdf Graphic file (type pdf)
 
 <use flow_if_elif_else.pdf>
-Package pdftex.def Info: flow_if_elif_else.pdf used on input line 3680.
+Package pdftex.def Info: flow_if_elif_else.pdf used on input line 3684.
 (pdftex.def)             Requested size: 380.82283pt x 271.52675pt.
 File: flow_if_elif_else.pdf Graphic file (type pdf)
  <use flow_if_elif_else.pdf>
-Package pdftex.def Info: flow_if_elif_else.pdf used on input line 3680.
+Package pdftex.def Info: flow_if_elif_else.pdf used on input line 3684.
 (pdftex.def)             Requested size: 355.65944pt x 253.59096pt.
  [101 <./flow_if_elif_else.pdf>] <flow_if_else.pdf, id=1266, 322.808pt x 202.46
 843pt>
 File: flow_if_else.pdf Graphic file (type pdf)
 
 <use flow_if_else.pdf>
-Package pdftex.def Info: flow_if_else.pdf used on input line 3705.
+Package pdftex.def Info: flow_if_else.pdf used on input line 3709.
 (pdftex.def)             Requested size: 322.8072pt x 202.46793pt.
 File: flow_if_else.pdf Graphic file (type pdf)
  <use flow_if_else.pdf>
-Package pdftex.def Info: flow_if_else.pdf used on input line 3705.
+Package pdftex.def Info: flow_if_else.pdf used on input line 3709.
 (pdftex.def)             Requested size: 322.8072pt x 202.46793pt.
  [102]
 <flow_if.pdf, id=1273, 308.351pt x 141.03992pt>
 File: flow_if.pdf Graphic file (type pdf)
  <use flow_if.pdf>
-Package pdftex.def Info: flow_if.pdf used on input line 3735.
+Package pdftex.def Info: flow_if.pdf used on input line 3739.
 (pdftex.def)             Requested size: 308.35025pt x 141.03957pt.
 File: flow_if.pdf Graphic file (type pdf)
 
 <use flow_if.pdf>
-Package pdftex.def Info: flow_if.pdf used on input line 3735.
+Package pdftex.def Info: flow_if.pdf used on input line 3739.
 (pdftex.def)             Requested size: 308.35025pt x 141.03957pt.
  [103 <./flow_if_else.pdf> <./flow_if.pdf>] [104] [105]
 <flow_for.pdf, id=1312, 200.85138pt x 259.48343pt>
 File: flow_for.pdf Graphic file (type pdf)
  <use flow_for.pdf>
-Package pdftex.def Info: flow_for.pdf used on input line 3883.
+Package pdftex.def Info: flow_for.pdf used on input line 3887.
 (pdftex.def)             Requested size: 200.85088pt x 259.48279pt.
 File: flow_for.pdf Graphic file (type pdf)
 
 <use flow_for.pdf>
-Package pdftex.def Info: flow_for.pdf used on input line 3883.
+Package pdftex.def Info: flow_for.pdf used on input line 3887.
 (pdftex.def)             Requested size: 200.85088pt x 259.48279pt.
  [106] [107 <./flow_for.pdf>]
 <flow_while.pdf, id=1332, 185.79512pt x 237.39992pt>
 File: flow_while.pdf Graphic file (type pdf)
  <use flow_while.pdf>
-Package pdftex.def Info: flow_while.pdf used on input line 3931.
+Package pdftex.def Info: flow_while.pdf used on input line 3935.
 (pdftex.def)             Requested size: 185.79466pt x 237.39934pt.
 File: flow_while.pdf Graphic file (type pdf)
 
 <use flow_while.pdf>
-Package pdftex.def Info: flow_while.pdf used on input line 3931.
+Package pdftex.def Info: flow_while.pdf used on input line 3935.
 (pdftex.def)             Requested size: 185.79466pt x 237.39934pt.
  [108] [109 <./flow_while.pdf>] [110] [111] [112] [113]
 [114
@@ -1285,12 +1294,12 @@ Chapter 7.
 [115] [116] [117] <sinc.pdf, id=1400, 578.16pt x 433.62pt>
 File: sinc.pdf Graphic file (type pdf)
  <use sinc.pdf>
-Package pdftex.def Info: sinc.pdf used on input line 4248.
+Package pdftex.def Info: sinc.pdf used on input line 4252.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 File: sinc.pdf Graphic file (type pdf)
 
 <use sinc.pdf>
-Package pdftex.def Info: sinc.pdf used on input line 4248.
+Package pdftex.def Info: sinc.pdf used on input line 4252.
 (pdftex.def)             Requested size: 355.65944pt x 266.74419pt.
  [118] [119 <./sinc.pdf>] [120] [121] [122] [123] [124] [125]
 [126] [127] [128] [129] [130]
@@ -1298,54 +1307,58 @@ Package pdftex.def Info: sinc.pdf used on input line 4248.
 File: VelocityVsTimePlot.pdf Graphic file (type pdf)
 
 <use VelocityVsTimePlot.pdf>
-Package pdftex.def Info: VelocityVsTimePlot.pdf used on input line 4642.
+Package pdftex.def Info: VelocityVsTimePlot.pdf used on input line 4646.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 File: VelocityVsTimePlot.pdf Graphic file (type pdf)
  <use VelocityVsTimePlot.pdf>
-Package pdftex.def Info: VelocityVsTimePlot.pdf used on input line 4642.
+Package pdftex.def Info: VelocityVsTimePlot.pdf used on input line 4646.
 (pdftex.def)             Requested size: 355.65944pt x 266.74419pt.
- [131 <./VelocityVsTimePlot.pdf>] [132] [133] [134]
+ [131 <./VelocityVsTimePlot.pdf>] [132]
+LaTeX Font Info:    Font shape `TS1/pcr/m/it' in size <9> not available
+(Font)              Font shape `TS1/pcr/m/sl' tried instead on input line 4708.
+
+ [133] [134]
 <VelocityVsTimeFit.pdf, id=1585, 578.16pt x 433.62pt>
 File: VelocityVsTimeFit.pdf Graphic file (type pdf)
 
 <use VelocityVsTimeFit.pdf>
-Package pdftex.def Info: VelocityVsTimeFit.pdf used on input line 4747.
+Package pdftex.def Info: VelocityVsTimeFit.pdf used on input line 4751.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 File: VelocityVsTimeFit.pdf Graphic file (type pdf)
  <use VelocityVsTimeFit.pdf>
-Package pdftex.def Info: VelocityVsTimeFit.pdf used on input line 4747.
+Package pdftex.def Info: VelocityVsTimeFit.pdf used on input line 4751.
 (pdftex.def)             Requested size: 355.65944pt x 266.74419pt.
  [135] [136 <./VelocityVsTimeFit.pdf>] [137] <besselSph.pdf, id=1678, 578.16pt 
 x 433.62pt>
 File: besselSph.pdf Graphic file (type pdf)
 
 <use besselSph.pdf>
-Package pdftex.def Info: besselSph.pdf used on input line 4812.
+Package pdftex.def Info: besselSph.pdf used on input line 4816.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 File: besselSph.pdf Graphic file (type pdf)
  <use besselSph.pdf>
-Package pdftex.def Info: besselSph.pdf used on input line 4812.
+Package pdftex.def Info: besselSph.pdf used on input line 4816.
 (pdftex.def)             Requested size: 355.65944pt x 266.74419pt.
  [138 <./besselSph.pdf>]
 <diceRoll2.pdf, id=1696, 578.16pt x 433.62pt>
 File: diceRoll2.pdf Graphic file (type pdf)
  <use diceRoll2.pdf>
-Package pdftex.def Info: diceRoll2.pdf used on input line 4829.
+Package pdftex.def Info: diceRoll2.pdf used on input line 4833.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 File: diceRoll2.pdf Graphic file (type pdf)
 
 <use diceRoll2.pdf>
-Package pdftex.def Info: diceRoll2.pdf used on input line 4829.
+Package pdftex.def Info: diceRoll2.pdf used on input line 4833.
 (pdftex.def)             Requested size: 355.65944pt x 266.74419pt.
  <smiley.pdf, id=1697, 578.16pt x 433.62pt>
 File: smiley.pdf Graphic file (type pdf)
 
 <use smiley.pdf>
-Package pdftex.def Info: smiley.pdf used on input line 4837.
+Package pdftex.def Info: smiley.pdf used on input line 4841.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 File: smiley.pdf Graphic file (type pdf)
  <use smiley.pdf>
-Package pdftex.def Info: smiley.pdf used on input line 4837.
+Package pdftex.def Info: smiley.pdf used on input line 4841.
 (pdftex.def)             Requested size: 355.65944pt x 266.74419pt.
  [139 <./diceRoll2.pdf>] [140 <./smiley.pdf>]
 [141] [142
@@ -1355,31 +1368,31 @@ Chapter 8.
 [143] [144] <betaDecay.pdf, id=1774, 578.16pt x 433.62pt>
 File: betaDecay.pdf Graphic file (type pdf)
  <use betaDecay.pdf>
-Package pdftex.def Info: betaDecay.pdf used on input line 4946.
+Package pdftex.def Info: betaDecay.pdf used on input line 4950.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 File: betaDecay.pdf Graphic file (type pdf)
 
 <use betaDecay.pdf>
-Package pdftex.def Info: betaDecay.pdf used on input line 4946.
+Package pdftex.def Info: betaDecay.pdf used on input line 4950.
 (pdftex.def)             Requested size: 355.65944pt x 266.74419pt.
  [145]
-Underfull \vbox (badness 10000) detected at line 5026
+Underfull \vbox (badness 10000) detected at line 5030
  []
 
 
-Underfull \vbox (badness 10000) detected at line 5026
+Underfull \vbox (badness 10000) detected at line 5030
  []
 
 [146 <./betaDecay.pdf>]
-Underfull \vbox (badness 10000) detected at line 5026
+Underfull \vbox (badness 10000) detected at line 5030
  []
 
 
-Overfull \vbox (0.77693pt too high) detected at line 5026
+Overfull \vbox (0.77693pt too high) detected at line 5030
  []
 
 [147] [148]
-Underfull \hbox (badness 10000) in paragraph at lines 5066--5067
+Underfull \hbox (badness 10000) in paragraph at lines 5070--5071
 \T1/ptm/m/n/10 A some-what more user-friendly ver-sion of the same method is ac
 -cessed
  []
@@ -1387,41 +1400,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 5066--5067
 [149] <Spectrum.pdf, id=1912, 578.16pt x 433.62pt>
 File: Spectrum.pdf Graphic file (type pdf)
  <use Spectrum.pdf>
-Package pdftex.def Info: Spectrum.pdf used on input line 5101.
+Package pdftex.def Info: Spectrum.pdf used on input line 5105.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 File: Spectrum.pdf Graphic file (type pdf)
 
 <use Spectrum.pdf>
-Package pdftex.def Info: Spectrum.pdf used on input line 5101.
+Package pdftex.def Info: Spectrum.pdf used on input line 5105.
 (pdftex.def)             Requested size: 355.65944pt x 266.74419pt.
  [150] [151 <./Spectrum.pdf>]
-Underfull \vbox (badness 10000) detected at line 5190
+Underfull \vbox (badness 10000) detected at line 5194
  []
 
 
-Underfull \vbox (badness 10000) detected at line 5190
+Underfull \vbox (badness 10000) detected at line 5194
  []
 
 [152] <FitSpectrum.pdf, id=1962, 578.16pt x 578.16pt>
 File: FitSpectrum.pdf Graphic file (type pdf)
  <use FitSpectrum.pdf>
-Package pdftex.def Info: FitSpectrum.pdf used on input line 5197.
+Package pdftex.def Info: FitSpectrum.pdf used on input line 5201.
 (pdftex.def)             Requested size: 578.15858pt x 578.15858pt.
 File: FitSpectrum.pdf Graphic file (type pdf)
 
 <use FitSpectrum.pdf>
-Package pdftex.def Info: FitSpectrum.pdf used on input line 5197.
+Package pdftex.def Info: FitSpectrum.pdf used on input line 5201.
 (pdftex.def)             Requested size: 355.65944pt x 355.65892pt.
  [153] [154 <./FitSpectrum.pdf>] [155]
 <DataOscDecay.pdf, id=2061, 578.16pt x 433.62pt>
 File: DataOscDecay.pdf Graphic file (type pdf)
  <use DataOscDecay.pdf>
-Package pdftex.def Info: DataOscDecay.pdf used on input line 5286.
+Package pdftex.def Info: DataOscDecay.pdf used on input line 5290.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 File: DataOscDecay.pdf Graphic file (type pdf)
 
 <use DataOscDecay.pdf>
-Package pdftex.def Info: DataOscDecay.pdf used on input line 5286.
+Package pdftex.def Info: DataOscDecay.pdf used on input line 5290.
 (pdftex.def)             Requested size: 355.65944pt x 266.74419pt.
  [156] [157 <./DataOscDecay.pdf>] [158]
 Chapter 9.
@@ -1431,62 +1444,62 @@ Chapter 9.
 File: specFuncPlots.pdf Graphic file (type pdf)
 
 <use specFuncPlots.pdf>
-Package pdftex.def Info: specFuncPlots.pdf used on input line 5363.
+Package pdftex.def Info: specFuncPlots.pdf used on input line 5367.
 (pdftex.def)             Requested size: 650.4284pt x 578.15858pt.
 File: specFuncPlots.pdf Graphic file (type pdf)
  <use specFuncPlots.pdf>
-Package pdftex.def Info: specFuncPlots.pdf used on input line 5363.
+Package pdftex.def Info: specFuncPlots.pdf used on input line 5367.
 (pdftex.def)             Requested size: 355.65944pt x 316.14519pt.
  [160 <./specFuncPlots.pdf>]
-Underfull \vbox (badness 10000) detected at line 5452
+Underfull \vbox (badness 10000) detected at line 5456
  []
 
 
-Underfull \vbox (badness 10000) detected at line 5452
+Underfull \vbox (badness 10000) detected at line 5456
  []
 
 [161] [162] [163] [164] [165] [166] [167] [168] [169]
-Underfull \vbox (badness 1253) detected at line 5834
+Underfull \vbox (badness 1253) detected at line 5838
  []
 
 [170] <odePend.pdf, id=2210, 578.16pt x 578.16pt>
 File: odePend.pdf Graphic file (type pdf)
  <use odePend.pdf>
-Package pdftex.def Info: odePend.pdf used on input line 5839.
+Package pdftex.def Info: odePend.pdf used on input line 5843.
 (pdftex.def)             Requested size: 578.15858pt x 578.15858pt.
 File: odePend.pdf Graphic file (type pdf)
 
 <use odePend.pdf>
-Package pdftex.def Info: odePend.pdf used on input line 5839.
+Package pdftex.def Info: odePend.pdf used on input line 5843.
 (pdftex.def)             Requested size: 355.65944pt x 355.65892pt.
  [171] [172 <./odePend.pdf>] [173]
 <fftSimple.pdf, id=2256, 578.16pt x 433.62pt>
 File: fftSimple.pdf Graphic file (type pdf)
  <use fftSimple.pdf>
-Package pdftex.def Info: fftSimple.pdf used on input line 5915.
+Package pdftex.def Info: fftSimple.pdf used on input line 5919.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 File: fftSimple.pdf Graphic file (type pdf)
 
 <use fftSimple.pdf>
-Package pdftex.def Info: fftSimple.pdf used on input line 5915.
+Package pdftex.def Info: fftSimple.pdf used on input line 5919.
 (pdftex.def)             Requested size: 355.65944pt x 266.74419pt.
  [174] [175 <./fftSimple.pdf>] [176] [177] [178] [179]
 [180] <rootsBrent.pdf, id=2328, 433.62pt x 289.08pt>
 File: rootsBrent.pdf Graphic file (type pdf)
  <use rootsBrent.pdf>
-Package pdftex.def Info: rootsBrent.pdf used on input line 6157.
+Package pdftex.def Info: rootsBrent.pdf used on input line 6161.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
 File: rootsBrent.pdf Graphic file (type pdf)
 
 <use rootsBrent.pdf>
-Package pdftex.def Info: rootsBrent.pdf used on input line 6157.
+Package pdftex.def Info: rootsBrent.pdf used on input line 6161.
 (pdftex.def)             Requested size: 355.65944pt x 237.1177pt.
  [181 <./rootsBrent.pdf>] [182] [183] [184] [185] [186
 
 ]
 Appendix A.
 [187]
-Underfull \hbox (badness 10000) in paragraph at lines 6291--6292
+Underfull \hbox (badness 10000) in paragraph at lines 6295--6296
 []\T1/ptm/m/it/10 Spyder \T1/ptm/m/n/10 pro-vides a com-pletely open source pro
 -gram-ming en-vi-ron-ment for
  []
@@ -1502,12 +1515,12 @@ ound PDF version <1.6>, but at most version <1.5> allowed
 <nbDashboard.pdf, id=2425, 781.32901pt x 316.37196pt>
 File: nbDashboard.pdf Graphic file (type pdf)
  <use nbDashboard.pdf>
-Package pdftex.def Info: nbDashboard.pdf used on input line 6384.
+Package pdftex.def Info: nbDashboard.pdf used on input line 6388.
 (pdftex.def)             Requested size: 781.3271pt x 316.37117pt.
 File: nbDashboard.pdf Graphic file (type pdf)
 
 <use nbDashboard.pdf>
-Package pdftex.def Info: nbDashboard.pdf used on input line 6384.
+Package pdftex.def Info: nbDashboard.pdf used on input line 6388.
 (pdftex.def)             Requested size: 355.65944pt x 144.0122pt.
 
 
@@ -1516,12 +1529,12 @@ ound PDF version <1.6>, but at most version <1.5> allowed
 <ipyNotebook.pdf, id=2427, 780.31528pt x 353.25978pt>
 File: ipyNotebook.pdf Graphic file (type pdf)
  <use ipyNotebook.pdf>
-Package pdftex.def Info: ipyNotebook.pdf used on input line 6392.
+Package pdftex.def Info: ipyNotebook.pdf used on input line 6396.
 (pdftex.def)             Requested size: 780.31337pt x 353.25891pt.
 File: ipyNotebook.pdf Graphic file (type pdf)
 
 <use ipyNotebook.pdf>
-Package pdftex.def Info: ipyNotebook.pdf used on input line 6392.
+Package pdftex.def Info: ipyNotebook.pdf used on input line 6396.
 (pdftex.def)             Requested size: 355.65944pt x 161.00835pt.
 
 
@@ -1531,14 +1544,14 @@ n: found PDF version <1.6>, but at most version <1.5> allowed
 File: firstIPyNBcells.pdf Graphic file (type pdf)
 
 <use firstIPyNBcells.pdf>
-Package pdftex.def Info: firstIPyNBcells.pdf used on input line 6403.
+Package pdftex.def Info: firstIPyNBcells.pdf used on input line 6407.
 (pdftex.def)             Requested size: 780.31337pt x 807.60527pt.
 File: firstIPyNBcells.pdf Graphic file (type pdf)
  <use firstIPyNBcells.pdf>
-Package pdftex.def Info: firstIPyNBcells.pdf used on input line 6403.
+Package pdftex.def Info: firstIPyNBcells.pdf used on input line 6407.
 (pdftex.def)             Requested size: 355.65944pt x 368.09035pt.
  [192 <./nbDashboard.pdf>]
-Underfull \hbox (badness 5147) in paragraph at lines 6408--6409
+Underfull \hbox (badness 5147) in paragraph at lines 6412--6413
 []\T1/ptm/m/n/10 You can also cre-ate plots in an IPython note-book. For ex-am-
 ple, typ-ing
  []
@@ -1550,12 +1563,12 @@ nd PDF version <1.6>, but at most version <1.5> allowed
 <mileageNB.pdf, id=2446, 783.34656pt x 685.30026pt>
 File: mileageNB.pdf Graphic file (type pdf)
  <use mileageNB.pdf>
-Package pdftex.def Info: mileageNB.pdf used on input line 6420.
+Package pdftex.def Info: mileageNB.pdf used on input line 6424.
 (pdftex.def)             Requested size: 783.34465pt x 685.29858pt.
 File: mileageNB.pdf Graphic file (type pdf)
 
 <use mileageNB.pdf>
-Package pdftex.def Info: mileageNB.pdf used on input line 6420.
+Package pdftex.def Info: mileageNB.pdf used on input line 6424.
 (pdftex.def)             Requested size: 355.65944pt x 311.14287pt.
  [193 <./ipyNotebook.pdf>] [194 <./firstIPyNBcells.pdf>]
 
@@ -1565,11 +1578,11 @@ n: found PDF version <1.6>, but at most version <1.5> allowed
 File: ipyNoteFinalTop.pdf Graphic file (type pdf)
 
 <use ipyNoteFinalTop.pdf>
-Package pdftex.def Info: ipyNoteFinalTop.pdf used on input line 6433.
+Package pdftex.def Info: ipyNoteFinalTop.pdf used on input line 6437.
 (pdftex.def)             Requested size: 780.31337pt x 410.87401pt.
 File: ipyNoteFinalTop.pdf Graphic file (type pdf)
  <use ipyNoteFinalTop.pdf>
-Package pdftex.def Info: ipyNoteFinalTop.pdf used on input line 6433.
+Package pdftex.def Info: ipyNoteFinalTop.pdf used on input line 6437.
 (pdftex.def)             Requested size: 355.65944pt x 187.26816pt.
  [195 <./mileageNB.pdf>]
 [196 <./ipyNoteFinalTop.pdf>]
@@ -1579,12 +1592,12 @@ d PDF version <1.6>, but at most version <1.5> allowed
 <markdown.pdf, id=2491, 781.32901pt x 550.86804pt>
 File: markdown.pdf Graphic file (type pdf)
  <use markdown.pdf>
-Package pdftex.def Info: markdown.pdf used on input line 6456.
+Package pdftex.def Info: markdown.pdf used on input line 6460.
 (pdftex.def)             Requested size: 781.3271pt x 550.8667pt.
 File: markdown.pdf Graphic file (type pdf)
 
 <use markdown.pdf>
-Package pdftex.def Info: markdown.pdf used on input line 6456.
+Package pdftex.def Info: markdown.pdf used on input line 6460.
 (pdftex.def)             Requested size: 355.65944pt x 250.75462pt.
 
 
@@ -1594,18 +1607,18 @@ sion: found PDF version <1.6>, but at most version <1.5> allowed
 File: ipyNoteFinalBottom.pdf Graphic file (type pdf)
 
 <use ipyNoteFinalBottom.pdf>
-Package pdftex.def Info: ipyNoteFinalBottom.pdf used on input line 6466.
+Package pdftex.def Info: ipyNoteFinalBottom.pdf used on input line 6470.
 (pdftex.def)             Requested size: 782.33086pt x 616.57202pt.
 File: ipyNoteFinalBottom.pdf Graphic file (type pdf)
  <use ipyNoteFinalBottom.pdf>
-Package pdftex.def Info: ipyNoteFinalBottom.pdf used on input line 6466.
+Package pdftex.def Info: ipyNoteFinalBottom.pdf used on input line 6470.
 (pdftex.def)             Requested size: 355.65944pt x 280.30618pt.
  [197 <./markdown.pdf>] [198 <./ipyNoteFinalBottom.pdf>] [199] [200
 
 ]
 Appendix C.
 [201] [202]
-Underfull \hbox (badness 10000) in paragraph at lines 6548--6550
+Underfull \hbox (badness 10000) in paragraph at lines 6552--6554
 []\T1/ptm/m/n/10 The mail-ing
  []
 
@@ -1616,22 +1629,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 6548--6550
 ] [206] [207
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6566.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 6566.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6570.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 6570.
  (./PyMan.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 6566.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6566.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 6570.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6570.
 
 Package rerunfilecheck Info: File `PyMan.out' has not changed.
 (rerunfilecheck)             Checksum: 4C8280904CD4AA2DDAA3EEC439AFD23B;4808.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6566.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6570.
  ) 
 Here is how much of TeX's memory you used:
- 10777 strings out of 493108
- 157415 string characters out of 6134847
- 267260 words of memory out of 5000000
- 13358 multiletter control sequences out of 15000+600000
- 72418 words of font info for 92 fonts, out of 8000000 for 9000
+ 10811 strings out of 493108
+ 158051 string characters out of 6134848
+ 267439 words of memory out of 5000000
+ 13383 multiletter control sequences out of 15000+600000
+ 73023 words of font info for 94 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  38i,19n,51p,1513b,565s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -1657,7 +1670,7 @@ c/uhvb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/helvetic/uhvbo
 l/texlive/2014/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive
 /2014/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on PyMan.pdf (213 pages, 2917819 bytes).
+Output written on PyMan.pdf (213 pages, 2917997 bytes).
 PDF statistics:
  2891 PDF objects out of 2984 (max. 8388607)
  1961 compressed objects within 20 object streams
