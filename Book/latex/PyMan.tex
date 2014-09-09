@@ -16,8 +16,8 @@
 
 
 \title{Introduction to Python for Science}
-\date{September 08, 2014}
-\release{0.9.28}
+\date{September 09, 2014}
+\release{0.9.29}
 \author{David J. Pine}
 \newcommand{\sphinxlogo}{}
 \renewcommand{\releasename}{Release}
@@ -6399,7 +6399,7 @@ To create a new IPython notebook, click the \code{New Notebook} button.  That wi
 
 \section{Using an IPython Notebook}
 \label{apdx2/apdx2_ipynb:using-an-ipython-notebook}
-When you open a new IPython Notebook, an IPython interactive cell with the prompt \code{In{[} {]}:} to the left, appears.  You can type code into this cell just as you would in the IPython shell of the {\hyperref[chap2/chap2_basics:fig-canopywindow]{\emph{Canopy window}}}.  For example, typing \code{2+3} into the cell and pressing \code{Shift-Enter} (or \code{Shift-Return}) to execute the cell yields the expected result.  Try it out.  Typing \code{sin(pi/6.)} and pressing \code{Shift-Enter} produces the expected result (to nearly 1 part in \(10^{16}\)).
+When you open a new IPython Notebook, an IPython interactive cell with the prompt \code{In{[} {]}:} to the left, appears.  You can type code into this cell just as you would in the IPython shell of the {\hyperref[chap2/chap2_basics:fig-canopywindow]{\emph{Canopy window}}}.  For example, typing \code{2+3} into the cell and pressing \code{Shift-Enter} (or \code{Shift-Return}) to execute the cell yields the expected result.  Try it out.
 \begin{figure}[htbp]
 \centering
 \capstart
@@ -6407,9 +6407,11 @@ When you open a new IPython Notebook, an IPython interactive cell with the promp
 \scalebox{0.900000}{\includegraphics{firstIPyNBcells.pdf}}
 \caption{IPython Notebook demo}\label{apdx2/apdx2_ipynb:fig-firstipynbcells}\end{figure}
 
-Below the result a new IPython interactive cell appears ready for your next entry.  In the next cell type the commands to import \code{numpy} and \code{matplotlib.pyplot} as shown in the {\hyperref[apdx2/apdx2_ipynb:fig-firstipynbcells]{\emph{IPython Notebook demo}}} figure.  These two commands are separated by the \code{Shift} (without \code{Enter} or \code{Return}) so that they appear in the same cell.  They are then both executed by pressing \code{Shift-Enter} (or \code{Shift-Return}).
+Below the result a new IPython interactive cell appears ready for your next entry.  In the next cell type the commands to import \code{numpy} and \code{matplotlib.pyplot} as shown in the {\hyperref[apdx2/apdx2_ipynb:fig-firstipynbcells]{\emph{IPython Notebook demo}}} figure.  These two commands are separated by the \code{Shift} (without \code{Enter} or \code{Return}) so that they appear in the same cell.  They are then both executed by pressing \code{Shift-Enter} (or \code{Shift-Return}).  After importing numpy, typing \code{sin(np.pi/6.)} and pressing \code{Shift-Enter} produces the expected result (to nearly 1 part in \(10^{16}\)).
 
-You can also create plots in an IPython notebook.  For example, typing \code{plot({[}1,2,3,2,3,4,3,4,5{]})} and pressing \code{Shift-Enter} produces  the same plot shown in the {\hyperref[chap5/chap5_plot:fig-zigzagplotdemo]{\emph{Interactive plot window}}} figure.  The plot is produced ``in line'' and not in a separate window, because we used the \code{-{-}matplotlib inline} switch when we launched IPython Notebook.  If you have followed along, your IPython notebook should look something like that shown in the figure {\hyperref[apdx2/apdx2_ipynb:fig-firstipynbcells]{\emph{IPython Notebook demo}}}.
+You can also create plots in an IPython notebook.  For example, typing \code{plt.plot({[}1,2,3,2,3,4,3,4,5{]})} and pressing \code{Shift-Enter} produces  the same plot shown in the {\hyperref[chap5/chap5_plot:fig-zigzagplotdemo]{\emph{Interactive plot window}}} figure.  The plot is produced ``in line'' and not in a separate window, because we used the \code{-{-}matplotlib inline} switch when we launched IPython Notebook.  If you have followed along, your IPython notebook should look something like that shown in the figure {\hyperref[apdx2/apdx2_ipynb:fig-firstipynbcells]{\emph{IPython Notebook demo}}}.
+
+When importing NumPy and MatPlotLib, you can import the entire libraries using the commands  ``\code{from numpy import *}'' and ``\code{from matplotlib.pyplot import *}''.  Importing the two libraries in this way means that you don't have to use the \code{np.} and \code{plt.} prefixes when calling NumPy and MatPlotLib functions, just as in the IPython console in Canopy or Spyder.  While this could lead to some confusion in the namespaces, it's usually harmless.
 
 Be sure to press the \code{Save and Checkpoint} icon at the far left near the top of the IPython Notebook window from time to time to \textbf{save your work}.
 

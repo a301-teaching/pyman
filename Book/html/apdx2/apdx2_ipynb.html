@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>11. IPython Notebooks &mdash; PyMan 0.9.28 documentation</title>
+    <title>11. IPython Notebooks &mdash; PyMan 0.9.29 documentation</title>
     
     <link rel="stylesheet" href="../_static/agogo.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '0.9.28',
+        VERSION:     '0.9.29',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="PyMan 0.9.28 documentation" href="../index.html" />
+    <link rel="top" title="PyMan 0.9.29 documentation" href="../index.html" />
     <link rel="next" title="12. Python Resources" href="../apdx3/apdx3_resources.html" />
     <link rel="prev" title="10. Installing Python" href="../apdx1/apdx1_install.html" /> 
   </head>
@@ -31,7 +31,7 @@
     <div class="header-wrapper">
       <div class="header">
         <div class="headertitle"><a
-          href="../pymanMaster.html">PyMan 0.9.28 documentation</a></div>
+          href="../pymanMaster.html">PyMan 0.9.29 documentation</a></div>
         <div class="rel">
           <a href="../apdx1/apdx1_install.html" title="10. Installing Python"
              accesskey="P">previous</a> |
@@ -80,13 +80,14 @@
 </div>
 <div class="section" id="using-an-ipython-notebook">
 <h2>11.3. Using an IPython Notebook<a class="headerlink" href="#using-an-ipython-notebook" title="Permalink to this headline">¶</a></h2>
-<p>When you open a new IPython Notebook, an IPython interactive cell with the prompt <tt class="docutils literal"><span class="pre">In[</span> <span class="pre">]:</span></tt> to the left, appears.  You can type code into this cell just as you would in the IPython shell of the <a class="reference internal" href="../chap2/chap2_basics.html#fig-canopywindow"><em>Canopy window</em></a>.  For example, typing <tt class="docutils literal"><span class="pre">2+3</span></tt> into the cell and pressing <tt class="docutils literal"><span class="pre">Shift-Enter</span></tt> (or <tt class="docutils literal"><span class="pre">Shift-Return</span></tt>) to execute the cell yields the expected result.  Try it out.  Typing <tt class="docutils literal"><span class="pre">sin(pi/6.)</span></tt> and pressing <tt class="docutils literal"><span class="pre">Shift-Enter</span></tt> produces the expected result (to nearly 1 part in <img class="math" src="../_images/math/e297e127ada10e7c2045a57828969910677c3d20.png" alt="10^{16}"/>).</p>
+<p>When you open a new IPython Notebook, an IPython interactive cell with the prompt <tt class="docutils literal"><span class="pre">In[</span> <span class="pre">]:</span></tt> to the left, appears.  You can type code into this cell just as you would in the IPython shell of the <a class="reference internal" href="../chap2/chap2_basics.html#fig-canopywindow"><em>Canopy window</em></a>.  For example, typing <tt class="docutils literal"><span class="pre">2+3</span></tt> into the cell and pressing <tt class="docutils literal"><span class="pre">Shift-Enter</span></tt> (or <tt class="docutils literal"><span class="pre">Shift-Return</span></tt>) to execute the cell yields the expected result.  Try it out.</p>
 <div class="figure align-center" id="fig-firstipynbcells">
 <a class="reference internal image-reference" href="../_images/firstIPyNBcells.jpg"><img alt="IPython Notebook demo" src="../_images/firstIPyNBcells.jpg" style="width: 694.8px; height: 719.1px;" /></a>
 <p class="caption">IPython Notebook demo</p>
 </div>
-<p>Below the result a new IPython interactive cell appears ready for your next entry.  In the next cell type the commands to import <tt class="docutils literal"><span class="pre">numpy</span></tt> and <tt class="docutils literal"><span class="pre">matplotlib.pyplot</span></tt> as shown in the <a class="reference internal" href="#fig-firstipynbcells"><em>IPython Notebook demo</em></a> figure.  These two commands are separated by the <tt class="docutils literal"><span class="pre">Shift</span></tt> (without <tt class="docutils literal"><span class="pre">Enter</span></tt> or <tt class="docutils literal"><span class="pre">Return</span></tt>) so that they appear in the same cell.  They are then both executed by pressing <tt class="docutils literal"><span class="pre">Shift-Enter</span></tt> (or <tt class="docutils literal"><span class="pre">Shift-Return</span></tt>).</p>
-<p>You can also create plots in an IPython notebook.  For example, typing <tt class="docutils literal"><span class="pre">plot([1,2,3,2,3,4,3,4,5])</span></tt> and pressing <tt class="docutils literal"><span class="pre">Shift-Enter</span></tt> produces  the same plot shown in the <a class="reference internal" href="../chap5/chap5_plot.html#fig-zigzagplotdemo"><em>Interactive plot window</em></a> figure.  The plot is produced &#8220;in line&#8221; and not in a separate window, because we used the <tt class="docutils literal"><span class="pre">--matplotlib</span> <span class="pre">inline</span></tt> switch when we launched IPython Notebook.  If you have followed along, your IPython notebook should look something like that shown in the figure <a class="reference internal" href="#fig-firstipynbcells"><em>IPython Notebook demo</em></a>.</p>
+<p>Below the result a new IPython interactive cell appears ready for your next entry.  In the next cell type the commands to import <tt class="docutils literal"><span class="pre">numpy</span></tt> and <tt class="docutils literal"><span class="pre">matplotlib.pyplot</span></tt> as shown in the <a class="reference internal" href="#fig-firstipynbcells"><em>IPython Notebook demo</em></a> figure.  These two commands are separated by the <tt class="docutils literal"><span class="pre">Shift</span></tt> (without <tt class="docutils literal"><span class="pre">Enter</span></tt> or <tt class="docutils literal"><span class="pre">Return</span></tt>) so that they appear in the same cell.  They are then both executed by pressing <tt class="docutils literal"><span class="pre">Shift-Enter</span></tt> (or <tt class="docutils literal"><span class="pre">Shift-Return</span></tt>).  After importing numpy, typing <tt class="docutils literal"><span class="pre">sin(np.pi/6.)</span></tt> and pressing <tt class="docutils literal"><span class="pre">Shift-Enter</span></tt> produces the expected result (to nearly 1 part in <img class="math" src="../_images/math/e297e127ada10e7c2045a57828969910677c3d20.png" alt="10^{16}"/>).</p>
+<p>You can also create plots in an IPython notebook.  For example, typing <tt class="docutils literal"><span class="pre">plt.plot([1,2,3,2,3,4,3,4,5])</span></tt> and pressing <tt class="docutils literal"><span class="pre">Shift-Enter</span></tt> produces  the same plot shown in the <a class="reference internal" href="../chap5/chap5_plot.html#fig-zigzagplotdemo"><em>Interactive plot window</em></a> figure.  The plot is produced &#8220;in line&#8221; and not in a separate window, because we used the <tt class="docutils literal"><span class="pre">--matplotlib</span> <span class="pre">inline</span></tt> switch when we launched IPython Notebook.  If you have followed along, your IPython notebook should look something like that shown in the figure <a class="reference internal" href="#fig-firstipynbcells"><em>IPython Notebook demo</em></a>.</p>
+<p>When importing NumPy and MatPlotLib, you can import the entire libraries using the commands  &#8220;<tt class="docutils literal"><span class="pre">from</span> <span class="pre">numpy</span> <span class="pre">import</span> <span class="pre">*</span></tt>&#8221; and &#8220;<tt class="docutils literal"><span class="pre">from</span> <span class="pre">matplotlib.pyplot</span> <span class="pre">import</span> <span class="pre">*</span></tt>&#8221;.  Importing the two libraries in this way means that you don&#8217;t have to use the <tt class="docutils literal"><span class="pre">np.</span></tt> and <tt class="docutils literal"><span class="pre">plt.</span></tt> prefixes when calling NumPy and MatPlotLib functions, just as in the IPython console in Canopy or Spyder.  While this could lead to some confusion in the namespaces, it&#8217;s usually harmless.</p>
 <p>Be sure to press the <tt class="docutils literal"><span class="pre">Save</span> <span class="pre">and</span> <span class="pre">Checkpoint</span></tt> icon at the far left near the top of the IPython Notebook window from time to time to <strong>save your work</strong>.</p>
 </div>
 <div class="section" id="running-programs-in-an-ipython-notebook">
@@ -222,7 +223,7 @@ duration $T$ of the trip:
           
     <div class="footer">
         &copy; Copyright 2014, David J. Pine.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
     </div>
         </div>
         <div class="clearer"></div>

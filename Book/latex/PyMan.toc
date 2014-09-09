@@ -149,7 +149,7 @@
 \contentsline {section}{\numberline {B.2}Installing and launching an IPython notebook}{191}{section.B.2}
 \contentsline {section}{\numberline {B.3}Using an IPython Notebook}{193}{section.B.3}
 \contentsline {section}{\numberline {B.4}Running programs in an IPython Notebook}{195}{section.B.4}
-\contentsline {section}{\numberline {B.5}Annotating an IPython Notebook}{195}{section.B.5}
+\contentsline {section}{\numberline {B.5}Annotating an IPython Notebook}{196}{section.B.5}
 \contentsline {section}{\numberline {B.6}Editing and rerunning a notebook}{198}{section.B.6}
 \contentsline {section}{\numberline {B.7}Quitting an IPython notebook}{199}{section.B.7}
 \contentsline {section}{\numberline {B.8}Working with an existing IPython notebook}{199}{section.B.8}
