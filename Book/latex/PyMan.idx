@@ -79,6 +79,7 @@
 \indexentry{functions!looping over arrays|hyperpage}{117}
 \indexentry{functions!fast array processing|hyperpage}{119}
 \indexentry{conditionals!applied to arrays|hyperpage}{119}
+\indexentry{functions!multiple inputs and/or outputs|hyperpage}{120}
 \indexentry{functions!arguments!keyword|hyperpage}{121}
 \indexentry{functions!arguments!positional|hyperpage}{121}
 \indexentry{functions!arguments!variable number|hyperpage}{122}
@@ -86,31 +87,41 @@
 \indexentry{functions!arguments!**kwargs|hyperpage}{122}
 \indexentry{curve fitting!linear|hyperpage}{130}
 \indexentry{curve fitting!linear!with weighting|hyperpage}{134}
-\indexentry{Anonymous functions|hyperpage}{135}
-\indexentry{Anonymous functions!lambda expressions|hyperpage}{135}
+\indexentry{anonymous functions|hyperpage}{135}
+\indexentry{anonymous functions!lambda expressions|hyperpage}{135}
 \indexentry{lambda expressions|hyperpage}{135}
 \indexentry{curve fitting|hyperpage}{141}
 \indexentry{curve fitting!linear!exponential function|hyperpage}{143}
 \indexentry{curve fitting!linear!power law function|hyperpage}{148}
 \indexentry{curve fitting!linear!power-law function|hyperpage}{148}
 \indexentry{curve fitting!nonlinear|hyperpage}{148}
+\indexentry{SciPy!nonlinear curve fitting|hyperpage}{149}
 \indexentry{list comprehension|hyperpage}{150}
-\indexentry{special functions|hyperpage}{159}
-\indexentry{numerical integration|hyperpage}{163}
+\indexentry{SciPy|hyperpage}{159}
+\indexentry{SciPy!special functions|hyperpage}{159}
+\indexentry{SciPy!numerical integration|hyperpage}{163}
 \indexentry{numerical integration!single integrals|hyperpage}{163}
 \indexentry{numerical integration!integrals of polynomials|hyperpage}{165}
 \indexentry{numerical integration!double integrals|hyperpage}{166}
 \indexentry{ODEs!numerical solutions|hyperpage}{168}
+\indexentry{SciPy!ODEs|hyperpage}{168}
 \indexentry{discrete Fourier transforms|hyperpage}{171}
+\indexentry{SciPy!discrete Fourier transforms|hyperpage}{171}
 \indexentry{fast Fourier transforms|hyperindexformat{\see{discrete Fourier transforms}}}{171}
 \indexentry{FFTs|hyperindexformat{\see{discrete Fourier transforms}}}{171}
 \indexentry{linear algebra|hyperpage}{176}
+\indexentry{SciPy!linear algebra|hyperpage}{176}
 \indexentry{linear algebra!solving systems of equations|hyperpage}{176}
+\indexentry{SciPy!solving systems of equations|hyperpage}{176}
 \indexentry{linear algebra!eigenvalue problems|hyperpage}{178}
+\indexentry{eigenvalue problems|hyperpage}{178}
+\indexentry{anonymous functions!lambda expressions|hyperpage}{178}
+\indexentry{lambda expressions|hyperpage}{178}
 \indexentry{linear algebra!generalized eigenvalue problem|hyperpage}{179}
 \indexentry{linear algebra!Hermitian and banded matrices|hyperpage}{180}
 \indexentry{non-linear equations|hyperpage}{180}
 \indexentry{non-linear equations!solving|hyperpage}{180}
+\indexentry{SciPy!non-linear equations|hyperpage}{180}
 \indexentry{solving non-linear equations|hyperindexformat{\see{non-linear equations}}}{180}
 \indexentry{roots of equations|hyperindexformat{\see{non-linear equations}}}{180}
 \indexentry{non-linear equations!Brent method|hyperpage}{181}

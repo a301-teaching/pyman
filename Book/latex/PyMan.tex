@@ -16,7 +16,7 @@
 
 
 \title{Introduction to Python for Science}
-\date{September 09, 2014}
+\date{September 13, 2014}
 \release{0.9.29}
 \author{David J. Pine}
 \newcommand{\sphinxlogo}{}
@@ -2172,7 +2172,7 @@ The value of the \code{distance} is \code{450} as expected, but it is a string (
 \PYG{g+gr}{Out[4]: }\PYG{l+m+mi}{450}
 \end{Verbatim}
 
-The eval function has converted \emph{distance} to an integer.  This is fine and we are ready to move on.  However, we might prefer that \code{distance} be a float instead of an integer.  There are two ways to do this.  We could assume the user is very smart and will type ``\code{450.}'' instead of ``\code{450}'', which will cause distance to be a float when \code{eval} does the conversion.  That is, the number 450 is dynamically typed to be a float or an integer depending on whether or not the user uses a decimal point.  Alternatively, we could use the function \code{float} in place of \code{eval}, which would ensure that \code{distance} is a floating point variable.  Thus, our code would look like this (including the user response):
+The \code{eval} function has converted \code{distance} to an integer.  This is fine and we are ready to move on.  However, we might prefer that \code{distance} be a float instead of an integer.  There are two ways to do this.  We could assume the user is very smart and will type ``\code{450.}'' instead of ``\code{450}'', which will cause distance to be a float when \code{eval} does the conversion.  That is, the number 450 is dynamically typed to be a float or an integer depending on whether or not the user uses a decimal point.  Alternatively, we could use the function \code{float} in place of \code{eval}, which would ensure that \code{distance} is a floating point variable.  Thus, our code would look like this (including the user response):
 
 \begin{Verbatim}[commandchars=\\\{\}]
 \PYG{g+gp}{In [5]: }\PYG{n}{distance} \PYG{o}{=} \PYG{n+nb}{raw\PYGZus{}input}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{Input distance of trip in miles: }\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
@@ -4277,9 +4277,10 @@ The \code{where} function creates the array \code{y} and sets the elements of \c
 \label{chap7/chap7_funcs:the-moral-of-the-story}
 The moral of the story is that you should avoid using \code{for} and \code{while} loops to process arrays in Python programs whenever an array-processing method is available.  As a beginning Python programmer, you may not always see how to avoid loops, and indeed, avoiding them is not always possible, but you should look for ways to avoid loops, especially loops that iterate a large number of times. As you become more experienced, you will find that using array-processing methods in Python becomes more natural. Using them can greatly speed up the execution of your code, especially when working with large arrays.
 
+\index{functions!multiple inputs and/or outputs}
 
 \subsection{Functions with more (or less) than one input or output}
-\label{chap7/chap7_funcs:functions-with-more-or-less-than-one-input-or-output}
+\label{chap7/chap7_funcs:functions-with-more-or-less-than-one-input-or-output}\label{chap7/chap7_funcs:index-3}
 Python functions can have any number of input arguments and can return any number of variables.  For example, suppose you want a function that outputs \(n\) \((x,y)\) coordinates around a circle of radius \(r\) centered at the point \((x_0,y_0)\).  The inputs to the function would be  \(r\), \(x_0\), \(y_0\), and  \(n\).  The outputs would be the \(n\) \((x,y)\) coordinates.  The following code implements this function.
 
 \begin{Verbatim}[commandchars=\\\{\}]
@@ -4308,7 +4309,7 @@ The function is invoked by typing \code{clear()}.  It has no inputs and no outpu
 \index{functions!arguments!keyword}\index{functions!arguments!positional}
 
 \subsection{Positional and keyword arguments}
-\label{chap7/chap7_funcs:positional-and-keyword-arguments}\label{chap7/chap7_funcs:index-3}
+\label{chap7/chap7_funcs:index-4}\label{chap7/chap7_funcs:positional-and-keyword-arguments}
 It is often useful to have function arguments that have some default setting.  This happens when you want an input to a function to have some standard value or setting most of the time, but you would like to reserve the possibility of giving it some value other than the default value.
 
 For example, in the program \code{circle} from the previous section, we might decide that under most circumstances, we want \code{n=12} points around the circle, like the points on a clock face, and we want the circle to be centered at the origin.  In this case, we would rewrite the code to read
@@ -4349,7 +4350,7 @@ By now you probably have noticed that we used the keyword argument \code{endpoin
 \index{functions!arguments!variable number}\index{functions!arguments!*args}\index{functions!arguments!**kwargs}
 
 \subsection{Variable number of arguments}
-\label{chap7/chap7_funcs:index-4}\label{chap7/chap7_funcs:variable-number-of-arguments}
+\label{chap7/chap7_funcs:index-5}\label{chap7/chap7_funcs:variable-number-of-arguments}
 While it may seem odd, it is sometimes useful to leave the number of arguments unspecified.  A simple example is a function that computes the product of an arbitrary number of numbers:
 
 \begin{Verbatim}[commandchars=\\\{\}]
@@ -4631,7 +4632,7 @@ The \code{clip()} method provides an example of a method that takes an argument,
 \index{curve fitting!linear}
 
 \section{Example: linear least squares fitting}
-\label{chap7/chap7_funcs:example-linear-least-squares-fitting}\label{chap7/chap7_funcs:linfitfunc}\label{chap7/chap7_funcs:index-5}
+\label{chap7/chap7_funcs:example-linear-least-squares-fitting}\label{chap7/chap7_funcs:index-6}\label{chap7/chap7_funcs:linfitfunc}
 In this section we illustrate how to use functions and methods in the context of modeling experimental data.
 
 In science and engineering we often have some theoretical curve or \emph{fitting function} that we would like to fit to some experimental data.  In general, the fitting function is of the form \(f(x; a, b, c, ...)\), where \(x\) is the independent variable and \(a\), \(b\), \(c\), ... are parameters to be adjusted so that the function \(f(x; a, b, c, ...)\) best fits the experimental data.  For example, suppose we had some data of the velocity \emph{vs} time for a falling mass.  If the mass falls only a short distance such that its velocity remains well below its terminal velocity, we can ignore air resistance.  In this case, we expect the acceleration to be constant and the velocity to change linearly in time according to the equation
@@ -4718,7 +4719,7 @@ It's hard to imagine a simpler implementation of the linear regression algorithm
 \index{curve fitting!linear!with weighting}
 
 \subsection{Linear regression with weighting: \(\chi^2\)}
-\label{chap7/chap7_funcs:index-6}\label{chap7/chap7_funcs:linear-regression-with-weighting}
+\label{chap7/chap7_funcs:index-7}\label{chap7/chap7_funcs:linear-regression-with-weighting}
 The linear regression routine of the previous section weights all data points equally.  That is fine if the absolute uncertainty is the same for all data points.  In many cases, however, the uncertainty is different for different points in a data set.  In such cases, we would like to weight the data that has smaller uncertainty more heavily than those data that have greater uncertainty.  For this case, there is a standard method of weighting and fitting data that is known as \(\chi^2\)  (or \emph{chi-squared}) fitting.  In this method we suppose that associated with each \((x_{i},y_{i})\) data point is an uncertainty in the value of \(y_{i}\) of \(\pm\sigma_{i}\).  In this case, the ``best fit'' is defined as the the one with the set of fitting parameters that minimizes the sum
 \phantomsection\label{chap7/chap7_funcs:equation-eq:chisq}\begin{gather}
 \begin{split}\chi^2 = \sum_{i} \left(\frac{y_{i} - f(x_{i})} {\sigma_{i}}\right)^2 \;.\end{split}\label{chap7/chap7_funcs-eq:chisq}
@@ -4760,10 +4761,10 @@ The estimates of uncertainties in the fitting parameters depend explicitly on \(
 
 You can find more information, including a derivation of Eq. \eqref{chap7/chap7_funcs-eq:absigma}, in \emph{Data Reduction and Error Analysis for the Physical Sciences, 3rd ed} by P. R. Bevington \& D. K. Robinson, McGraw-Hill, New York, 2003.
 
-\index{Anonymous functions}\index{Anonymous functions!lambda expressions}\index{lambda expressions}
+\index{anonymous functions}\index{anonymous functions!lambda expressions}\index{lambda expressions}
 
 \section{Anonymous functions (lambda)}
-\label{chap7/chap7_funcs:anonymous-functions-lambda}\label{chap7/chap7_funcs:index-7}\label{chap7/chap7_funcs:lambda}
+\label{chap7/chap7_funcs:anonymous-functions-lambda}\label{chap7/chap7_funcs:index-8}\label{chap7/chap7_funcs:lambda}
 Python provides another way to generate functions called \emph{lambda} expressions.  A lambda expression is a kind of in-line function that can be generated on the fly to accomplish some small task.  You can assign lambda functions a name, but you don't need to; hence, they are often called \emph{anonymous} functions.  A lambda uses the keyword \code{lambda} and has the general form
 
 \begin{Verbatim}[commandchars=\\\{\}]
@@ -5067,6 +5068,7 @@ There are a number of different methods for trying to find the minimum in \(\chi
 
 Before illustrating the Levenberg-Marquardt method, we make one important cautionary remark: the Levenberg-Marquardt method can fail if the initial guesses of the fitting parameters are too far away from the desired solution.  This problem becomes more serious the greater the number of fitting parameters.  Thus it is important to provide reasonable initial guesses for the fitting parameters.  Usually, this is not a problem, as it is clear from the physical situation of a particular experiment what reasonable values of the fitting parameters are.  But beware!
 
+\index{SciPy!nonlinear curve fitting}
 The \code{scipy.optimize} module provides routines that implement the Levenberg-Marquardt non-linear fitting method.  One is called \code{scipy.optimize.leastsq}.  A somewhat more user-friendly version of the same method is accessed through another routine in the same \code{scipy.optimize} module: it's called \code{scipy.optimize.curve\_fit} and it is the one we demonstrate here.  The function call is
 
 \begin{Verbatim}[commandchars=\\\{\}]
@@ -5350,14 +5352,15 @@ time (ms)  signal  uncertainty
 \label{chap9/chap9_scipy::doc}\label{chap9/chap9_scipy:numerical-routines-scipy-and-numpy}\label{chap9/chap9_scipy:chap9}
 SciPy is a Python library of mathematical routines.  Many of the SciPy routines are Python ``wrappers'', that is, Python routines that provide a Python interface for numerical libraries and routines originally written in Fortran, C, or C++.  Thus, SciPy lets you take advantage of the decades of work that has gone into creating and optimizing numerical routines for science and engineering.  Because the Fortran, C, or C++ code that Python accesses is compiled, these routines typically run very fast.  Therefore, there is no real downside---no speed penalty---for using Python in these cases.
 
+\index{SciPy}
 We have already encountered one of SciPy's routines, \code{scipy.optimize.leastsq}, for fitting nonlinear functions to experimental data, which was introduced in the the chapter on {\hyperref[chap8/chap8_fitting:chap8]{\emph{Curve Fitting}}}.   Here we will provide a further introduction to a number of other SciPy packages, in particular those on special functions, numerical integration, including routines for numerically solving ordinary differential equations (ODEs), discrete Fourier transforms, linear algebra, and solving non-linear equations.  Our introduction to these capabilities does not include extensive background on the numerical methods employed; that is a topic for another text.  Here we simply introduce the SciPy routines for performing some of the more frequently required numerical tasks.
 
 One final note:  SciPy makes extensive use of NumPy arrays, so NumPy should always be imported with SciPy
 
-\index{special functions}
+\index{SciPy!special functions}
 
 \section{Special functions}
-\label{chap9/chap9_scipy:index-0}\label{chap9/chap9_scipy:specfunc}\label{chap9/chap9_scipy:special-functions}
+\label{chap9/chap9_scipy:specfunc}\label{chap9/chap9_scipy:special-functions}\label{chap9/chap9_scipy:index-1}
 SciPy provides a plethora of special functions, including Bessel functions (and routines for finding their zeros, derivatives, and integrals), error functions, the gamma function, Legendre, Laguerre, and Hermite polynomials (and other polynomial functions), Mathieu functions, many statistical functions, and a number of other functions.  Most are contained in the \code{scipy.special} library, and each has its own special arguments and syntax, depending on the vagaries of the particular function.  We demonstrate a number of them in the code below that produces a plot of the different functions called.  For more information, you should consult the SciPy web site on the \code{scipy.special} library.
 \begin{quote}
 \begin{figure}[htbp]
@@ -5468,10 +5471,10 @@ For example, if \code{p = {[}2.0, 5.0, 1.0{]}}, \code{polyval(p, x)} generates t
 
 SciPy's \code{special.legendre(n)} and \code{special.laguerre(n)} functions output the coefficients \code{p} needed in \code{polyval} to produce the \(n^\mathrm{th}\)-order Legendre and Laguerre polynomials, respectively.  The \code{scipy.special} library has functions that specify many other polynomial functions in this same way.
 
-\index{numerical integration}\index{numerical integration!single integrals}
+\index{SciPy!numerical integration}\index{numerical integration!single integrals}
 
 \section{Numerical integration}
-\label{chap9/chap9_scipy:numericalintegration}\label{chap9/chap9_scipy:index-1}\label{chap9/chap9_scipy:numerical-integration}
+\label{chap9/chap9_scipy:numericalintegration}\label{chap9/chap9_scipy:index-2}\label{chap9/chap9_scipy:numerical-integration}
 When a function cannot be integrated analytically, or is very difficult to integrate analytically, one generally turns to numerical integration methods.   SciPy has a number of routines for performing numerical integration.  Most of them are found in the same \code{scipy.integrate} library.  We list them here for reference.
 \begin{quote}
 
@@ -5629,7 +5632,7 @@ Because the SciPy function \code{scipy.special.jn(v, x)} is a function of two va
 \index{numerical integration!integrals of polynomials}
 
 \subsubsection{Integrating polynomials}
-\label{chap9/chap9_scipy:integrating-polynomials}\label{chap9/chap9_scipy:index-2}
+\label{chap9/chap9_scipy:integrating-polynomials}\label{chap9/chap9_scipy:index-3}
 Working in concert with the NumPy \code{poly1d}, the NumPy function \code{polyint} takes the \(n^\mathrm{th}\) antiderivative of a polynomial and can be used to evaluate definite integrals.  The function \code{poly1d} essentially does the same thing as \code{polyval} that we encountered in the section {\hyperref[chap9/chap9_scipy:specfunc]{\emph{Special functions}}}, but with a different syntax.  Suppose we want to make the polynomial function \(p(x) = 2x^2 + 5x +1\).  Then we write
 
 \begin{Verbatim}[commandchars=\\\{\}]
@@ -5675,7 +5678,7 @@ or
 \index{numerical integration!double integrals}
 
 \subsection{Double integrals}
-\label{chap9/chap9_scipy:double-integrals}\label{chap9/chap9_scipy:index-3}
+\label{chap9/chap9_scipy:index-4}\label{chap9/chap9_scipy:double-integrals}
 The \code{scipy.integrate} function \code{dblquad} can be used to numerically evaluate double integrals of the form
 \begin{gather}
 \begin{split}\int_{y=a}^{y=b} dy \int_{x=g(y)}^{x=h(y)} dx\,f(x,y)\end{split}\notag
@@ -5725,10 +5728,10 @@ The code for this is given by
 \label{chap9/chap9_scipy:other-integration-routines}
 In addition to the routines described above, \code{scipy.integrate} has a number of other integration routines, including \code{nquad}, which performs \(n\)-fold multiple integration, as well as other routines that implement other integration algorithms.  You will find, however, that \code{quad} and \code{dblquad} meet most of your needs for numerical integration.
 
-\index{ODEs!numerical solutions}
+\index{ODEs!numerical solutions}\index{SciPy!ODEs}
 
 \section{Solving ODEs}
-\label{chap9/chap9_scipy:index-4}\label{chap9/chap9_scipy:solving-odes}
+\label{chap9/chap9_scipy:solving-odes}\label{chap9/chap9_scipy:index-5}
 The \code{scipy.integrate} library has two powerful powerful routines, \code{ode} and \code{odeint}, for numerically solving systems of coupled first order ordinary differential equations (ODEs).  While \code{ode} is more versatile, \code{odeint} (ODE integrator) has a simpler Python interface works very well for most problems.  It can handle both stiff and non-stiff problems.  Here we provide an introduction to \code{odeint}.
 
 A typical problem is to solve a second or higher order ODE for a given set of initial conditions.  Here we illustrate using \code{odeint} to solve the equation for a driven damped pendulum.  The equation of motion for the angle \(\theta\) that the pendulum makes with the vertical is given by
@@ -5845,10 +5848,10 @@ The only other tasks remaining are to define the parameters needed in the functi
 
 The plots above reveal that for the particular set of input parameters chosen, \code{Q = 2.0}, \code{d = 1.5}, and \code{Omega = 0.65}, the pendulum trajectories are chaotic.  Weaker forcing (smaller \(d\)) leads to what is perhaps the more familiar behavior of sinusoidal oscillations with a fixed frequency which, at long times, is equal to the driving frequency.
 
-\index{discrete Fourier transforms}\index{fast Fourier transforms|see{discrete Fourier transforms}}\index{FFTs|see{discrete Fourier transforms}}
+\index{discrete Fourier transforms}\index{SciPy!discrete Fourier transforms}\index{fast Fourier transforms|see{discrete Fourier transforms}}\index{FFTs|see{discrete Fourier transforms}}
 
 \section{Discrete (fast) Fourier transforms}
-\label{chap9/chap9_scipy:index-5}\label{chap9/chap9_scipy:discrete-fast-fourier-transforms}
+\label{chap9/chap9_scipy:index-6}\label{chap9/chap9_scipy:discrete-fast-fourier-transforms}
 The SciPy library has a number of routines for performing discrete Fourier transforms.  Before delving into them, we provide a brief review of Fourier transforms and discrete Fourier transforms.
 
 
@@ -5929,10 +5932,10 @@ As for most FFT routines, the \code{scipy.fftpack} FFT routines are most efficie
 
 \code{scipy.fftpack} also supplies an inverse DFT function \code{ifft}.  It is written to act on the \emph{unshifted} FFT so take care!  Note also that \code{ifft} returns a \emph{complex} array.  Because of machine roundoff error, the imaginary part of the function returned by \code{ifft} will, in general, be very near zero but not exactly zero even when the original function is a purely real function.
 
-\index{linear algebra}
+\index{linear algebra}\index{SciPy!linear algebra}
 
 \section{Linear algebra}
-\label{chap9/chap9_scipy:index-6}\label{chap9/chap9_scipy:linear-algebra}
+\label{chap9/chap9_scipy:linear-algebra}\label{chap9/chap9_scipy:index-7}
 Python's mathematical libraries, NumPy and SciPy, have extensive tools for numerically solving problems in linear algebra.  Here we focus on two problems that arise commonly in scientific and engineering settings: (1) solving a system of linear equations and (2) eigenvalue problems.  In addition, we also show how to perform a number of other basic computations, such as finding the determinant of a matrix, matrix inversion, and \(LU\) decomposition.  The SciPy package for linear algebra is called \code{scipy.linalg}.
 
 
@@ -5965,10 +5968,10 @@ The inverse of a matrix is computed using the \code{scipy.linalg.inv} function, 
 \PYG{g+go}{               [ 0.,  1.]])}
 \end{Verbatim}
 
-\index{linear algebra!solving systems of equations}
+\index{linear algebra!solving systems of equations}\index{SciPy!solving systems of equations}
 
 \subsection{Solving systems of linear equations}
-\label{chap9/chap9_scipy:solving-systems-of-linear-equations}\label{chap9/chap9_scipy:index-7}
+\label{chap9/chap9_scipy:solving-systems-of-linear-equations}\label{chap9/chap9_scipy:index-8}
 Solving systems of equations is nearly as simple as constructing a coefficient matrix and a column vector.  Suppose you have the following system of linear equations to solve:
 \begin{gather}
 \begin{split}2x_1 + 4x_2 + 6x_3 &= 4\\
@@ -6035,10 +6038,10 @@ where the third row is a multiple of the first row.  Let's try it out and see wh
 
 Whether we use \code{scipy.linalg.solve} or \code{scipy.linalg.inv}, SciPy raises an error because the matrix is singular.
 
-\index{linear algebra!eigenvalue problems}
+\index{linear algebra!eigenvalue problems}\index{eigenvalue problems}\index{anonymous functions!lambda expressions}\index{lambda expressions}
 
 \subsection{Eigenvalue problems}
-\label{chap9/chap9_scipy:eigenvalue-problems}\label{chap9/chap9_scipy:index-8}
+\label{chap9/chap9_scipy:eigenvalue-problems}\label{chap9/chap9_scipy:index-9}
 One of the most common problems in science and engineering is the eigenvalue problem, which in matrix form is written as
 \begin{gather}
 \begin{split}\mathsf{A}\mathbf{x} = \lambda \mathbf{x}\end{split}\notag
@@ -6093,7 +6096,7 @@ Thus we see by direct substitution that the left and right sides of \(\mathsf{A}
 \index{linear algebra!generalized eigenvalue problem}
 
 \subsubsection{Generalized eigenvalue problem}
-\label{chap9/chap9_scipy:generalized-eigenvalue-problem}\label{chap9/chap9_scipy:index-9}
+\label{chap9/chap9_scipy:generalized-eigenvalue-problem}\label{chap9/chap9_scipy:index-10}
 The \code{scipy.linalg.eig} function can also solve the \emph{generalized} eigenvalue problem
 \begin{gather}
 \begin{split}\mathsf{A}\mathbf{x} = \lambda \mathsf{B}\mathbf{x}\end{split}\notag
@@ -6127,15 +6130,15 @@ The solutions are returned in the same fashion as before, as an array \code{lam}
 \index{linear algebra!Hermitian and banded matrices}
 
 \subsubsection{Hermitian and banded matrices}
-\label{chap9/chap9_scipy:hermitian-and-banded-matrices}\label{chap9/chap9_scipy:index-10}
+\label{chap9/chap9_scipy:hermitian-and-banded-matrices}\label{chap9/chap9_scipy:index-11}
 SciPy has a specialized routine for solving eigenvalue problems for Hermitian (or real symmetric) matrices.  The routine for hermitian matrices is \code{scipy.linalg.eigh}.  It is more efficient (faster and uses less memory) than \code{scipy.linalg.eig}.  The basic syntax of the two routines is the same, although some of the \emph{optional} arguments are different.  Both routines can solve generalized as well as standard eigenvalue problems.
 
 SciPy also has a specialized routine \code{scipy.linalg.eig\_banded} for solving eigenvalue problems for real symmetric or complex hermitian banded matrices.
 
-\index{non-linear equations}\index{non-linear equations!solving}\index{solving non-linear equations|see{non-linear equations}}\index{roots of equations|see{non-linear equations}}
+\index{non-linear equations}\index{non-linear equations!solving}\index{SciPy!non-linear equations}\index{solving non-linear equations|see{non-linear equations}}\index{roots of equations|see{non-linear equations}}
 
 \section{Solving non-linear equations}
-\label{chap9/chap9_scipy:solving-non-linear-equations}\label{chap9/chap9_scipy:sec-findingroots}\label{chap9/chap9_scipy:index-11}
+\label{chap9/chap9_scipy:solving-non-linear-equations}\label{chap9/chap9_scipy:index-12}\label{chap9/chap9_scipy:sec-findingroots}
 SciPy has many different routines for numerically solving non-linear equations or systems of non-linear equations.  Here we will introduce only a few of these routines, the ones that are relatively simple and appropriate for the most common types of nonlinear equations.
 
 
@@ -6164,7 +6167,7 @@ Next, we plot \(f(x)\) over the domain of interest, in this case from \(x=0\) to
 \index{non-linear equations!Brent method}
 
 \subsubsection{Brent method}
-\label{chap9/chap9_scipy:brent-method}\label{chap9/chap9_scipy:index-12}
+\label{chap9/chap9_scipy:brent-method}\label{chap9/chap9_scipy:index-13}
 One of the workhorses for finding solutions to a single variable nonlinear equation is the method of Brent, discussed in many texts on numerical methods.  SciPy's implementation of the Brent algorithm is the function \code{scipy.optimize.brentq(f, a, b)}, which has three required arguments.  The first \code{f} is the name of the user-defined function to be solved.  The next two, \code{a} and \code{b} are the \(x\) values that bracket the solution you are looking for.  You should choose \code{a} and \code{b} so that there is only one solutions in the interval between \code{a} and \code{b}.  Brent's method also requires that \code{f(a)} and \code{f(b)} have opposite signs; an error message is returned if they do not.  Thus to find the three solutions to \(\tan x - \sqrt{(8/x)^2-1} = 0\), we need to run \code{scipy.optimize.brentq(f, a, b)} three times using three different values of \code{a} and \code{b} that bracket each of the three solutions.  The program below illustrates the how to use \code{scipy.optimize.brentq}
 
 \begin{Verbatim}[commandchars=\\\{\}]
@@ -6246,7 +6249,7 @@ The \code{brentq} function has a number of optional keyword arguments that you m
 \index{non-linear equations!Newton-Raphson method}
 
 \subsubsection{Other methods for solving equations of a single variable}
-\label{chap9/chap9_scipy:index-13}\label{chap9/chap9_scipy:other-methods-for-solving-equations-of-a-single-variable}
+\label{chap9/chap9_scipy:index-14}\label{chap9/chap9_scipy:other-methods-for-solving-equations-of-a-single-variable}
 SciPy provides a number of other methods for solving nonlinear equations of a single variable.  It has an implementation of the Newton-Raphson method called \code{scipy.optimize.newton}.  It's the racecar of such methods; its super fast but less stable that the Brent method.  To fully realize its speed, you need to specify not only the function to be solved, but also its first derivative, which is often more trouble than its worth.  You can also specify its second derivative, which may further speed up finding the solution.  If you do not specify the first or second derivatives, the method uses the secant method, which is usually slower than the Brent method.
 
 \index{non-linear equations!Ridder method}\index{non-linear equations!Bisection method}
@@ -6255,7 +6258,7 @@ Other methods, including the Ridder (\code{scipy.optimize.ridder}) and bisection
 \index{non-linear equations!systems of nonlinear equations}
 
 \subsection{Solving systems of nonlinear equations}
-\label{chap9/chap9_scipy:solving-systems-of-nonlinear-equations}\label{chap9/chap9_scipy:index-15}
+\label{chap9/chap9_scipy:index-16}\label{chap9/chap9_scipy:solving-systems-of-nonlinear-equations}
 Solving systems of nonlinear equations is not for the faint of heart.  It is a difficult problem that lacks any general purpose solutions.  Nevertheless, SciPy provides quite an assortment of numerical solvers for nonlinear systems of equations.  However, because of the complexity and subtleties of this class of problems, we do not discuss their use here.
 \newpage
 

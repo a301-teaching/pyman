@@ -54,10 +54,10 @@
   <div class="section" id="numerical-routines-scipy-and-numpy">
 <span id="chap9"></span><h1>9. Numerical Routines: SciPy and NumPy<a class="headerlink" href="#numerical-routines-scipy-and-numpy" title="Permalink to this headline">¶</a></h1>
 <p>SciPy is a Python library of mathematical routines.  Many of the SciPy routines are Python &#8220;wrappers&#8221;, that is, Python routines that provide a Python interface for numerical libraries and routines originally written in Fortran, C, or C++.  Thus, SciPy lets you take advantage of the decades of work that has gone into creating and optimizing numerical routines for science and engineering.  Because the Fortran, C, or C++ code that Python accesses is compiled, these routines typically run very fast.  Therefore, there is no real downside&#8212;no speed penalty&#8212;for using Python in these cases.</p>
-<p>We have already encountered one of SciPy&#8217;s routines, <tt class="docutils literal"><span class="pre">scipy.optimize.leastsq</span></tt>, for fitting nonlinear functions to experimental data, which was introduced in the the chapter on <a class="reference internal" href="../chap8/chap8_fitting.html#chap8"><em>Curve Fitting</em></a>.   Here we will provide a further introduction to a number of other SciPy packages, in particular those on special functions, numerical integration, including routines for numerically solving ordinary differential equations (ODEs), discrete Fourier transforms, linear algebra, and solving non-linear equations.  Our introduction to these capabilities does not include extensive background on the numerical methods employed; that is a topic for another text.  Here we simply introduce the SciPy routines for performing some of the more frequently required numerical tasks.</p>
+<p id="index-0">We have already encountered one of SciPy&#8217;s routines, <tt class="docutils literal"><span class="pre">scipy.optimize.leastsq</span></tt>, for fitting nonlinear functions to experimental data, which was introduced in the the chapter on <a class="reference internal" href="../chap8/chap8_fitting.html#chap8"><em>Curve Fitting</em></a>.   Here we will provide a further introduction to a number of other SciPy packages, in particular those on special functions, numerical integration, including routines for numerically solving ordinary differential equations (ODEs), discrete Fourier transforms, linear algebra, and solving non-linear equations.  Our introduction to these capabilities does not include extensive background on the numerical methods employed; that is a topic for another text.  Here we simply introduce the SciPy routines for performing some of the more frequently required numerical tasks.</p>
 <p>One final note:  SciPy makes extensive use of NumPy arrays, so NumPy should always be imported with SciPy</p>
 <div class="section" id="special-functions">
-<span id="specfunc"></span><span id="index-0"></span><h2>9.1. Special functions<a class="headerlink" href="#special-functions" title="Permalink to this headline">¶</a></h2>
+<span id="specfunc"></span><span id="index-1"></span><h2>9.1. Special functions<a class="headerlink" href="#special-functions" title="Permalink to this headline">¶</a></h2>
 <p>SciPy provides a plethora of special functions, including Bessel functions (and routines for finding their zeros, derivatives, and integrals), error functions, the gamma function, Legendre, Laguerre, and Hermite polynomials (and other polynomial functions), Mathieu functions, many statistical functions, and a number of other functions.  Most are contained in the <tt class="docutils literal"><span class="pre">scipy.special</span></tt> library, and each has its own special arguments and syntax, depending on the vagaries of the particular function.  We demonstrate a number of them in the code below that produces a plot of the different functions called.  For more information, you should consult the SciPy web site on the <tt class="docutils literal"><span class="pre">scipy.special</span></tt> library.</p>
 <blockquote>
 <div><div class="figure align-center" id="fig-specfuncplots">
@@ -244,7 +244,7 @@
 <p>SciPy&#8217;s <tt class="docutils literal"><span class="pre">special.legendre(n)</span></tt> and <tt class="docutils literal"><span class="pre">special.laguerre(n)</span></tt> functions output the coefficients <tt class="docutils literal"><span class="pre">p</span></tt> needed in <tt class="docutils literal"><span class="pre">polyval</span></tt> to produce the <img class="math" src="../_images/math/1a3679aec3dfb0f6adda3d47ea8364d642a9e903.png" alt="n^\mathrm{th}"/>-order Legendre and Laguerre polynomials, respectively.  The <tt class="docutils literal"><span class="pre">scipy.special</span></tt> library has functions that specify many other polynomial functions in this same way.</p>
 </div>
 <div class="section" id="numerical-integration">
-<span id="numericalintegration"></span><span id="index-1"></span><h2>9.2. Numerical integration<a class="headerlink" href="#numerical-integration" title="Permalink to this headline">¶</a></h2>
+<span id="numericalintegration"></span><span id="index-2"></span><h2>9.2. Numerical integration<a class="headerlink" href="#numerical-integration" title="Permalink to this headline">¶</a></h2>
 <p>When a function cannot be integrated analytically, or is very difficult to integrate analytically, one generally turns to numerical integration methods.   SciPy has a number of routines for performing numerical integration.  Most of them are found in the same <tt class="docutils literal"><span class="pre">scipy.integrate</span></tt> library.  We list them here for reference.</p>
 <blockquote>
 <div><table border="1" class="docutils">
@@ -363,7 +363,7 @@
 </div>
 <p>Because the SciPy function <tt class="docutils literal"><span class="pre">scipy.special.jn(v,</span> <span class="pre">x)</span></tt> is a function of two variables, <tt class="docutils literal"><span class="pre">v</span></tt> and <tt class="docutils literal"><span class="pre">x</span></tt>, we cannot use the function name <tt class="docutils literal"><span class="pre">scipy.special.jn</span></tt> in <tt class="docutils literal"><span class="pre">quad</span></tt>.  So we use a <tt class="docutils literal"><span class="pre">lambda</span></tt> expression, which is a function of only one variable, <tt class="docutils literal"><span class="pre">x</span></tt>, because we have set the <tt class="docutils literal"><span class="pre">v</span></tt> argument equal to 1.</p>
 <div class="section" id="integrating-polynomials">
-<span id="index-2"></span><h4>9.2.1.1. Integrating polynomials<a class="headerlink" href="#integrating-polynomials" title="Permalink to this headline">¶</a></h4>
+<span id="index-3"></span><h4>9.2.1.1. Integrating polynomials<a class="headerlink" href="#integrating-polynomials" title="Permalink to this headline">¶</a></h4>
 <p>Working in concert with the NumPy <tt class="docutils literal"><span class="pre">poly1d</span></tt>, the NumPy function <tt class="docutils literal"><span class="pre">polyint</span></tt> takes the <img class="math" src="../_images/math/1a3679aec3dfb0f6adda3d47ea8364d642a9e903.png" alt="n^\mathrm{th}"/> antiderivative of a polynomial and can be used to evaluate definite integrals.  The function <tt class="docutils literal"><span class="pre">poly1d</span></tt> essentially does the same thing as <tt class="docutils literal"><span class="pre">polyval</span></tt> that we encountered in the section <a class="reference internal" href="#specfunc"><em>Special functions</em></a>, but with a different syntax.  Suppose we want to make the polynomial function <img class="math" src="../_images/math/1a0530fa410bf433d7e63640496ceb309230ae8e.png" alt="p(x) = 2x^2 + 5x +1"/>.  Then we write</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [12]: </span><span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
 
@@ -399,7 +399,7 @@
 </div></div>
 </div>
 <div class="section" id="double-integrals">
-<span id="index-3"></span><h3>9.2.2. Double integrals<a class="headerlink" href="#double-integrals" title="Permalink to this headline">¶</a></h3>
+<span id="index-4"></span><h3>9.2.2. Double integrals<a class="headerlink" href="#double-integrals" title="Permalink to this headline">¶</a></h3>
 <p>The <tt class="docutils literal"><span class="pre">scipy.integrate</span></tt> function <tt class="docutils literal"><span class="pre">dblquad</span></tt> can be used to numerically evaluate double integrals of the form</p>
 <div class="math">
 <p><img src="../_images/math/e03127b5a9e1875d2a7a890533468d5f2eec6378.png" alt="\int_{y=a}^{y=b} dy \int_{x=g(y)}^{x=h(y)} dx\,f(x,y)"/></p>
@@ -440,7 +440,7 @@
 </div>
 </div>
 <div class="section" id="solving-odes">
-<span id="index-4"></span><h2>9.3. Solving ODEs<a class="headerlink" href="#solving-odes" title="Permalink to this headline">¶</a></h2>
+<span id="index-5"></span><h2>9.3. Solving ODEs<a class="headerlink" href="#solving-odes" title="Permalink to this headline">¶</a></h2>
 <p>The <tt class="docutils literal"><span class="pre">scipy.integrate</span></tt> library has two powerful powerful routines, <tt class="docutils literal"><span class="pre">ode</span></tt> and <tt class="docutils literal"><span class="pre">odeint</span></tt>, for numerically solving systems of coupled first order ordinary differential equations (ODEs).  While <tt class="docutils literal"><span class="pre">ode</span></tt> is more versatile, <tt class="docutils literal"><span class="pre">odeint</span></tt> (ODE integrator) has a simpler Python interface works very well for most problems.  It can handle both stiff and non-stiff problems.  Here we provide an introduction to <tt class="docutils literal"><span class="pre">odeint</span></tt>.</p>
 <p>A typical problem is to solve a second or higher order ODE for a given set of initial conditions.  Here we illustrate using <tt class="docutils literal"><span class="pre">odeint</span></tt> to solve the equation for a driven damped pendulum.  The equation of motion for the angle <img class="math" src="../_images/math/a9cfbeb8ebee1f365919e147a79e242dcb67ee5d.png" alt="\theta"/> that the pendulum makes with the vertical is given by</p>
 <div class="math">
@@ -599,7 +599,7 @@ f_2(t, \theta, \omega) &amp;= -\frac{1}{Q}\,\omega + \sin\theta
 <p>The plots above reveal that for the particular set of input parameters chosen, <tt class="docutils literal"><span class="pre">Q</span> <span class="pre">=</span> <span class="pre">2.0</span></tt>, <tt class="docutils literal"><span class="pre">d</span> <span class="pre">=</span> <span class="pre">1.5</span></tt>, and <tt class="docutils literal"><span class="pre">Omega</span> <span class="pre">=</span> <span class="pre">0.65</span></tt>, the pendulum trajectories are chaotic.  Weaker forcing (smaller <img class="math" src="../_images/math/425d86ba2f2979d75b7535c2bcf92c33ed6b285a.png" alt="d"/>) leads to what is perhaps the more familiar behavior of sinusoidal oscillations with a fixed frequency which, at long times, is equal to the driving frequency.</p>
 </div>
 <div class="section" id="discrete-fast-fourier-transforms">
-<span id="index-5"></span><h2>9.4. Discrete (fast) Fourier transforms<a class="headerlink" href="#discrete-fast-fourier-transforms" title="Permalink to this headline">¶</a></h2>
+<span id="index-6"></span><h2>9.4. Discrete (fast) Fourier transforms<a class="headerlink" href="#discrete-fast-fourier-transforms" title="Permalink to this headline">¶</a></h2>
 <p>The SciPy library has a number of routines for performing discrete Fourier transforms.  Before delving into them, we provide a brief review of Fourier transforms and discrete Fourier transforms.</p>
 <div class="section" id="continuous-and-discrete-fourier-transforms">
 <h3>9.4.1. Continuous and discrete Fourier transforms<a class="headerlink" href="#continuous-and-discrete-fourier-transforms" title="Permalink to this headline">¶</a></h3>
@@ -666,7 +666,7 @@ f_2(t, \theta, \omega) &amp;= -\frac{1}{Q}\,\omega + \sin\theta
 </div>
 </div>
 <div class="section" id="linear-algebra">
-<span id="index-6"></span><h2>9.5. Linear algebra<a class="headerlink" href="#linear-algebra" title="Permalink to this headline">¶</a></h2>
+<span id="index-7"></span><h2>9.5. Linear algebra<a class="headerlink" href="#linear-algebra" title="Permalink to this headline">¶</a></h2>
 <p>Python&#8217;s mathematical libraries, NumPy and SciPy, have extensive tools for numerically solving problems in linear algebra.  Here we focus on two problems that arise commonly in scientific and engineering settings: (1) solving a system of linear equations and (2) eigenvalue problems.  In addition, we also show how to perform a number of other basic computations, such as finding the determinant of a matrix, matrix inversion, and <img class="math" src="../_images/math/aaf00e3adaeb5a75dcbe3b7849e67996aa6eae2a.png" alt="LU"/> decomposition.  The SciPy package for linear algebra is called <tt class="docutils literal"><span class="pre">scipy.linalg</span></tt>.</p>
 <div class="section" id="basic-computations-in-linear-algebra">
 <h3>9.5.1. Basic computations in linear algebra<a class="headerlink" href="#basic-computations-in-linear-algebra" title="Permalink to this headline">¶</a></h3>
@@ -695,7 +695,7 @@ f_2(t, \theta, \omega) &amp;= -\frac{1}{Q}\,\omega + \sin\theta
 </div>
 </div>
 <div class="section" id="solving-systems-of-linear-equations">
-<span id="index-7"></span><h3>9.5.2. Solving systems of linear equations<a class="headerlink" href="#solving-systems-of-linear-equations" title="Permalink to this headline">¶</a></h3>
+<span id="index-8"></span><h3>9.5.2. Solving systems of linear equations<a class="headerlink" href="#solving-systems-of-linear-equations" title="Permalink to this headline">¶</a></h3>
 <p>Solving systems of equations is nearly as simple as constructing a coefficient matrix and a column vector.  Suppose you have the following system of linear equations to solve:</p>
 <div class="math">
 <p><img src="../_images/math/2464025d7a42ba4ac55b45bd3e17d257f21c8644.png" alt="2x_1 + 4x_2 + 6x_3 &amp;= 4\\
@@ -751,7 +751,7 @@ f_2(t, \theta, \omega) &amp;= -\frac{1}{Q}\,\omega + \sin\theta
 <p>Whether we use <tt class="docutils literal"><span class="pre">scipy.linalg.solve</span></tt> or <tt class="docutils literal"><span class="pre">scipy.linalg.inv</span></tt>, SciPy raises an error because the matrix is singular.</p>
 </div>
 <div class="section" id="eigenvalue-problems">
-<span id="index-8"></span><h3>9.5.3. Eigenvalue problems<a class="headerlink" href="#eigenvalue-problems" title="Permalink to this headline">¶</a></h3>
+<span id="index-9"></span><h3>9.5.3. Eigenvalue problems<a class="headerlink" href="#eigenvalue-problems" title="Permalink to this headline">¶</a></h3>
 <p>One of the most common problems in science and engineering is the eigenvalue problem, which in matrix form is written as</p>
 <div class="math">
 <p><img src="../_images/math/efddf1960470e3fbc30ac728ccc029bf89e2001c.png" alt="\mathsf{A}\mathbf{x} = \lambda \mathbf{x}"/></p>
@@ -795,7 +795,7 @@ f_2(t, \theta, \omega) &amp;= -\frac{1}{Q}\,\omega + \sin\theta
 </div>
 <p>Thus we see by direct substitution that the left and right sides of <img class="math" src="../_images/math/35495cc42ba526e3de54768d6443d3c5be828aa0.png" alt="\mathsf{A}\mathbf{x} = \lambda \mathbf{x}:"/> are equal.   In general, the eigenvalues can be complex, so their values are reported as complex numbers.</p>
 <div class="section" id="generalized-eigenvalue-problem">
-<span id="index-9"></span><h4>9.5.3.1. Generalized eigenvalue problem<a class="headerlink" href="#generalized-eigenvalue-problem" title="Permalink to this headline">¶</a></h4>
+<span id="index-10"></span><h4>9.5.3.1. Generalized eigenvalue problem<a class="headerlink" href="#generalized-eigenvalue-problem" title="Permalink to this headline">¶</a></h4>
 <p>The <tt class="docutils literal"><span class="pre">scipy.linalg.eig</span></tt> function can also solve the <em>generalized</em> eigenvalue problem</p>
 <div class="math">
 <p><img src="../_images/math/7b7f0cd337c638c0982b96abe9c82f2e19b13d6c.png" alt="\mathsf{A}\mathbf{x} = \lambda \mathsf{B}\mathbf{x}"/></p>
@@ -821,14 +821,14 @@ f_2(t, \theta, \omega) &amp;= -\frac{1}{Q}\,\omega + \sin\theta
 </div>
 </div>
 <div class="section" id="hermitian-and-banded-matrices">
-<span id="index-10"></span><h4>9.5.3.2. Hermitian and banded matrices<a class="headerlink" href="#hermitian-and-banded-matrices" title="Permalink to this headline">¶</a></h4>
+<span id="index-11"></span><h4>9.5.3.2. Hermitian and banded matrices<a class="headerlink" href="#hermitian-and-banded-matrices" title="Permalink to this headline">¶</a></h4>
 <p>SciPy has a specialized routine for solving eigenvalue problems for Hermitian (or real symmetric) matrices.  The routine for hermitian matrices is <tt class="docutils literal"><span class="pre">scipy.linalg.eigh</span></tt>.  It is more efficient (faster and uses less memory) than <tt class="docutils literal"><span class="pre">scipy.linalg.eig</span></tt>.  The basic syntax of the two routines is the same, although some of the <em>optional</em> arguments are different.  Both routines can solve generalized as well as standard eigenvalue problems.</p>
 <p>SciPy also has a specialized routine <tt class="docutils literal"><span class="pre">scipy.linalg.eig_banded</span></tt> for solving eigenvalue problems for real symmetric or complex hermitian banded matrices.</p>
 </div>
 </div>
 </div>
 <div class="section" id="solving-non-linear-equations">
-<span id="sec-findingroots"></span><span id="index-11"></span><h2>9.6. Solving non-linear equations<a class="headerlink" href="#solving-non-linear-equations" title="Permalink to this headline">¶</a></h2>
+<span id="sec-findingroots"></span><span id="index-12"></span><h2>9.6. Solving non-linear equations<a class="headerlink" href="#solving-non-linear-equations" title="Permalink to this headline">¶</a></h2>
 <p>SciPy has many different routines for numerically solving non-linear equations or systems of non-linear equations.  Here we will introduce only a few of these routines, the ones that are relatively simple and appropriate for the most common types of nonlinear equations.</p>
 <div class="section" id="single-equations-of-a-single-variable">
 <h3>9.6.1. Single equations of a single variable<a class="headerlink" href="#single-equations-of-a-single-variable" title="Permalink to this headline">¶</a></h3>
@@ -846,7 +846,7 @@ f_2(t, \theta, \omega) &amp;= -\frac{1}{Q}\,\omega + \sin\theta
 <p class="caption">Roots of a nonlinear function</p>
 </div>
 <div class="section" id="brent-method">
-<span id="index-12"></span><h4>9.6.1.1. Brent method<a class="headerlink" href="#brent-method" title="Permalink to this headline">¶</a></h4>
+<span id="index-13"></span><h4>9.6.1.1. Brent method<a class="headerlink" href="#brent-method" title="Permalink to this headline">¶</a></h4>
 <p>One of the workhorses for finding solutions to a single variable nonlinear equation is the method of Brent, discussed in many texts on numerical methods.  SciPy&#8217;s implementation of the Brent algorithm is the function <tt class="docutils literal"><span class="pre">scipy.optimize.brentq(f,</span> <span class="pre">a,</span> <span class="pre">b)</span></tt>, which has three required arguments.  The first <tt class="docutils literal"><span class="pre">f</span></tt> is the name of the user-defined function to be solved.  The next two, <tt class="docutils literal"><span class="pre">a</span></tt> and <tt class="docutils literal"><span class="pre">b</span></tt> are the <img class="math" src="../_images/math/188c175aac0a8a9c22499336711b5d7256407254.png" alt="x"/> values that bracket the solution you are looking for.  You should choose <tt class="docutils literal"><span class="pre">a</span></tt> and <tt class="docutils literal"><span class="pre">b</span></tt> so that there is only one solutions in the interval between <tt class="docutils literal"><span class="pre">a</span></tt> and <tt class="docutils literal"><span class="pre">b</span></tt>.  Brent&#8217;s method also requires that <tt class="docutils literal"><span class="pre">f(a)</span></tt> and <tt class="docutils literal"><span class="pre">f(b)</span></tt> have opposite signs; an error message is returned if they do not.  Thus to find the three solutions to <img class="math" src="../_images/math/f26671f61f7d9dddedfc342c7ae001c72b47c469.png" alt="\tan x - \sqrt{(8/x)^2-1} = 0"/>, we need to run <tt class="docutils literal"><span class="pre">scipy.optimize.brentq(f,</span> <span class="pre">a,</span> <span class="pre">b)</span></tt> three times using three different values of <tt class="docutils literal"><span class="pre">a</span></tt> and <tt class="docutils literal"><span class="pre">b</span></tt> that bracket each of the three solutions.  The program below illustrates the how to use <tt class="docutils literal"><span class="pre">scipy.optimize.brentq</span></tt></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">scipy.optimize</span>
@@ -921,13 +921,13 @@ f_2(t, \theta, \omega) &amp;= -\frac{1}{Q}\,\omega + \sin\theta
 <p>The <tt class="docutils literal"><span class="pre">brentq</span></tt> function has a number of optional keyword arguments that you may find useful.  One keyword argument causes <tt class="docutils literal"><span class="pre">brentq</span></tt> to return not only the solution but the value of the function evaluated at the solution.  Other arguments allow you to specify a tolerance to which the solution is found as well as a few other parameters possibly of interest.  Most of the time, you can leave the keyword arguments at their default values.  See the <tt class="docutils literal"><span class="pre">brentq</span></tt> entry online on the SciPy web site for more information.</p>
 </div>
 <div class="section" id="other-methods-for-solving-equations-of-a-single-variable">
-<span id="index-13"></span><h4>9.6.1.2. Other methods for solving equations of a single variable<a class="headerlink" href="#other-methods-for-solving-equations-of-a-single-variable" title="Permalink to this headline">¶</a></h4>
+<span id="index-14"></span><h4>9.6.1.2. Other methods for solving equations of a single variable<a class="headerlink" href="#other-methods-for-solving-equations-of-a-single-variable" title="Permalink to this headline">¶</a></h4>
 <p>SciPy provides a number of other methods for solving nonlinear equations of a single variable.  It has an implementation of the Newton-Raphson method called <tt class="docutils literal"><span class="pre">scipy.optimize.newton</span></tt>.  It&#8217;s the racecar of such methods; its super fast but less stable that the Brent method.  To fully realize its speed, you need to specify not only the function to be solved, but also its first derivative, which is often more trouble than its worth.  You can also specify its second derivative, which may further speed up finding the solution.  If you do not specify the first or second derivatives, the method uses the secant method, which is usually slower than the Brent method.</p>
-<p id="index-14">Other methods, including the Ridder (<tt class="docutils literal"><span class="pre">scipy.optimize.ridder</span></tt>) and bisection (<tt class="docutils literal"><span class="pre">scipy.optimize.bisect</span></tt>), are also available, although the Brent method is generally superior.  SciPy let&#8217;s you use your favorite.</p>
+<p id="index-15">Other methods, including the Ridder (<tt class="docutils literal"><span class="pre">scipy.optimize.ridder</span></tt>) and bisection (<tt class="docutils literal"><span class="pre">scipy.optimize.bisect</span></tt>), are also available, although the Brent method is generally superior.  SciPy let&#8217;s you use your favorite.</p>
 </div>
 </div>
 <div class="section" id="solving-systems-of-nonlinear-equations">
-<span id="index-15"></span><h3>9.6.2. Solving systems of nonlinear equations<a class="headerlink" href="#solving-systems-of-nonlinear-equations" title="Permalink to this headline">¶</a></h3>
+<span id="index-16"></span><h3>9.6.2. Solving systems of nonlinear equations<a class="headerlink" href="#solving-systems-of-nonlinear-equations" title="Permalink to this headline">¶</a></h3>
 <p>Solving systems of nonlinear equations is not for the faint of heart.  It is a difficult problem that lacks any general purpose solutions.  Nevertheless, SciPy provides quite an assortment of numerical solvers for nonlinear systems of equations.  However, because of the complexity and subtleties of this class of problems, we do not discuss their use here.</p>
 </div>
 </div>

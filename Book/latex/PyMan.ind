@@ -2,8 +2,8 @@
 
   \item Anaconda
     \subitem resources, \hyperpage{202}
-  \item Anonymous functions, \hyperpage{135}
-    \subitem lambda expressions, \hyperpage{135}
+  \item anonymous functions, \hyperpage{135}
+    \subitem lambda expressions, \hyperpage{135}, \hyperpage{178}
   \item array (NumPy), \hyperpage{29}
     \subitem printing, \hyperpage{61}
   \item assignment operator, \hyperpage{15}
@@ -34,6 +34,10 @@
 
   \indexspace
 
+  \item eigenvalue problems, \hyperpage{178}
+
+  \indexspace
+
   \item fast Fourier transforms, 
 		\hyperindexformat{\see{discrete Fourier transforms}}{171}
   \item FFTs, \hyperindexformat{\see{discrete Fourier transforms}}{171}
@@ -46,6 +50,7 @@
       \subsubitem variable number, \hyperpage{122}
     \subitem fast array processing, \hyperpage{119}
     \subitem looping over arrays, \hyperpage{117}
+    \subitem multiple inputs and/or outputs, \hyperpage{120}
     \subitem NumPy, \hyperpage{14}
     \subitem user defined, \hyperpage{115}
 
@@ -71,6 +76,7 @@
   \indexspace
 
   \item lambda expressions, \hyperpage{135}
+    \subitem anonymous functions, \hyperpage{178}
   \item line continuation, \hyperpage{22}
   \item linear algebra, \hyperpage{176}
     \subitem eigenvalue problems, \hyperpage{178}
@@ -115,7 +121,7 @@
     \subitem Ridder method, \hyperpage{184}
     \subitem solving, \hyperpage{180}
     \subitem systems of nonlinear equations, \hyperpage{184}
-  \item numerical integration, \hyperpage{163}
+  \item numerical integration
     \subitem double integrals, \hyperpage{166}
     \subitem integrals of polynomials, \hyperpage{165}
     \subitem single integrals, \hyperpage{163}
@@ -159,12 +165,19 @@
 
   \indexspace
 
-  \item SciPy
+  \item SciPy, \hyperpage{159}
+    \subitem discrete Fourier transforms, \hyperpage{171}
+    \subitem linear algebra, \hyperpage{176}
     \subitem module, \hyperpage{12}
+    \subitem non-linear equations, \hyperpage{180}
+    \subitem nonlinear curve fitting, \hyperpage{149}
+    \subitem numerical integration, \hyperpage{163}
+    \subitem ODEs, \hyperpage{168}
+    \subitem solving systems of equations, \hyperpage{176}
+    \subitem special functions, \hyperpage{159}
   \item scripts, \hyperpage{18}
   \item solving non-linear equations, 
 		\hyperindexformat{\see{non-linear equations}}{180}
-  \item special functions, \hyperpage{159}
   \item Spyder
     \subitem installing Python, \hyperpage{187}
     \subitem resources, \hyperpage{202}
