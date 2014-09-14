@@ -12,6 +12,9 @@ Installing Python on your computer
 
 If you haven't already installed Python on your computer, see :ref:`apdx1`, which includes instructions for installing Python on Macs running under MacOSX and on PCs running under  Windows.
 
+.. index::
+   single: Canopy
+
 Once you have installed Python, find the Canopy icon on your computer and launch the application.  Wait for the Canopy welcome screen to appear, and then click on the ``Editor`` icon.  The Canopy window should appear, like the one shown below.  This is the window you will generally use to work with Python.
 
 .. _fig-CanopyWindow:
@@ -25,9 +28,6 @@ Once you have installed Python, find the Canopy icon on your computer and launch
 
 The Canopy window
 =================
-
-.. index::
-   single: Canopy; window
 
 .. index::
    single: Canopy; window

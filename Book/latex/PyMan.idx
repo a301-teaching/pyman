@@ -1,4 +1,4 @@
-\indexentry{Canopy!window|hyperpage}{3}
+\indexentry{Canopy|hyperpage}{3}
 \indexentry{Canopy!window|hyperpage}{3}
 \indexentry{Canopy!IPython pane|hyperpage}{3}
 \indexentry{IPython!Canopy IPython pane|hyperpage}{4}
@@ -84,7 +84,7 @@
 \indexentry{functions!arguments!positional|hyperpage}{121}
 \indexentry{functions!arguments!variable number|hyperpage}{122}
 \indexentry{functions!arguments!*args|hyperpage}{122}
-\indexentry{functions!arguments!**kwargs|hyperpage}{122}
+\indexentry{functions!arguments!**kwargs|hyperpage}{124}
 \indexentry{curve fitting!linear|hyperpage}{130}
 \indexentry{curve fitting!linear!with weighting|hyperpage}{134}
 \indexentry{anonymous functions|hyperpage}{135}
@@ -130,6 +130,8 @@
 \indexentry{non-linear equations!Bisection method|hyperpage}{184}
 \indexentry{non-linear equations!systems of nonlinear equations|hyperpage}{184}
 \indexentry{Python!installing|hyperpage}{187}
+\indexentry{Canopy|hyperpage}{187}
+\indexentry{Spyder|hyperpage}{187}
 \indexentry{Canopy!installing Python|hyperpage}{187}
 \indexentry{installing Python!Canopy|hyperpage}{187}
 \indexentry{Spyder!installing Python|hyperpage}{187}

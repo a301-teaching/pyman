@@ -16,8 +16,8 @@
 
 
 \title{Introduction to Python for Science}
-\date{September 13, 2014}
-\release{0.9.29}
+\date{September 14, 2014}
+\release{0.9.30}
 \author{David J. Pine}
 \newcommand{\sphinxlogo}{}
 \renewcommand{\releasename}{Release}
@@ -155,6 +155,7 @@ You are not assumed to have had any previous programming experience.  However, t
 \label{chap2/chap2_basics:installing-python-on-your-computer}
 If you haven't already installed Python on your computer, see {\hyperref[apdx1/apdx1_install:apdx1]{\emph{Installing Python}}}, which includes instructions for installing Python on Macs running under MacOSX and on PCs running under  Windows.
 
+\index{Canopy}
 Once you have installed Python, find the Canopy icon on your computer and launch the application.  Wait for the Canopy welcome screen to appear, and then click on the \code{Editor} icon.  The Canopy window should appear, like the one shown below.  This is the window you will generally use to work with Python.
 \begin{figure}[htbp]
 \centering
@@ -166,7 +167,6 @@ Once you have installed Python, find the Canopy icon on your computer and launch
 
 \section{The Canopy window}
 \label{chap2/chap2_basics:the-canopy-window}
-\index{Canopy!window}
 \index{Canopy!window}
 The default Canopy window has three panes: the code editor, the interactive Python pane, and the file browser pane.  The \textbf{interactive Python pane} is the primary way that you interact with Python.  You can use it to run Python computer programs, test snippets of Python code, navigate your computer file directories, and perform system tasks like creating, moving, and deleting files and directories.  You will use the \textbf{code editor} to write and edit Python programs (or scripts), which are simply sequences of Python commands (code) stored in a file on your computer.  The \textbf{file browser pane} allows you to navigate your computer's file directory system in order to view and retrieve files on your computer.
 
@@ -4347,7 +4347,7 @@ The normal arguments without keywords are called \emph{positional arguments}; th
 
 By now you probably have noticed that we used the keyword argument \code{endpoint} in calling \code{linspace} in our definition of the \code{circle} function.  The default value of \code{endpoint} is \code{True}, meaning that \code{linspace} includes the endpoint specified in the second argument of \code{linspace}.  We set it equal to \code{False} so that the last point was not included.  Do you see why?
 
-\index{functions!arguments!variable number}\index{functions!arguments!*args}\index{functions!arguments!**kwargs}
+\index{functions!arguments!variable number}\index{functions!arguments!*args}
 
 \subsection{Variable number of arguments}
 \label{chap7/chap7_funcs:index-5}\label{chap7/chap7_funcs:variable-number-of-arguments}
@@ -4419,6 +4419,7 @@ We get the same answer as before, but this time we have used \code{deriv} with a
 
 The order of the parameters is important.  The function \code{deriv} uses \code{x}, the first argument of \code{f1}, as its principal argument, and then uses \code{a} and \code{p}, in the same order that they are defined in the function \code{f1}, to fill in the additional arguments---the parameters---of the function \code{f1}.
 
+\index{functions!arguments!**kwargs}
 Optional arguments must appear after the regular positional and keyword arguments in a function call. The order of the arguments must adhere to the following convention:
 
 \begin{Verbatim}[commandchars=\\\{\}]
@@ -4632,7 +4633,7 @@ The \code{clip()} method provides an example of a method that takes an argument,
 \index{curve fitting!linear}
 
 \section{Example: linear least squares fitting}
-\label{chap7/chap7_funcs:example-linear-least-squares-fitting}\label{chap7/chap7_funcs:index-6}\label{chap7/chap7_funcs:linfitfunc}
+\label{chap7/chap7_funcs:example-linear-least-squares-fitting}\label{chap7/chap7_funcs:index-7}\label{chap7/chap7_funcs:linfitfunc}
 In this section we illustrate how to use functions and methods in the context of modeling experimental data.
 
 In science and engineering we often have some theoretical curve or \emph{fitting function} that we would like to fit to some experimental data.  In general, the fitting function is of the form \(f(x; a, b, c, ...)\), where \(x\) is the independent variable and \(a\), \(b\), \(c\), ... are parameters to be adjusted so that the function \(f(x; a, b, c, ...)\) best fits the experimental data.  For example, suppose we had some data of the velocity \emph{vs} time for a falling mass.  If the mass falls only a short distance such that its velocity remains well below its terminal velocity, we can ignore air resistance.  In this case, we expect the acceleration to be constant and the velocity to change linearly in time according to the equation
@@ -4719,7 +4720,7 @@ It's hard to imagine a simpler implementation of the linear regression algorithm
 \index{curve fitting!linear!with weighting}
 
 \subsection{Linear regression with weighting: \(\chi^2\)}
-\label{chap7/chap7_funcs:index-7}\label{chap7/chap7_funcs:linear-regression-with-weighting}
+\label{chap7/chap7_funcs:linear-regression-with-weighting}\label{chap7/chap7_funcs:index-8}
 The linear regression routine of the previous section weights all data points equally.  That is fine if the absolute uncertainty is the same for all data points.  In many cases, however, the uncertainty is different for different points in a data set.  In such cases, we would like to weight the data that has smaller uncertainty more heavily than those data that have greater uncertainty.  For this case, there is a standard method of weighting and fitting data that is known as \(\chi^2\)  (or \emph{chi-squared}) fitting.  In this method we suppose that associated with each \((x_{i},y_{i})\) data point is an uncertainty in the value of \(y_{i}\) of \(\pm\sigma_{i}\).  In this case, the ``best fit'' is defined as the the one with the set of fitting parameters that minimizes the sum
 \phantomsection\label{chap7/chap7_funcs:equation-eq:chisq}\begin{gather}
 \begin{split}\chi^2 = \sum_{i} \left(\frac{y_{i} - f(x_{i})} {\sigma_{i}}\right)^2 \;.\end{split}\label{chap7/chap7_funcs-eq:chisq}
@@ -4764,7 +4765,7 @@ You can find more information, including a derivation of Eq. \eqref{chap7/chap7_
 \index{anonymous functions}\index{anonymous functions!lambda expressions}\index{lambda expressions}
 
 \section{Anonymous functions (lambda)}
-\label{chap7/chap7_funcs:anonymous-functions-lambda}\label{chap7/chap7_funcs:index-8}\label{chap7/chap7_funcs:lambda}
+\label{chap7/chap7_funcs:anonymous-functions-lambda}\label{chap7/chap7_funcs:index-9}\label{chap7/chap7_funcs:lambda}
 Python provides another way to generate functions called \emph{lambda} expressions.  A lambda expression is a kind of in-line function that can be generated on the fly to accomplish some small task.  You can assign lambda functions a name, but you don't need to; hence, they are often called \emph{anonymous} functions.  A lambda uses the keyword \code{lambda} and has the general form
 
 \begin{Verbatim}[commandchars=\\\{\}]
@@ -6290,7 +6291,7 @@ For scientific programming with Python, you need to install Python and three sci
 \label{apdx1/apdx1_install:id1}
 There are a number of ways to install Python and the scientific libraries you will need on your computer.  Some are easier than others.  You can install Python and the scientific libraries you need from ``source'' and compile them yourself.  This is not recommended unless you are an expert in Python, in which case you have little need for this manual.
 
-\index{Canopy!installing Python}\index{installing Python!Canopy}\index{Spyder!installing Python}\index{installing Python!Spyder}
+\index{Canopy}\index{Spyder}\index{Canopy!installing Python}\index{installing Python!Canopy}\index{Spyder!installing Python}\index{installing Python!Spyder}
 For most people, the simplest way to install Python and all the scientific libraries you need is to install either \emph{Canopy} or \emph{Spyder}.  Canopy and Spyder are integrated development environments (IDEs) for Python.  They have a number of very useful features and tools.  First, they have syntax highlighting, which colors different parts Python syntax according to function, making code easier to read.  Second, and more importantly, they run a program in the background called \emph{PyFlakes} that checks the validity of the Python syntax as you write it.  It's like a spelling and grammar checker all rolled into one, and it is extremely useful, for novice and expert alike.  The Canopy and Spyder IDEs have a number of other useful features, which we do not go into here, but expect you will learn about as you become more familiar with Python.  Canopy is a simpler IDE than Spyder, and easier for novices to learn and maintain.  Spyder has more advanced features, which you may find useful as you become more expert in Python programming.
 
 \emph{Canopy} is written, maintained, and distributed by the software company Enthought (\href{http://www.enthought.com/}{http://www.enthought.com/}).  There are two versions of Canopy.  One version, \emph{Canopy Express}, is completely free to everybody and contains all the libraries you will need for this manual.  The other, \emph{Canopy Basic}, contains nearly every library you are ever likely to need for scientific computing.  It is free to academic users; others pay a fee.  Go to \href{https://www.enthought.com/products/canopy/}{https://www.enthought.com/products/canopy/} and press the ``Get Canopy'' button, which will take you to a page where you can either download \emph{Canopy Express} or request and academic license, which will allow you to download \emph{Canopy Basic}.

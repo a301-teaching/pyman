@@ -10,7 +10,7 @@
 
   \indexspace
 
-  \item Canopy
+  \item Canopy, \hyperpage{3}, \hyperpage{187}
     \subitem Code Editor, \hyperpage{18}
     \subitem installing Python, \hyperpage{187}
     \subitem IPython pane, \hyperpage{3}
@@ -43,7 +43,7 @@
   \item FFTs, \hyperindexformat{\see{discrete Fourier transforms}}{171}
   \item functions
     \subitem arguments
-      \subsubitem **kwargs, \hyperpage{122}
+      \subsubitem **kwargs, \hyperpage{124}
       \subsubitem *args, \hyperpage{122}
       \subsubitem keyword, \hyperpage{121}
       \subsubitem positional, \hyperpage{121}
@@ -75,8 +75,7 @@
 
   \indexspace
 
-  \item lambda expressions, \hyperpage{135}
-    \subitem anonymous functions, \hyperpage{178}
+  \item lambda expressions, \hyperpage{135}, \hyperpage{178}
   \item line continuation, \hyperpage{22}
   \item linear algebra, \hyperpage{176}
     \subitem eigenvalue problems, \hyperpage{178}
@@ -178,7 +177,7 @@
   \item scripts, \hyperpage{18}
   \item solving non-linear equations, 
 		\hyperindexformat{\see{non-linear equations}}{180}
-  \item Spyder
+  \item Spyder, \hyperpage{187}
     \subitem installing Python, \hyperpage{187}
     \subitem resources, \hyperpage{202}
   \item string, \hyperpage{29}
