@@ -879,9 +879,9 @@ finds the height :math:`h` and velocity :math:`v` at a time :math:`t` after the 
 
 #.  Write a single Python script that calculates the following expressions:
 
-        (a) :math:`\displaystyle\frac{2 + e^{2.8}}{\sqrt{13}-2}`
-        (b) :math:`\displaystyle\frac{1-(1+\ln 2)^{-3.5}}{1+\sqrt{5}}`
-        (c) :math:`\displaystyle\sin\left( \frac{2-\sqrt{2}}{2+\sqrt{2}} \right)`
+        (a) :math:`\displaystyle a = \frac{2 + e^{2.8}}{\sqrt{13}-2}`
+        (b) :math:`\displaystyle b = \frac{1-(1+\ln 2)^{-3.5}}{1+\sqrt{5}}`
+        (c) :math:`\displaystyle c = \sin\left( \frac{2-\sqrt{2}}{2+\sqrt{2}} \right)`
     
     After running your script in the IPython shell, typing ``a``, ``b``, or ``c`` at the IPython prompt should yield the value of the expressions in (a), (b), or (c), respectively.
 
