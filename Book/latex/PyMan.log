@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.24)  4 FEB 2015 09:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.21)  28 FEB 2015 17:56
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **PyMan.tex
@@ -1637,7 +1637,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6580.
 Here is how much of TeX's memory you used:
  10808 strings out of 493109
  158042 string characters out of 6135004
- 267557 words of memory out of 5000000
+ 267559 words of memory out of 5000000
  13388 multiletter control sequences out of 15000+600000
  73023 words of font info for 94 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
@@ -1665,7 +1665,7 @@ c/uhvb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/helvetic/uhvbo
 l/texlive/2014/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive
 /2014/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on PyMan.pdf (209 pages, 2909942 bytes).
+Output written on PyMan.pdf (209 pages, 2909966 bytes).
 PDF statistics:
  2746 PDF objects out of 2984 (max. 8388607)
  1821 compressed objects within 19 object streams
