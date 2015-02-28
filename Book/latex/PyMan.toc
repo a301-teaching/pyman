@@ -156,3 +156,4 @@
 \contentsline {chapter}{\numberline {C}Python Resources}{201}{appendix.C}
 \contentsline {section}{\numberline {C.1}Web resources}{201}{section.C.1}
 \contentsline {section}{\numberline {C.2}Books}{203}{section.C.2}
+\contentsline {chapter}{Index}{205}{section*.61}
